@@ -44,7 +44,7 @@
     <div class="header">
       <div class="title">
         <h1>Initiatieven interoperabiliteit</h1>
-        <p>Overzicht van initiatieven rond semantiek en interoperabiliteit in en rond het energiedomein. De kaartjes hieronder zijn gebaseerd op de inventarisatie in het rapport (hoofdstuk 6.1).</p>
+        <p>Overzicht van initiatieven rond semantiek en interoperabiliteit in en rond het energiedomein, met focus op publiek deelbare informatie.</p>
       </div>
       <div class="actions">
         <a href="initiatieven-interoperabiliteit-print.html" target="_blank" rel="noopener noreferrer" class="button primary">Printoverzicht openen</a>
@@ -52,14 +52,23 @@
     </div>
 
     <div class="toolbar">
-      <div class="toolbarLeft">
-        <div class="controls">
-          <input id="q" class="input" type="search" placeholder="Zoek (naam, samenvatting, tags…)" autocomplete="off" />
-          <select id="status" class="select">
-            <option value="">Status (alle)</option>
+      <div class="toolbarLeft toolbarLeft--interop">
+        <div class="controls controls--interop">
+          <input id="q" class="input" type="search" placeholder="Zoek (naam, omschrijving, organisatie...)" autocomplete="off" />
+          <select id="type" class="select">
+            <option value="">Type initiatief (alle)</option>
           </select>
-          <select id="scope" class="select">
-            <option value="">Scope (alle)</option>
+          <select id="focus" class="select">
+            <option value="">Inhoudelijke focus (alle)</option>
+          </select>
+          <select id="maturity" class="select">
+            <option value="">Volwassenheid (alle)</option>
+          </select>
+          <select id="region" class="select">
+            <option value="">Regio (alle)</option>
+          </select>
+          <select id="origin" class="select">
+            <option value="">Oorsprong in rapport (alle)</option>
           </select>
         </div>
         <div class="kpis">
@@ -104,17 +113,17 @@
       </div>
 
       <div class="section" id="dDevelopmentsSection" style="display:none;">
-        <h4>Ontwikkelingen sinds publicatie</h4>
+        <h4>Uitgebreide omschrijving</h4>
         <div id="dDevelopments"></div>
       </div>
 
       <div class="section" id="dAdviceSection" style="display:none;">
-        <h4>Relevantie en advies</h4>
+        <h4>Toepassing in praktijk</h4>
         <p id="dAdvice" class="summary"></p>
       </div>
 
       <div class="section" id="dRelatedSection" style="display:none;">
-        <h4>Verwante of nieuwe initiatieven</h4>
+        <h4>Verwante initiatieven</h4>
         <ul class="list" id="dRelated"></ul>
       </div>
 

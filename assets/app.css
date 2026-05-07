@@ -1068,6 +1068,15 @@ hr.sep {
 .controls--useCases > :first-child {
   grid-column: 1 / span 2;
 }
+.controls--interop {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.controls--interop > :first-child {
+  grid-column: 1 / span 3;
+}
+.toolbarLeft--interop {
+  max-width: 760px;
+}
 
 .barChartPanel {
   border: 1px solid var(--border);
