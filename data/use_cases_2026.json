@@ -2721,55 +2721,6 @@
       ]
     },
     {
-      "project_id": "P060",
-      "projectnaam": "Datastelsel Verduurzaming Utiliteit",
-      "oorsprong": "Overig",
-      "organisaties": "RVO, gebouweigenaren, huurders, energieadviseurs, aannemers, overheden en meetbedrijven",
-      "beschrijving": "Het Datastelsel Verduurzaming Utiliteit (DVU) is een stelsel en dashboard waarmee eigenaren en huurders van utiliteitsgebouwen veilig inzicht krijgen in energieverbruik en deze data met gemachtigde partijen kunnen delen voor energiebesparing en verduurzaming.",
-      "gebruik_energiedata": "Gestandaardiseerde energieverbruiksdata van utiliteitsgebouwen wordt ontsloten voor eigenaren, huurders, adviseurs, uitvoerende partijen en overheden om verduurzaming te monitoren, te stimuleren en te verantwoorden.",
-      "MD1_status": "Lopend",
-      "MD2_projectdoel": [
-        "Beleid & onderzoek: gebruik van energiedata t.b.v. nieuw of aangepast beleid",
-        "Inzicht & monitoring van energiegebruik"
-      ],
-      "MD3_type_energiedata": [
-        "Energieverbruiksdata",
-        "Gebouwdata: data over gebouwen die energie verbruiken"
-      ],
-      "MD4_databron": [
-        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
-        "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "MD5_datasink": [
-        "Overheden/beleidsmakers",
-        "Bedrijven/industrie",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "MD6_governance": [
-        "Individuele toestemming (consent)",
-        "Data space / federatief (gedistribueerde datadeling met behoud van controle)",
-        "Contractuele datadeling (B2B)"
-      ],
-      "MD7_toepassing": [
-        "Ondersteunen van landelijke beleidsvorming - Strategische keuzes, wet- en regelgeving, scenario's, monitoring",
-        "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen."
-      ],
-      "MD8_granulariteit_niveau": [
-        "Aansluiting",
-        "Gemeente",
-        "Land"
-      ],
-      "MD9_granulariteit_frequentie": [
-        "Dag",
-        "Maand",
-        "Jaar"
-      ],
-      "links": [
-        "https://www.rvo.nl/onderwerpen/verduurzaming-utiliteitsbouw/dvu"
-      ]
-    },
-    {
       "project_id": "P061",
       "projectnaam": "Slim Strandnet Scheveningen",
       "oorsprong": "Overig",
