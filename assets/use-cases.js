@@ -4,12 +4,12 @@ let fuse = null;
 
 const elQ = document.getElementById('q');
 const elStatus = document.getElementById('status');
-const elOrigin = document.getElementById('origin');
 const elEnergyType = document.getElementById('energyType');
 const elGrid = document.getElementById('grid');
 const elEmpty = document.getElementById('empty');
 const elCount = document.getElementById('countLabel');
 const elChips = document.getElementById('activeChips');
+const elEnergyTypeBars = document.getElementById('energyTypeBars');
 
 const overlay = document.getElementById('overlay');
 const drawer = document.getElementById('drawer');
@@ -75,11 +75,72 @@ function listToBadges(values, maxItems = 2) {
     .join('');
 }
 
+function buildEnergyTypeStats(list) {
+  const totalProjects = list.length || 1;
+  const counts = new Map();
+
+  for (const item of list) {
+    const uniqueTypes = new Set(
+      (Array.isArray(item.MD3_type_energiedata) ? item.MD3_type_energiedata : [])
+        .filter(isNonEmptyString)
+    );
+    for (const type of uniqueTypes) {
+      counts.set(type, (counts.get(type) || 0) + 1);
+    }
+  }
+
+  return Array.from(counts.entries())
+    .map(([label, count]) => ({
+      label,
+      count,
+      percentage: Math.round((count / totalProjects) * 1000) / 10
+    }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
+
+function renderEnergyTypeBars() {
+  if (!elEnergyTypeBars) return;
+
+  const stats = buildEnergyTypeStats(allUseCases);
+  const activeType = elEnergyType.value;
+
+  if (!stats.length) {
+    elEnergyTypeBars.innerHTML = '<div class="small">Geen data beschikbaar.</div>';
+    return;
+  }
+
+  elEnergyTypeBars.innerHTML = stats.map(item => {
+    const isActive = activeType === item.label;
+    return `
+      <button
+        type="button"
+        class="barRow${isActive ? ' is-active' : ''}"
+        data-energy-type="${escapeHtml(item.label)}"
+        aria-pressed="${isActive ? 'true' : 'false'}"
+      >
+        <span class="barRowTop">
+          <span class="barLabel">${escapeHtml(item.label)}</span>
+          <span class="barValue">${item.percentage.toFixed(1)}%</span>
+        </span>
+        <span class="barTrack">
+          <span class="barFill" style="width:${Math.min(100, item.percentage)}%"></span>
+        </span>
+      </button>
+    `;
+  }).join('');
+
+  for (const button of elEnergyTypeBars.querySelectorAll('.barRow')) {
+    button.addEventListener('click', () => {
+      const value = button.getAttribute('data-energy-type') || '';
+      elEnergyType.value = elEnergyType.value === value ? '' : value;
+      apply();
+    });
+  }
+}
+
 function cardHtml(item) {
   const meta = `
     ${statusBadgeForUseCase(item.MD1_status)}
-    ${item.oorsprong ? `<span class="badge">${escapeHtml(item.oorsprong)}</span>` : ''}
-    ${listToBadges(item.MD3_type_energiedata, 1)}
   `;
   const summarySrc = item.beschrijving || '';
   const summary = escapeHtml(summarySrc).slice(0, 180) + (summarySrc.length > 180 ? '…' : '');
@@ -119,13 +180,11 @@ function renderChips() {
   const chips = [];
   const q = elQ.value.trim();
   const status = elStatus.value;
-  const origin = elOrigin.value;
   const energyType = elEnergyType.value;
 
   if (q) chips.push({ label: `Zoek: ${q}`, clear: () => { elQ.value = ''; apply(); } });
   if (status) chips.push({ label: `Status: ${status}`, clear: () => { elStatus.value = ''; apply(); } });
-  if (origin) chips.push({ label: `Oorsprong: ${origin}`, clear: () => { elOrigin.value = ''; apply(); } });
-  if (energyType) chips.push({ label: `Type energiedata`, clear: () => { elEnergyType.value = ''; apply(); } });
+  if (energyType) chips.push({ label: `Type energiedata: ${energyType}`, clear: () => { elEnergyType.value = ''; apply(); } });
 
   elChips.innerHTML = '';
   for (const chip of chips) {
@@ -143,16 +202,15 @@ function apply() {
 
   const q = elQ.value.trim();
   const status = elStatus.value;
-  const origin = elOrigin.value;
   const energyType = elEnergyType.value;
 
   let list = allUseCases;
   if (q && fuse) list = fuse.search(q).map(r => r.item);
   if (status) list = list.filter(x => (x.MD1_status || '') === status);
-  if (origin) list = list.filter(x => (x.oorsprong || '') === origin);
   if (energyType) list = list.filter(x => x.MD3_type_energiedata.includes(energyType));
 
   renderGrid(list);
+  renderEnergyTypeBars();
 }
 
 function kvRow(label, value) {
@@ -237,20 +295,18 @@ async function loadUseCases() {
   });
 
   elStatus.innerHTML = '<option value="">Status (alle)</option>';
-  elOrigin.innerHTML = '<option value="">Oorsprong (alle)</option>';
   elEnergyType.innerHTML = '<option value="">Type energiedata (alle)</option>';
 
   buildSelectOptions(elStatus, uniqueValues(allUseCases.map(x => x.MD1_status)));
-  buildSelectOptions(elOrigin, uniqueValues(allUseCases.map(x => x.oorsprong)));
   buildSelectOptions(elEnergyType, uniqueValues(allUseCases.flatMap(x => x.MD3_type_energiedata)));
 
+  renderEnergyTypeBars();
   apply();
 }
 
 function init() {
   elQ.addEventListener('input', apply);
   elStatus.addEventListener('change', apply);
-  elOrigin.addEventListener('change', apply);
   elEnergyType.addEventListener('change', apply);
 
   loadUseCases().catch(err => {

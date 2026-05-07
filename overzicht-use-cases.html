@@ -51,15 +51,12 @@
       </div>
     </div>
 
-    <div class="toolbar">
+    <div class="toolbar toolbarWithDiagram">
       <div class="toolbarLeft toolbarLeft--useCases">
         <div class="controls controls--useCases">
           <input id="q" class="input" type="search" placeholder="Zoek (projectnaam, beschrijving, organisaties...)" autocomplete="off" />
           <select id="status" class="select">
             <option value="">Status (alle)</option>
-          </select>
-          <select id="origin" class="select">
-            <option value="">Oorsprong (alle)</option>
           </select>
           <select id="energyType" class="select">
             <option value="">Type energiedata (alle)</option>
@@ -73,6 +70,11 @@
           <div class="chips" id="activeChips"></div>
         </div>
       </div>
+      <aside class="barChartPanel" aria-label="Verdeling type energiedata">
+        <h3 class="barChartTitle">Type energiedata (% van projecten)</h3>
+        <p class="small barChartHint">Projecten kunnen meerdere types bevatten; totaal kan boven 100% uitkomen.</p>
+        <div id="energyTypeBars" class="barChartList"></div>
+      </aside>
     </div>
 
     <div id="grid" class="grid"></div>
