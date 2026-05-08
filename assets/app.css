@@ -787,7 +787,7 @@ hr.sep {
   flex-shrink: 0;
   width: 168px;
   padding: 22px 20px;
-  background: #f4f6f9;
+  background: #FFFFFF;
   border-radius: var(--radius2);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow:
