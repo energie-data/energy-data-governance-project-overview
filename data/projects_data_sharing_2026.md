@@ -44,28 +44,29 @@ VIVET is structureel actief en richt zich in 2023–2026 op verbetering van data
 - datum=2026-03; titel=Webinar Industrie & Datacenters; detail=Kennisdeling over monitoring van specifieke grootverbruikers.
 
 ## id: mffbas
-naam: MFFBAS (Marktfaciliteringsforum & Beheerder Afsprakenstelsel)
+naam: Het Normo
 status: Actief
 scope: Energiedomein
 geografische_scope: Nederland
-eigenaar: MFF (vereniging) & BAS B.V. – sectorbrede governance (o.a. Netbeheer Nederland, Energie‑Nederland, VMNed, Techniek Nederland)
+eigenaar: Het Normo B.V.
 jaar_start: 2019
 jaar_einde: None
 tags: energiedata, afsprakenstelsel, slimme meter, governance, privacy
 
 ### links
-- label=Website; url=https://www.mffbas.nl/
-- label=Toelichting (Netbeheer Nederland); url=https://www.netbeheernederland.nl/artikelen/nieuws/energiedata-beter-uitwisselen-om-de-energietransitie-te-realiseren
+- label=Website Het Normo; url=https://www.hetnormo.nl/
+- label=Website Enkiy; url=https://www.enkiy.nl/
+- label=Website MFF; url=https://www.mffbas.nl/
 
 ### samenvatting
-In aanloop naar de Energiewet is MFFBAS opgesplitst in een vereniging (MFF) voor marktfacilitatie en een BV (BAS) voor de wettelijke rol. BAS opereert sinds 2025/2026 onder de handelsnaam Het Normo en fungeert per 1 januari 2026 als wettelijke Gegevensuitwisselingsentiteit (GUE).
+Het Normo voert de wettelijke rol van Gegevensuitwisselingsentiteit (GUE) voor de energiedata uit. Via Enkiy krijgen data eigenaren de mogelijkheid om toestemming te geven voor het delen van hun data. Via het MFF worden marktpartijen uit de energiesector betrokken in de totstandkoming van afspraken rondom het delen van energiedata.
 
 ### korte_referentie.primair_doel
 Transparant en efficiënt delen van (gereguleerde) energiedata mogelijk maken, met regie bij de consument en duidelijke afspraken voor marktpartijen.
 
 ### korte_referentie.belangrijkste_resultaten
 - Afsprakenstelsel energiedata
-- Governancestructuur (MFF/BAS)
+- Governancestructuur (MFF)
 - Implementatie- en monitoringsprocessen
 - Marktbrede afstemming over datadeling
 
@@ -248,8 +249,8 @@ Implementeren van een Europese energy data space met data‑soevereiniteit en ee
 ### korte_referentie.doelgebruikers
 - Energiesector
 - Hernieuwbare‑operators
-- Wind operators
-- Hydrogen operators
+- Local Energy Communities
+- Mobiliteitsdienstverleners
 - Netbeheerders/aggregators
 
 ### ontwikkelingen_2023_2026.referentiedatum
@@ -268,22 +269,21 @@ geografische_scope: Europa
 eigenaar: EU‑gefinancierd consortium (30 partners, 12 landen; NL o.a. via TNO)
 jaar_start: 2022
 jaar_einde: 2025
-tags: EU-project, referentiearchitectuur, SGAM, dataspace, GAIA-X, IDSA, BRIDGE
+tags: EU-project, referentiearchitectuur, SGAM, dataspace, prikkels
 
 ### links
 - label=Website; url=https://enershare.eu/
 - label=CORDIS; url=https://cordis.europa.eu/project/id/101069831
 
 ### samenvatting
-Enershare is medio 2025 afgerond. Het project ontwikkelde een referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in zeven pilots en elf use‑cases.
+Enershare is medio 2025 afgerond. Het project ontwikkelde een consumer-centric referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in pilots.
 
 ### korte_referentie.primair_doel
-Een referentiearchitectuur en componenten leveren voor interoperabele energiedata‑deling in Europa.
+Een mens‑/eindafnemer‑gerichte referentiearchitectuur en componenten leveren voor interoperabele energiedata‑deling in Europa.
 
 ### korte_referentie.belangrijkste_resultaten
-- Referentiearchitectuur (GAIA-X en SGAM‑gebaseerd)
+- Referentiearchitectuur (SGAM‑gebaseerd)
 - IDSA‑compliant componenten
-- Marketplace (marktplaats) met blockchain/smart contracts
 - Pilots en use cases
 - Compensatiesysteem voor datadeling
 
@@ -298,7 +298,7 @@ Een referentiearchitectuur en componenten leveren voor interoperabele energiedat
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-Enershare is medio 2025 afgerond. Het project ontwikkelde een referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in pilots.
+Enershare is medio 2025 afgerond. Het project ontwikkelde een consumer-centric referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in pilots.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2025-04; titel=Final evaluation; detail=Eindrapportage met evaluatie van pilots en best practices.
@@ -343,7 +343,7 @@ Open‑source, gedecentraliseerde data space ontwikkelen waarmee burgers/gebruik
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-EDDIE is eind 2025 afgerond. Het project ontwikkelde een gedecentraliseerde, open-source data space met focus op “in-house” consent en datadeling voor slimme-meterdata.
+Volgens het update-overzicht is EDDIE eind 2025 afgerond. Het project ontwikkelde een gedecentraliseerde, open-source data space met focus op “in-house” consent en datadeling voor slimme-meterdata.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2023; titel=EDDIE Online (PaaS); detail=PaaS gelanceerd voor snelle data-integratie.
@@ -527,44 +527,343 @@ Int:net is in het voorjaar van 2025 afgerond. Het project bouwde een cross-domei
 
 ## id: data-sharing-coalition
 naam: Data Sharing Coalition
-status: Actief
+status: Afgerond
 scope: Generiek initiatief
 geografische_scope: Nederland
-eigenaar: Coalitie van (o.a.) Nederlandse publieke en private organisaties; community >60 organisaties/initiatieven
+eigenaar: Voormalige coalitie van Nederlandse publieke en private organisaties; kennis, resultaten en deelnemers zijn gebundeld in het Centre of Excellence for Data Sharing & Cloud (CoE-DSC)
 jaar_start: 2020
-jaar_einde: None
-tags: cross-sectoraal, datadelen, use cases, handleidingen, community
+jaar_einde: 2023
+tags: cross-sectoraal, datadelen, use cases, handleidingen, historisch, CoE-DSC
 
 ### links
-- label=Website; url=https://datasharingcoalition.eu/
+- label=Website Data Sharing Coalition; url=https://datasharingcoalition.eu/
+- label=CoE-DSC – history and founding; url=https://coe-dsc.nl/about-coe-dsc/
+- label=CoE-DSC launch; url=https://coe-dsc.nl/centre-of-excellence-for-data-sharing-and-cloud-has-been-launched/
 
 ### samenvatting
-Programma/coalitie dat cross‑sectoraal datadelen stimuleert onder controle van de rechthebbende partij. Werkt via drie sporen: (1) use cases, (2) kennisontwikkeling (o.a. Data Sharing Canvas, playbook, blueprint, implementation guide) en (3) communityvorming.
+De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Het initiatief moet in dit overzicht niet langer als zelfstandig actief worden weergegeven: de inzet, resultaten en deelnemers zijn sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 gebundeld in dat vervolginitiatief. Behoud de Data Sharing Coalition daarom als historische voorganger van CoE-DSC.
 
 ### korte_referentie.primair_doel
-Cross‑sectoraal datadelen versnellen en interoperabiliteit tussen data spaces versterken, met regie bij de rechthebbende.
+Cross-sectoraal datadelen versnellen en interoperabiliteit tussen data spaces versterken, met regie bij de rechthebbende partij; vanaf 2023 voortgezet via CoE-DSC.
 
 ### korte_referentie.belangrijkste_resultaten
-- Use case‑ontwikkeling
-- Data Sharing Canvas
-- Use case playbook
-- Blueprint & implementation guide
-- Community/netwerk
+- Use case-ontwikkeling voor cross-sectoraal datadelen
+- Data Sharing Canvas / Harmonisation Canvas en andere handreikingen
+- Blueprints, playbooks en implementatiekennis voor datadelen
+- Community/netwerk dat is ingebracht in CoE-DSC
 
 ### korte_referentie.doelgebruikers
 - Data space initiatieven
 - Bedrijven en overheden
-- Architecten & juristen
+- Architecten en juristen
 - Programma’s rond digitalisering
 - Innovatieconsortia
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+De Data Sharing Coalition is als zelfstandig initiatief opgegaan in CoE-DSC. CoE-DSC bouwt voort op de inzet en resultaten van de Data Sharing Coalition, de NL AIC-werkgroep Data Delen en de Gaia-X Hub NL, en fungeert als centraal Nederlands kennis- en ondersteuningspunt voor datadelen, cloud en data spaces.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-03; titel=CoE-DSC gelanceerd; detail=Lancering van CoE-DSC als centrale plek voor datadeel- en cloudvraagstukken, voortbouwend op de Data Sharing Coalition en andere Nederlandse initiatieven.
+- datum=2023; titel=Kennis en deelnemers gebundeld; detail=Deelnemers en resultaten van de Data Sharing Coalition zijn ingebracht in het CoE-DSC-netwerk.
+- datum=2024-2026; titel=Historische producten blijven bruikbaar; detail=Canvas, playbooks, use cases en andere kennisproducten blijven relevant als basis voor data space implementaties binnen de CoE-DSC-kennisbasis.
+
+## id: insieme-ceeds
+naam: INSIEME / CEEDS (Common European Energy Data Space)
+status: Actief
+scope: Energiedomein
+geografische_scope: Europa
+eigenaar: EU Digital Europe-projectconsortium, gecoördineerd door de University of Applied Sciences Upper Austria / Department of Smart and Interconnected Living (SAIL), met 50+ Europese partners
+jaar_start: 2025
+jaar_einde: 2028
+tags: energiedataspace, CEEDS, EU, interoperabiliteit, datasoevereiniteit, digitalisering energiesysteem
+
+### links
+- label=INSIEME; url=https://insieme.energy/
+- label=CEEDS.energy; url=https://www.ceeds.energy/
+- label=Blueprint CEEDS v2; url=https://zenodo.org/records/12609569
+
+### samenvatting
+INSIEME is het Europese flagship-initiatief dat de Common European Energy Data Space (CEEDS) operationaliseert. CEEDS is daarbij niet goed als losstaand project naast INSIEME te zien: CEEDS is de beoogde gemeenschappelijke energiedataruimte en INSIEME is het implementatieproject dat bestaande energie-data-space-projecten en nationale/regionale oplossingen moet verbinden. In dit overzicht is daarom gekozen voor één gecombineerde entry. INSIEME werkt aan veilige, gestandaardiseerde en interoperabele energiedata-uitwisseling, met use cases rond flexibiliteit, energiegemeenschappen, netbeheer, e-mobiliteit, hernieuwbare integratie en sector coupling.
+
+### korte_referentie.primair_doel
+De Common European Energy Data Space (CEEDS) van visie naar operationele federatieve infrastructuur brengen, zodat energiedata veilig, interoperabel en onder duidelijke governance kan worden gedeeld binnen Europa.
+
+### korte_referentie.belangrijkste_resultaten
+- Operationalisering van CEEDS en kernbouwblokken voor de energiedataspace
+- Federatieve architectuur en koppeling met bestaande nationale/regionale data-uitwisselingsplatformen
+- Gestandaardiseerde data-uitwisseling, securityprotocollen en governancekaders
+- Pan-Europese pilots/deployments voor o.a. flexibiliteit, e-mobiliteit, energiegemeenschappen en netdiensten
+- Blueprints, richtlijnen en beleidsaanbevelingen voor opschaling na afloop van het project
+
+### korte_referentie.doelgebruikers
+- TSO’s en DSO’s
+- Energieleveranciers en dienstverleners
+- Flexibility service providers en aggregators
+- Energiegemeenschappen en actieve afnemers/prosumers
+- Data space operators en softwareleveranciers
+- Beleidsmakers en toezichthouders
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+CEEDS kreeg in 2024 een uitgewerkte blueprint vanuit het Europese energie-data-space-cluster. In 2025 startte INSIEME als Digital Europe-flagship om de resterende bouwblokken te piloten en de Common European Energy Data Space operationeel te maken. Conclusie: opnemen als één entry ‘INSIEME / CEEDS’, niet als twee afzonderlijke projecten.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2024-07; titel=Blueprint CEEDS v2; detail=Publicatie van de Blueprint of the Common European Energy Data Space met architectuur, use cases en interoperabiliteitsaspecten.
+- datum=2025-04; titel=Start INSIEME; detail=Start van het INSIEME-project als vlaggenschip voor operationalisering van CEEDS.
+- datum=2025-2026; titel=Pan-Europese deployments; detail=Uitwerking van meerdere deployments/use cases in EU-lidstaten, met nadruk op data-uitwisseling, security, governance en businessmodellen.
+- datum=2028-03; titel=Geplande afronding; detail=Project loopt naar verwachting tot maart 2028; structurele adoptie moet daarna via sectorale en nationale implementaties plaatsvinden.
+
+## id: coe-dsc
+naam: Centre of Excellence for Data Sharing & Cloud (CoE-DSC)
+status: Actief
+scope: Generiek initiatief
+geografische_scope: Nederland / Europa
+eigenaar: CoE-DSC, getrokken door TNO en financieel mogelijk gemaakt door het ministerie van Economische Zaken; open samenwerkingsinitiatief met Nederlandse en Europese data sharing- en cloudpartijen
+jaar_start: 2023
+jaar_einde: None
+tags: dataspaces, cloud, datasoevereiniteit, interoperabiliteit, kenniscentrum, generieke bouwblokken
+
+### links
+- label=Website; url=https://coe-dsc.nl/
+- label=About CoE-DSC; url=https://coe-dsc.nl/about-coe-dsc/
+- label=Knowledge base; url=https://coe-dsc.nl/knowledge-base/introduction/
+
+### samenvatting
+CoE-DSC is het centrale Nederlandse kennis- en ondersteuningspunt voor datadelen, cloud en data spaces. Het bouwt voort op de Data Sharing Coalition, de werkgroep Data Delen van de NL AI Coalitie en de Gaia-X Hub NL. Het initiatief ondersteunt organisaties bij het realiseren van schaalbare data spaces, werkt aan generieke bouwblokken en probeert versnippering tussen sectorale data-initiatieven te voorkomen.
+
+### korte_referentie.primair_doel
+De waarde van datadeling ontsluiten door organisaties te ondersteunen bij schaalbare, vertrouwde en interoperabele data spaces en bij gebruik van cloud- en datasoevereiniteitsbouwblokken.
+
+### korte_referentie.belangrijkste_resultaten
+- Kennisbasis met tools, gidsen, publicaties en best practices
+- Use case-begeleiding en communityvorming voor data spaces
+- Generieke bouwblokken en richtlijnen voor vertrouwen, governance en interoperabiliteit
+- Data Sharing Interoperability Compass (DSIC) en andere handreikingen
+- Aansluiting op Europese initiatieven zoals DSSC en de Europese datastrategie
+
+### korte_referentie.doelgebruikers
+- Data space initiatieven
+- Bedrijven en overheden
+- Sectorale programma’s rond datadelen
+- Architecten, juristen en product owners
+- Cloud- en datadienstverleners
+- Innovatie- en valorisatieprogramma’s
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+CoE-DSC is in 2023 gestart als bundeling van eerdere Nederlandse datadeelinitiatieven en is in 2026 actief als centraal Nederlands loket voor kennis, tools, use cases en interoperabiliteit rond data spaces en cloud.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-03; titel=Lancering CoE-DSC; detail=Officiële start als centrale plek voor Nederlandse datadeel- en cloudvraagstukken.
+- datum=2024; titel=Doorontwikkeling kennisbasis en tools; detail=Publicatie en bundeling van kennisproducten voor data sharing en data spaces.
+- datum=2024-2026; titel=Data Sharing Interoperability Compass; detail=Ontwikkeling van praktische richtlijnen voor interoperabiliteit tussen data-uitwisselingsomgevingen.
+- datum=2026; titel=Valorisatie en opschaling; detail=Nadruk op praktische toepassing, use case-ontwikkeling en schaalbare impact via programma’s zoals Data SVP.
+
+## id: dmi
+naam: DMI (Dutch Metropolitan Innovations)
+status: Actief
+scope: Gerelateerde sector
+geografische_scope: Nederland
+eigenaar: DMI-ecosysteem: publiek-private samenwerking van ministeries, gemeenten, provincies, private partners en kennisinstellingen; mede mogelijk gemaakt door het Nationaal Groeifonds
+jaar_start: 2023
+jaar_einde: None
+tags: stedelijke verdichting, mobiliteit, gebiedsontwikkeling, klimaat, energie, energiedata, digital twins, sandboxes, federatief datadelen, afsprakenstelsel
+
+### links
+- label=Website; url=https://dmi-ecosysteem.nl/
+- label=Over DMI; url=https://dmi-ecosysteem.nl/over-dmi/
+- label=Use case overview; url=https://dmi-ecosysteem.nl/use-case-overview/
+- label=DMI PDX; url=https://pdx.dmi-ecosysteem.nl/
+- label=Jaarverslag 2025; url=https://jaarverslag.dmi-ecosysteem.nl/
+
+### samenvatting
+DMI is een publiek-privaat data-ecosysteem voor mobiliteit en duurzame verstedelijking. Voor het energiedomein is DMI vooral relevant als cross-sectoraal data-deelinitiatief: er zijn nog weinig concreet toegepaste energiedata-use-cases binnen DMI, maar bij gemeenten bestaat een grote behoefte aan hergebruik van energiedata voor gebiedsontwikkeling, beheer van de openbare ruimte, mobiliteit, netcongestie en ruimtelijke planning. Het DMI Café Energie & Digitalisering van 28 januari 2026 markeert een inhoudelijke verbreding richting energiedata. Daarin kwamen sandboxes, federatieve digital twins, gebiedsgerichte planningsmodellen, ESDL, iSHARE en een mogelijke rol van DMI als verbindend ecosysteem richting de Actieagenda Digitalisering Energiesysteem nadrukkelijk naar voren. DMI is daarmee niet primair een energiesector-initiatief, maar een relevante omgeving om energiedata veilig en vertrouwd te hergebruiken in integrale stedelijke besluitvorming.
+
+### korte_referentie.primair_doel
+Data, digitale infrastructuur en publiek-private samenwerking inzetten om stedelijke opgaven rond gebiedsontwikkeling, mobiliteit, klimaat, energie en sociaal domein integraal en datagedreven aan te pakken, met specifieke potentie voor het veilige hergebruik van energiedata in gebiedsontwikkeling en ruimtelijke planning.
+
+### korte_referentie.belangrijkste_resultaten
+- DMI-afsprakenstelsel voor deelname, governance en datadeling
+- Producten en Data Exchange (PDX) voor vraag en aanbod van data, producten, diensten en kennis
+- Use case portfolio rond mobiliteit, gebiedsontwikkeling, digital twins, water/bodem, klimaat en energie
+- DMI Café Energie & Digitalisering op 28 januari 2026 met 22 deelnemers uit gemeenten, netbeheerders, kennisinstellingen en marktpartijen
+- Identificatie van energiedata als kansrijk thema voor gebiedsgerichte planning, digital twins en duurzame verstedelijking
+- Agendering van sandboxes als veilige publieke voorziening om vragen op energiedata te kunnen stellen zonder ruwe data breed te delen
+- Voorstel voor 4–6 living labs rond gebiedsontwikkeling, netcongestie, bedrijventerreinen en binnenstedelijke verdichting
+- Verkenning van federatieve digital twins waarin modellen data bij de bron kunnen gebruiken in plaats van data centraal te kopiëren
+- Aansluiting op trustmechanismen en standaarden zoals iSHARE en ESDL
+- Positionering van DMI als mogelijke verbindende schakel tussen gemeenten, netbeheerders, marktpartijen, kennisinstellingen en landelijke programma's zoals de Actieagenda Digitalisering Energiesysteem
+
+### korte_referentie.doelgebruikers
+- Gemeenten en provincies
+- Ministeries en uitvoeringsorganisaties
+- Netbeheerders als samenwerkingspartner en databron
+- Mobiliteits- en gebiedsontwikkelingspartijen
+- Beheerders van openbare ruimte
+- Data- en platformleveranciers
+- Kennisinstellingen
+- Beleidsmakers en stedelijke planners
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+DMI is in 2025 en 2026 doorontwikkeld van een breed ecosysteem voor mobiliteit en duurzame verstedelijking naar een relevante omgeving voor cross-sectoraal hergebruik van energiedata. De belangrijkste nuance is dat DMI nog weinig concreet toegepaste energiedata-use-cases kent, maar wel een duidelijke behoefte en potentieel: gemeenten willen energiedata gebruiken voor gebiedsontwikkeling, beheer openbare ruimte, netcongestie, mobiliteit en ruimtelijke planning. Het DMI Café Energie & Digitalisering van 28 januari 2026 bracht deze behoefte scherp in beeld. De strategische sweet spot ligt bij een energiedata-infrastructuur met standaarden, trust frameworks, federatief datadelen en sandboxes, direct gekoppeld aan gebiedsgerichte planningscasussen. Voor de update van het rapport is DMI daarom relevant als gerelateerde-sectorinitiatief dat kan helpen om energiedata buiten de oorspronkelijke verzamelcontext verantwoord te hergebruiken.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-06; titel=DMI-afsprakenstelsel v1.1; detail=Vastlegging van deelnamevoorwaarden, governance, algemene voorzieningen en gedragsregels voor deelnemers. Dit vormt de basis voor vertrouwd datadelen binnen het DMI-ecosysteem.
+- datum=2025-10; titel=Livegang Producten en Data Exchange (PDX); detail=Lancering van de PDX voor het vindbaar, toetsbaar en onder voorwaarden deelbaar maken van data, producten en diensten binnen het DMI-ecosysteem.
+- datum=2026-01-28; titel=DMI Café Energie & Digitalisering; detail=DMI organiseerde een kennissessie over de rol van DMI in de digitalisering van het energiesysteem. Met 22 deelnemers uit gemeenten, netbeheerders, kennisinstellingen en marktpartijen zijn energiedata-ecosystemen, gebiedsgerichte planningsmodellen, digital twins en energieapplicaties besproken. Het energiedata-ecosysteem scoorde hoog op relevantie, gebiedsgerichte planning kreeg de hoogste prioriteit en digital twins leverden de meeste casussen op. Het DMI Café maakte zichtbaar dat gemeenten en marktpartijen behoefte hebben aan energiedata voor gebiedsontwikkeling en beheer openbare ruimte, maar dat ontbrekende data, onvindbare data, juridische onzekerheid, privacy, security en terughoudendheid bij netbeheerders belangrijke belemmeringen zijn. Deelnemers benoemden sandboxing als mogelijke versneller: niet ruwe energiedata breed delen, maar vragen veilig op datasets kunnen afvuren in een beschermde omgeving. Dit kan helpen om AVG- en securitybelemmeringen te verkleinen en toch bruikbare antwoorden voor gemeenten en onderzoekers te krijgen. Het gedeelde toekomstbeeld is federatieve digital twins die data bij de bron benutten.
+- datum=2026; titel=Opschaling en gebruik; detail=Verdere adoptie van PDX, use cases en interoperabele afspraken voor datagedreven stedelijke besluitvorming.
+
+## id: ibds
+naam: IBDS (Interbestuurlijke Datastrategie)
+status: Actief
+scope: Generiek initiatief
+geografische_scope: Nederland
+eigenaar: Interbestuurlijk databeleid onder verantwoordelijkheid van het ministerie van Binnenlandse Zaken en Koninkrijksrelaties; sturing via OBDO en IDO, uitvoering via programma Realisatie IBDS
+jaar_start: 2021
+jaar_einde: None
+tags: overheid, databeleid, verantwoord datagebruik, datavolwassenheid, federatief datastelsel, knelpunten gegevensdeling
+
+### links
+- label=Interbestuurlijke Datastrategie; url=https://www.digitaleoverheid.nl/interbestuurlijke-datastrategie/
+- label=Realisatie IBDS; url=https://www.digitaleoverheid.nl/community/realisatie-ibds/
+- label=NDS prioriteit Data; url=https://www.digitaleoverheid.nl/nederlandse-digitaliseringsstrategie-nds/6-prioriteiten-voor-een-overheid/prioriteit-2-data/
+
+### samenvatting
+De IBDS is het interbestuurlijke databeleid voor de hele overheid. Het programma Realisatie IBDS helpt overheden om data juridisch houdbaar, ethisch verantwoord en maatschappelijk uitlegbaar te gebruiken en te delen. Voor data governance is IBDS relevant als generiek beleids- en uitvoeringskader rond datavolwassenheid, het Federatief Datastelsel en het oplossen van knelpunten in gegevensdeling.
+
+### korte_referentie.primair_doel
+Als één overheid het potentieel van data benutten voor maatschappelijke opgaven, met verantwoord datagebruik en domein- en bestuurslaagoverstijgende gegevensdeling.
+
+### korte_referentie.belangrijkste_resultaten
+- Interbestuurlijke Datastrategie 2021
+- Programma Realisatie IBDS en kennisbank
+- Beslishulp Datavolwassenheid, Toolbox verantwoord datagebruik en andere hulpmiddelen
+- Federatief Datastelsel als afsprakenstelsel voor organisaties met een publieke taak
+- Adviesfunctie Verantwoord Datagebruik en Community of Practice Digitale Ethiek
+
+### korte_referentie.doelgebruikers
+- Ministeries
+- Gemeenten, provincies en waterschappen
+- Uitvoeringsorganisaties
+- Data officers en data stewards
+- Beleidsmakers en juristen
+- Publieke organisaties met domeinoverstijgende datavragen
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+De uitvoering van de IBDS kreeg sinds 2025 extra richting via de Nederlandse Digitaliseringsstrategie. In 2026 verschuift de nadruk van ontwikkelen naar toepassen: doelen stellen, afspraken maken en gebruiken wat al is ontwikkeld.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2021-11; titel=IBDS aangeboden aan Tweede Kamer; detail=Startpunt voor interbestuurlijk databeleid voor de hele overheid.
+- datum=2022; titel=Start programma Realisatie IBDS; detail=Uitvoeringsprogramma onder verantwoordelijkheid van BZK.
+- datum=2025; titel=Koppeling met Nederlandse Digitaliseringsstrategie; detail=IBDS geeft invulling aan prioriteit Data binnen de NDS.
+- datum=2026; titel=Focus op toepassen; detail=Verschuiving naar gezamenlijke doelen, afspraken en toepassing van ontwikkelde hulpmiddelen en voorzieningen.
+
+## id: federatief-datastelsel
+naam: Federatief Datastelsel (FDS)
+status: Actief
+scope: Generiek initiatief
+geografische_scope: Nederland
+eigenaar: Programma Realisatie IBDS / ministerie van BZK en ICTU, met interbestuurlijke sturing; afspraken vastgesteld door het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO)
+jaar_start: None
+jaar_einde: None
+tags: federatief datadelen, afsprakenstelsel, publieke taak, metadata, databronnen, overheid
+
+### links
+- label=Wat is het Federatief Datastelsel; url=https://realisatieibds.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/wiki/view/6eb23feb-22b9-4d0a-abf1-512cc86c2d19/wat-is-het-federatief-datastelsel
+- label=IBDS – Federatief Datastelsel; url=https://www.digitaleoverheid.nl/interbestuurlijke-datastrategie/
+- label=NDS prioriteit Data; url=https://www.digitaleoverheid.nl/nederlandse-digitaliseringsstrategie-nds/6-prioriteiten-voor-een-overheid/prioriteit-2-data/
+
+### samenvatting
+Het Federatief Datastelsel is een afsprakenstelsel voor organisaties met een publieke taak. Het maakt verantwoord datadelen en datagebruik tussen publieke organisaties eenvoudiger doordat data domeinoverstijgend uniform wordt beschreven en gedeeld. Het uitgangspunt sluit aan op federatief datadelen: gegevens blijven zoveel mogelijk bij de bron, maar worden beter vindbaar, herbruikbaar en uitwisselbaar gemaakt via gezamenlijke afspraken.
+
+### korte_referentie.primair_doel
+Overheidsbreed op eenzelfde manier verantwoord data delen, met uniforme beschrijving en organisatie van gegevens en heldere spelregels voor gebruik over organisatiegrenzen heen.
+
+### korte_referentie.belangrijkste_resultaten
+- Afsprakenstelsel Federatief Datastelsel voor data-aanbieders
+- Basisafspraken voor metadata, publicatie en beschrijving van data
+- Implementatiehulp voor organisaties die willen deelnemen
+- Aansluiting op NDS-prioriteit Data en de bredere IBDS-uitvoering
+- Stap richting overheidsbrede interoperabiliteit tussen datastelsels
+
+### korte_referentie.doelgebruikers
+- Organisaties met een publieke taak
+- Data-aanbieders binnen de overheid
+- Data-afnemers binnen en tussen publieke domeinen
+- Architecten en datastewards
+- Beleids- en uitvoeringsorganisaties
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+In februari 2026 stelde het OBDO het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. In het JSON-overzicht verdient FDS een aparte entry naast IBDS, omdat FDS de concrete stelselvoorziening/afsprakenlaag is, terwijl IBDS het bredere beleids- en uitvoeringsprogramma is.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2025; titel=NDS-prioriteit Data; detail=FDS is gepositioneerd als instrument om overheidsbreed verantwoord datadelen op dezelfde manier te organiseren.
+- datum=2026-02; titel=Afsprakenstelsel vastgesteld; detail=OBDO stelt het Afsprakenstelsel Federatief Datastelsel vast voor aanbieders van data.
+- datum=2026; titel=Implementatie en uitbreiding; detail=Organisaties kunnen het afsprakenstelsel raadplegen en implementatiehulp krijgen; afspraken voor data-afnemers volgen later.
+
+## id: simpl
+naam: Simpl (Smart Middleware for cloud-to-edge federations and data spaces)
+status: Actief
+scope: Generiek initiatief
+geografische_scope: Europa
+eigenaar: Europese Commissie (DG CONNECT); ontwikkeling via Europese aanbestedings-/raamcontracten en open-source community
+jaar_start: 2023
+jaar_einde: None
+tags: EU, middleware, dataspaces, cloud-to-edge, open source, interoperabiliteit
+
+### links
+- label=European Commission – Simpl; url=https://digital-strategy.ec.europa.eu/en/policies/simpl
+- label=Simpl Programme; url=https://simpl-programme.ec.europa.eu/
+- label=Simpl-Open; url=https://simpl-programme.ec.europa.eu/dashboard/simpl-open
+
+### samenvatting
+Simpl is het open-source middlewareprogramma van de Europese Commissie voor cloud-to-edge-federaties en Europese data spaces. Het ondersteunt datatoegang en interoperabiliteit tussen data spaces en biedt bouwblokken voor o.a. identiteits- en toegangsbeheer, beveiliging, portabiliteit, interoperabiliteit en testing. Simpl is generiek en sectoroverstijgend; voor het energiedomein is het relevant als Europese bouwsteenlaag die ook energy data spaces kan ondersteunen.
+
+### korte_referentie.primair_doel
+Een open, modulaire en veilige middlewarebasis bieden waarmee Europese data spaces en cloud-to-edge-federaties interoperabel, herbruikbaar en zonder vendor lock-in kunnen worden opgezet.
+
+### korte_referentie.belangrijkste_resultaten
+- Simpl-Open: open-source software stack voor data spaces en cloud-to-edge-federaties
+- Simpl-Labs: test- en experimenteeromgeving voor interoperabiliteit met Simpl
+- Simpl-Live: specifieke implementaties van Simpl-Open voor geselecteerde Europese data spaces
+- Open-source componenten en documentatie voor implementatie
+- Community, forum en code repository voor doorontwikkeling
+
+### korte_referentie.doelgebruikers
+- Europese en nationale data space initiatieven
+- Publieke en private dataplatformen
+- Cloud- en edge-infrastructuurleveranciers
+- Softwareontwikkelaars en architecten
+- Sectorale data space beheerders
+- Beleidsmakers en Europese programma’s
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+Simpl is sinds 2023/2024 doorontwikkeld van aanbesteding en proof-of-concept naar een actief open-source programma met Simpl-Open, Simpl-Labs en Simpl-Live. In 2026 ligt de nadruk op community, releases, interoperabiliteit en inzet bij Europese data-initiatieven.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-10; titel=Raamcontracten gegund; detail=Europese Commissie gunt ontwikkelcontracten voor Simpl.
+- datum=2024-06; titel=Proof-of-concept en Simpl-Open repository; detail=Proof-of-concept en broncode-repository voor Simpl-Open beschikbaar gemaakt.
+- datum=2025-2026; titel=Simpl Programme en community; detail=Doorontwikkeling van website, community, documentatie en open-source componenten voor data spaces.
+- datum=2026-01; titel=Simpl Annual Community Event; detail=Tweede jaarlijkse communitybijeenkomst met focus op Simpl-Open, releases en doorontwikkeling.
 
 ## id: gaia-x
 naam: GAIA-X
@@ -896,7 +1195,7 @@ Uniforme afspraken realiseren voor gecontroleerde datadeling in de gebouwde omge
 
 ## id: dvu
 naam: DVU (Datastelsel Verduurzaming Utiliteit)
-status: Pilot
+status: Actief
 scope: Gerelateerde sector
 geografische_scope: Nederland
 eigenaar: RVO (interface) + partners (o.a. Dutch Green Building Council/WEii) + iSHARE‑ecosysteem
