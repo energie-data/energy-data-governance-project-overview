@@ -104,7 +104,7 @@
       "label": "MD8: Granulariteit data - niveau",
       "beschrijving": "Op welk geografisch of fysiek aggregatieniveau de data beschikbaar is",
       "waarden": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Groep: een groep van apparaten",
         "Fase: een verzameling van apparaten aansgesloten op 1 fase in het huis",
         "Allocatiepunt: als onderdeel van de aansluiting",
@@ -663,7 +663,7 @@
       ],
       "MD8_granulariteit_niveau": [
         "Aansluiting",
-        "Apparaat: 1 apparaat dat de energieverbruikt"
+        "Apparaat: 1 apparaat dat energie verbruikt"
       ],
       "MD9_granulariteit_frequentie": [
         "Seconde",
@@ -957,7 +957,7 @@
       "MD8_granulariteit_niveau": [
         "Wijk",
         "Aansluiting",
-        "Apparaat: 1 apparaat dat de energieverbruikt"
+        "Apparaat: 1 apparaat dat energie verbruikt"
       ],
       "MD9_granulariteit_frequentie": [
         "Minuut",
@@ -1152,7 +1152,7 @@
       "MD8_granulariteit_niveau": [
         "Wijk",
         "Aansluiting",
-        "Apparaat: 1 apparaat dat de energieverbruikt"
+        "Apparaat: 1 apparaat dat energie verbruikt"
       ],
       "MD9_granulariteit_frequentie": [
         "Kwartier",
@@ -1733,7 +1733,7 @@
       "MD8_granulariteit_niveau": [
         "Wijk",
         "Aansluiting",
-        "Apparaat: 1 apparaat dat de energieverbruikt"
+        "Apparaat: 1 apparaat dat energie verbruikt"
       ],
       "MD9_granulariteit_frequentie": [
         "Kwartier",
@@ -2868,7 +2868,7 @@
         "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie"
       ],
       "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Aansluiting",
         "Wijk",
         "Gemeente",
@@ -2930,7 +2930,7 @@
         "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."
       ],
       "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Aansluiting",
         "Wijk"
       ],
@@ -2987,7 +2987,7 @@
         "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."
       ],
       "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Aansluiting",
         "Land"
       ],
@@ -3089,7 +3089,7 @@
         "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."
       ],
       "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Allocatiepunt: als onderdeel van de aansluiting",
         "Aansluiting"
       ],
@@ -3199,7 +3199,7 @@
         "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie"
       ],
       "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Aansluiting",
         "Wijk",
         "Gemeente"
@@ -3323,7 +3323,7 @@
         "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet"
       ],
       "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Apparaat: 1 apparaat dat energie verbruikt",
         "Aansluiting",
         "Wijk"
       ],

@@ -337,7 +337,7 @@ async function loadUseCases() {
         'Allocatiepunt: als onderdeel van de aansluiting',
         'Fase: een verzameling van apparaten aansgesloten op 1 fase in het huis',
         'Groep: een groep van apparaten',
-        'Apparaat: 1 apparaat dat de energieverbruikt'
+        'Apparaat: 1 apparaat dat energie verbruikt'
       ]
     )
   );

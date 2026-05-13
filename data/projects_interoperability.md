@@ -64,7 +64,7 @@ status_2026: Doorlopende updates; conformance/SV-IOP tests volwassen; ruggengraa
 Land van oorsprong: internationaal / Europa. Organisatie/consortium: IEC TC57; ENTSO-E; UCAIug. IEC Common Information Model (CIM) en ENTSO-E CGMES-profiel voor uitwisseling van net- en gridmodellen.
 
 ### ontwikkelingen_sinds_publicatie
-ENTSO-E introduceerde jaarlijkse SV-IOP; 2024 testreport publiek met governance rond NC profiles.
+ENTSO-E introduceerde jaarlijkse SV-IOP; het testrapport uit 2024 is gepubliceerd, met governance rond NC-profielen.
 
 ### bijdrage_datagovernance_interoperabiliteit
 Levert gedeelde semantiek + syntaxis én conformance governance via profielen, tests en change management.
@@ -230,7 +230,7 @@ Start/opschaling als open governance laag voor semantische assets.
 Ondersteunt beheer, versiebeheer en hergebruik van semantische assets (ontologieën, mappings, guidelines).
 
 ### relevantie_en_advies
-Relevant; opnemen als mogelijke landing place voor semantische assets en alignment.
+Relevant; opnemen als mogelijke landingsplek voor semantische assets en alignment.
 
 ### verwante_of_nieuwe_initiatieven
 InterConnect SIF; ETSI SAREF.
@@ -247,13 +247,13 @@ status_2023: Project actief; deliverables gepubliceerd.
 status_2026: Projectresultaten publiek; bruikbaar als referentie/benchmark.
 
 ### korte_omschrijving
-Land van oorsprong: Europa. Organisatie/consortium: H2020 OneNet consortium. OneNet publiceerde richtlijnen en deliverables voor interoperabiliteit, incl. technische specs voor data models/middleware (o.a. D5.5).
+Land van oorsprong: Europa. Organisatie/consortium: H2020 OneNet consortium. OneNet publiceerde richtlijnen en deliverables voor interoperabiliteit, incl. technische specs voor datamodellen en middleware (o.a. D5.5).
 
 ### ontwikkelingen_sinds_publicatie
 Van deliverables naar replicability/lessons learned; CIM/CGMES blijft centraal.
 
 ### bijdrage_datagovernance_interoperabiliteit
-Analyse en aanbevelingen voor interoperabiliteit; concrete technische specs voor data models/middleware (D5.5).
+Analyse en aanbevelingen voor interoperabiliteit; concrete technische specs voor datamodellen en middleware (D5.5).
 
 ### relevantie_en_advies
 Relevant als Europese referentie; koppelen aan CIM/CGMES en nationale ketens.
