@@ -229,7 +229,7 @@ function kvRow(label, value) {
 
 function listSection(title, values) {
   if (!values.length) return '';
-  return `<div class="small" style="margin-top:10px;">${escapeHtml(title)}</div><ul class="list">${values.map(v => `<li>${escapeHtml(v)}</li>`).join('')}</ul>`;
+  return `<div class="drawerSubheading">${escapeHtml(title)}</div><ul class="drawerList">${values.map(v => `<li>${escapeHtml(v)}</li>`).join('')}</ul>`;
 }
 
 function openDrawer(id) {

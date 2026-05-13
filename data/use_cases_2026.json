@@ -2888,58 +2888,6 @@
       ]
     },
     {
-      "project_id": "P064",
-      "projectnaam": "B-DER: Blockchain-based platform for peer-to-peer energy transactions",
-      "oorsprong": "PPS Toeslag / TKI Urban Energy",
-      "organisaties": "Universiteit Utrecht, Resourcefully, Stichting EnergyCoin",
-      "beschrijving": "B-DER ontwikkelde een blockchain- en smart-contractplatform voor peer-to-peer energietransacties tussen distributed energy resources, zoals PV-systemen, huishoudens en EV-laadpunten. Het project bouwde voort op meetdata uit het PARENT-project en onderzocht hoe lokale energie-uitwisseling decentraal, verifieerbaar en veilig kan worden georganiseerd.",
-      "gebruik_energiedata": "Elektriciteitsverbruiksdata, PV-productiedata en data van EV-laadpunten worden gebruikt om lokale vraag, opwek en laadvraag te optimaliseren en peer-to-peer transacties tussen huishoudens en andere DER-partijen te ondersteunen.",
-      "links": [
-        "https://projecten.topsectorenergie.nl/projecten/a-blockchain-based-platform-for-peer-to-peer-energy-transactions-between-distributed-energy-resource-32980"
-      ],
-      "MD1_status": "Afgerond",
-      "MD2_projectdoel": [
-        "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit",
-        "Optimalisatie & sturing van energiegebruik",
-        "Inzicht & monitoring van energiegebruik",
-        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
-      ],
-      "MD3_type_energiedata": [
-        "Energieverbruiksdata",
-        "Flexibiliteitsdata: data over de inzet van flexibele energie",
-        "Marktdata: data over de energiemarkt",
-        "Realtime sensordata (anders dan energieverbruik)"
-      ],
-      "MD4_databron": [
-        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
-        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "data_consumer": [
-        "Huishoudens/prosumers",
-        "Dienstverlener anders dan de aggregator",
-        "Onderzoekers"
-      ],
-      "MD6_governance": [
-        "Individuele toestemming (consent)",
-        "Contractuele datadeling (B2B)"
-      ],
-      "MD7_toepassing": [
-        "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit.",
-        "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie",
-        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."
-      ],
-      "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat energie verbruikt",
-        "Aansluiting",
-        "Wijk"
-      ],
-      "MD9_granulariteit_frequentie": [
-        "Kwartier",
-        "Uur"
-      ]
-    },
-    {
       "project_id": "P065",
       "projectnaam": "EVRoaming Foundation / OCPI",
       "oorsprong": "Overig / vervolg op ECISS",
@@ -2994,159 +2942,6 @@
       "MD9_granulariteit_frequentie": [
         "Minuut",
         "Kwartier"
-      ]
-    },
-    {
-      "project_id": "P066",
-      "projectnaam": "Lokaal Energie Management Platform",
-      "oorsprong": "EZ Energie Innovatie / MVI-Energie",
-      "organisaties": "TNO, Baas, BEplus West-Friesland, Energie Platform regio Alkmaar, EnergyZero, Enervalis, Greenchoice, Kortman duurzame gebiedsontwikkeling, Markus Makelaardij",
-      "beschrijving": "Het project Lokaal Energie Management Platform onderzocht en demonstreerde hoe lokale energie-initiatieven op bedrijventerreinen een LEM-platform kunnen inzetten om energieopwekking en -verbruik te verzamelen, te delen en om te zetten in diensten rond zonnepanelen, e-mobiliteit, peak-shaving, gedragsbeïnvloeding en smart-gridtoepassingen.",
-      "gebruik_energiedata": "Data over energieopwekking, energieverbruik, gebruikersgedrag en gebiedsprestaties wordt in een LEM-platform verzameld en gebruikt om energiediensten te ontwikkelen, verbruik op elkaar af te stemmen, machine-learningsturing te testen en effecten op energie-efficiëntie terug te koppelen aan gebruikers.",
-      "links": [
-        "https://projecten.topsectorenergie.nl/projecten/lokaal-energie-management-platform-31782"
-      ],
-      "MD1_status": "Afgerond",
-      "MD2_projectdoel": [
-        "Inzicht & monitoring van energiegebruik",
-        "Optimalisatie & sturing van energiegebruik",
-        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
-      ],
-      "MD3_type_energiedata": [
-        "Energieverbruiksdata",
-        "Gebouwdata: data over gebouwen die energie verbruiken",
-        "Realtime sensordata (anders dan energieverbruik)",
-        "Flexibiliteitsdata: data over de inzet van flexibele energie"
-      ],
-      "MD4_databron": [
-        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
-        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "data_consumer": [
-        "Bedrijven/industrie",
-        "Onderzoekers",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "MD6_governance": [
-        "Contractuele datadeling (B2B)",
-        "Geanonimiseerde data"
-      ],
-      "MD7_toepassing": [
-        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs.",
-        "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet",
-        "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen."
-      ],
-      "MD8_granulariteit_niveau": [
-        "Bedrijventerrein",
-        "Aansluiting"
-      ],
-      "MD9_granulariteit_frequentie": [
-        "Kwartier",
-        "Uur"
-      ]
-    },
-    {
-      "project_id": "P067",
-      "projectnaam": "Meetdata Derden / MLOEA 2.0",
-      "oorsprong": "EZ Energie Innovatie",
-      "organisaties": "PowerD, Alliander, Awesems Nederland, ENGIE Nederland Retail, Groendus Laadoplossingen, Shell EV Charging Solutions",
-      "beschrijving": "Meetdata Derden ontwikkelde en demonstreerde een alternatief voor Meerdere Leveranciers Op Eén Aansluiting (MLOEA) waarbij submeterdata van slimme assets, zoals laadpalen en boilers, wordt gebruikt voor allocatie en verrekening achter de primaire netbeheerdersmeter. Het project omvatte een Sub Asset Registratie en een platform voor virtuele allocatiepunten.",
-      "gebruik_energiedata": "Meetdata van gecertificeerde submeters in slimme assets wordt gekoppeld aan virtuele allocatiepunten en in mindering gebracht op de netbeheerdersmeter. De data wordt gebruikt voor allocatie, verrekening, meerdere leveranciers op één aansluiting en proposities zoals EV-laadcontracten of flex asset pools.",
-      "links": [
-        "https://projecten.topsectorenergie.nl/projecten/meetdata-derden-34977"
-      ],
-      "MD1_status": "Afgerond",
-      "MD2_projectdoel": [
-        "Inzicht & monitoring van energiegebruik",
-        "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit",
-        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
-      ],
-      "MD3_type_energiedata": [
-        "Energieverbruiksdata",
-        "Realtime sensordata (anders dan energieverbruik)",
-        "Flexibiliteitsdata: data over de inzet van flexibele energie"
-      ],
-      "MD4_databron": [
-        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
-        "Energieleverancier",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "data_consumer": [
-        "Huishoudens/prosumers",
-        "Bedrijven/industrie",
-        "Dienstverlener anders dan de aggregator",
-        "Aggregator"
-      ],
-      "MD6_governance": [
-        "Individuele toestemming (consent)",
-        "Contractuele datadeling (B2B)",
-        "Wettelijke verplichting"
-      ],
-      "MD7_toepassing": [
-        "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit.",
-        "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie",
-        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."
-      ],
-      "MD8_granulariteit_niveau": [
-        "Apparaat: 1 apparaat dat energie verbruikt",
-        "Allocatiepunt: als onderdeel van de aansluiting",
-        "Aansluiting"
-      ],
-      "MD9_granulariteit_frequentie": [
-        "Kwartier",
-        "Uur"
-      ]
-    },
-    {
-      "project_id": "P068",
-      "projectnaam": "Photovoltaics Observatory",
-      "oorsprong": "PPS Toeslag / TKI Urban Energy",
-      "organisaties": "Universiteit Utrecht, CBS, Good! B.V., SunData",
-      "beschrijving": "Photovoltaics Observatory onderzocht hoe een nationale database voor PV-systemen kan worden opgezet met ruimtelijke systeemmetadata en gemeten prestatiegegevens. Het doel was inzicht te krijgen in locatie, capaciteit, oriëntatie, hellingshoek en productie van Nederlandse PV-systemen voor netbalans, leveringszekerheid, onderzoek en beleid.",
-      "gebruik_energiedata": "PV-systeemmetadata en gemeten productie-/prestatiegegevens worden verzameld en geanalyseerd om de prestaties van PV-systemen in Nederland inzichtelijk te maken en een blauwdruk voor opschaling naar een nationale PV-database te ontwikkelen.",
-      "links": [
-        "https://projecten.topsectorenergie.nl/projecten/photovoltaics-observatory-33364"
-      ],
-      "MD1_status": "Afgerond",
-      "MD2_projectdoel": [
-        "Inzicht & monitoring van energiegebruik",
-        "Voorspelling & planning van energiegebruik",
-        "Beleid & onderzoek: gebruik van energiedata t.b.v. nieuw of aangepast beleid"
-      ],
-      "MD3_type_energiedata": [
-        "Realtime sensordata (anders dan energieverbruik)",
-        "Netdata: data over het (fysieke) energienetwerk en de assets daarin"
-      ],
-      "MD4_databron": [
-        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "data_consumer": [
-        "Overheden/beleidsmakers",
-        "Netbeheerders",
-        "Onderzoekers",
-        "Dienstverlener anders dan de aggregator"
-      ],
-      "MD6_governance": [
-        "Geanonimiseerde data",
-        "Open data",
-        "Contractuele datadeling (B2B)"
-      ],
-      "MD7_toepassing": [
-        "Ondersteunen van landelijke beleidsvorming - Strategische keuzes, wet- en regelgeving, scenario's, monitoring",
-        "Ondersteunen van systeemplanning en realisatie - Fysieke planning en beheer van netten en infrastructuur door netbeheerders",
-        "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen."
-      ],
-      "MD8_granulariteit_niveau": [
-        "Aansluiting",
-        "Gemeente",
-        "Land"
-      ],
-      "MD9_granulariteit_frequentie": [
-        "Uur",
-        "Dag",
-        "Maand"
       ]
     },
     {
@@ -3574,6 +3369,74 @@
       "MD9_granulariteit_frequentie": [
         "Minuut",
         "Kwartier"
+      ]
+    },
+    {
+      "project_id": "P076",
+      "projectnaam": "SYMPHONIE",
+      "oorsprong": "MOOI",
+      "organisaties": "Stichting Hanzehogeschool Groningen, TNO, TU Eindhoven, Hogeschool Utrecht, TenneT TSO, DHL eCommerce (Netherlands), Eneco Wind, Energie Management Coöperatie Utrecht, Gebied coöperatie Spes Nostra, Gemeente Veenendaal, Groendus Energy Services, Novar Investments, OcK-Zon, Provincie Utrecht, REpowered, Roba Metals, Strukton Rail Nederland, Tenergy Portfolio Services, Theo Pouw, Vereniging Bedrijvenkring Ondernemend Veenendaal, Werkstichting Lage Weide, Witteveen+Bos en overige consortiumpartners",
+      "beschrijving": "SYMPHONIE staat voor SYsteemintegratie van Meerschalige energieHubs voor een Opschaalbare, Netbewuste en Interoperabele Energievoorziening. Het MOOI-project ontwikkelt een meerschalige, gebiedsgerichte en multi-commodity aanpak voor energiehubs, waarmee congestiegebieden beter gebruik kunnen maken van flexibiliteit, opslag en conversie over meerdere netniveaus. In vier praktijkgebieden worden collectieve energieplannen, ontwerptools, stuurmechanismen, algoritmen en governance- en marktmodellen ontwikkeld en gevalideerd, met als doel meer duurzame opwek en elektrificatie binnen bestaande netlimieten mogelijk te maken.",
+      "gebruik_energiedata": "Energiedata over lokale en regionale belastingprofielen, netcapaciteit, netlimieten, opwek, vraag, opslag, conversie en flexibiliteit wordt gebruikt om energiehubs over meerdere schaalniveaus te ontwerpen, simuleren en sturen. De data ondersteunt het ontwikkelen van ontwerptools, simulatiemodellen, sturingsalgoritmen en governance- en marktmodellen waarmee vraag, aanbod, opslag en conversie realtime en over verschillende netvlakken op elkaar worden afgestemd.",
+      "MD1_status": "Lopend",
+      "MD2_projectdoel": [
+        "Inzicht & monitoring van energiegebruik",
+        "Optimalisatie & sturing van energiegebruik",
+        "Voorspelling & planning van energiegebruik",
+        "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit",
+        "Beleid & onderzoek: gebruik van energiedata t.b.v. nieuw of aangepast beleid",
+        "Operationeel netbeheer: gebruik van energiedata voor de operationele taken van de netbeheerder",
+        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
+      ],
+      "MD3_type_energiedata": [
+        "Energieverbruiksdata",
+        "Realtime sensordata (anders dan energieverbruik)",
+        "Netdata: data over het (fysieke) energienetwerk en de assets daarin",
+        "Flexibiliteitsdata: data over de inzet van flexibele energie",
+        "Marktdata: data over de energiemarkt"
+      ],
+      "MD4_databron": [
+        "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
+        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
+        "Dienstverlener anders dan de aggregator",
+        "Aggregator",
+        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
+      ],
+      "MD5_datasink": [
+        "Bedrijven/industrie",
+        "Overheden/beleidsmakers",
+        "Netbeheerders",
+        "Dienstverlener anders dan de aggregator",
+        "Aggregator",
+        "Onderzoekers"
+      ],
+      "MD6_governance": [
+        "Contractuele datadeling (B2B)"
+      ],
+      "MD7_toepassing": [
+        "Ondersteunen van systeemplanning en realisatie - Fysieke planning en beheer van netten en infrastructuur door netbeheerders",
+        "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen.",
+        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs.",
+        "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit.",
+        "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet"
+      ],
+      "MD8_granulariteit_niveau": [
+        "Aansluiting",
+        "Bedrijventerrein",
+        "Gemeente"
+      ],
+      "MD9_granulariteit_frequentie": [
+        "Minuut",
+        "Kwartier",
+        "Uur",
+        "Dag"
+      ],
+      "links": [
+        "https://projecten.topsectorenergie.nl/projecten/systeemintegratie-van-meerschalige-energiehubs-voor-een-opschaalbare-netbewuste-en-interoperabele-energievoorziening-40236",
+        "https://www.hanze.nl/nl/onderzoeken/centers/entrance-centre-of-expertise-energy/projecten/symphonie",
+        "https://www.entrance.eu/kennis/projecten/symphonie/",
+        "https://www.entrance.eu/nieuws/landelijke-samenwerking-van-start-voor-ontwikkeling-governancemodel-regionale-energiehubs/",
+        "https://www.rvo.nl/onderwerpen/mooi/systeemintegratie/welke-projecten-subsidie"
       ]
     }
   ]

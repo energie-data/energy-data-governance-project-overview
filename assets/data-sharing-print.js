@@ -80,13 +80,6 @@ function radarSectionHtml() {
 function projectSection(p, index) {
   const anchorId = sectionAnchorId(p, index);
   const qr = p.korte_referentie || {};
-  const metaParts = [p.status, p.scope, p.geografische_scope].filter(x => x && String(x).trim());
-  if (p.jaar_start != null || p.jaar_einde != null) {
-    metaParts.push(`${p.jaar_start ?? '—'}–${p.jaar_einde ?? '—'}`);
-  }
-  const metaHtml = metaParts.length
-    ? `<div class="printOverall"><span>${escapeHtml(metaParts.join(' • '))}</span></div>`
-    : '';
 
   const outputs = qr.belangrijkste_resultaten || [];
   const users = qr.doelgebruikers || [];
@@ -108,7 +101,6 @@ function projectSection(p, index) {
     <section class="printRecSection" id="${escapeHtml(anchorId)}">
       <div class="printRecHeader">
         <h2>${escapeHtml(p.naam ?? '')}</h2>
-        ${metaHtml}
       </div>
       ${body}
       <p class="printIdFoot">ID: ${escapeHtml(p.id ?? '')}</p>

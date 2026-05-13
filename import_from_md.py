@@ -176,9 +176,88 @@ def import_data_sharing(md_path: Path, json_path: Path) -> None:
     json_path.write_text(json.dumps(out_items, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _interop_parse_site_lines(lines: List[str]) -> List[Dict[str, str]]:
+    """Parse `- label=…; url=…` regels (zelfde patroon als data-sharing links)."""
+    out: List[Dict[str, str]] = []
+    for ln in lines:
+        ln = ln.strip()
+        if not ln.startswith("-"):
+            continue
+        content = ln[1:].strip()
+        parts = [p.strip() for p in content.split(";") if p.strip()]
+        obj: Dict[str, str] = {}
+        for part in parts:
+            if "=" not in part:
+                continue
+            k, v = part.split("=", 1)
+            k, v = k.strip(), v.strip()
+            if k == "label":
+                obj["label"] = v
+            elif k == "url":
+                obj["url"] = v
+        if obj.get("url"):
+            out.append(obj)
+    return out
+
+
+def _interop_bullet_strings(lines: List[str]) -> List[str]:
+    out: List[str] = []
+    for ln in lines:
+        t = ln.strip()
+        if not t.startswith("-"):
+            continue
+        s = t[1:].strip()
+        if s:
+            out.append(s)
+    return out
+
+
+_INTEROP_HEADER_KEYS = [
+    "naam",
+    "typologie",
+    "typologie_label",
+    "familie",
+    "land_van_oorsprong",
+    "regio",
+    "organisatie_of_consortium",
+    "website_official",
+    "geografische_scope",
+    "jaar_start",
+    "jaar_einde",
+    "volwassenheid_2026",
+    "type_initiatief",
+    "beheer_vorm",
+    "inhoudelijke_focus",
+    "regio_cluster",
+    "relevantie_h61",
+    "oorsprong_in_rapport",
+    "bruikbaarheid_e_ontologie",
+    "advies_toelichting",
+]
+
+_INTEROP_TEXT_SECTIONS = [
+    "korte_omschrijving",
+    "uitgebreide_omschrijving",
+    "toepassing_in_praktijk",
+    "status_2023",
+    "status_2026",
+    "relevantie_semantiek",
+    "relevantie_interoperabiliteit",
+    "relevantie_h61_toelichting",
+    "bruikbaarheid_e_ontologie_toelichting",
+    "opmerkingen",
+]
+
+
 def import_interoperability(md_path: Path, json_path: Path) -> None:
+    """
+    Leest Markdown (v11-formaat) en schrijft `initiatieven` terug naar JSON.
+    Behoudt ongewijzigd: `meta`, `bronbijlage`, `filter_metadata_definities`.
+    """
     original = json.loads(json_path.read_text(encoding="utf-8"))
     meta = original.get("meta") or {}
+    bronbijlage = original.get("bronbijlage")
+    filter_metadata_definities = original.get("filter_metadata_definities")
 
     text = md_path.read_text(encoding="utf-8")
     blocks = _read_blocks(text)
@@ -211,30 +290,31 @@ def import_interoperability(md_path: Path, json_path: Path) -> None:
             return "\n".join(sections.get(name, [])).strip()
 
         it: Dict[str, Any] = {
-            "id": _id_from_block(block) or header.get("id", ""),
-            "naam": header.get("naam", ""),
-            "familie": header.get("familie", ""),
-            "geografische_scope": header.get("geografische_scope", ""),
-            "status_2023": header.get("status_2023", ""),
-            "status_2026": header.get("status_2026", ""),
-            "korte_omschrijving": get_text("korte_omschrijving"),
-            "ontwikkelingen_sinds_publicatie": get_text("ontwikkelingen_sinds_publicatie"),
-            "bijdrage_datagovernance_interoperabiliteit": get_text("bijdrage_datagovernance_interoperabiliteit"),
-            "relevantie_en_advies": get_text("relevantie_en_advies"),
-            "verwante_of_nieuwe_initiatieven": get_text("verwante_of_nieuwe_initiatieven"),
+            "id": (_id_from_block(block) or header.get("id", "")).strip(),
         }
 
-        br_lines = sections.get("bronnen", [])
-        bronnen: List[str] = []
-        for ln in br_lines:
-            ln = ln.strip()
-            if ln.startswith("-"):
-                bronnen.append(ln[1:].strip())
-        it["bronnen"] = bronnen
+        for k in _INTEROP_HEADER_KEYS:
+            if k in ("jaar_start", "jaar_einde"):
+                it[k] = _parse_optional_json_number(header, k)
+            else:
+                it[k] = header.get(k, "")
+
+        it["alternatieve_namen"] = _interop_bullet_strings(sections.get("alternatieve_namen", []))
+        it["opgeleverd"] = _interop_bullet_strings(sections.get("opgeleverd", []))
+        it["verwante_initiatieven"] = _interop_bullet_strings(sections.get("verwante_initiatieven", []))
+        it["aanvullende_websites"] = _interop_parse_site_lines(sections.get("aanvullende_websites", []))
+
+        for sec in _INTEROP_TEXT_SECTIONS:
+            it[sec] = get_text(sec)
 
         initiatives.append(it)
 
-    new_root = {"meta": meta, "initiatieven": initiatives}
+    new_root: Dict[str, Any] = {"meta": meta, "initiatieven": initiatives}
+    if bronbijlage is not None:
+        new_root["bronbijlage"] = bronbijlage
+    if filter_metadata_definities is not None:
+        new_root["filter_metadata_definities"] = filter_metadata_definities
+
     json_path.write_text(json.dumps(new_root, ensure_ascii=False, indent=2), encoding="utf-8")
 
 

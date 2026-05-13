@@ -78,8 +78,6 @@ function tocHtml(recommendations) {
 
 function sectionHtml(rec, index) {
   const anchorId = sectionAnchorId(rec, index);
-  const overallKey = coerceStatusKeyPrint(rec?.overallStatusKey);
-  const overallLabel = rec?.overallStatusLabel ?? '';
   const header = rec?.header ?? '';
   const subs = Array.isArray(rec.subRecommendations) ? rec.subRecommendations : [];
 
@@ -87,10 +85,6 @@ function sectionHtml(rec, index) {
     <section class="printRecSection" id="${escapeHtml(anchorId)}">
       <div class="printRecHeader">
         <h2>${escapeHtml(header)}</h2>
-        <div class="printOverall">
-          ${printDotHtml(overallKey)}
-          <span>${escapeHtml(overallLabel)}</span>
-        </div>
       </div>
       ${subs.map(subBlockHtml).join('')}
     </section>

@@ -1,6 +1,7 @@
 /**
  * Statisch printoverzicht voor initiatieven-interoperabiliteit-print.html
  * (geen klikbare links in de gegenereerde inhoud)
+ * Data: projects_interoperability.json (zelfde bron als de overzichtspagina).
  */
 function textBlock(label, value) {
   const t = value != null && String(value).trim() ? String(value) : '';
@@ -13,11 +14,43 @@ function listBlock(label, items) {
   return `<p class="printBlockLabel">${escapeHtml(label)}</p><ul class="printList">${items.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul>`;
 }
 
-function resolveBronLines(keys, sourcesMap) {
-  return (keys || []).map(k => {
-    const v = sourcesMap[k];
-    return typeof v === 'string' && v.trim() ? v.trim() : k;
+function labelFor(defs, defKey, code) {
+  if (!code) return '';
+  const def = defs[defKey];
+  const categories = def && Array.isArray(def.categorieen) ? def.categorieen : [];
+  const hit = categories.find(x => x.code === code);
+  return hit ? hit.label : code;
+}
+
+function buildIdToName(initiatives) {
+  const map = new Map();
+  if (!Array.isArray(initiatives)) return map;
+  for (const item of initiatives) {
+    if (item && item.id) map.set(item.id, item.naam || item.id);
+  }
+  return map;
+}
+
+function resolveRelatedIds(ids, idToName) {
+  return (Array.isArray(ids) ? ids : []).map((id) => {
+    const naam = idToName.get(id);
+    return naam && naam !== id ? `${naam} (${id})` : id;
   });
+}
+
+/** Bronregels als platte tekst (geen <a>-tags). */
+function referenceLines(initiative) {
+  const lines = [];
+  if (initiative.website_official && String(initiative.website_official).trim()) {
+    lines.push(`Officiële website: ${String(initiative.website_official).trim()}`);
+  }
+  const extra = Array.isArray(initiative.aanvullende_websites) ? initiative.aanvullende_websites : [];
+  for (const site of extra) {
+    if (!site || !site.url) continue;
+    const label = (site.label && String(site.label).trim()) ? String(site.label).trim() : String(site.url).trim();
+    lines.push(`${label}: ${String(site.url).trim()}`);
+  }
+  return lines;
 }
 
 function sectionAnchorId(initiative, index) {
@@ -28,47 +61,74 @@ function sectionAnchorId(initiative, index) {
 
 function tocHtml(initiatives) {
   if (!Array.isArray(initiatives) || !initiatives.length) return '';
-  const items = initiatives.map((i, idx) => {
-    const id = sectionAnchorId(i, idx);
-    const label = i?.naam ?? i?.id ?? `Initiatief ${idx + 1}`;
+
+  const liAt = (globalIdx) => {
+    const i = initiatives[globalIdx];
+    const id = sectionAnchorId(i, globalIdx);
+    const label = i?.naam ?? i?.id ?? `Initiatief ${globalIdx + 1}`;
     return `<li><a href="#${escapeHtml(id)}">${escapeHtml(label)}</a></li>`;
-  }).join('');
+  };
+
+  const mid = Math.ceil(initiatives.length / 2);
+  const leftItems = initiatives.slice(0, mid).map((_, j) => liAt(j)).join('');
+  const rightItems = initiatives.slice(mid).map((_, j) => liAt(mid + j)).join('');
+
+  const listBody = rightItems
+    ? `
+      <div class="printTocColumns">
+        <ol class="printTocList">${leftItems}</ol>
+        <ol class="printTocList" start="${mid + 1}">${rightItems}</ol>
+      </div>
+    `
+    : `<ol class="printTocList">${leftItems}</ol>`;
+
   return `
     <nav class="printToc" aria-label="Inhoudsopgave initiatieven interoperabiliteit">
       <h2>Inhoudsopgave</h2>
-      <ol class="printTocList">${items}</ol>
+      ${listBody}
     </nav>
   `;
 }
 
-function initiativeSection(i, sourcesMap, index) {
+function initiativeSection(i, defs, idToName, index) {
   const anchorId = sectionAnchorId(i, index);
   const naam = i.naam ?? '';
-  const metaParts = [i.familie, i.geografische_scope].filter(x => x && String(x).trim());
-  const metaHtml = metaParts.length
-    ? `<div class="printOverall"><span>${escapeHtml(metaParts.join(' • '))}</span></div>`
-    : '';
 
-  const keys = Array.isArray(i.bronnen) ? i.bronnen : [];
-  const bronLines = resolveBronLines(keys, sourcesMap);
-  const related = splitRelated(i.verwante_of_nieuwe_initiatieven);
+  const related = resolveRelatedIds(i.verwante_initiatieven, idToName);
+  const refs = referenceLines(i);
+  const opgeleverd = Array.isArray(i.opgeleverd) ? i.opgeleverd : [];
+
+  const filterSummary = [
+    textBlock('Type initiatief', labelFor(defs, 'type_initiatief', i.type_initiatief)),
+    textBlock('Inhoudelijke focus', labelFor(defs, 'inhoudelijke_focus', i.inhoudelijke_focus)),
+    textBlock('Volwassenheid 2026', labelFor(defs, 'volwassenheid_2026', i.volwassenheid_2026)),
+    textBlock('Regio-cluster', labelFor(defs, 'regio_cluster', i.regio_cluster)),
+    textBlock('Beheervorm', labelFor(defs, 'beheer_vorm', i.beheer_vorm)),
+    textBlock('Oorsprong in rapport', labelFor(defs, 'oorsprong_in_rapport', i.oorsprong_in_rapport)),
+    textBlock('Relevantie H6.1', labelFor(defs, 'relevantie_h61', i.relevantie_h61))
+  ].join('');
 
   const body = [
+    textBlock('Organisatie / consortium', i.organisatie_of_consortium),
     textBlock('Korte omschrijving', i.korte_omschrijving),
-    textBlock('Rol voor datagovernance / interoperabiliteit', i.bijdrage_datagovernance_interoperabiliteit),
+    textBlock('Uitgebreide omschrijving', i.uitgebreide_omschrijving),
+    textBlock('Toepassing in praktijk', i.toepassing_in_praktijk),
+    textBlock('Relevantie semantiek', i.relevantie_semantiek),
+    textBlock('Relevantie interoperabiliteit', i.relevantie_interoperabiliteit),
     textBlock('Status 2023', i.status_2023),
     textBlock('Status 2026', i.status_2026),
-    textBlock('Ontwikkelingen sinds publicatie', i.ontwikkelingen_sinds_publicatie),
-    textBlock('Relevantie en advies', i.relevantie_en_advies),
-    listBlock('Verwante of nieuwe initiatieven', related),
-    listBlock('Bronnen', bronLines),
+    filterSummary,
+    textBlock('Toelichting relevantie H6.1', i.relevantie_h61_toelichting),
+    textBlock('Advies (toelichting)', i.advies_toelichting),
+    listBlock('Opgeleverd', opgeleverd),
+    listBlock('Verwante initiatieven', related),
+    listBlock('Referenties en websites (tekst)', refs)
   ].join('');
 
   return `
     <section class="printRecSection" id="${escapeHtml(anchorId)}">
       <div class="printRecHeader">
         <h2>${escapeHtml(naam)}</h2>
-        ${metaHtml}
       </div>
       ${body}
       <p class="printIdFoot">ID: ${escapeHtml(i.id ?? '')}</p>
@@ -89,12 +149,13 @@ async function loadInteroperabilityPrint() {
     throw new Error('Unexpected data format');
   }
 
-  const sourcesMap = data.bronnen || {};
+  const defs = data.filter_metadata_definities || {};
   const list = data.initiatieven;
+  const idToName = buildIdToName(list);
 
   root.innerHTML = `
     ${tocHtml(list)}
-    ${list.map((i, idx) => initiativeSection(i, sourcesMap, idx)).join('')}
+    ${list.map((i, idx) => initiativeSection(i, defs, idToName, idx)).join('')}
   `;
 }
 
@@ -104,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('interopPrintRoot');
     if (root) {
       root.innerHTML =
-        '<p class="printError">Kon het overzicht niet laden. Controleer of dit bestand via een webserver wordt geopend.</p>';
+        '<p class="printError">Kon het overzicht niet laden (./data/projects_interoperability.json). Controleer of dit bestand via een webserver wordt geopend.</p>';
     }
   });
 });

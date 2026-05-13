@@ -43,10 +43,6 @@ function tocHtml(useCases) {
 function useCaseSection(u, index) {
   const anchorId = sectionAnchorId(u, index);
   const links = normalizeLinks(u);
-  const metaParts = [u.MD1_status, u.oorsprong].filter(x => x && String(x).trim());
-  const metaHtml = metaParts.length
-    ? `<div class="printOverall"><span>${escapeHtml(metaParts.join(' • '))}</span></div>`
-    : '';
 
   const body = [
     textBlock('Beschrijving', u.beschrijving),
@@ -67,7 +63,6 @@ function useCaseSection(u, index) {
     <section class="printRecSection" id="${escapeHtml(anchorId)}">
       <div class="printRecHeader">
         <h2>${escapeHtml(u.projectnaam ?? '')}</h2>
-        ${metaHtml}
       </div>
       ${body}
       <p class="printIdFoot">Project ID: ${escapeHtml(u.project_id ?? '')}</p>

@@ -101,6 +101,16 @@ body {
   columns: 2;
   column-gap: 24px;
 }
+/* Twee expliciete kolommen (o.a. interoperabiliteits-print): links ceil(n/2), rechts de rest — voorkomt browser-balancing 6+7 i.p.v. 7+6. */
+.printTocColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.printTocColumns .printTocList {
+  columns: 1;
+}
 .printTocList li {
   margin: 0.2em 0;
   break-inside: avoid;
@@ -114,6 +124,7 @@ body {
 }
 @media (max-width: 900px) {
   .printTocList { columns: 1; }
+  .printTocColumns { grid-template-columns: 1fr; }
 }
 
 .printRadarSection {
@@ -213,15 +224,6 @@ body {
   letter-spacing: -0.01em;
   flex: 1;
   min-width: min(100%, 240px);
-}
-.printOverall {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--print-muted);
-  white-space: nowrap;
 }
 
 .printSub {

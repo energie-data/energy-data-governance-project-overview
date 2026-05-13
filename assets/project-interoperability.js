@@ -15,7 +15,7 @@ function labelFor(defs, defKey, code) {
 
 async function init(){
   const slug = getSlug();
-  const dataUrl = './data/projects_interoperability_2.json';
+  const dataUrl = './data/projects_interoperability.json';
   const res = await fetch(dataUrl, {cache:'no-store'});
   if (!res.ok) throw new Error(`Failed to load ${dataUrl}`);
   const data = await res.json();
@@ -142,6 +142,6 @@ async function init(){
 init().catch(err=>{
   console.error(err);
   document.getElementById('pTitle').textContent = 'Fout bij laden';
-  document.getElementById('pSub').textContent = 'Kon ./data/projects_interoperability_2.json niet laden.';
+  document.getElementById('pSub').textContent = 'Kon ./data/projects_interoperability.json niet laden.';
 });
 

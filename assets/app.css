@@ -436,6 +436,69 @@ a { color: inherit }
 }
 .section + .section { margin-top: 14px; }
 .section h4 { margin: 0 0 10px; font-size: 13px; color: var(--muted) }
+
+/* Drawer (zijbalk): zelfde ritme als quick reference (.kv) — titel lichtgrijs, tekst wit, 13px */
+.drawer .section h4 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+.drawer .summary {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.drawer .drawerProse {
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+.drawer .drawerSubheading {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--muted);
+}
+.drawer .drawerSubheading:first-child {
+  margin-top: 0;
+}
+.drawer .drawerList {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+  list-style-position: outside;
+}
+.drawer .drawerList li {
+  color: var(--text);
+}
+.drawer .developmentHighlights li {
+  color: var(--text);
+}
+.drawer .developmentHighlights strong {
+  color: var(--text);
+  font-weight: 650;
+}
+.drawer .section ul.list:not(.drawerList) {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.drawer .section ul.list:not(.drawerList) li {
+  color: var(--text);
+}
+.drawer .drawerReferentie-label {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .kv {
   display: grid;
   grid-template-columns: minmax(140px, 36%) minmax(0, 1fr);
@@ -1053,7 +1116,7 @@ hr.sep {
 .statusDot--partial  { background: rgba(100, 165, 200, .95); border-color: rgba(100,165,200,.55); box-shadow: 0 0 0 3px rgba(100,165,200,.12); }
 .statusDot--none     { background: rgba(255,255,255,.45); border-color: rgba(255,255,255,.25); box-shadow: 0 0 0 3px rgba(255,255,255,.05); }
 
-.recsDrawerText { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.recsDrawerText { color: var(--text); font-size: 13px; line-height: 1.45; }
 .recsDrawerBlock { white-space: pre-wrap; }
 
 .recsDrawerStatusText { color: var(--text); font-weight: 500; font-size: 13px; }

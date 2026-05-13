@@ -101,48 +101,114 @@ def export_data_sharing(json_path: Path, md_path: Path) -> None:
     md_path.write_text(_join_non_empty(lines) + "\n", encoding="utf-8")
 
 
+def _interop_header_scalar(v: Any) -> str:
+    """Single-line header value (no newlines)."""
+    if v is None:
+        return ""
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    if isinstance(v, (int, float)):
+        return str(v)
+    s = str(v).strip().replace("\r\n", "\n")
+    if "\n" in s:
+        return " ".join(s.split())
+    return s
+
+
 def export_interoperability(json_path: Path, md_path: Path) -> None:
+    """
+    Export v11+ interoperability JSON (initiatieven met typologie, websites,
+    filtercodes, enz.) naar Markdown. Zie import_from_md.import_interoperability voor het verwachte formaat.
+    """
     root = json.loads(json_path.read_text(encoding="utf-8"))
     initiatives = root.get("initiatieven") or []
+
+    # Korte kopregels (één regel); lange of meerregelige inhoud onder ### secties.
+    _HEADER_KEYS = [
+        "naam",
+        "typologie",
+        "typologie_label",
+        "familie",
+        "land_van_oorsprong",
+        "regio",
+        "organisatie_of_consortium",
+        "website_official",
+        "geografische_scope",
+        "jaar_start",
+        "jaar_einde",
+        "volwassenheid_2026",
+        "type_initiatief",
+        "beheer_vorm",
+        "inhoudelijke_focus",
+        "regio_cluster",
+        "relevantie_h61",
+        "oorsprong_in_rapport",
+        "bruikbaarheid_e_ontologie",
+        "advies_toelichting",
+    ]
+
+    _TEXT_SECTIONS = [
+        "korte_omschrijving",
+        "uitgebreide_omschrijving",
+        "toepassing_in_praktijk",
+        "status_2023",
+        "status_2026",
+        "relevantie_semantiek",
+        "relevantie_interoperabiliteit",
+        "relevantie_h61_toelichting",
+        "bruikbaarheid_e_ontologie_toelichting",
+        "opmerkingen",
+    ]
 
     lines: List[str] = []
     lines.append(f"# Export van {json_path.name}")
     lines.append("")
 
     for it in initiatives:
-        i: Dict[str, Any] = it
-        lines.append(f"## id: {i.get('id','').strip()}")
-        lines.append(f"naam: {i.get('naam','')}")
-        lines.append(f"familie: {i.get('familie','')}")
-        lines.append(f"geografische_scope: {i.get('geografische_scope','')}")
-        lines.append(f"status_2023: {i.get('status_2023','')}")
-        lines.append(f"status_2026: {i.get('status_2026','')}")
+        i: Dict[str, Any] = it or {}
+        iid = str(i.get("id", "")).strip()
+        lines.append(f"## id: {iid}")
+        for key in _HEADER_KEYS:
+            lines.append(f"{key}: {_interop_header_scalar(i.get(key))}")
         lines.append("")
 
-        lines.append("### korte_omschrijving")
-        lines.append(i.get("korte_omschrijving", "").rstrip())
+        lines.append("### alternatieve_namen")
+        for row in i.get("alternatieve_namen") or []:
+            if str(row).strip():
+                lines.append(f"- {str(row).strip()}")
         lines.append("")
 
-        lines.append("### ontwikkelingen_sinds_publicatie")
-        lines.append(i.get("ontwikkelingen_sinds_publicatie", "").rstrip())
+        lines.append("### opgeleverd")
+        for row in i.get("opgeleverd") or []:
+            if str(row).strip():
+                lines.append(f"- {str(row).strip()}")
         lines.append("")
 
-        lines.append("### bijdrage_datagovernance_interoperabiliteit")
-        lines.append(i.get("bijdrage_datagovernance_interoperabiliteit", "").rstrip())
+        lines.append("### verwante_initiatieven")
+        for row in i.get("verwante_initiatieven") or []:
+            if str(row).strip():
+                lines.append(f"- {str(row).strip()}")
         lines.append("")
 
-        lines.append("### relevantie_en_advies")
-        lines.append(i.get("relevantie_en_advies", "").rstrip())
+        lines.append("### aanvullende_websites")
+        for site in i.get("aanvullende_websites") or []:
+            if not isinstance(site, dict):
+                continue
+            label = str(site.get("label", "")).strip()
+            url = str(site.get("url", "")).strip()
+            if not url:
+                continue
+            parts: List[str] = []
+            if label:
+                parts.append(f"label={label}")
+            parts.append(f"url={url}")
+            lines.append("- " + "; ".join(parts))
         lines.append("")
 
-        lines.append("### verwante_of_nieuwe_initiatieven")
-        lines.append(i.get("verwante_of_nieuwe_initiatieven", "").rstrip())
-        lines.append("")
-
-        lines.append("### bronnen")
-        for b in i.get("bronnen") or []:
-            lines.append(f"- {b}")
-        lines.append("")
+        for sec in _TEXT_SECTIONS:
+            lines.append(f"### {sec}")
+            lines.append(str(i.get(sec, "") or "").rstrip())
+            lines.append("")
 
     md_path.write_text(_join_non_empty(lines) + "\n", encoding="utf-8")
 

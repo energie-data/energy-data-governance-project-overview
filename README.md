@@ -12,7 +12,7 @@ Static HTML site that presents Dutch-language overviews of energy-sector data go
 |--------------------------|-----------------------------------|------|
 | `data_sharing_2023`      | `data/projects_data_sharing_2023.json` | Initiatives snapshot (2023) |
 | `data_sharing_2026`      | `data/projects_data_sharing_2026.json` | Initiatives snapshot (2026) |
-| `interoperability`       | `data/projects_interoperability.json`   | Interoperability initiatives + `meta` |
+| `interoperability`       | `data/projects_interoperability.json`   | Interoperability: `meta`, `initiatieven`, `bronbijlage`, `filter_metadata_definities` |
 | `recommendations_2023`   | `data/recommendations_2023.json`        | Recommendations legend + nested structure |
 
 The static assets in `assets/*.js` fetch these JSON files (paths are relative to each HTML page).
@@ -46,11 +46,13 @@ python import_from_md.py --source data_sharing_2023 --source recommendations_202
 
 - **Export** writes `data/*.md` from `data/*.json`. Filenames are fixed per source (see table above).
 - **Import** reads those Markdown files and overwrites the corresponding JSON.  
-  Interoperability import **preserves** the existing `meta` object in `projects_interoperability.json` and only replaces `initiatieven` from Markdown.
+  Interoperability import **preserves** `meta`, `bronbijlage` en `filter_metadata_definities` in `projects_interoperability.json`; alleen `initiatieven` wordt uit de Markdown opgebouwd.
 
 Markdown formats differ by dataset (block structure, section headings). The canonical round-trip pair is **export then import** on the same source; avoid hand-editing field names unless you match the exporter’s layout.
 
 Data-sharing Markdown includes a **`### links`** block after `tags` (one line per link: `- label=…; url=https://…`). Import maps that back to the JSON `links` array; if the block is missing or empty, `links` becomes `[]`.
+
+Interoperability Markdown (v11): per initiatief een blok `## id: …` met **kopregels** (`naam:`, `type_initiatief:`, `jaar_start:`, enz.), daarna **`###`-secties** voor langere tekst (`korte_omschrijving`, `uitgebreide_omschrijving`, …) en lijsten met `- regels` voor `alternatieve_namen`, `opgeleverd`, `verwante_initiatieven`. **`### aanvullende_websites`** gebruikt hetzelfde `- label=…; url=…`-patroon als data-sharing links.
 
 ## Local preview
 

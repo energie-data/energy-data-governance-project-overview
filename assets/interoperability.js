@@ -100,8 +100,6 @@ function mapInitiatives(raw){
       regio_cluster: i.regio_cluster || '',
       oorsprong_in_rapport: i.oorsprong_in_rapport || '',
       beheer_vorm: i.beheer_vorm || '',
-      bruikbaarheid_e_ontologie: i.bruikbaarheid_e_ontologie || '',
-      bruikbaarheid_e_ontologie_toelichting: i.bruikbaarheid_e_ontologie_toelichting || '',
       website_official: i.website_official || '',
       aanvullende_websites: Array.isArray(i.aanvullende_websites) ? i.aanvullende_websites : [],
       verwante_initiatieven: Array.isArray(i.verwante_initiatieven) ? i.verwante_initiatieven : []
@@ -112,8 +110,8 @@ function mapInitiatives(raw){
 function cardHtml(p){
   const meta = `
     ${p.type_initiatief ? `<span class="badge">${escapeHtml(labelFor('type_initiatief', p.type_initiatief))}</span>` : ''}
+    ${p.inhoudelijke_focus ? `<span class="badge">${escapeHtml(labelFor('inhoudelijke_focus', p.inhoudelijke_focus))}</span>` : ''}
     ${p.volwassenheid_2026 ? `<span class="badge">${escapeHtml(labelFor('volwassenheid_2026', p.volwassenheid_2026))}</span>` : ''}
-    ${p.bruikbaarheid_e_ontologie ? `<span class="badge">${escapeHtml(labelFor('bruikbaarheid_e_ontologie', p.bruikbaarheid_e_ontologie))}</span>` : ''}
   `;
   const baseSummary = p.korte_omschrijving || '';
   const summary = escapeHtml(baseSummary).slice(0, 190) + (baseSummary.length > 190 ? '…' : '');
@@ -195,7 +193,6 @@ function openDrawer(slug){
     <div class="k">Inhoudelijke focus</div><div class="v">${escapeHtml(labelFor('inhoudelijke_focus', p.inhoudelijke_focus) || '—')}</div>
     <div class="k">Volwassenheid 2026</div><div class="v">${escapeHtml(labelFor('volwassenheid_2026', p.volwassenheid_2026) || '—')}</div>
     <div class="k">Regio-cluster</div><div class="v">${escapeHtml(labelFor('regio_cluster', p.regio_cluster) || '—')}</div>
-    <div class="k">Bruikbaarheid e-ontologie</div><div class="v">${escapeHtml(labelFor('bruikbaarheid_e_ontologie', p.bruikbaarheid_e_ontologie) || '—')}</div>
     <div class="k">Oorsprong in rapport</div><div class="v">${escapeHtml(labelFor('oorsprong_in_rapport', p.oorsprong_in_rapport) || '—')}</div>
     <div class="k">Beheervorm</div><div class="v">${escapeHtml(labelFor('beheer_vorm', p.beheer_vorm) || '—')}</div>
     <div class="k">Organisatie / consortium</div><div class="v">${escapeHtml(p.organisatie || '—')}</div>
@@ -263,7 +260,7 @@ function openDrawer(slug){
 }
 
 async function loadData(){
-  const dataUrl = './data/projects_interoperability_2.json';
+  const dataUrl = './data/projects_interoperability.json';
   const res = await fetch(dataUrl, { cache: 'no-store' });
   if (!res.ok) throw new Error(`Failed to load ${dataUrl}`);
   const data = await res.json();
@@ -313,7 +310,7 @@ async function init(){
     await loadData();
   } catch (err){
     console.error(err);
-    elGrid.innerHTML = `<div class="empty">Kon ./data/projects_interoperability_2.json niet laden. Check of het bestand beschikbaar is.</div>`;
+    elGrid.innerHTML = `<div class="empty">Kon ./data/projects_interoperability.json niet laden. Check of het bestand beschikbaar is.</div>`;
   }
 }
 

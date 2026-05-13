@@ -232,8 +232,8 @@ function openDrawer(slug){
   const outputs = (qr.belangrijkste_resultaten || []);
   const users = (qr.doelgebruikers || []);
   dLists.innerHTML = `
-    ${outputs.length ? `<div class="small" style="margin-top:10px;">Belangrijkste resultaten</div><ul class="list">${outputs.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>` : ''}
-    ${users.length ? `<div class="small" style="margin-top:10px;">Doelgebruikers</div><ul class="list">${users.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>` : ''}
+    ${outputs.length ? `<div class="drawerSubheading">Belangrijkste resultaten</div><ul class="drawerList">${outputs.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>` : ''}
+    ${users.length ? `<div class="drawerSubheading">Doelgebruikers</div><ul class="drawerList">${users.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>` : ''}
   `;
 
   // links
@@ -267,13 +267,13 @@ function openDrawer(slug){
     dDevelopmentsSection.style.display = '';
     let html = '';
     if (dev.referentiedatum) {
-      html += `<p class="small" style="margin:0 0 8px;">Referentiedatum: ${escapeHtml(dev.referentiedatum)}</p>`;
+      html += `<p class="summary" style="margin:0 0 8px;"><span class="drawerReferentie-label">Referentiedatum:</span> ${escapeHtml(dev.referentiedatum)}</p>`;
     }
     if (dev.samenvatting) {
       html += `<p class="summary" style="margin:0 0 10px;">${escapeHtml(dev.samenvatting)}</p>`;
     }
     if (Array.isArray(dev.hoogtepunten) && dev.hoogtepunten.length) {
-      html += '<ul class="list developmentHighlights">';
+      html += '<ul class="drawerList developmentHighlights">';
       for (const h of dev.hoogtepunten) {
         const datePart = h.datum ? `<span class="developmentDate">${escapeHtml(h.datum)}</span> ` : '';
         html += `<li>${datePart}<strong>${escapeHtml(h.titel || '')}</strong>${h.detail ? ` — ${escapeHtml(h.detail)}` : ''}</li>`;
