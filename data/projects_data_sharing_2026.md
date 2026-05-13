@@ -281,7 +281,7 @@ tags: EU-project, referentiearchitectuur, SGAM, dataspace, prikkels
 Enershare is medio 2025 afgerond. Het project ontwikkelde een consumer-centric referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in pilots.
 
 ### korte_referentie.primair_doel
-Een mens‑/eindafnemer‑gerichte referentiearchitectuur en componenten leveren voor interoperabele energiedata‑deling in Europa.
+Een op de eindafnemer gerichte referentiearchitectuur en componenten leveren voor interoperabele energiedata‑deling in Europa.
 
 ### korte_referentie.belangrijkste_resultaten
 - Referentiearchitectuur (SGAM‑gebaseerd)
@@ -300,7 +300,7 @@ Een mens‑/eindafnemer‑gerichte referentiearchitectuur en componenten leveren
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-Enershare is medio 2025 afgerond. Het project ontwikkelde een consumer-centric referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in pilots.
+Enershare is medio 2025 afgerond. Het project ontwikkelde een op de eindafnemer gerichte referentiearchitectuur voor een Energy Data Space, inclusief marktplaats voor data en diensten, en valideerde dit in pilots.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2025-04; titel=Final evaluation; detail=Eindrapportage met evaluatie van pilots en best practices.
@@ -324,14 +324,14 @@ tags: EU-project, open source, toestemming, slimme meter, dataspace
 - label=CORDIS; url=https://cordis.europa.eu/project/id/101069510
 
 ### samenvatting
-EDDIE eind 2025 afgerond. Het project ontwikkelde een gedecentraliseerde, open-source data space met focus op “in-house” consent en datadeling voor slimme-meterdata.
+EDDIE eind 2025 afgerond. Het project ontwikkelde een gedecentraliseerde, open-source data space met focus op consent per huishouden en datadeling voor slimme-meterdata.
 
 ### korte_referentie.primair_doel
-Open‑source, gedecentraliseerde data space ontwikkelen waarmee burgers/gebruikers gecontroleerd energiedata kunnen delen.
+Open‑source, gedecentraliseerde data space ontwikkelen waarmee burgers/eindafnemers gecontroleerd energiedata kunnen delen.
 
 ### korte_referentie.belangrijkste_resultaten
 - Open‑source data space bouwblokken
-- Consent‑management interface (home‑based)
+- Consent‑management interface (toestemmingsbeheerportaal voor huishoudens)
 - Integratie met home automation en slimme meters
 - Demonstrators/pilots
 
@@ -373,7 +373,7 @@ Data Cellar is afgerond in november 2025. Het project leverde een data space voo
 Een data space realiseren die de oprichting en exploitatie van local energy communities in de EU ondersteunt.
 
 ### korte_referentie.belangrijkste_resultaten
-- Ontologie voor LEC‑data
+- Ontologie voor local energy communities (LEC) data
 - IT‑referentiearchitectuur
 - Blockchain‑gebaseerde marktplaats
 - Validatiecases (9)
@@ -412,7 +412,7 @@ tags: EU-project, referentie-implementatie, cross-domein, energiedata, collectie
 - label=CORDIS; url=https://cordis.europa.eu/project/id/101069839
 
 ### samenvatting
-Het Horizon Europe project SYNERGIES zit in de afrondende fase en rondt af op 28 februari 2026. Het leverde een referentie-implementatie voor een Energy Data Space en voerde grootschalige demo’s uit in Griekenland, Spanje en Denemarken.
+Het Horizon Europe project SYNERGIES is afgerond op 28 februari 2026. Het leverde een referentie-implementatie voor een Energy Data Space en voerde grootschalige demo’s uit in Griekenland, Spanje en Denemarken.
 
 ### korte_referentie.primair_doel
 Een referentie‑implementatie leveren voor een inclusieve, cross‑domain energy data space.
@@ -434,7 +434,7 @@ Een referentie‑implementatie leveren voor een inclusieve, cross‑domain energ
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-Het Horizon Europe project SYNERGIES zit in de afrondende fase en rondt af op 28 februari 2026. Het leverde een referentie-implementatie voor een Energy Data Space en voerde grootschalige demo’s uit in Griekenland, Spanje en Denemarken.
+Het Horizon Europe project SYNERGIES is afgerond op 28 februari 2026. Het leverde een referentie-implementatie voor een Energy Data Space en voerde grootschalige demo’s uit in Griekenland, Spanje en Denemarken.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2026-02-28; titel=Projectafsluiting; detail=Einde projectperiode en afronding deliverables.
@@ -458,7 +458,7 @@ tags: EU-project, open data, FAIR, onderzoek, platform
 - label=CORDIS; url=https://cordis.europa.eu/project/id/884161
 
 ### samenvatting
-EnerMaps is afgerond in juni 2022. Het project leverde een Open Data Management Tool om energie-onderzoeksdata vindbaar en herbruikbaar te maken volgens FAIR-principes en werd geregistreerd als EOSC service provider.
+EnerMaps is afgerond in juni 2022. Het project leverde een Open Data Management Tool om energie-onderzoeksdata vindbaar en herbruikbaar te maken volgens FAIR-principes en werd geregistreerd als European Open Science Cloud (EOSC) service provider.
 
 ### korte_referentie.primair_doel
 Databeheer en toegankelijkheid voor energieonderzoek verbeteren en hergebruik versnellen.
@@ -472,13 +472,12 @@ Databeheer en toegankelijkheid voor energieonderzoek verbeteren en hergebruik ve
 - Onderzoekers
 - Energie‑industrie
 - Toezichthouders
-- Data stewards
 
 ### ontwikkelingen_2023_2026.referentiedatum
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-EnerMaps is afgerond in juni 2022. Het project leverde een Open Data Management Tool om energie-onderzoeksdata vindbaar en herbruikbaar te maken volgens FAIR-principes en werd geregistreerd als EOSC service provider.
+EnerMaps is afgerond in juni 2022. Het project leverde een Open Data Management Tool om energie-onderzoeksdata vindbaar en herbruikbaar te maken volgens FAIR-principes en werd geregistreerd als European Open Science Cloud (EOSC) service provider.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2022-06; titel=Project afgerond; detail=Einde project en oplevering tooling/documentatie.
@@ -543,7 +542,7 @@ tags: cross-sectoraal, datadelen, use cases, handleidingen, historisch, CoE-DSC
 - label=CoE-DSC launch; url=https://coe-dsc.nl/centre-of-excellence-for-data-sharing-and-cloud-has-been-launched/
 
 ### samenvatting
-De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 zijn de inzet, resultaten en deelnemers gebundeld in dat vervolginitiatief. Daarmee is de Data Sharing Coalition vooral relevant als historische voorganger van CoE-DSC.
+De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Het initiatief moet in dit overzicht niet langer als zelfstandig actief worden weergegeven: de inzet, resultaten en deelnemers zijn sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 gebundeld in dat vervolginitiatief. 
 
 ### korte_referentie.primair_doel
 Cross-sectoraal datadelen versnellen en interoperabiliteit tussen data spaces versterken, met regie bij de rechthebbende partij; vanaf 2023 voortgezet via CoE-DSC.
@@ -612,7 +611,7 @@ De Common European Energy Data Space (CEEDS) van visie naar operationele federat
 Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-CEEDS kreeg in 2024 een uitgewerkte blueprint vanuit het Europese energie-data-space-cluster. In 2025 startte INSIEME als Digital Europe-flagship om de resterende bouwblokken te piloten en de Common European Energy Data Space operationeel te maken. De nadruk ligt op het verbinden van CEEDS-bouwblokken, pilots en bestaande nationale en regionale data-uitwisselingsoplossingen.
+CEEDS kreeg in 2024 een uitgewerkte blueprint vanuit het Europese energie-data-space-cluster. In 2025 startte INSIEME als Digital Europe-flagship om de resterende bouwblokken te piloten en de Common European Energy Data Space operationeel te maken. Vandaar dat beide initiatieven zijn opgenomen als één entry ‘INSIEME / CEEDS’, niet als twee afzonderlijke projecten.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2024-07; titel=Blueprint CEEDS v2; detail=Publicatie van de Blueprint of the Common European Energy Data Space met architectuur, use cases en interoperabiliteitsaspecten.
