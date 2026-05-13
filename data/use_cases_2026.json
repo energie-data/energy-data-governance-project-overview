@@ -58,8 +58,8 @@
       ],
       "meerdere_waarden": true
     },
-    "MD5_datasink": {
-      "label": "MD5: Datasink, gebruiker ofwel aanvrager",
+    "data_consumer": {
+      "label": "MD5: Data consument, gebruiker ofwel aanvrager",
       "beschrijving": "Wie de data ontvangt of gebruikt; meerdere waarden mogelijk",
       "waarden": [
         "Huishoudens/prosumers",
@@ -167,7 +167,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders",
         "Onderzoekers"
@@ -210,7 +210,7 @@
       "MD4_databron": [
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders",
         "Onderzoekers"
       ],
@@ -260,7 +260,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders",
         "Onderzoekers"
@@ -306,7 +306,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders"
       ],
@@ -354,7 +354,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders"
       ],
@@ -401,7 +401,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -447,7 +447,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Netbeheerders",
         "Onderzoekers",
@@ -499,7 +499,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Onderzoekers",
         "Bedrijven/industrie"
@@ -548,7 +548,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Onderzoekers",
         "Bedrijven/industrie"
       ],
@@ -598,7 +598,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Netbeheerders",
         "Aggregator",
@@ -649,7 +649,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders",
         "Aggregator"
       ],
@@ -697,7 +697,7 @@
         "Dienstverlener anders dan de aggregator",
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Huishoudens/prosumers",
         "Aggregator"
@@ -747,7 +747,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders"
       ],
@@ -791,7 +791,7 @@
       "MD4_databron": [
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders"
       ],
       "MD6_governance": [
@@ -840,7 +840,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Onderzoekers",
         "Netbeheerders"
@@ -890,7 +890,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders",
         "Onderzoekers"
       ],
@@ -940,7 +940,7 @@
         "Dienstverlener anders dan de aggregator",
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Netbeheerders",
         "Dienstverlener anders dan de aggregator"
@@ -991,7 +991,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders"
       ],
@@ -1037,7 +1037,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders",
         "Dienstverlener anders dan de aggregator"
@@ -1086,7 +1086,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders",
         "Dienstverlener anders dan de aggregator"
@@ -1135,7 +1135,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Netbeheerders",
         "Aggregator"
@@ -1181,7 +1181,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Onderzoekers"
       ],
@@ -1228,7 +1228,7 @@
         "Energieleverancier",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Bedrijven/industrie",
         "Onderzoekers"
@@ -1276,7 +1276,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Aggregator"
       ],
@@ -1320,7 +1320,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1363,7 +1363,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1405,7 +1405,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1447,7 +1447,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1491,7 +1491,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Aggregator"
       ],
@@ -1535,7 +1535,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1580,7 +1580,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders"
       ],
@@ -1624,7 +1624,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1670,7 +1670,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Aggregator"
       ],
@@ -1717,7 +1717,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie"
       ],
@@ -1763,7 +1763,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Overheden/beleidsmakers"
       ],
@@ -1810,7 +1810,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Onderzoekers"
       ],
@@ -1853,7 +1853,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1896,7 +1896,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -1941,7 +1941,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Bedrijven/industrie"
       ],
@@ -1987,7 +1987,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Onderzoekers"
       ],
@@ -2033,7 +2033,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Bedrijven/industrie"
       ],
@@ -2077,7 +2077,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Aggregator"
       ],
@@ -2123,7 +2123,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Netbeheerders",
         "Overheden/beleidsmakers"
@@ -2168,7 +2168,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Aggregator"
       ],
@@ -2214,7 +2214,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
         "Aggregator"
@@ -2260,7 +2260,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -2304,7 +2304,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Aggregator",
         "Netbeheerders"
@@ -2348,7 +2348,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders"
       ],
       "MD6_governance": [
@@ -2395,7 +2395,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Aggregator",
         "Netbeheerders"
@@ -2439,7 +2439,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders"
       ],
       "MD6_governance": [
@@ -2481,7 +2481,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders"
       ],
       "MD6_governance": [
@@ -2523,7 +2523,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -2565,7 +2565,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie"
       ],
@@ -2609,7 +2609,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -2651,7 +2651,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie"
       ],
       "MD6_governance": [
@@ -2694,7 +2694,7 @@
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Onderzoekers",
         "Dienstverlener anders dan de aggregator"
@@ -2745,7 +2745,7 @@
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Bedrijven/industrie",
         "Netbeheerders"
@@ -2796,7 +2796,7 @@
         "Dienstverlener anders dan de aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Bedrijven/industrie",
         "Netbeheerders",
@@ -2850,7 +2850,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Onderzoekers",
         "Dienstverlener anders dan de aggregator",
         "Overheden/beleidsmakers",
@@ -2915,7 +2915,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Dienstverlener anders dan de aggregator",
         "Onderzoekers"
@@ -2970,7 +2970,7 @@
         "Energieleverancier",
         "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
         "Dienstverlener anders dan de aggregator",
@@ -3023,7 +3023,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Bedrijven/industrie",
         "Onderzoekers",
         "Dienstverlener anders dan de aggregator"
@@ -3072,7 +3072,7 @@
         "Energieleverancier",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
         "Dienstverlener anders dan de aggregator",
@@ -3122,7 +3122,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Overheden/beleidsmakers",
         "Netbeheerders",
         "Onderzoekers",
@@ -3181,7 +3181,7 @@
         "Aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders",
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
@@ -3242,7 +3242,7 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
         "Overheden/beleidsmakers",
@@ -3303,7 +3303,7 @@
         "Aggregator",
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
         "Dienstverlener anders dan de aggregator",
@@ -3365,7 +3365,7 @@
         "Aggregator",
         "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Bedrijven/industrie",
         "Netbeheerders",
@@ -3428,7 +3428,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Huishoudens/prosumers",
         "Overheden/beleidsmakers",
         "Netbeheerders",
@@ -3491,7 +3491,7 @@
         "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
         "Dienstverlener anders dan de aggregator"
       ],
-      "MD5_datasink": [
+      "data_consumer": [
         "Netbeheerders",
         "Bedrijven/industrie",
         "Overheden/beleidsmakers",

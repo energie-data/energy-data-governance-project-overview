@@ -55,7 +55,7 @@ function useCaseSection(u, index) {
     listBlock('Projectdoel', u.MD2_projectdoel),
     listBlock('Type energiedata', u.MD3_type_energiedata),
     listBlock('Databron', u.MD4_databron),
-    listBlock('Datasink', u.MD5_datasink),
+    listBlock('Data consument', u.data_consumer),
     listBlock('Governance / toegang', u.MD6_governance),
     listBlock('Toepassing', u.MD7_toepassing),
     listBlock('Granulariteit niveau', u.MD8_granulariteit_niveau),

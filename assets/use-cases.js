@@ -5,6 +5,8 @@ let fuse = null;
 const elQ = document.getElementById('q');
 const elStatus = document.getElementById('status');
 const elEnergyType = document.getElementById('energyType');
+const elGranularityLevel = document.getElementById('granularityLevel');
+const elGranularityFrequency = document.getElementById('granularityFrequency');
 const elGrid = document.getElementById('grid');
 const elEmpty = document.getElementById('empty');
 const elCount = document.getElementById('countLabel');
@@ -48,7 +50,7 @@ function normalizeUseCase(raw) {
     MD2_projectdoel: Array.isArray(raw.MD2_projectdoel) ? raw.MD2_projectdoel : [],
     MD3_type_energiedata: Array.isArray(raw.MD3_type_energiedata) ? raw.MD3_type_energiedata : [],
     MD4_databron: Array.isArray(raw.MD4_databron) ? raw.MD4_databron : [],
-    MD5_datasink: Array.isArray(raw.MD5_datasink) ? raw.MD5_datasink : [],
+    data_consumer: Array.isArray(raw.data_consumer) ? raw.data_consumer : [],
     MD6_governance: Array.isArray(raw.MD6_governance) ? raw.MD6_governance : [],
     MD7_toepassing: Array.isArray(raw.MD7_toepassing) ? raw.MD7_toepassing : [],
     MD8_granulariteit_niveau: Array.isArray(raw.MD8_granulariteit_niveau) ? raw.MD8_granulariteit_niveau : [],
@@ -181,10 +183,14 @@ function renderChips() {
   const q = elQ.value.trim();
   const status = elStatus.value;
   const energyType = elEnergyType.value;
+  const granularityLevel = elGranularityLevel.value;
+  const granularityFrequency = elGranularityFrequency.value;
 
   if (q) chips.push({ label: `Zoek: ${q}`, clear: () => { elQ.value = ''; apply(); } });
   if (status) chips.push({ label: `Status: ${status}`, clear: () => { elStatus.value = ''; apply(); } });
   if (energyType) chips.push({ label: `Type energiedata: ${energyType}`, clear: () => { elEnergyType.value = ''; apply(); } });
+  if (granularityLevel) chips.push({ label: `Granulariteit niveau: ${granularityLevel}`, clear: () => { elGranularityLevel.value = ''; apply(); } });
+  if (granularityFrequency) chips.push({ label: `Granulariteit frequentie: ${granularityFrequency}`, clear: () => { elGranularityFrequency.value = ''; apply(); } });
 
   elChips.innerHTML = '';
   for (const chip of chips) {
@@ -203,11 +209,15 @@ function apply() {
   const q = elQ.value.trim();
   const status = elStatus.value;
   const energyType = elEnergyType.value;
+  const granularityLevel = elGranularityLevel.value;
+  const granularityFrequency = elGranularityFrequency.value;
 
   let list = allUseCases;
   if (q && fuse) list = fuse.search(q).map(r => r.item);
   if (status) list = list.filter(x => (x.MD1_status || '') === status);
   if (energyType) list = list.filter(x => x.MD3_type_energiedata.includes(energyType));
+  if (granularityLevel) list = list.filter(x => x.MD8_granulariteit_niveau.includes(granularityLevel));
+  if (granularityFrequency) list = list.filter(x => x.MD9_granulariteit_frequentie.includes(granularityFrequency));
 
   renderGrid(list);
   renderEnergyTypeBars();
@@ -243,7 +253,7 @@ function openDrawer(id) {
     ${listSection('Projectdoel', item.MD2_projectdoel)}
     ${listSection('Type energiedata', item.MD3_type_energiedata)}
     ${listSection('Databron', item.MD4_databron)}
-    ${listSection('Datasink', item.MD5_datasink)}
+    ${listSection('Data consument', item.data_consumer)}
     ${listSection('Governance', item.MD6_governance)}
     ${listSection('Toepassing', item.MD7_toepassing)}
     ${listSection('Granulariteit niveau', item.MD8_granulariteit_niveau)}
@@ -266,6 +276,16 @@ function openDrawer(id) {
 
 function uniqueValues(values) {
   return Array.from(new Set(values.filter(isNonEmptyString))).sort((a, b) => a.localeCompare(b));
+}
+
+function sortByPreferredOrder(values, preferredOrder) {
+  const rank = new Map(preferredOrder.map((value, index) => [value, index]));
+  return [...values].sort((a, b) => {
+    const aRank = rank.has(a) ? rank.get(a) : Number.POSITIVE_INFINITY;
+    const bRank = rank.has(b) ? rank.get(b) : Number.POSITIVE_INFINITY;
+    if (aRank !== bRank) return aRank - bRank;
+    return a.localeCompare(b);
+  });
 }
 
 async function loadUseCases() {
@@ -296,9 +316,38 @@ async function loadUseCases() {
 
   elStatus.innerHTML = '<option value="">Status (alle)</option>';
   elEnergyType.innerHTML = '<option value="">Type energiedata (alle)</option>';
+  elGranularityLevel.innerHTML = '<option value="">Granulariteit niveau (alle)</option>';
+  elGranularityFrequency.innerHTML = '<option value="">Granulariteit frequentie (alle)</option>';
 
   buildSelectOptions(elStatus, uniqueValues(allUseCases.map(x => x.MD1_status)));
   buildSelectOptions(elEnergyType, uniqueValues(allUseCases.flatMap(x => x.MD3_type_energiedata)));
+  buildSelectOptions(
+    elGranularityLevel,
+    sortByPreferredOrder(
+      uniqueValues(allUseCases.flatMap(x => x.MD8_granulariteit_niveau)),
+      [
+        'Land',
+        'Provincie',
+        'Gemeente',
+        'Wijk',
+        'Postcode 6',
+        'Straat',
+        'Bedrijventerrein',
+        'Aansluiting',
+        'Allocatiepunt: als onderdeel van de aansluiting',
+        'Fase: een verzameling van apparaten aansgesloten op 1 fase in het huis',
+        'Groep: een groep van apparaten',
+        'Apparaat: 1 apparaat dat de energieverbruikt'
+      ]
+    )
+  );
+  buildSelectOptions(
+    elGranularityFrequency,
+    sortByPreferredOrder(
+      uniqueValues(allUseCases.flatMap(x => x.MD9_granulariteit_frequentie)),
+      ['5 Jaar', 'Jaar', 'Maand', 'Week', 'Dag', 'Uur', 'Kwartier', 'Minuut', 'Seconde']
+    )
+  );
 
   renderEnergyTypeBars();
   apply();
@@ -308,6 +357,8 @@ function init() {
   elQ.addEventListener('input', apply);
   elStatus.addEventListener('change', apply);
   elEnergyType.addEventListener('change', apply);
+  elGranularityLevel.addEventListener('change', apply);
+  elGranularityFrequency.addEventListener('change', apply);
 
   loadUseCases().catch(err => {
     console.error(err);
