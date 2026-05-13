@@ -1104,7 +1104,7 @@
     "status": "Actief",
     "scope": "Generiek initiatief",
     "geografische_scope": "Nederland",
-    "eigenaar": "Interbestuurlijk databeleid onder verantwoordelijkheid van het ministerie van Binnenlandse Zaken en Koninkrijksrelaties; sturing via OBDO en IDO, uitvoering via programma Realisatie IBDS",
+    "eigenaar": "Interbestuurlijk databeleid onder verantwoordelijkheid van het ministerie van Binnenlandse Zaken en Koninkrijksrelaties; sturing via het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) en het Interbestuurlijk Data Overleg (IDO), uitvoering via programma Realisatie IBDS",
     "jaar_start": 2021,
     "jaar_einde": null,
     "tags": [
@@ -1226,7 +1226,7 @@
     },
     "ontwikkelingen_2023_2026": {
       "referentiedatum": "Q2 2026",
-      "samenvatting": "In februari 2026 stelde het OBDO het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. FDS vormt de concrete afsprakenlaag voor federatief datadelen binnen de overheid en sluit aan op de bredere IBDS-uitvoering.",
+      "samenvatting": "In februari 2026 stelde het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. FDS vormt de concrete afsprakenlaag voor federatief datadelen binnen de overheid en sluit aan op de bredere IBDS-uitvoering.",
       "hoogtepunten": [
         {
           "datum": "2025",
@@ -1236,7 +1236,7 @@
         {
           "datum": "2026-02",
           "titel": "Afsprakenstelsel vastgesteld",
-          "detail": "OBDO stelt het Afsprakenstelsel Federatief Datastelsel vast voor aanbieders van data."
+          "detail": "Het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) stelt het Afsprakenstelsel Federatief Datastelsel vast voor aanbieders van data."
         },
         {
           "datum": "2026",
@@ -1752,7 +1752,7 @@
       ],
       "doelgebruikers": [
         "Gebouweigenaren",
-        "ESCO’s/adviesbureaus",
+        "Energy Service Companies (ESCO’s) en adviesbureaus",
         "Gebouwbeheerders",
         "Financiers",
         "Sectororganisaties"

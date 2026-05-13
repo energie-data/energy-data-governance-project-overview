@@ -879,7 +879,7 @@ CO₂‑reductie in utiliteitsgebouwen versnellen door betrouwbare uitwisseling 
 
 ### korte_referentie.doelgebruikers
 - Gebouweigenaren
-- ESCO’s/adviesbureaus
+- Energy Service Companies (ESCO’s) en adviesbureaus
 - Gebouwbeheerders
 - Financiers
 - Sectororganisaties

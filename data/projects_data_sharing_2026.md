@@ -729,7 +729,7 @@ naam: IBDS (Interbestuurlijke Datastrategie)
 status: Actief
 scope: Generiek initiatief
 geografische_scope: Nederland
-eigenaar: Interbestuurlijk databeleid onder verantwoordelijkheid van het ministerie van Binnenlandse Zaken en Koninkrijksrelaties; sturing via OBDO en IDO, uitvoering via programma Realisatie IBDS
+eigenaar: Interbestuurlijk databeleid onder verantwoordelijkheid van het ministerie van Binnenlandse Zaken en Koninkrijksrelaties; sturing via het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) en het Interbestuurlijk Data Overleg (IDO), uitvoering via programma Realisatie IBDS
 jaar_start: 2021
 jaar_einde: None
 tags: overheid, databeleid, verantwoord datagebruik, datavolwassenheid, federatief datastelsel, knelpunten gegevensdeling
@@ -811,11 +811,11 @@ Overheidsbreed op eenzelfde manier verantwoord data delen, met uniforme beschrij
 Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-In februari 2026 stelde het OBDO het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. FDS vormt de concrete afsprakenlaag voor federatief datadelen binnen de overheid en sluit aan op de bredere IBDS-uitvoering.
+In februari 2026 stelde het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. FDS vormt de concrete afsprakenlaag voor federatief datadelen binnen de overheid en sluit aan op de bredere IBDS-uitvoering.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2025; titel=NDS-prioriteit Data; detail=FDS is gepositioneerd als instrument om overheidsbreed verantwoord datadelen op dezelfde manier te organiseren.
-- datum=2026-02; titel=Afsprakenstelsel vastgesteld; detail=OBDO stelt het Afsprakenstelsel Federatief Datastelsel vast voor aanbieders van data.
+- datum=2026-02; titel=Afsprakenstelsel vastgesteld; detail=Het Overheidsbreed Beleidsoverleg Digitale Overheid (OBDO) stelt het Afsprakenstelsel Federatief Datastelsel vast voor aanbieders van data.
 - datum=2026; titel=Implementatie en uitbreiding; detail=Organisaties kunnen het afsprakenstelsel raadplegen en implementatiehulp krijgen; afspraken voor data-afnemers volgen later.
 
 ## id: simpl
@@ -1222,7 +1222,7 @@ CO₂‑reductie in utiliteitsgebouwen versnellen door betrouwbare uitwisseling 
 
 ### korte_referentie.doelgebruikers
 - Gebouweigenaren
-- ESCO’s/adviesbureaus
+- Energy Service Companies (ESCO’s) en adviesbureaus
 - Gebouwbeheerders
 - Financiers
 - Sectororganisaties
