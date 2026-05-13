@@ -3519,6 +3519,62 @@
         "Uur",
         "Dag"
       ]
+    },
+    {
+      "project_id": "P075",
+      "projectnaam": "NEDbalans",
+      "oorsprong": "Overig",
+      "organisaties": "NEDbalans B.V., lokale energiegemeenschappen, energiehubs, bewoners, bedrijven, gemeenten/regio’s, netbeheerders, energieleveranciers en technologiepartners",
+      "beschrijving": "NEDbalans is een platform en aanpak waarmee lokale Energy Management Systemen (EMS’en) en slimme algoritmes van buurten, bedrijven, energiegemeenschappen en energiehubs met elkaar worden verbonden. Het doel is om lokaal opgewekte energie slimmer te gebruiken en eerlijker te verdelen, vraag en aanbod binnen energiegroepen te balanceren, de druk op het elektriciteitsnet te verlagen en deelnemers grip te geven op energieopwekking, -verbruik en energiekosten. NEDbalans werkt onder meer aan pilots in Reduzum-Idaerd-Friens en Steendam-Tjuchem.",
+      "gebruik_energiedata": "Energiedata uit lokale EMS’en, slimme algoritmes en deelnemersportalen wordt realtime uitgewisseld en geanalyseerd. Data over energieverbruik, lokale opwekking, overschotten, vraag, aanbod en voorspellingen wordt gebruikt om automatische keuzes te maken voor optimaal lokaal gebruik, onderlinge energieafstemming, verdeling van overschotten, piekreductie, monitoring van verbruik en opwekking en balans tussen energiegroepen.",
+      "links": [
+        "https://www.nedbalans.nu/"
+      ],
+      "MD1_status": "Lopend",
+      "MD2_projectdoel": [
+        "Inzicht & monitoring van energiegebruik",
+        "Optimalisatie & sturing van energiegebruik",
+        "Voorspelling & planning van energiegebruik",
+        "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit",
+        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
+      ],
+      "MD3_type_energiedata": [
+        "Energieverbruiksdata",
+        "Realtime sensordata (anders dan energieverbruik)",
+        "Flexibiliteitsdata: data over de inzet van flexibele energie"
+      ],
+      "MD4_databron": [
+        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
+        "Dienstverlener anders dan de aggregator",
+        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
+      ],
+      "MD5_datasink": [
+        "Huishoudens/prosumers",
+        "Bedrijven/industrie",
+        "Overheden/beleidsmakers",
+        "Netbeheerders",
+        "Dienstverlener anders dan de aggregator"
+      ],
+      "MD6_governance": [
+        "Individuele toestemming (consent)",
+        "Contractuele datadeling (B2B)",
+        "Data space / federatief (gedistribueerde datadeling met behoud van controle)"
+      ],
+      "MD7_toepassing": [
+        "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie",
+        "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit.",
+        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs.",
+        "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet"
+      ],
+      "MD8_granulariteit_niveau": [
+        "Aansluiting",
+        "Wijk",
+        "Bedrijventerrein"
+      ],
+      "MD9_granulariteit_frequentie": [
+        "Minuut",
+        "Kwartier"
+      ]
     }
   ]
 }
