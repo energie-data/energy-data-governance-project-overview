@@ -62,6 +62,19 @@ def _read_blocks(md_text: str) -> List[List[str]]:
     return blocks
 
 
+def _split_kv_line_segments(content: str, known_keys: Tuple[str, ...]) -> List[str]:
+    """Split ``key=value; key2=...`` only at semicolons before the next ``known_key=``.
+
+    Values may contain ``;`` (e.g. detail text); naive ``split(';')`` would corrupt them.
+    """
+    s = content.strip()
+    if not s:
+        return []
+    alt = "|".join(re.escape(k) + "=" for k in known_keys)
+    pattern = r";\s*(?=(" + alt + r"))"
+    return [p.strip() for p in re.split(pattern, s) if p.strip()]
+
+
 def import_data_sharing(md_path: Path, json_path: Path) -> None:
     text = md_path.read_text(encoding="utf-8")
     blocks = _read_blocks(text)
@@ -117,7 +130,7 @@ def import_data_sharing(md_path: Path, json_path: Path) -> None:
             if not ln.startswith("-"):
                 continue
             content = ln[1:].strip()
-            parts = [p.strip() for p in content.split(";") if p.strip()]
+            parts = _split_kv_line_segments(content, ("label", "url"))
             link_obj: Dict[str, str] = {}
             for part in parts:
                 if "=" not in part:
@@ -152,7 +165,7 @@ def import_data_sharing(md_path: Path, json_path: Path) -> None:
             if not ln.startswith("-"):
                 continue
             content = ln[1:].strip()
-            parts = [p.strip() for p in content.split(";") if p.strip()]
+            parts = _split_kv_line_segments(content, ("datum", "titel", "detail"))
             h: Dict[str, Any] = {}
             for part in parts:
                 if "=" not in part:
@@ -184,7 +197,7 @@ def _interop_parse_site_lines(lines: List[str]) -> List[Dict[str, str]]:
         if not ln.startswith("-"):
             continue
         content = ln[1:].strip()
-        parts = [p.strip() for p in content.split(";") if p.strip()]
+        parts = _split_kv_line_segments(content, ("label", "url"))
         obj: Dict[str, str] = {}
         for part in parts:
             if "=" not in part:
