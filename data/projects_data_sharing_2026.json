@@ -1996,5 +1996,111 @@
         }
       ]
     }
+  },
+  {
+    "id": "d4e",
+    "naam": "Data for Energy (D4E)",
+    "status": "Actief",
+    "scope": "Energiedomein",
+    "geografische_scope": "Europa",
+    "eigenaar": "Europese Commissie (DG ENER en DG CNECT), als subgroep van de Smart Energy Expert Group (SEEG)",
+    "jaar_start": 2024,
+    "jaar_einde": null,
+    "tags": [
+      "energiedata",
+      "EU",
+      "CEEDS",
+      "data spaces",
+      "interoperabiliteit",
+      "governance",
+      "standaardisatie",
+      "flexibiliteit",
+      "slim laden",
+      "gebouwen"
+    ],
+    "links": [
+      {
+        "label": "Smart Energy Expert Group",
+        "url": "https://ec.europa.eu/transparency/expert-groups-register/screen/expert-groups/consult?lang=en&groupID=3926&fromCallsApplication=true"
+      },
+      {
+        "label": "EU Action Plan – Digitalising the Energy System",
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13141-Digitalising-the-energy-sector-EU-action-plan_en"
+      },
+      {
+        "label": "Blueprint Common European Energy Data Space",
+        "url": "https://zenodo.org/records/12609569"
+      }
+    ],
+    "samenvatting": "Data for Energy (D4E) is een Europese expertwerkgroep die de Europese Commissie ondersteunt bij het ontwikkelen van een coherent Europees kader voor toegang tot, uitwisseling van en hergebruik van energiedata. D4E is geen uitvoerend IT-platform of datahub, maar een coördinatie- en expertplatform dat beleid, technische bouwblokken, standaardisatie en governance bij elkaar brengt. De werkgroep richt zich op interoperabele, veilige en bruikbare energiedata-uitwisseling en levert input voor de ontwikkeling en governance van de Common European Energy Data Space (CEEDS).",
+    "korte_referentie": {
+      "primair_doel": "De Europese Commissie ondersteunen bij het ontwikkelen van een geharmoniseerd Europees raamwerk voor energiedata-uitwisseling, met nadruk op interoperabiliteit, standaardisatie, governance, best practices en de verdere ontwikkeling van CEEDS.",
+      "belangrijkste_resultaten": [
+        "Formele inrichting als subgroep van de Smart Energy Expert Group",
+        "Scoping van drie prioritaire EU-use-cases voor energiedata-uitwisseling",
+        "Vorming van drafting teams voor de eerste twee use cases",
+        "Agendering van technische bouwblokken zoals datamodellen, protocollen, identity management en trust frameworks",
+        "Agendering van governancevraagstukken rond toegang, gebruik, rechten, juridische compliance en organisatorische inrichting",
+        "Kennisdeling tussen lidstaten over nationale energiedata-infrastructuren en best practices"
+      ],
+      "doelgebruikers": [
+        "Europese Commissie",
+        "EU-lidstaten",
+        "TSO's en DSO's",
+        "Energieleveranciers",
+        "Aggregators en flexibiliteitsdienstverleners",
+        "Aanbieders van opslag en demand-response diensten",
+        "Eindgebruikers en prosumers",
+        "Fabrikanten van apparaten en voertuigen",
+        "Dataspace-initiatieven",
+        "Beleidsmakers, standaardisatieorganisaties en onderzoekers"
+      ]
+    },
+    "ontwikkelingen_2023_2026": {
+      "referentiedatum": "Q1 2026",
+      "samenvatting": "D4E is aangekondigd in het EU Action Plan for digitalising the energy system uit 2022 en is operationeel gestart met de eerste bijeenkomst op 6 november 2024 in Brussel. Sindsdien bevindt de werkgroep zich vooral in een opstart- en structureringsfase: prioritaire use cases zijn gekozen, drafting teams zijn gevormd voor flexibiliteit en slim/bidirectioneel laden, en technische en governancebouwstenen zijn geagendeerd. In de beschikbare stukken zijn nog geen afgeronde inhoudelijke einddeliverables zichtbaar; de voortgang bestaat vooral uit scoping, werkverdeling, afbakening van use cases en positionering richting CEEDS.",
+      "hoogtepunten": [
+        {
+          "datum": "2022-10",
+          "titel": "Aankondiging in EU Action Plan",
+          "detail": "De oprichting van D4E en de leidende principes voor de werkgroep zijn aangekondigd in het EU Action Plan for digitalising the energy system."
+        },
+        {
+          "datum": "2024-11-06",
+          "titel": "Eerste D4E-bijeenkomst in Brussel",
+          "detail": "De eerste bijeenkomst had als doel prioritaire use cases vast te stellen, werkwijzen te bespreken en drafting teams te vormen."
+        },
+        {
+          "datum": "2024",
+          "titel": "Vaststelling van drie prioritaire use cases",
+          "detail": "D4E richt zich in eerste instantie op flexibiliteitsdiensten voor energiemarkten en netten, slim en bidirectioneel laden van elektrische voertuigen, en slimme/energie-efficiënte gebouwen."
+        },
+        {
+          "datum": "2024/2025",
+          "titel": "Drafting team flexibiliteitsdiensten",
+          "detail": "Voor de use case flexibiliteitsdiensten bouwt D4E voort op bestaand werk uit onder meer EDDIE, OneNet, Platone en BRIDGE. De focus ligt op flexibiliteitsregisters, near-real-time data exchange en Europese afspraken over dataformaten, metadata, ontologieën en API's."
+        },
+        {
+          "datum": "2025",
+          "titel": "Drafting team smart en bidirectional EV charging",
+          "detail": "Voor slim en bidirectioneel laden werkt D4E voort op werk van onder meer het Sustainable Transport Forum en de Coalition of the Willing. De energiekant wordt toegevoegd via databehoeften, harmonisatie van datatypes en interoperabele standaarden."
+        },
+        {
+          "datum": "2025",
+          "titel": "Scope slimme en energie-efficiënte gebouwen nog in uitwerking",
+          "detail": "De derde use case hangt samen met de EPBD en toekomstige afspraken over interoperabiliteit en toegang tot gebouwdata. De scope was bij de eerste bijeenkomst nog minder scherp en moet verder worden afgebakend."
+        },
+        {
+          "datum": "2025",
+          "titel": "Technische bouwblokken geagendeerd",
+          "detail": "D4E agendeert bouwblokken voor data-interoperabiliteit, identity management, access and usage policies, contracting, logging en traceability."
+        },
+        {
+          "datum": "2025/2026",
+          "titel": "Positionering richting CEEDS-governance",
+          "detail": "D4E positioneert zich als schakel tussen bestaande projecten, lidstaatinitiatieven, Europese regelgeving en toekomstige governance van de Common European Energy Data Space."
+        }
+      ]
+    }
   }
 ]
