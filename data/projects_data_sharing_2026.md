@@ -169,15 +169,16 @@ Regio’s ondersteunen bij het opstellen en uitvoeren van Regionale Energiestrat
 - Provincies
 - Waterschappen
 - Rijksoverheid
+- Netbeheerders
 
 ### ontwikkelingen_2023_2026.referentiedatum
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-De RES-regio’s zitten in de uitvoeringsfase. Monitoring laat zien dat het 2030-doel (35 TWh) binnen bereik ligt, terwijl de pijplijn voor nieuwe projecten stagneert; de focus verschuift naar systeemintegratie, congestie en de periode na 2030.
+De RES-regio’s zitten in de uitvoeringsfase. Monitoring laat zien dat het 2030-doel (35 TWh) binnen bereik ligt. Hoewel de pijplijn voor nieuwe projecten de afgelopen jaren stagneerde, komt er in verschillende provincies weer beweging op gang en neemt de pijplijn voor windenergie opnieuw toe, bijvoorbeeld in Overijssel. Tegelijk verschuift de focus steeds meer naar systeemintegratie, congestie en de periode na 2030.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
-- datum=2025-12; titel=Monitor RES 2025; detail=Voortgangsrapportage met aandacht voor stagnatie in nieuwe projecten en netcongestie.
+- datum=2025-12; titel=Monitor RES 2025; detail=Voortgangsrapportage met aandacht voor stagnatie door o.a. netcongestie en voor het werk aan regionale integrerende perspectieven en visies.
 - titel=Dataset Begrippenkader RES; detail=Dataset om projectstatussen eenduidig te monitoren van ambitie tot realisatie.
 - titel=Doelbereik 35 TWh; detail=Inschatting dat 35 TWh doelstelling voor 2030 binnen bereik ligt.
 
@@ -235,7 +236,7 @@ tags: EU-project, energiedataspace, GAIA-X, IDSA, marktplaats
 - label=CORDIS; url=https://cordis.europa.eu/project/id/101069287
 
 ### samenvatting
-EU‑project dat een energie data space implementeert met gefedereerde infrastructuur en een data‑/dienstenmarktplaats. Data‑soevereiniteit staat centraal. Realisatie op basis van IDSA‑ en GAIA‑X‑principes (met o.a. FIWARE‑componenten). Ontwikkelt pilots voor o.a. O&M van hernieuwbare bronnen, local energy communities, e‑mobiliteitsdiensten en lokale flexibiliteit.
+EU‑project dat een energie data space implementeert met gefedereerde infrastructuur en een data‑/dienstenmarktplaats. Data‑soevereiniteit staat centraal. Realisatie op basis van IDSA‑ en GAIA‑X‑principes (met o.a. FIWARE‑componenten). Ontwikkelt pilots voor o.a. Operations & Maintenance (O&M) van hernieuwbare bronnen, local energy communities, e‑mobiliteitsdiensten en lokale flexibiliteit.
 
 ### korte_referentie.primair_doel
 Implementeren van een Europese energy data space met data‑soevereiniteit en een federatieve markt voor data en diensten.
@@ -251,7 +252,8 @@ Implementeren van een Europese energy data space met data‑soevereiniteit en ee
 - Hernieuwbare‑operators
 - Local Energy Communities
 - Mobiliteitsdienstverleners
-- Netbeheerders/aggregators
+- Netbeheerders
+- Aggregators
 
 ### ontwikkelingen_2023_2026.referentiedatum
 
