@@ -345,7 +345,7 @@ Open‑source, gedecentraliseerde data space ontwikkelen waarmee burgers/gebruik
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-Volgens het update-overzicht is EDDIE eind 2025 afgerond. Het project ontwikkelde een gedecentraliseerde, open-source data space met focus op “in-house” consent en datadeling voor slimme-meterdata.
+EDDIE is eind 2025 afgerond. Het project ontwikkelde een gedecentraliseerde, open-source data space met focus op “in-house” consent en datadeling voor slimme-meterdata.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2023; titel=EDDIE Online (PaaS); detail=PaaS gelanceerd voor snelle data-integratie.
@@ -543,7 +543,7 @@ tags: cross-sectoraal, datadelen, use cases, handleidingen, historisch, CoE-DSC
 - label=CoE-DSC launch; url=https://coe-dsc.nl/centre-of-excellence-for-data-sharing-and-cloud-has-been-launched/
 
 ### samenvatting
-De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Het initiatief moet in dit overzicht niet langer als zelfstandig actief worden weergegeven: de inzet, resultaten en deelnemers zijn sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 gebundeld in dat vervolginitiatief. Behoud de Data Sharing Coalition daarom als historische voorganger van CoE-DSC.
+De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 zijn de inzet, resultaten en deelnemers gebundeld in dat vervolginitiatief. Daarmee is de Data Sharing Coalition vooral relevant als historische voorganger van CoE-DSC.
 
 ### korte_referentie.primair_doel
 Cross-sectoraal datadelen versnellen en interoperabiliteit tussen data spaces versterken, met regie bij de rechthebbende partij; vanaf 2023 voortgezet via CoE-DSC.
@@ -588,7 +588,7 @@ tags: energiedataspace, CEEDS, EU, interoperabiliteit, datasoevereiniteit, digit
 - label=Blueprint CEEDS v2; url=https://zenodo.org/records/12609569
 
 ### samenvatting
-INSIEME is het Europese flagship-initiatief dat de Common European Energy Data Space (CEEDS) operationaliseert. CEEDS is daarbij niet goed als losstaand project naast INSIEME te zien: CEEDS is de beoogde gemeenschappelijke energiedataruimte en INSIEME is het implementatieproject dat bestaande energie-data-space-projecten en nationale/regionale oplossingen moet verbinden. In dit overzicht is daarom gekozen voor één gecombineerde entry. INSIEME werkt aan veilige, gestandaardiseerde en interoperabele energiedata-uitwisseling, met use cases rond flexibiliteit, energiegemeenschappen, netbeheer, e-mobiliteit, hernieuwbare integratie en sector coupling.
+INSIEME is het Europese flagship-initiatief dat de Common European Energy Data Space (CEEDS) operationaliseert. CEEDS is de beoogde gemeenschappelijke energiedataruimte; INSIEME werkt aan de implementatie daarvan door bestaande energie-data-space-projecten en nationale en regionale oplossingen te verbinden. Het project richt zich op veilige, gestandaardiseerde en interoperabele energiedata-uitwisseling, met use cases rond flexibiliteit, energiegemeenschappen, netbeheer, e-mobiliteit, hernieuwbare integratie en sector coupling.
 
 ### korte_referentie.primair_doel
 De Common European Energy Data Space (CEEDS) van visie naar operationele federatieve infrastructuur brengen, zodat energiedata veilig, interoperabel en onder duidelijke governance kan worden gedeeld binnen Europa.
@@ -612,7 +612,7 @@ De Common European Energy Data Space (CEEDS) van visie naar operationele federat
 Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-CEEDS kreeg in 2024 een uitgewerkte blueprint vanuit het Europese energie-data-space-cluster. In 2025 startte INSIEME als Digital Europe-flagship om de resterende bouwblokken te piloten en de Common European Energy Data Space operationeel te maken. Conclusie: opnemen als één entry ‘INSIEME / CEEDS’, niet als twee afzonderlijke projecten.
+CEEDS kreeg in 2024 een uitgewerkte blueprint vanuit het Europese energie-data-space-cluster. In 2025 startte INSIEME als Digital Europe-flagship om de resterende bouwblokken te piloten en de Common European Energy Data Space operationeel te maken. De nadruk ligt op het verbinden van CEEDS-bouwblokken, pilots en bestaande nationale en regionale data-uitwisselingsoplossingen.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2024-07; titel=Blueprint CEEDS v2; detail=Publicatie van de Blueprint of the Common European Energy Data Space met architectuur, use cases en interoperabiliteitsaspecten.
@@ -812,7 +812,7 @@ Overheidsbreed op eenzelfde manier verantwoord data delen, met uniforme beschrij
 Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-In februari 2026 stelde het OBDO het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. In het JSON-overzicht verdient FDS een aparte entry naast IBDS, omdat FDS de concrete stelselvoorziening/afsprakenlaag is, terwijl IBDS het bredere beleids- en uitvoeringsprogramma is.
+In februari 2026 stelde het OBDO het Afsprakenstelsel Federatief Datastelsel vast. Daarmee zijn gezamenlijke spelregels voor data-aanbieders vastgelegd; basisafspraken voor data-afnemers volgen later. FDS vormt de concrete afsprakenlaag voor federatief datadelen binnen de overheid en sluit aan op de bredere IBDS-uitvoering.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2025; titel=NDS-prioriteit Data; detail=FDS is gepositioneerd als instrument om overheidsbreed verantwoord datadelen op dezelfde manier te organiseren.
