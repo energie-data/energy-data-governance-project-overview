@@ -542,7 +542,7 @@ tags: cross-sectoraal, datadelen, use cases, handleidingen, historisch, CoE-DSC
 - label=CoE-DSC launch; url=https://coe-dsc.nl/centre-of-excellence-for-data-sharing-and-cloud-has-been-launched/
 
 ### samenvatting
-De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Het initiatief moet in dit overzicht niet langer als zelfstandig actief worden weergegeven: de inzet, resultaten en deelnemers zijn sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 gebundeld in dat vervolginitiatief. 
+De Data Sharing Coalition was een Nederlands cross-sectoraal initiatief om datadelen onder regie van de rechthebbende partij te versnellen. Het initiatief moet in dit overzicht niet langer als zelfstandig actief worden weergegeven: de inzet, resultaten en deelnemers zijn sinds de lancering van het Centre of Excellence for Data Sharing & Cloud (CoE-DSC) in 2023 gebundeld in dat vervolginitiatief.
 
 ### korte_referentie.primair_doel
 Cross-sectoraal datadelen versnellen en interoperabiliteit tussen data spaces versterken, met regie bij de rechthebbende partij; vanaf 2023 voortgezet via CoE-DSC.
@@ -942,12 +942,15 @@ Vertrouwde, gestandaardiseerde datadeling mogelijk maken met duidelijke rollen, 
 - Softwareontwikkelaars
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+iSHARE is in 2023-2026 verder verschoven van een trust framework met oorsprong in logistiek naar een generieke trust- en autorisatielaag voor federatieve data spaces. De relevantie voor het energiedomein is vooral indirect maar concreet: iSHARE wordt toegepast of verkend in data spaces en stelsels die raken aan gebouwde omgeving, mobiliteit en energiedata, waaronder DVU, DMI en DSGO. Belangrijke ontwikkelingen zijn de sectorale toepassing rond utiliteitsgebouwen, de verdere professionalisering van het framework, ISO 27001-certificering, de introductie van een data space template en de samenwerking met IDSA.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023; titel=Sectorale toepassing rond energiegebruik utiliteitsgebouwen; detail=iSHARE formaliseerde met RVO een toepassing voor het identificeren, benchmarken en uitwisselen van energieverbruiksdata van deelnemende utiliteitsgebouwen. Daarmee werd de bruikbaarheid van iSHARE voor energie- en gebouwdata concreter.
+- datum=2024; titel=Samenwerking met IDSA; detail=IDSA en iSHARE ondertekenden een Memorandum of Understanding om technische dataspace-standaarden en trust-frameworkafspraken beter op elkaar te laten aansluiten.
+- datum=2024-2026; titel=Breder gebruik in data spaces; detail=iSHARE positioneert zich als basislaag voor trust, identiteit, onboarding, autorisatie en change management in data spaces. De Foundation noemt onder meer DVU, BDI, DMI, i4Trust, MFFBAS en DSGO als initiatieven die met het Trust Framework samenwerken of daarop zijn gebaseerd.
 
 ## id: idsa
 naam: International Data Spaces Association (IDSA)
@@ -983,12 +986,17 @@ Een gestandaardiseerd, veilig en flexibel ecosysteem voor organisatie‑overstij
 - Onderzoekers
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connectorconcept naar een breder stelsel van rulebook, architectuur, certificering en protocolstandaardisatie voor data spaces. De IDSA Rulebook-publicatie, de standaardisatie van het Dataspace Protocol en de voorbereiding van IDS-RAM 5 maken IDSA relevant als internationale referentie voor data-soevereiniteit en interoperabele data spaces, ook voor het energiedomein.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023; titel=IDSA Rulebook; detail=Het IDSA Rulebook biedt principes en eisen voor vertrouwd datadelen via data spaces, inclusief functionele, technische, operationele en juridische vereisten voor het opzetten en beheren van een data space.
+- datum=2024; titel=Dataspace Protocol richting internationale standaard; detail=IDSA werkte aan verdere standaardisatie van het Dataspace Protocol als protocol voor interoperabele datadeling, waarbij partijen data kunnen publiceren, overeenkomsten kunnen onderhandelen en data kunnen benaderen binnen een federatief dataspace-netwerk.
+- datum=2024-03; titel=MoU met iSHARE; detail=IDSA en iSHARE formaliseerden samenwerking om dataspace-architectuur, protocolafspraken en trust-frameworkcomponenten beter te combineren.
+- datum=2025; titel=Data Space Manifesto en doorontwikkeling documentatie; detail=IDSA publiceerde aanvullende kernpublicaties, waaronder het Data Space Manifesto, en bleef de documentatieset rond IDS-RAM, Rulebook, certificering en Dataspace Protocol positioneren als basis voor praktische implementatie.
+- datum=2025-2026; titel=IDS-RAM 5 in ontwikkeling; detail=IDS-RAM 4 blijft de stabiele officiële referentie voor bestaande implementaties, certificering en training, terwijl IDSA werkt aan IDS-RAM 5 om nieuwe inzichten rond governance, policies, protocollen, conformance, schaalbaarheid en interoperabiliteit te verwerken.
 
 ## id: fiware
 naam: FIWARE
@@ -1024,12 +1032,16 @@ Herbruikbare open‑source bouwblokken bieden voor interoperabele (IoT) data‑g
 - Innovatieprogramma’s
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+FIWARE blijft in 2023-2026 actief als open-source technologiestack voor contextdata, IoT, smart cities, digital twins en data spaces. De relevantie voor data governance ligt vooral bij standaard API's, NGSI-LD, Smart Data Models, open-source componenten en de FIWARE Data Space Connector. Voor het energiedomein is FIWARE vooral relevant in cross-sectorale toepassingen zoals smart cities, mobiliteit, gebouwdata, digital twins en koppelingen tussen IoT- en energiedata.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-2026; titel=Doorontwikkeling Smart Data Models; detail=De Smart Data Models-initiatieven van FIWARE, TM Forum, IUDX en OASC blijven publieke, royaltyvrije datamodellen beschikbaar stellen voor interoperabele smart solutions in meerdere sectoren.
+- datum=2024; titel=FIWARE for Data Spaces; detail=FIWARE positioneerde NGSI-LD, standaarddatamodellen, marketplacecomponenten en digital-twin-architecturen als bouwstenen voor data spaces waarin data onder voorwaarden en met behoud van controle kan worden gedeeld.
+- datum=2024-2025; titel=FIWARE Data Space Connector; detail=De FIWARE Data Space Connector biedt een praktische implementatieroute voor data spaces, inclusief componenten voor catalogus, contractering, policy enforcement, trust-infrastructuur en deployment per rol.
+- datum=2025; titel=Data spaces en AI; detail=FIWARE legde in Europese dataspace-discussies meer nadruk op de koppeling tussen data spaces, digital twins en AI-toepassingen. Daarmee wordt FIWARE relevanter als technische laag voor datagedreven besluitvorming en hergebruik van domeindata.
 
 ## id: gofair
 naam: GoFAIR Initiative
@@ -1065,10 +1077,10 @@ FAIR‑datapraktijken breed toepasbaar maken zodat data vindbaar, toegankelijk, 
 - Organisaties die data publiceren/delen
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+GO FAIR blijft in 2023-2026 relevant als methodische en semantische basis voor vindbare, toegankelijke, interoperabele en herbruikbare data. Het initiatief is geen data space en geen technisch trust framework, maar levert principes, implementatiemethoden, FAIR Implementation Profiles, training en communityvorming die van belang zijn voor datakwaliteit, metadata en hergebruik. Voor energiedata is GO FAIR vooral relevant als generieke benadering voor metadata, semantiek en herbruikbaarheid van datasets.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 
@@ -1114,7 +1126,7 @@ Blockchain‑kennis en -toepassingen versnellen en verbinden in Nederland, als k
 ### ontwikkelingen_2023_2026.hoogtepunten
 
 ## id: nl-ai-coalitie
-naam: NL AI Coalitie (Dutch AI Coalition / NL AIC)
+naam: AIC4NL (NL AI Coalitie)
 status: Actief
 scope: Generiek initiatief
 geografische_scope: Nederland
@@ -1146,12 +1158,17 @@ AI‑ecosysteem in Nederland versterken en AI‑innovatie versnellen met aandach
 - Maatschappelijke organisaties
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+De NL AI Coalitie is per 1 januari 2025 samen met AiNed verdergegaan als AI Coalitie 4 NL (AIC4NL). Daarmee is het oorspronkelijke NL AIC-initiatief inhoudelijk niet verdwenen, maar organisatorisch opgegaan in één publiek-private AI-organisatie met één missie en strategie. Voor data governance is AIC4NL vooral relevant door de nadruk op verantwoorde AI, AI-infrastructuur, datasets, ELSA-labs, waarden en regelgeving, en AI-toepassingen in sectoren zoals energie en duurzaamheid.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2025-01-01; titel=NL AIC en AiNed gaan verder als AIC4NL; detail=De Nederlandse AI Coalitie en AiNed bundelden hun krachten in AI Coalitie 4 NL. AIC4NL bouwt voort op NL AIC sinds 2019 en AiNed sinds 2021.
+- datum=2025; titel=Agenda 2025-2027; detail=AIC4NL legde de koers vast in de Agenda 2025-2027, met nadruk op bereik vergroten, maatschappelijke vraagstukken aanpakken en technologische transformaties met AI stimuleren.
+- datum=2025; titel=Versterking van instrumenten voor verantwoorde AI; detail=Het instrumentarium omvat onder meer ELSA Labs, Learning Communities, InnovatieLabs, Fellowship Grants, Breaking Barriers, MKB-instrumenten en aandacht voor waarden, normen, regelgeving, talent, vaardigheden en infrastructuur.
+- datum=2025-11; titel=AI-investeringsagenda; detail=AIC4NL presenteerde een position paper waarin gerichte investeringen worden bepleit in AI-infrastructuur, Nederlandse AI-industrie en AI als versneller van transities zoals energie, gezondheid, stikstof en voedsel.
+- datum=2026; titel=Van opbouw naar opschaling; detail=In 2026 ligt de focus op impact met AI: succesvolle initiatieven breder toepassen, samenhang tussen programma's versterken, werken aan een Nederlandse AI-fabriek, AI Fair Tech en verdere aansluiting op Europese AI-initiatieven.
 
 ## id: dsgo
 naam: DSGO (Digitaal Stelsel Gebouwde Omgeving)
@@ -1187,12 +1204,18 @@ Uniforme afspraken realiseren voor gecontroleerde datadeling in de gebouwde omge
 - Overheden
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+DSGO is in 2023-2026 doorontwikkeld van programma en eerste afsprakenstelsel naar een steeds volwassener federatief ecosysteem voor datadeling in de gebouwde omgeving. De belangrijkste ontwikkeling is tweeledig. Ten eerste is DSGO in juni 2024 met versie 1.0 officieel klaar voor gebruik verklaard en overgedragen aan de markt voor adoptie. Ten tweede is op 11 november 2025 Afsprakenstelsel DSGO versie 2.0 gepubliceerd, waarmee het stelsel inhoudelijk is doorontwikkeld en beter toepasbaar wordt voor implementatie door deelnemers, softwareleveranciers en datadienstaanbieders. Parallel daaraan is DSGO bestuurlijk steviger verankerd via het Bestuursakkoord Digitale Gebouwde Omgeving 2027. Dat akkoord vertaalt digitale ketensamenwerking naar concrete beleidsmaatregelen, digiDeals en implementatieprojecten voor 2025-2027. Voor het energiedomein is vooral beleidsmaatregel 21 relevant: data-uitwisseling in aangrenzende domeinen zoals logistiek, mobiliteit en energie moet waar mogelijk aansluiten op DSGO.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023; titel=digiAkkoord als basis voor versnelde ketensamenwerking; detail=Het Bestuursakkoord Digitale Gebouwde Omgeving 2027 bouwt voort op het in 2023 gesloten digiAkkoord 2030. Daarmee werd de basis gelegd voor sectorbrede digitale ketensamenwerking in ontwerp, bouw, techniek, beheer en gebouwde omgeving.
+- datum=2024-06-18; titel=Lancering DSGO Afsprakenstelsel versie 1.0; detail=Versie 1.0 van het afsprakenstelsel werd gelanceerd en DSGO werd officieel overgedragen aan de markt voor adoptie. Daarmee kwam een federatief afsprakenstelsel beschikbaar voor veilige, betrouwbare en gecontroleerde toegang tot digitale informatie vanuit de bron in de ontwerp-, bouw- en technieksector.
+- datum=2024-10-16; titel=Bestuursakkoord Digitale Gebouwde Omgeving 2027; detail=39 partijen ondertekenden het Bestuursakkoord Digitale Gebouwde Omgeving 2027. Het akkoord maakt DSGO onderdeel van een bestuurlijk gedragen implementatieagenda voor digitale samenwerking in de gebouwde omgeving. Het gebruik van eenduidige standaarden en veilig en betrouwbaar data delen via DSGO staan centraal.
+- datum=2025-2027; titel=Beleidsmaatregelen en digiDeals; detail=Het Bestuursakkoord is vertaald naar meer dan 20 beleidsmaatregelen en concrete digitaliseringsprojecten. De samenwerking wordt vastgelegd in digiDeals: implementatieprojecten met duidelijke stappen, rollen en financiering. Daarmee verschuift DSGO van een vrijwillig afsprakenstelsel naar een beleidsmatig gedragen uitvoeringsagenda.
+- datum=2025-11-11; titel=Publicatie DSGO Afsprakenstelsel versie 2.0; detail=DSGO Afsprakenstelsel versie 2.0 is gepubliceerd als volledig overzicht van de actuele afspraken. De publicatie markeert een nieuwe volwassenheidsfase van het stelsel, met een duidelijker basis voor rollen, generieke afspraken, specifieke afspraken, implementatie door datadienstaanbieders en toepassing door deelnemers in de gebouwde omgeving.
+- datum=2025-2026; titel=Stelselvoorzieningen voor implementatie; detail=DSGO werkt aan voorzieningen die implementatie en adoptie ondersteunen, waaronder de Developer Portal, de conformiteitstest-tool, het participantenregister en de stelselcatalogus. Deze voorzieningen maken het eenvoudiger voor deelnemers en softwareleveranciers om datadiensten conform het afsprakenstelsel te ontwikkelen, te testen, aan te bieden en te gebruiken.
 
 ## id: dvu
 naam: DVU (Datastelsel Verduurzaming Utiliteit)
@@ -1236,42 +1259,58 @@ CO₂‑reductie in utiliteitsgebouwen versnellen door betrouwbare uitwisseling 
 ### ontwikkelingen_2023_2026.hoogtepunten
 
 ## id: great
-naam: GREAT (Green Deal Data Space)
-status: Actief
+naam: GREAT (Green Deal Data Space Foundation and Community of Practice)
+status: Afgerond
 scope: Gerelateerde sector
 geografische_scope: Europa
-eigenaar: EU‑project/consortium (Green Deal Data Space)
-jaar_start: None
-jaar_einde: None
-tags: Green Deal, dataspace, EU-project, milieu, interoperabiliteit
+eigenaar: EU-project/consortium gefinancierd onder het Digital Europe Programme; voorbereidende actie voor de Green Deal Data Space
+jaar_start: 2022
+jaar_einde: 2024
+tags: Green Deal, dataspace, EU-project, milieudata, duurzaamheid, interoperabiliteit, governance, roadmap, voorbereidende actie, SAGE
 
 ### links
 - label=Website; url=https://www.greatproject.eu/
+- label=Public deliverables; url=https://www.greatproject.eu/great-project-resources/public-deliverables/
+- label=Closing event; url=https://www.greatproject.eu/closing-event/
+- label=SAGE - vervolg/implementatiefase; url=https://www.greendealdata.eu/
 
 ### samenvatting
-Europees project dat bijdraagt aan de ontwikkeling van de Green Deal Data Space door bouwblokken en use cases te ontwikkelen rond het delen van data voor duurzaamheid en de Green Deal.
+GREAT was de voorbereidende actie voor de Green Deal Data Space. Het project heeft niet zelf de uiteindelijke operationele data space gerealiseerd, maar de basis gelegd: een Community of Practice, technische blueprint, governance schemes, datasetscope, dataservice-inventarisatie en roadmap voor implementatie en deployment. GREAT moet daarom in het overzicht niet langer als actief uitvoeringsproject worden weergegeven, maar als afgerond voorbereidingsproject waarvan de resultaten direct doorwerken in SAGE.
 
 ### korte_referentie.primair_doel
-Bijdragen aan een interoperabele Green Deal Data Space door concrete bouwblokken en pilots/use cases te leveren.
+De foundation, community, governance, technische blauwdruk, datasetscope en roadmap ontwikkelen voor de implementatie van de Europese Green Deal Data Space.
 
 ### korte_referentie.belangrijkste_resultaten
-- Projectresultaten (architectuur/bouwblokken)
-- Use cases/pilots
-- Samenwerking met Green Deal Data Space ecosysteem
+- Green Deal Data Space Community of Practice
+- Final Blueprint of the GDDS Reference Architecture
+- Final Governance Requirements and Endorsed Governance Scheme
+- Final Prioritised Data Sets & Gaps
+- Final Roadmap voor implementatie en operationalisering
+- Reference use cases en stakeholderfora rond biodiversiteit, klimaatadaptatie en zero pollution
+- Overdracht van resultaten naar de implementatiefase via SAGE
 
 ### korte_referentie.doelgebruikers
+- Europese Commissie
+- Green Deal Data Space implementatieprojecten
 - Overheden
-- Bedrijven in duurzaamheid/energie/milieu
-- Data space initiatieven
+- Bedrijven in duurzaamheid, milieu en data-economie
 - Onderzoekers
+- Data space initiatieven
+- Data providers en data service providers
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+GREAT is in 2023-2024 afgerond als voorbereidende actie voor de Green Deal Data Space. In deze periode verschoof de nadruk van communityvorming en initiële visie naar validatie van de technische blueprint, governance-aanpak, prioritaire datasets en roadmap. De finale resultaten vormen de basis voor de implementatiefase die vanaf 2025 via SAGE wordt uitgevoerd. Voor het overzicht is de juiste positionering daarom: GREAT is afgerond, maar blijft relevant als bron van de governance- en architectuurbasis voor de Green Deal Data Space.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023; titel=Community of Practice en stakeholderfora; detail=GREAT bouwde een Europese Community of Practice op en organiseerde stakeholderfora rond de belangrijkste Green Deal-thema's. Deze community leverde input op requirements, use cases, governance en roadmap.
+- datum=2023-2024; titel=Technische blueprint, governance en datasetscope; detail=Het project werkte de kernbouwstenen uit voor een Minimum Viable Green Deal Data Space: technische architectuur, governance-aanpak, prioritaire datasets, datagaps en roadmap.
+- datum=2024-04-23; titel=Closing event GREAT; detail=Het closing event in Brussel markeerde de afronding van twintig maanden werk. De belangrijkste uitkomsten waren de Community of Practice, Technical Blueprint, Governance strategies, Data Sets en roadmap.
+- datum=2024-05; titel=Publicatie finale deliverables; detail=GREAT publiceerde finale deliverables rond de GDDS Reference Architecture, governance requirements, prioritised datasets & gaps en roadmap.
+- datum=2025; titel=Doorwerking in SAGE; detail=SAGE bouwt direct voort op de GREAT-community en -resultaten. GREAT fungeert daarmee als voorbereidingslaag; SAGE als uitvoerings- en operationaliseringslaag.
+- datum=2026; titel=Status voor het overzicht; detail=GREAT moet als afgerond initiatief worden opgenomen, met blijvende relevantie als bron voor de Green Deal Data Space-architectuur, governance en roadmap. De actuele implementatie hoort bij SAGE.
 
 ## id: green-data-hub
 naam: Green Data Hub (AT)
@@ -1304,51 +1343,135 @@ Duurzaamheidsdata beter vindbaar en uitwisselbaar maken en hergebruik stimuleren
 - Duurzaamheidsinitiatieven
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+Green Data Hub is in 2023-2026 doorontwikkeld als Oostenrijks en Europees platform voor Data Spaces for Sustainability. Het initiatief richt zich op datadeling voor energietransitie, mobiliteitstransitie, circulaire economie en digitale klimaattweelingen. De nadruk ligt op gestandaardiseerde, soevereine en veilige datadeling, praktische use cases, blauwdrukken, technische/juridische/economische best practices en internationale koppeling van groene data spaces.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023; titel=Data Spaces for Sustainability; detail=Green Data Hub positioneerde data spaces als organisatorische en technische ruimtes waarin data decentraal, soeverein en gericht op use cases beschikbaar worden gemaakt. De focusdomeinen zijn energiewende, mobiliteitswende, circulaire economie en digitale klimaattweeling.
+- datum=2023-2024; titel=Linking Green Data Spaces; detail=Binnen Linking Green Data Spaces zijn use cases en data spaces geëvalueerd met partners in energie, mobiliteit, circulariteit en digital climate twin. De resultaten worden vertaald naar herbruikbare modules, catalogi en blueprints.
+- datum=2024-04; titel=Publicatie technische, juridische en economische projectresultaten; detail=Green Data Hub publiceerde rapporten over techniek, recht en economie in data spaces, met status quo, best practices en handelingsperspectief voor organisaties die data spaces willen realiseren.
+- datum=2024-09; titel=Blueprint voor duurzame databenutting; detail=Green Data Hub publiceerde een blueprint die richting geeft aan het gebruik en beheer van groene data. De blueprint behandelt data-interoperabiliteit, datasoevereiniteit en technische en juridische randvoorwaarden.
+- datum=2024-10; titel=Update-event en continuering; detail=Tijdens het Green Data Hub Update Event werd teruggeblikt op twee jaar innovatie, use cases en partnerschappen. Hoewel de oorspronkelijke projectfinanciering eindigt, communiceerde Green Data Hub dat het initiatief blijft bestaan.
+- datum=2025-2026; titel=International Green Data Spaces en Roadmap 2030; detail=Via International Green Data Spaces worden voorwaarden onderzocht voor internationale en domeinoverstijgende aansluiting van duurzame data spaces. Doel is een Roadmap 2030 voor een grens- en domeinoverstijgend data-service-ecosysteem.
 
 ## id: green-deal-data-space
 naam: Green Deal Data Space
 status: Actief
 scope: Generiek initiatief
 geografische_scope: Europa
-eigenaar: EU‑initiatief (Green Deal Data Space ecosysteem)
+eigenaar: EU-initiatief en Green Deal Data Space ecosysteem; operationele doorontwikkeling via onder meer Green Deal Dataspace e.V. en het Digital Europe-project SAGE
 jaar_start: None
 jaar_einde: None
-tags: EU, Green Deal, dataspace, milieu, hergebruik
+tags: EU, Green Deal, dataspace, milieudata, duurzaamheid, biodiversiteit, klimaatadaptatie, circulaire economie, zero pollution, hergebruik, federatief datadelen
 
 ### links
-- label=Website; url=https://green-deal-dataspace.eu/
+- label=Website Green Deal Dataspace; url=https://green-deal-dataspace.eu/
+- label=European Commission - Green Data; url=https://environment.ec.europa.eu/law-and-governance/green-data_en
+- label=SAGE - The Green Deal Data Space; url=https://www.greendealdata.eu/
+- label=Green Deal Dataspace e.V.; url=https://green-deal-dataspace.eu/association/
+- label=Data Marketplace; url=https://green-deal-dataspace.eu/datamarketplace/
 
 ### samenvatting
-Europees initiatief om een data space te realiseren rondom de Europese Green Deal. Doel is het delen en hergebruik van milieu- en duurzaamheidsdata te faciliteren, met interoperabiliteit, governance en vertrouwen als uitgangspunt.
+De Green Deal Data Space (GDDS) is het overkoepelende Europese data-space-initiatief voor Green Deal-gerelateerde milieu- en duurzaamheidsdata. Het doel is om publieke en private partijen data veilig, interoperabel en onder duidelijke voorwaarden te laten delen, uitwisselen en hergebruiken voor Europese milieu- en klimaatdoelen. De GDDS moet bijdragen aan betere toegang tot data, hergebruik van milieudata, data-gedreven productontwikkeling, duurzaamheidsrapportage, circulaire economie, biodiversiteit, klimaatadaptatie en zero pollution. In de tijdlijn is GREAT te zien als de voorbereidende fase met roadmap, governance en technische blauwdruk; SAGE is de uitvoeringsfase die vanaf 2025 werkt aan een volledig operationele GDDS met tien concrete use cases.
 
 ### korte_referentie.primair_doel
-Een Europese data space opzetten die Green Deal gerelateerde data veilig en interoperabel beschikbaar maakt voor brede hergebruikscenario’s.
+Een Europese Green Deal Data Space realiseren waarin milieudata en duurzaamheidsdata uit publieke en private bronnen veilig, soeverein, interoperabel en herbruikbaar beschikbaar komen voor beleid, innovatie, rapportage en markttoepassingen.
 
 ### korte_referentie.belangrijkste_resultaten
-- Ecosysteem en governance‑aanpak
-- Interoperabiliteitskaders
-- Koppeling met projecten/pilots (o.a. GREAT, Green Data Hub)
+- Overkoepelend Europees ecosysteem voor Green Deal-gerelateerde datadeling
+- Voorbereidende resultaten uit GREAT: Community of Practice, technische blueprint, governance schemes, dataset- en dataservice-inventarisatie en implementatieroadmap
+- Operationele uitwerking via SAGE: federatieve, veilige en interoperabele data space met governance- en trust frameworks
+- Tien SAGE-use-cases rond biodiversiteit, klimaatadaptatie, circulaire economie en zero pollution
+- Data Marketplace als catalogus en handelsomgeving voor data-assets, metadata, gereguleerde toegang en peer-to-peer datalevering
+- Aansluiting op FAIR-principes, metadata, semantische interoperabiliteit, data-soevereiniteit en high-value datasets
 
 ### korte_referentie.doelgebruikers
-- Overheden
-- Bedrijven
-- NGO’s
-- Onderzoekers
-- Data space projecten
+- Europese Commissie
+- Overheden en publieke instellingen
+- Bedrijven met duurzaamheids- en rapportageverplichtingen
+- Onderzoekers en onderzoeksinfrastructuren
+- NGO's en maatschappelijke organisaties
+- Data providers en data consumers
+- Data space initiatieven
+- Burgers en citizen-science initiatieven
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+De Green Deal Data Space is in 2023-2026 verschoven van voorbereiding naar implementatie. GREAT leverde in 2023-2024 de community, roadmap, technische blauwdruk, governance-aanpak en datasetscope. In september 2023 werd Green Deal Dataspace e.V. opgericht als ecosysteemorganisatie. Vanaf 2025 vormt SAGE de belangrijkste uitvoeringslijn: het project ontwikkelt een operationele, federatieve en interoperabele GDDS, gevalideerd via tien use cases. Daarmee is SAGE geen losstaand randproject, maar de concrete operationalisering van de Green Deal Data Space.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-09-13; titel=Oprichting Green Deal Dataspace e.V.; detail=Zeven organisaties richtten Green Deal Dataspace e.V. op als ecosysteemorganisatie rond de Green Deal Data Space. Dit ondersteunt de continuïteit en communityvorming rond GDDS.
+- datum=2024-04-23; titel=Afronding GREAT als voorbereidende actie; detail=Het closing event van GREAT in Brussel markeerde de afronding van twintig maanden werk aan de voorbereidende fase van de Green Deal Data Space.
+- datum=2024; titel=GREAT levert kernbouwstenen op; detail=GREAT publiceerde onder meer de finale technische blueprint, governance requirements, endorsed governance scheme, prioritaire datasets en implementatieroadmap voor de GDDS.
+- datum=2025-03; titel=Start SAGE als uitvoeringsfase; detail=SAGE startte als Digital Europe-project om de Green Deal Data Space operationeel te maken. Het project bouwt voort op de GREAT-community en -resultaten.
+- datum=2025-2026; titel=Tien operationele use cases; detail=SAGE werkt met tien use cases, waaronder Forest Data Space, Pollinator Monitoring Data Space, Soil Circularity, CO2 Hub & Building Twins, Circular Textile Data Space, Climate Investment Data Space, Environmental Hazards Data Space en Air Quality and Health Data Space.
+- datum=2026; titel=Eerste SAGE-deliverables en architectuuruitwerking; detail=In 2026 zijn de eerste publieke SAGE-deliverables beschikbaar gekomen, waaronder stakeholder mapping, use-case-methodologie en een GDDS architecture diagram. Hiermee wordt de stap gezet van concept en roadmap naar technische en organisatorische implementatie.
+
+## id: sage
+naam: SAGE (The Data Space for a Sustainable Green Europe)
+status: Actief
+scope: Gerelateerde sector
+geografische_scope: Europa
+eigenaar: EU Digital Europe-consortium gecoördineerd door IDC Italy; meer dan 40 partners, waaronder Nederlandse partijen zoals SURF, Universiteit Utrecht, CBS, Geonovum, Geodan, iSHARE, Sogelink, TEXroad, Mangostone en Rockwood Digital Europe
+jaar_start: 2025
+jaar_einde: 2028
+tags: Green Deal, dataspace, Digital Europe, milieudata, duurzaamheid, biodiversiteit, klimaatadaptatie, circulaire economie, zero pollution, data sovereignty, semantische interoperabiliteit, FAIR data, high-value datasets, federatief datadelen, GREAT
+
+### links
+- label=Website; url=https://www.greendealdata.eu/
+- label=About SAGE; url=https://www.greendealdata.eu/about/sage-project/
+- label=Use cases; url=https://www.greendealdata.eu/use-cases/
+- label=Public deliverables; url=https://www.greendealdata.eu/public-deliverables/
+- label=Geonovum - SAGE; url=https://www.geonovum.nl/themas/europese-datastrategie/sage
+- label=European Commission - Green Data; url=https://environment.ec.europa.eu/law-and-governance/green-data_en
+- label=EGI projectpagina; url=https://www.egi.eu/project/sage/
+
+### samenvatting
+SAGE is het Digital Europe-project dat de Green Deal Data Space operationeel moet maken. Het project bouwt direct voort op de community en resultaten van GREAT en ontwikkelt een federatieve, veilige en interoperabele data space voor groene en milieudata in Europa. SAGE richt zich op vier strategische pijlers van de Europese Green Deal: biodiversiteit, klimaatadaptatie/mitigatie, circulaire economie en zero pollution. De aanpak combineert een proof-of-concept-platform, tien pilot-use-cases, governance- en trust frameworks, semantische interoperabiliteit, high-value datasets en data-soevereiniteit. Voor het energiedomein is SAGE vooral indirect relevant: via gebouw- en CO2-data, klimaatplannen, milieugevaren, circulariteit en data-infrastructuur voor duurzaamheidsbesluitvorming. Het is geen energiespecifieke dataspace, maar wel een belangrijke naburige Europese dataspace die interactie kan hebben met energiedata, gebouwdata, klimaatdata en duurzaamheidsrapportage.
+
+### korte_referentie.primair_doel
+Een volledig operationele, federatieve, veilige en interoperabele Green Deal Data Space realiseren die groene en milieudata in de EU beter toegankelijk, integreerbaar en herbruikbaar maakt voor Green Deal-doelen.
+
+### korte_referentie.belangrijkste_resultaten
+- Proof-of-concept-platform voor de Green Deal Data Space
+- Doorontwikkeling naar een verbeterd platform dat nieuwe use cases kan ondersteunen
+- Tien pilot-use-cases rond biodiversiteit, klimaatadaptatie, circulariteit en zero pollution
+- Governance- en trust frameworks voor de GDDS
+- Mechanismen voor data-soevereiniteit, toegangscontrole en verantwoord delen van gevoelige of restricted data
+- Semantische interoperabiliteit en interoperabele metadata
+- Ontsluiting van high-value datasets via de GDDS, met aansluiting op FAIR-principes
+- GDDS service integration, deployment and operations
+- Plan voor een duurzame operationele entiteit die de GDDS na afloop van het project kan blijven exploiteren
+
+### korte_referentie.doelgebruikers
+- Data providers van groene en milieudata
+- Overheden en beleidsmakers
+- Bedrijven met duurzaamheids-, ESG- en rapportageverplichtingen
+- Onderzoekers en onderzoeksinfrastructuren
+- Burgers en citizen-science initiatieven
+- Data space operators en service providers
+- Organisaties rond biodiversiteit, klimaatadaptatie, circulariteit en zero pollution
+- Gebouw-, vastgoed- en CO2-monitoringpartijen
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+SAGE is de ontbrekende schakel tussen GREAT en de operationele Green Deal Data Space. GREAT leverde in 2023-2024 de voorbereidende bouwstenen; SAGE is in maart 2025 gestart om de GDDS daadwerkelijk te realiseren. In 2025 is het consortium gestart met de integratie van technische infrastructuur, service management, operationele platformvoorzieningen, governance en use-casevalidatie. In 2026 zijn de eerste publieke deliverables beschikbaar gekomen, waaronder stakeholder mapping, use-case-methodologie en een GDDS architecture diagram. Daarmee is SAGE in 2026 nog in opbouw, maar wel het belangrijkste actuele implementatieproject voor de Green Deal Data Space.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-2024; titel=Voorbereidende basis via GREAT; detail=SAGE bouwt direct voort op de GREAT-community en -resultaten, waaronder de technische blueprint, governance-aanpak, datasetinventarisatie en roadmap voor de Green Deal Data Space.
+- datum=2025-03-13/14; titel=Kick-off SAGE in Warschau; detail=SAGE startte met een tweedaagse kick-off in Warschau. Het project brengt stakeholders uit het Europese data-ecosysteem samen om datasilo's te doorbreken en data-gedreven oplossingen voor de Green Deal te realiseren.
+- datum=2025; titel=Start operationalisering Green Deal Data Space; detail=SAGE startte met de bouw van een volledig operationele Green Deal Data Space. De nadruk ligt op federatie van gefragmenteerde datasets, interoperabele metadata, datavalidatie, AI-gedreven analytics, governance en langetermijncontinuïteit.
+- datum=2025-2026; titel=Fase 1: technische infrastructuur en service management; detail=In de eerste projectfase ligt de nadruk op ontwikkeling van de GDDS technische infrastructuur, het service management framework en het operationele platform.
+- datum=2025-2026; titel=Tien pilot-use-cases geselecteerd; detail=De use cases omvatten onder meer Forest Data Space, Pollinator Monitoring Data Space, Soil Circularity Data Space, Construction Environment CO2 Hub & Building Twins, Circular Textiles Data Space, Climate Investment Plan, Environmental Hazards Data Space, NECST en Air Quality and Health Data Space.
+- datum=2026; titel=Eerste publieke deliverables; detail=SAGE publiceerde de eerste publieke deliverables, waaronder stakeholder mapping, use-case-methodologie en een GDDS architecture diagram. Deze vormen de eerste concrete documentatie van de implementatiefase.
+- datum=2026; titel=Relevantie voor data governance; detail=SAGE is relevant voor data governance door de combinatie van federatief datadelen, data-soevereiniteit, governance- en trust frameworks, semantische interoperabiliteit, FAIR metadata en langetermijnbeheer. Voor energiedata is de relevantie vooral cross-sectoraal, bijvoorbeeld via gebouw- en CO2-data, klimaatplannen, circulaire ketens en bredere duurzaamheidsdata.
+- datum=2028; titel=Geplande afronding en continuïteit; detail=Het project loopt tot februari 2028. De SAGE-platformvoorzieningen en governance-entiteiten moeten daarna op duurzame basis blijven functioneren, onder meer via een aparte operationele entiteit.
 
 ## id: dssc
 naam: Data Spaces Support Centre (DSSC)
@@ -1384,12 +1507,18 @@ Europese (common) data spaces versnellen en interoperabel maken door kennis, too
 - Projectleiders EU‑data spaces
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+DSSC is in 2023-2026 uitgegroeid tot de belangrijkste Europese ondersteuningsstructuur voor common European data spaces. Het centrum levert geen sectorspecifieke data space, maar generieke kennis, methodiek, bouwblokken, glossarium, starter kits, blueprint en support voor interoperabiliteit, governance, juridische aspecten, technische architectuur en communityvorming. Voor het energiedomein is DSSC relevant als generieke referentie voor de inrichting van energiedata spaces en voor aansluiting op Europese data-space-architecturen.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-03; titel=Starter Kit voor Data Space Designers versie 1.0; detail=DSSC publiceerde de eerste Starter Kit om data-space-initiatieven te helpen bij start-up checklist, business, legal, operations, functionaliteit, technologie en governance.
+- datum=2023-09; titel=Blueprint 0.5; detail=De eerste blueprint-publicaties bundelden een conceptueel model, building blocks, glossarium en eerste richtlijnen voor het ontwikkelen en beheren van data spaces.
+- datum=2024; titel=DSSC als Europese supportvoorziening; detail=De Europese Commissie positioneerde DSSC als ondersteuning voor common European data spaces, met assets zoals glossarium, starter kit, blueprint en help centre.
+- datum=2024-09; titel=Starter Kit versie 1.5; detail=DSSC publiceerde een uitgebreidere Starter Kit met aandacht voor interoperability and data quality, business, legal, operational activities, functionality, technology en data/organisational governance.
+- datum=2025; titel=Blueprint 2.0; detail=DSSC publiceerde een verder ontwikkelde Blueprint for Data Spaces met bouwblokken voor business, governance, legal, technical building blocks, data sovereignty and trust, publication and discovery, standards en life-cycle support.
+- datum=2025-2026; titel=Referentie voor Europese data-space-convergentie; detail=DSSC blijft richtinggevend voor hergebruik van referentiearchitecturen, semantiek, interoperabiliteitsspecificaties, datamodellen, adviesdiensten en afstemming tussen sectorale data spaces, waaronder energie, mobiliteit, Green Deal, gezondheid en industrie.
 
 ## id: energie-data
 naam: energie.data
@@ -1487,3 +1616,62 @@ D4E is aangekondigd in het EU Action Plan for digitalising the energy system uit
 - datum=2025; titel=Scope slimme en energie-efficiënte gebouwen nog in uitwerking; detail=De derde use case hangt samen met de EPBD en toekomstige afspraken over interoperabiliteit en toegang tot gebouwdata. De scope was bij de eerste bijeenkomst nog minder scherp en moet verder worden afgebakend.
 - datum=2025; titel=Technische bouwblokken geagendeerd; detail=D4E agendeert bouwblokken voor data-interoperabiliteit, identity management, access and usage policies, contracting, logging en traceability.
 - datum=2025/2026; titel=Positionering richting CEEDS-governance; detail=D4E positioneert zich als schakel tussen bestaande projecten, lidstaatinitiatieven, Europese regelgeving en toekomstige governance van de Common European Energy Data Space.
+
+## id: amdex
+naam: AMdEX (Amsterdam Data Exchange)
+status: Actief
+scope: Generiek initiatief
+geografische_scope: Nederland / Europa
+eigenaar: AMdEX-ecosysteem; oorspronkelijk fieldlab van AMS-IX, SURF, Universiteit van Amsterdam, deXes en Amsterdam Economic Board, mede gefinancierd door het Europees Fonds voor Regionale Ontwikkeling en de provincie Noord-Holland. Het beheer is in november 2024 overgedragen aan AMS-IX voor verdere ontwikkeling en opschaling.
+jaar_start: 2018
+jaar_einde: None
+tags: datadelen, digitale notaris, data sovereignty, policy enforcement, contracten, data spaces, trust framework, machine-readable policies, federatief datadelen, fair data economy
+
+### links
+- label=Website; url=https://amdex.eu/
+- label=About AMdEX; url=https://amdex.eu/about/
+- label=AMdEX bij Amsterdam Economic Board; url=https://amsterdameconomicboard.com/initiatief/amdex/
+- label=AMdEX Reference Architecture v1; url=https://cci-research.nl/post/amdex-ram-v1/
+- label=AMdEX downloads; url=https://amdex.eu/downloads/
+- label=AMdEX smart-building use case; url=https://amsterdameconomicboard.com/nieuws/smart-building-deelt-sensordata-via-amdex/
+
+### samenvatting
+AMdEX is een generiek Nederlands initiatief voor vertrouwd, gecontroleerd en eerlijk datadelen. Het initiatief ontwikkelt een neutrale en onafhankelijke infrastructuur, vaak omschreven als een digitale notaris, waarmee organisaties data kunnen delen onder zelfgekozen voorwaarden. AMdEX vertaalt juridische, organisatorische en consortiale afspraken naar digitale overeenkomsten en machine-readable policies die kunnen worden afgedwongen, gemonitord en gecontroleerd. Het initiatief slaat daarmee een brug tussen de zachte infrastructuur van contracten, beleid, rollen en governance en de harde technische infrastructuur van datadeelplatformen, identity, autorisatie, policy enforcement en auditability. Voor het energiedomein is AMdEX vooral relevant als generieke bouwsteen en referentie voor datadeling rond sensor-, gebouw-, smart-city- en mogelijk energiedata, niet als sectorspecifiek energiedatastelsel.
+
+### korte_referentie.primair_doel
+Een neutrale, onafhankelijke en niet-commerciële infrastructuur voor vertrouwde datadeling ontwikkelen, waarin data-eigenaren en datagebruikers controle houden over voorwaarden, toegang en gebruik van data.
+
+### korte_referentie.belangrijkste_resultaten
+- Prototype AMdEX met basisfunctionaliteit voor eerlijke en betrouwbare dataconsortia
+- Digitale-notarisconcept voor datadeling: juridische afspraken vertalen naar digitale contracten en machine-readable policies
+- AMdEX Reference Architecture v1 met governance-oplossingen, technische componenten, rollen, protocollen en policy enforcement
+- Policy- en data-exchange-templatebibliotheek, inclusief archetypen voor data-uitwisseling en eFLINT-templates
+- Praktijkuse-cases rond onder meer Marineterrein, smart buildings, sensordata en data commons
+- Governance- en businessmodellen voor opschaling naar een structurele, collectieve voorziening
+- Overdracht van beheer aan AMS-IX in november 2024 voor verdere ontwikkeling en opschaling
+
+### korte_referentie.doelgebruikers
+- Data-eigenaren
+- Datagebruikers
+- Data space initiatieven
+- Bedrijven en overheden
+- Kennisinstellingen
+- Smart-city en smart-building partijen
+- AI- en datadienstverleners
+- Technologie- en platformleveranciers
+- Consortia die gevoelige of gereguleerde data willen delen
+
+### ontwikkelingen_2023_2026.referentiedatum
+Q2 2026
+
+### ontwikkelingen_2023_2026.samenvatting
+AMdEX is in 2023–2026 doorontwikkeld van fieldlab en prototype naar een concretere referentiearchitectuur en opschalingslijn. De nadruk ligt op het afdwingbaar maken van datadeelvoorwaarden via digitale contracten, policy reasoning, monitoring, auditability en technische bouwblokken voor data spaces. In 2023 zijn meerdere community- en praktijkactiviteiten uitgevoerd, waaronder een smart-building/sensordata use case. In 2024 zijn de AMdEX Reference Architecture v1 en templatebibliotheken voor data-exchange policies beschikbaar gekomen. De belangrijkste organisatorische ontwikkeling is de overdracht van het beheer aan AMS-IX in november 2024, gericht op verdere ontwikkeling en opschaling. Voor de update van het rapport is AMdEX relevant als generiek initiatief in dezelfde familie als iSHARE, DSGO, FDS, CoE-DSC en andere trust- en datadeelraamwerken.
+
+### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-05; titel=Community meeting over aansluiting en policy reasoning; detail=AMdEX organiseerde een community meeting met bijdragen over aansluiting op AMdEX, policy and normative reasoning in data exchange systems en privacyverhogende technologieën zoals secure multi-party computation. Dit onderstreept de focus op juridische, technische en organisatorische borging van datadeling.
+- datum=2023-09; titel=Smart-building use case met sensordata; detail=In de H20 Esports Campus-use-case werden 114 sensoren gebruikt om data over gebruik en bezetting van een gebouw betrouwbaar te delen met vertrouwde partijen. De use case laat zien hoe AMdEX voorwaarden voor toegang en gebruik kan handhaven en is relevant voor toekomstige toepassingen rond smart buildings, gebouwbeheer en energiebeheer.
+- datum=2023-11; titel=AMdEX Acceleration Event; detail=Het Acceleration Event markeerde de overgang van losse fieldlabactiviteiten naar bredere communityvorming, demonstratie van resultaten en voorbereiding op opschaling.
+- datum=2024-02; titel=AMdEX Reference Architecture v1 gepubliceerd; detail=De eerste referentiearchitectuur beschrijft de AMdEX-aanpak voor datadeling, inclusief governance-oplossingen, technische oplossingen, rollen, componenten, protocollen, policy-administratie en policy enforcement.
+- datum=2024-02; titel=Data-exchange archetypes en policy templates; detail=AMdEX publiceerde een templatebibliotheek met data-exchange-archetypen, algemene templates, specifieke use cases en eFLINT-templates voor voorwaarden. Dit ondersteunt hergebruik van afspraken en versnelt de inrichting van dataconsortia.
+- datum=2024-11; titel=Beheer overgedragen aan AMS-IX; detail=AMS-IX heeft als founding partner het beheer van AMdEX overgenomen voor verdere ontwikkeling en opschaling. Daarmee verschuift AMdEX van fieldlabfase naar een structurelere opschalings- en beheerfase.
+- datum=2025-2026; titel=Doorwerking in data-space-ecosysteem; detail=De AMdEX-aanpak werkt door in het Nederlandse data-space-ecosysteem, onder meer via partners als deXes en verbindingen met dataspaces rond mobiliteit, stedelijke data en publieke/private datadeling. Voor energiedata is vooral de generieke aanpak rond digitale contracten, policy enforcement, auditability en datadeling zonder centrale datakopie relevant.
