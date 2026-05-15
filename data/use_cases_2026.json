@@ -3438,6 +3438,173 @@
         "https://www.entrance.eu/nieuws/landelijke-samenwerking-van-start-voor-ontwikkeling-governancemodel-regionale-energiehubs/",
         "https://www.rvo.nl/onderwerpen/mooi/systeemintegratie/welke-projecten-subsidie"
       ]
+    },
+    {
+      "project_id": "P077",
+      "projectnaam": "AIMZ",
+      "oorsprong": "Overig",
+      "organisaties": "AIMZ, gebouweigenaren, vastgoedbeheerders, installateurs, adviseurs en gebruikers van utiliteitsgebouwen",
+      "beschrijving": "AIMZ levert AI-gestuurde software voor slim energie- en klimaatbeheer in gebouwen. Het platform analyseert continu energiegebruik en klimaatinstallaties, leert van gebouwgedrag en stuurt instellingen automatisch bij om energieverspilling, CO2-uitstoot en piekbelasting te verminderen zonder comfortverlies. AIMZ richt zich onder meer op kantoren, scholen, zorginstellingen, gemeentelijk vastgoed en andere utiliteitsgebouwen.",
+      "gebruik_energiedata": "Gebouw-, klimaat- en energieverbruiksdata wordt continu verzameld en geanalyseerd om klimaatinstallaties slimmer aan te sturen, energieverspilling te detecteren, comfortinstellingen te optimaliseren en besparingspotentieel inzichtelijk te maken. De software gebruikt onder meer data over energiegebruik, temperatuur, gebouwgebruik, weersverwachtingen en klimaatinstallaties om automatisch te leren en bij te sturen.",
+      "links": [
+        "https://www.aimz.nl/"
+      ],
+      "MD1_status": "Lopend",
+      "MD2_projectdoel": [
+        "Inzicht & monitoring van energiegebruik",
+        "Optimalisatie & sturing van energiegebruik",
+        "Voorspelling & planning van energiegebruik",
+        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
+      ],
+      "MD3_type_energiedata": [
+        "Energieverbruiksdata",
+        "Realtime sensordata (anders dan energieverbruik)",
+        "Gebouwdata: data over gebouwen die energie verbruiken"
+      ],
+      "MD4_databron": [
+        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
+        "Dienstverlener anders dan de aggregator"
+      ],
+      "MD5_datasink": [
+        "Bedrijven/industrie",
+        "Dienstverlener anders dan de aggregator"
+      ],
+      "MD6_governance": [
+        "Contractuele datadeling (B2B)"
+      ],
+      "MD7_toepassing": [
+        "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet",
+        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs.",
+        "Ondersteunen van andere maatschappelijke opgaven - Integratie met o.a. woningbouw, mobiliteit"
+      ],
+      "MD8_granulariteit_niveau": [
+        "Aansluiting",
+        "Groep: een groep van apparaten"
+      ],
+      "MD9_granulariteit_frequentie": [
+        "Kwartier",
+        "Uur",
+        "Dag"
+      ]
+    },
+    {
+      "project_id": "P078",
+      "projectnaam": "Slim Strandnet Scheveningen",
+      "oorsprong": "Overig",
+      "organisaties": "Gemeente Den Haag, Stedin, lokale ondernemers en strandpaviljoens in Scheveningen, Ampowr, Kersten Techniek, OpenRemote, Alfen, Spectral, NRG, Tallgrass en partners van Living Lab Scheveningen",
+      "beschrijving": "Slim Strandnet Scheveningen is een lokaal slim energienet op het Noordelijk Havenhoofd en de boulevard van Scheveningen. Het project verbindt gemeentelijke voorzieningen, strandpaviljoens, zonnepanelen, batterijopslag, laadpalen, warmtepompen en andere assets in een lokaal privaat laagspanningsnet van circa 1 megawatt. Het doel is om lokaal opgewekte duurzame elektriciteit zoveel mogelijk lokaal te gebruiken, vraag en aanbod slim te balanceren, pieken te verminderen en netcongestie te omzeilen of te beperken.",
+      "gebruik_energiedata": "Realtime meet- en energiestroomdata van zonnepanelen, batterijopslag, laadpunten, warmtepompen, strandpaviljoens, gemeentelijke voorzieningen en het lokale net wordt gebruikt voor monitoring, visualisatie, energiemanagement en automatische sturing. Het EMS monitort assets realtime en stuurt vraag, aanbod, opslag en verbruik zodat de beschikbare netcapaciteit beter wordt benut en piekbelasting wordt verminderd.",
+      "links": [
+        "https://smartcity.denhaag.nl/use-cases/slim-energienet-op-het-noordelijk-havenhoofd/",
+        "https://smartcity.denhaag.nl/living-lab-scheveningen/",
+        "https://www.stedin.net/over-stedin/pers-en-media/persberichten/stedin-en-den-haag-experimenteren-op-scheveningen-met-elektriciteitsnet-van-de-toekomst",
+        "https://www.platform31.nl/artikelen/ondernemers-en-gemeente-den-haag-omzeilen-netcongestie-met-slim-strandnet/",
+        "https://kerstentechniek.nl/nieuws/artikelen/slim-strandnet-scheveningen-lokaal-energiebeheer-wordt-realiteit/",
+        "https://ampowr.com/nl/elektriciteitsnet-scheveningen/",
+        "https://spectral.energy/project/living-labs-scheveningen-micro-grid-phase-1/",
+        "https://vng.nl/praktijkvoorbeelden/slim-strandnet-het-elektriciteitsnet-van-de-toekomst"
+      ],
+      "MD1_status": "Lopend",
+      "MD2_projectdoel": [
+        "Inzicht & monitoring van energiegebruik",
+        "Optimalisatie & sturing van energiegebruik",
+        "Voorspelling & planning van energiegebruik",
+        "Operationeel netbeheer: gebruik van energiedata voor de operationele taken van de netbeheerder",
+        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
+      ],
+      "MD3_type_energiedata": [
+        "Energieverbruiksdata",
+        "Realtime sensordata (anders dan energieverbruik)",
+        "Netdata: data over het (fysieke) energienetwerk en de assets daarin",
+        "Flexibiliteitsdata: data over de inzet van flexibele energie"
+      ],
+      "MD4_databron": [
+        "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
+        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
+        "Dienstverlener anders dan de aggregator",
+        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
+      ],
+      "MD5_datasink": [
+        "Overheden/beleidsmakers",
+        "Bedrijven/industrie",
+        "Netbeheerders",
+        "Dienstverlener anders dan de aggregator",
+        "Onderzoekers"
+      ],
+      "MD6_governance": [
+        "Contractuele datadeling (B2B)"
+      ],
+      "MD7_toepassing": [
+        "Ondersteunen van systeemplanning en realisatie - Fysieke planning en beheer van netten en infrastructuur door netbeheerders",
+        "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen.",
+        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs.",
+        "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet"
+      ],
+      "MD8_granulariteit_niveau": [
+        "Apparaat: 1 apparaat dat de energieverbruikt",
+        "Groep: een groep van apparaten",
+        "Aansluiting",
+        "Wijk"
+      ],
+      "MD9_granulariteit_frequentie": [
+        "Seconde",
+        "Minuut",
+        "Kwartier"
+      ]
+    },
+    {
+      "project_id": "P079",
+      "projectnaam": "Sterk op Stroom",
+      "oorsprong": "Overig",
+      "organisaties": "Energiecoöperatie Sterk op Stroom, bewoners en prosumers in West-Den Haag / Vruchtenbuurt, Energie VanOns, Stedin en lokale partners zoals Groene Mient",
+      "beschrijving": "Sterk op Stroom is een lokale energiecoöperatie in West-Den Haag die werkt aan duurzame en betaalbare energie voor onder meer de Vruchtenbuurt. De coöperatie wil lokaal opgewekte duurzame elektriciteit lokaal gebruiken en uiteindelijk delen met buren. Via een smart-gridpilot met Stedin en een ontheffing van de Elektriciteitswet verkent Sterk op Stroom hoe lokale opwek, opslag en slim gebruik kunnen worden georganiseerd binnen een energiegemeenschap.",
+      "gebruik_energiedata": "Energiedata over lokale opwek, individueel verbruik, weersverwachtingen, actuele energietarieven en gebruikspatronen wordt gebruikt om leden inzicht te geven en te adviseren over slim energiegebruik. De beoogde smart-gridtoepassing gebruikt data om lokaal opgewekte elektriciteit beter af te stemmen op verbruik, overschotten lokaal te benutten, pieken te verminderen en energiegebruik te verschuiven naar momenten met veel duurzame opwek.",
+      "links": [
+        "https://sterkopstroom.nl/",
+         "https://www.groenemient.nl/nieuws/energiecooperatie-sterk-op-stroom-van-start/"
+      ],
+      "MD1_status": "Lopend",
+      "MD2_projectdoel": [
+        "Inzicht & monitoring van energiegebruik",
+        "Optimalisatie & sturing van energiegebruik",
+        "Voorspelling & planning van energiegebruik",
+        "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit",
+        "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"
+      ],
+      "MD3_type_energiedata": [
+        "Energieverbruiksdata",
+        "Flexibiliteitsdata: data over de inzet van flexibele energie",
+        "Marktdata: data over de energiemarkt"
+      ],
+      "MD4_databron": [
+        "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
+        "Energieleverancier",
+        "Dienstverlener anders dan de aggregator",
+        "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"
+      ],
+      "MD5_datasink": [
+        "Huishoudens/prosumers",
+        "Netbeheerders",
+        "Dienstverlener anders dan de aggregator"
+      ],
+      "MD6_governance": [
+        "Individuele toestemming (consent)",
+        "Contractuele datadeling (B2B)"
+      ],
+      "MD7_toepassing": [
+        "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie",
+        "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit.",
+        "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."
+      ],
+      "MD8_granulariteit_niveau": [
+        "Aansluiting",
+        "Wijk"
+      ],
+      "MD9_granulariteit_frequentie": [
+        "Kwartier",
+        "Uur",
+        "Dag"
+      ]
     }
   ]
 }
