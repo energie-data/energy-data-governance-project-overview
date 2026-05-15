@@ -1886,74 +1886,98 @@
   },
   {
     "id": "great",
-    "naam": "GREAT (Green Deal Data Space)",
-    "status": "Actief",
+    "naam": "GREAT (Green Deal Data Space Foundation and Community of Practice)",
+    "status": "Afgerond",
     "scope": "Gerelateerde sector",
     "geografische_scope": "Europa",
-    "eigenaar": "EU‑project/consortium (Green Deal Data Space)",
-    "jaar_start": null,
-    "jaar_einde": null,
+    "eigenaar": "EU-project/consortium gefinancierd onder het Digital Europe Programme; voorbereidende actie voor de Green Deal Data Space",
+    "jaar_start": 2022,
+    "jaar_einde": 2024,
     "tags": [
       "Green Deal",
       "dataspace",
       "EU-project",
-      "milieu",
-      "interoperabiliteit"
+      "milieudata",
+      "duurzaamheid",
+      "interoperabiliteit",
+      "governance",
+      "roadmap",
+      "voorbereidende actie",
+      "SAGE"
     ],
     "links": [
       {
         "label": "Website",
         "url": "https://www.greatproject.eu/"
+      },
+      {
+        "label": "Public deliverables",
+        "url": "https://www.greatproject.eu/great-project-resources/public-deliverables/"
+      },
+      {
+        "label": "Closing event",
+        "url": "https://www.greatproject.eu/closing-event/"
+      },
+      {
+        "label": "SAGE - vervolg/implementatiefase",
+        "url": "https://www.greendealdata.eu/"
       }
     ],
-    "samenvatting": "Europees project dat bijdraagt aan de ontwikkeling van de Green Deal Data Space door bouwblokken en use cases te ontwikkelen rond het delen van data voor duurzaamheid en de Green Deal.",
+    "samenvatting": "GREAT was de voorbereidende actie voor de Green Deal Data Space. Het project heeft niet zelf de uiteindelijke operationele data space gerealiseerd, maar de basis gelegd: een Community of Practice, technische blueprint, governance schemes, datasetscope, dataservice-inventarisatie en roadmap voor implementatie en deployment. GREAT moet daarom in het overzicht niet langer als actief uitvoeringsproject worden weergegeven, maar als afgerond voorbereidingsproject waarvan de resultaten direct doorwerken in SAGE.",
     "korte_referentie": {
-      "primair_doel": "Bijdragen aan een interoperabele Green Deal Data Space door concrete bouwblokken en pilots/use cases te leveren.",
+      "primair_doel": "De foundation, community, governance, technische blauwdruk, datasetscope en roadmap ontwikkelen voor de implementatie van de Europese Green Deal Data Space.",
       "belangrijkste_resultaten": [
-        "Projectresultaten (architectuur/bouwblokken)",
-        "Use cases/pilots",
-        "Samenwerking met Green Deal Data Space ecosysteem"
+        "Green Deal Data Space Community of Practice",
+        "Final Blueprint of the GDDS Reference Architecture",
+        "Final Governance Requirements and Endorsed Governance Scheme",
+        "Final Prioritised Data Sets & Gaps",
+        "Final Roadmap voor implementatie en operationalisering",
+        "Reference use cases en stakeholderfora rond biodiversiteit, klimaatadaptatie en zero pollution",
+        "Overdracht van resultaten naar de implementatiefase via SAGE"
       ],
       "doelgebruikers": [
+        "Europese Commissie",
+        "Green Deal Data Space implementatieprojecten",
         "Overheden",
-        "Bedrijven in duurzaamheid/energie/milieu",
+        "Bedrijven in duurzaamheid, milieu en data-economie",
+        "Onderzoekers",
         "Data space initiatieven",
-        "Onderzoekers"
+        "Data providers en data service providers"
       ]
     },
     "ontwikkelingen_2023_2026": {
       "referentiedatum": "Q2 2026",
-      "samenvatting": "GREAT moet in het overzicht worden gezien als voorbereidend EU-project voor de Green Deal Data Space, niet als de uiteindelijke operationele data space zelf. In 2023-2024 leverde GREAT de belangrijkste voorbereidende bouwstenen: community of practice, prioritaire datasets, technische blueprint, governance- en businessmodellen en een roadmap. Vanaf 2025 werken SAGE en andere implementatie-initiatieven voort op de resultaten van GREAT.",
+      "samenvatting": "GREAT is in 2023-2024 afgerond als voorbereidende actie voor de Green Deal Data Space. In deze periode verschoof de nadruk van communityvorming en initiële visie naar validatie van de technische blueprint, governance-aanpak, prioritaire datasets en roadmap. De finale resultaten vormen de basis voor de implementatiefase die vanaf 2025 via SAGE wordt uitgevoerd. Voor het overzicht is de juiste positionering daarom: GREAT is afgerond, maar blijft relevant als bron van de governance- en architectuurbasis voor de Green Deal Data Space.",
       "hoogtepunten": [
         {
           "datum": "2023",
-          "titel": "Roadmap versie 1.0",
-          "detail": "GREAT werkte aan de eerste roadmap voor implementatie en operationalisering van de Green Deal Data Space, in lijn met de Europese datastrategie en de Green Deal."
+          "titel": "Community of Practice en stakeholderfora",
+          "detail": "GREAT bouwde een Europese Community of Practice op en organiseerde stakeholderfora rond de belangrijkste Green Deal-thema's. Deze community leverde input op requirements, use cases, governance en roadmap."
         },
         {
           "datum": "2023-2024",
-          "titel": "Community of Practice en referentie-use-cases",
-          "detail": "Het project bouwde een internationale en cross-sectorale Green Deal Data Space Community of Practice op en gebruikte reference use cases om requirements voor de toekomstige data space te concretiseren."
+          "titel": "Technische blueprint, governance en datasetscope",
+          "detail": "Het project werkte de kernbouwstenen uit voor een Minimum Viable Green Deal Data Space: technische architectuur, governance-aanpak, prioritaire datasets, datagaps en roadmap."
         },
         {
-          "datum": "2024",
-          "titel": "Finale key deliverables",
-          "detail": "GREAT publiceerde de finale deliverables rond Technical Blueprint, Governance Schemes, Datasets and Data Services en Roadmap. Deze vormen de basis voor verdere implementatie."
+          "datum": "2024-04-23",
+          "titel": "Closing event GREAT",
+          "detail": "Het closing event in Brussel markeerde de afronding van twintig maanden werk. De belangrijkste uitkomsten waren de Community of Practice, Technical Blueprint, Governance strategies, Data Sets en roadmap."
         },
         {
-          "datum": "2024",
-          "titel": "Roadmap versie 2.0",
-          "detail": "De tweede roadmapversie consolideerde feedback van stakeholders, de Europese Commissie, DSSC en reference use cases en beschreef acties richting implementatie en operationele deployment van de Green Deal Data Space."
+          "datum": "2024-05",
+          "titel": "Publicatie finale deliverables",
+          "detail": "GREAT publiceerde finale deliverables rond de GDDS Reference Architecture, governance requirements, prioritised datasets & gaps en roadmap."
         },
         {
           "datum": "2025",
           "titel": "Doorwerking in SAGE",
-          "detail": "SAGE bouwt direct voort op de community en resultaten van GREAT en ontwikkelt een proof-of-concept-platform en verbeterde platformvoorzieningen voor Green Deal-use-cases."
+          "detail": "SAGE bouwt direct voort op de GREAT-community en -resultaten. GREAT fungeert daarmee als voorbereidingslaag; SAGE als uitvoerings- en operationaliseringslaag."
         },
         {
           "datum": "2026",
-          "titel": "Statusinterpretatie voor het overzicht",
-          "detail": "GREAT is vooral relevant als afgerond of doorwerkend voorbereidingsproject. De structurele relevantie zit in de overdracht van resultaten naar de bredere Green Deal Data Space en SAGE."
+          "titel": "Status voor het overzicht",
+          "detail": "GREAT moet als afgerond initiatief worden opgenomen, met blijvende relevantie als bron voor de Green Deal Data Space-architectuur, governance en roadmap. De actuele implementatie hoort bij SAGE."
         }
       ]
     }
@@ -2038,66 +2062,227 @@
     "status": "Actief",
     "scope": "Generiek initiatief",
     "geografische_scope": "Europa",
-    "eigenaar": "EU‑initiatief (Green Deal Data Space ecosysteem)",
+    "eigenaar": "EU-initiatief en Green Deal Data Space ecosysteem; operationele doorontwikkeling via onder meer Green Deal Dataspace e.V. en het Digital Europe-project SAGE",
     "jaar_start": null,
     "jaar_einde": null,
     "tags": [
       "EU",
       "Green Deal",
       "dataspace",
-      "milieu",
-      "hergebruik"
+      "milieudata",
+      "duurzaamheid",
+      "biodiversiteit",
+      "klimaatadaptatie",
+      "circulaire economie",
+      "zero pollution",
+      "hergebruik",
+      "federatief datadelen"
     ],
     "links": [
       {
-        "label": "Website",
+        "label": "Website Green Deal Dataspace",
         "url": "https://green-deal-dataspace.eu/"
+      },
+      {
+        "label": "European Commission - Green Data",
+        "url": "https://environment.ec.europa.eu/law-and-governance/green-data_en"
+      },
+      {
+        "label": "SAGE - The Green Deal Data Space",
+        "url": "https://www.greendealdata.eu/"
+      },
+      {
+        "label": "Green Deal Dataspace e.V.",
+        "url": "https://green-deal-dataspace.eu/association/"
+      },
+      {
+        "label": "Data Marketplace",
+        "url": "https://green-deal-dataspace.eu/datamarketplace/"
       }
     ],
-    "samenvatting": "Europees initiatief om een data space te realiseren rondom de Europese Green Deal. Doel is het delen en hergebruik van milieu- en duurzaamheidsdata te faciliteren, met interoperabiliteit, governance en vertrouwen als uitgangspunt.",
+    "samenvatting": "De Green Deal Data Space (GDDS) is het overkoepelende Europese data-space-initiatief voor Green Deal-gerelateerde milieu- en duurzaamheidsdata. Het doel is om publieke en private partijen data veilig, interoperabel en onder duidelijke voorwaarden te laten delen, uitwisselen en hergebruiken voor Europese milieu- en klimaatdoelen. De GDDS moet bijdragen aan betere toegang tot data, hergebruik van milieudata, data-gedreven productontwikkeling, duurzaamheidsrapportage, circulaire economie, biodiversiteit, klimaatadaptatie en zero pollution. In de tijdlijn is GREAT te zien als de voorbereidende fase met roadmap, governance en technische blauwdruk; SAGE is de uitvoeringsfase die vanaf 2025 werkt aan een volledig operationele GDDS met tien concrete use cases.",
     "korte_referentie": {
-      "primair_doel": "Een Europese data space opzetten die Green Deal gerelateerde data veilig en interoperabel beschikbaar maakt voor brede hergebruikscenario’s.",
+      "primair_doel": "Een Europese Green Deal Data Space realiseren waarin milieudata en duurzaamheidsdata uit publieke en private bronnen veilig, soeverein, interoperabel en herbruikbaar beschikbaar komen voor beleid, innovatie, rapportage en markttoepassingen.",
       "belangrijkste_resultaten": [
-        "Ecosysteem en governance‑aanpak",
-        "Interoperabiliteitskaders",
-        "Koppeling met projecten/pilots (o.a. GREAT, Green Data Hub)"
+        "Overkoepelend Europees ecosysteem voor Green Deal-gerelateerde datadeling",
+        "Voorbereidende resultaten uit GREAT: Community of Practice, technische blueprint, governance schemes, dataset- en dataservice-inventarisatie en implementatieroadmap",
+        "Operationele uitwerking via SAGE: federatieve, veilige en interoperabele data space met governance- en trust frameworks",
+        "Tien SAGE-use-cases rond biodiversiteit, klimaatadaptatie, circulaire economie en zero pollution",
+        "Data Marketplace als catalogus en handelsomgeving voor data-assets, metadata, gereguleerde toegang en peer-to-peer datalevering",
+        "Aansluiting op FAIR-principes, metadata, semantische interoperabiliteit, data-soevereiniteit en high-value datasets"
       ],
       "doelgebruikers": [
-        "Overheden",
-        "Bedrijven",
-        "NGO’s",
-        "Onderzoekers",
-        "Data space projecten"
+        "Europese Commissie",
+        "Overheden en publieke instellingen",
+        "Bedrijven met duurzaamheids- en rapportageverplichtingen",
+        "Onderzoekers en onderzoeksinfrastructuren",
+        "NGO's en maatschappelijke organisaties",
+        "Data providers en data consumers",
+        "Data space initiatieven",
+        "Burgers en citizen-science initiatieven"
       ]
     },
     "ontwikkelingen_2023_2026": {
       "referentiedatum": "Q2 2026",
-      "samenvatting": "De Green Deal Data Space is in 2023-2026 verschoven van voorbereidende conceptvorming naar implementatie. Het GREAT-project leverde bouwstenen zoals communityvorming, governance, technische blauwdruk, prioritaire datasets en roadmap. Daarna is via de Digital Europe Programme-call ingezet op deployment van technische infrastructuur en governance. Vanaf 2025 bouwt SAGE voort op GREAT-resultaten om een federatieve, veilige en interoperabele Green Deal Data Space te realiseren met concrete use cases rond biodiversiteit, klimaatadaptatie, circulariteit en zero pollution.",
+      "samenvatting": "De Green Deal Data Space is in 2023-2026 verschoven van voorbereiding naar implementatie. GREAT leverde in 2023-2024 de community, roadmap, technische blauwdruk, governance-aanpak en datasetscope. In september 2023 werd Green Deal Dataspace e.V. opgericht als ecosysteemorganisatie. Vanaf 2025 vormt SAGE de belangrijkste uitvoeringslijn: het project ontwikkelt een operationele, federatieve en interoperabele GDDS, gevalideerd via tien use cases. Daarmee is SAGE geen losstaand randproject, maar de concrete operationalisering van de Green Deal Data Space.",
       "hoogtepunten": [
         {
-          "datum": "2023-2024",
-          "titel": "Voorbereiding via GREAT en verwante projecten",
-          "detail": "GREAT en verwante Green Deal-projecten werkten aan de inhoudelijke basis voor de data space, waaronder technische architectuur, governance, prioritaire datasets, community of practice en implementatieroadmap."
+          "datum": "2023-09-13",
+          "titel": "Oprichting Green Deal Dataspace e.V.",
+          "detail": "Zeven organisaties richtten Green Deal Dataspace e.V. op als ecosysteemorganisatie rond de Green Deal Data Space. Dit ondersteunt de continuïteit en communityvorming rond GDDS."
         },
         {
-          "datum": "2024-03",
-          "titel": "Europese call voor implementatie",
-          "detail": "De Europese Commissie organiseerde een informatiebijeenkomst voor de call rond deployment van de Green Deal Data Space. De call richtte zich op technische infrastructuur, governance-mechanismen en use cases voor hergebruik van publieke en private data-ecosystemen."
+          "datum": "2024-04-23",
+          "titel": "Afronding GREAT als voorbereidende actie",
+          "detail": "Het closing event van GREAT in Brussel markeerde de afronding van twintig maanden werk aan de voorbereidende fase van de Green Deal Data Space."
         },
         {
-          "datum": "2025",
-          "titel": "SAGE start als implementatietraject",
-          "detail": "SAGE, Data Space for a Sustainable Green Europe, bouwt direct voort op de community en resultaten van GREAT en ontwikkelt een federatieve, veilige en interoperabele data space voor de belangrijkste Green Deal-pijlers."
+          "datum": "2024",
+          "titel": "GREAT levert kernbouwstenen op",
+          "detail": "GREAT publiceerde onder meer de finale technische blueprint, governance requirements, endorsed governance scheme, prioritaire datasets en implementatieroadmap voor de GDDS."
+        },
+        {
+          "datum": "2025-03",
+          "titel": "Start SAGE als uitvoeringsfase",
+          "detail": "SAGE startte als Digital Europe-project om de Green Deal Data Space operationeel te maken. Het project bouwt voort op de GREAT-community en -resultaten."
         },
         {
           "datum": "2025-2026",
-          "titel": "Tien use cases in uitvoering",
-          "detail": "De Europese Commissie beschrijft tien SAGE-use-cases voor onder meer Forest Data Space, Pollinator Monitoring, Soil Circularity, CO2 Hub en Building Twins, Circular Textile Data Space, Climate Investment Data Space en Air Quality and Health Data Space."
+          "titel": "Tien operationele use cases",
+          "detail": "SAGE werkt met tien use cases, waaronder Forest Data Space, Pollinator Monitoring Data Space, Soil Circularity, CO2 Hub & Building Twins, Circular Textile Data Space, Climate Investment Data Space, Environmental Hazards Data Space en Air Quality and Health Data Space."
         },
         {
-          "datum": "2025-2027",
-          "titel": "Koppeling met Green Data for All en INSPIRE",
-          "detail": "De Green Deal Data Space hangt samen met de Green Data for All-agenda, de beoogde modernisering van INSPIRE en bredere niet-wetgevende maatregelen om hergebruik van milieudata voor beleid en markttoepassingen te stimuleren."
+          "datum": "2026",
+          "titel": "Eerste SAGE-deliverables en architectuuruitwerking",
+          "detail": "In 2026 zijn de eerste publieke SAGE-deliverables beschikbaar gekomen, waaronder stakeholder mapping, use-case-methodologie en een GDDS architecture diagram. Hiermee wordt de stap gezet van concept en roadmap naar technische en organisatorische implementatie."
+        }
+      ]
+    }
+  },
+  {
+    "id": "sage",
+    "naam": "SAGE (The Data Space for a Sustainable Green Europe)",
+    "status": "Actief",
+    "scope": "Gerelateerde sector",
+    "geografische_scope": "Europa",
+    "eigenaar": "EU Digital Europe-consortium gecoördineerd door IDC Italy; meer dan 40 partners, waaronder Nederlandse partijen zoals SURF, Universiteit Utrecht, CBS, Geonovum, Geodan, iSHARE, Sogelink, TEXroad, Mangostone en Rockwood Digital Europe",
+    "jaar_start": 2025,
+    "jaar_einde": 2028,
+    "tags": [
+      "Green Deal",
+      "dataspace",
+      "Digital Europe",
+      "milieudata",
+      "duurzaamheid",
+      "biodiversiteit",
+      "klimaatadaptatie",
+      "circulaire economie",
+      "zero pollution",
+      "data sovereignty",
+      "semantische interoperabiliteit",
+      "FAIR data",
+      "high-value datasets",
+      "federatief datadelen",
+      "GREAT"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.greendealdata.eu/"
+      },
+      {
+        "label": "About SAGE",
+        "url": "https://www.greendealdata.eu/about/sage-project/"
+      },
+      {
+        "label": "Use cases",
+        "url": "https://www.greendealdata.eu/use-cases/"
+      },
+      {
+        "label": "Public deliverables",
+        "url": "https://www.greendealdata.eu/public-deliverables/"
+      },
+      {
+        "label": "Geonovum - SAGE",
+        "url": "https://www.geonovum.nl/themas/europese-datastrategie/sage"
+      },
+      {
+        "label": "European Commission - Green Data",
+        "url": "https://environment.ec.europa.eu/law-and-governance/green-data_en"
+      },
+      {
+        "label": "EGI projectpagina",
+        "url": "https://www.egi.eu/project/sage/"
+      }
+    ],
+    "samenvatting": "SAGE is het Digital Europe-project dat de Green Deal Data Space operationeel moet maken. Het project bouwt direct voort op de community en resultaten van GREAT en ontwikkelt een federatieve, veilige en interoperabele data space voor groene en milieudata in Europa. SAGE richt zich op vier strategische pijlers van de Europese Green Deal: biodiversiteit, klimaatadaptatie/mitigatie, circulaire economie en zero pollution. De aanpak combineert een proof-of-concept-platform, tien pilot-use-cases, governance- en trust frameworks, semantische interoperabiliteit, high-value datasets en data-soevereiniteit. Voor het energiedomein is SAGE vooral indirect relevant: via gebouw- en CO2-data, klimaatplannen, milieugevaren, circulariteit en data-infrastructuur voor duurzaamheidsbesluitvorming. Het is geen energiespecifieke dataspace, maar wel een belangrijke naburige Europese dataspace die interactie kan hebben met energiedata, gebouwdata, klimaatdata en duurzaamheidsrapportage.",
+    "korte_referentie": {
+      "primair_doel": "Een volledig operationele, federatieve, veilige en interoperabele Green Deal Data Space realiseren die groene en milieudata in de EU beter toegankelijk, integreerbaar en herbruikbaar maakt voor Green Deal-doelen.",
+      "belangrijkste_resultaten": [
+        "Proof-of-concept-platform voor de Green Deal Data Space",
+        "Doorontwikkeling naar een verbeterd platform dat nieuwe use cases kan ondersteunen",
+        "Tien pilot-use-cases rond biodiversiteit, klimaatadaptatie, circulariteit en zero pollution",
+        "Governance- en trust frameworks voor de GDDS",
+        "Mechanismen voor data-soevereiniteit, toegangscontrole en verantwoord delen van gevoelige of restricted data",
+        "Semantische interoperabiliteit en interoperabele metadata",
+        "Ontsluiting van high-value datasets via de GDDS, met aansluiting op FAIR-principes",
+        "GDDS service integration, deployment and operations",
+        "Plan voor een duurzame operationele entiteit die de GDDS na afloop van het project kan blijven exploiteren"
+      ],
+      "doelgebruikers": [
+        "Data providers van groene en milieudata",
+        "Overheden en beleidsmakers",
+        "Bedrijven met duurzaamheids-, ESG- en rapportageverplichtingen",
+        "Onderzoekers en onderzoeksinfrastructuren",
+        "Burgers en citizen-science initiatieven",
+        "Data space operators en service providers",
+        "Organisaties rond biodiversiteit, klimaatadaptatie, circulariteit en zero pollution",
+        "Gebouw-, vastgoed- en CO2-monitoringpartijen"
+      ]
+    },
+    "ontwikkelingen_2023_2026": {
+      "referentiedatum": "Q2 2026",
+      "samenvatting": "SAGE is de ontbrekende schakel tussen GREAT en de operationele Green Deal Data Space. GREAT leverde in 2023-2024 de voorbereidende bouwstenen; SAGE is in maart 2025 gestart om de GDDS daadwerkelijk te realiseren. In 2025 is het consortium gestart met de integratie van technische infrastructuur, service management, operationele platformvoorzieningen, governance en use-casevalidatie. In 2026 zijn de eerste publieke deliverables beschikbaar gekomen, waaronder stakeholder mapping, use-case-methodologie en een GDDS architecture diagram. Daarmee is SAGE in 2026 nog in opbouw, maar wel het belangrijkste actuele implementatieproject voor de Green Deal Data Space.",
+      "hoogtepunten": [
+        {
+          "datum": "2023-2024",
+          "titel": "Voorbereidende basis via GREAT",
+          "detail": "SAGE bouwt direct voort op de GREAT-community en -resultaten, waaronder de technische blueprint, governance-aanpak, datasetinventarisatie en roadmap voor de Green Deal Data Space."
+        },
+        {
+          "datum": "2025-03-13/14",
+          "titel": "Kick-off SAGE in Warschau",
+          "detail": "SAGE startte met een tweedaagse kick-off in Warschau. Het project brengt stakeholders uit het Europese data-ecosysteem samen om datasilo's te doorbreken en data-gedreven oplossingen voor de Green Deal te realiseren."
+        },
+        {
+          "datum": "2025",
+          "titel": "Start operationalisering Green Deal Data Space",
+          "detail": "SAGE startte met de bouw van een volledig operationele Green Deal Data Space. De nadruk ligt op federatie van gefragmenteerde datasets, interoperabele metadata, datavalidatie, AI-gedreven analytics, governance en langetermijncontinuïteit."
+        },
+        {
+          "datum": "2025-2026",
+          "titel": "Fase 1: technische infrastructuur en service management",
+          "detail": "In de eerste projectfase ligt de nadruk op ontwikkeling van de GDDS technische infrastructuur, het service management framework en het operationele platform."
+        },
+        {
+          "datum": "2025-2026",
+          "titel": "Tien pilot-use-cases geselecteerd",
+          "detail": "De use cases omvatten onder meer Forest Data Space, Pollinator Monitoring Data Space, Soil Circularity Data Space, Construction Environment CO2 Hub & Building Twins, Circular Textiles Data Space, Climate Investment Plan, Environmental Hazards Data Space, NECST en Air Quality and Health Data Space."
+        },
+        {
+          "datum": "2026",
+          "titel": "Eerste publieke deliverables",
+          "detail": "SAGE publiceerde de eerste publieke deliverables, waaronder stakeholder mapping, use-case-methodologie en een GDDS architecture diagram. Deze vormen de eerste concrete documentatie van de implementatiefase."
+        },
+        {
+          "datum": "2026",
+          "titel": "Relevantie voor data governance",
+          "detail": "SAGE is relevant voor data governance door de combinatie van federatief datadelen, data-soevereiniteit, governance- en trust frameworks, semantische interoperabiliteit, FAIR metadata en langetermijnbeheer. Voor energiedata is de relevantie vooral cross-sectoraal, bijvoorbeeld via gebouw- en CO2-data, klimaatplannen, circulaire ketens en bredere duurzaamheidsdata."
+        },
+        {
+          "datum": "2028",
+          "titel": "Geplande afronding en continuïteit",
+          "detail": "Het project loopt tot februari 2028. De SAGE-platformvoorzieningen en governance-entiteiten moeten daarna op duurzame basis blijven functioneren, onder meer via een aparte operationele entiteit."
         }
       ]
     }
