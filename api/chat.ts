@@ -2,7 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 import OpenAI from 'openai';
 
-import { corsHeaders } from '../lib/cors.js';
+import { corsHeaders, isOriginAllowed } from '../lib/cors.js';
 
 import { getOpenAiApiKey } from '../lib/load-env.js';
 
@@ -125,20 +125,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
 
   if (req.method === 'OPTIONS') {
-
-    res.status(204).setHeader('Access-Control-Allow-Origin', cors['Access-Control-Allow-Origin'] ?? '*');
-
+    if (!isOriginAllowed(origin)) {
+      return res.status(403).json({ error: 'Origin not allowed by CORS' });
+    }
     for (const [k, v] of Object.entries(cors)) res.setHeader(k, v);
-
-    return res.end();
-
+    return res.status(204).end();
   }
 
-
+  if (!isOriginAllowed(origin)) {
+    return res.status(403).json({ error: 'Origin not allowed by CORS' });
+  }
 
   for (const [k, v] of Object.entries(cors)) res.setHeader(k, v);
-
-
 
   if (req.method !== 'POST') {
 

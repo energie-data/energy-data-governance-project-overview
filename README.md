@@ -127,6 +127,16 @@ Commit het gegenereerde `assets/chat-config.js` (of run `build:chat-config` in j
 1. Deploy de API naar Vercel; zet `OPENAI_API_KEY` en `CORS_ORIGINS` daar.
 2. Zet `CHAT_API_URL` op die Vercel-URL en run `npm run build:chat-config` vóór publicatie op GitHub Pages.
 
+### Chat werkt niet op GitHub Pages?
+
+De widget toont *“Kon geen verbinding maken…”* als `fetch` faalt (meestal **CORS**). Controleer in **Vercel → Settings → Environment Variables** (Production):
+
+1. **`CORS_ORIGINS`** — exacte origin van je site, **zonder pad**, bijv. `https://energie-data.github.io` (niet `.../energy-data-governance-project-overview`). Voeg `,http://localhost:8080` toe voor lokaal testen.
+2. **`CHAT_CLIENT_API_KEY`** — als deze op Vercel staat, moet dezelfde waarde bij build in `CHAT_CLIENT_API_KEY` / `assets/chat-config.js` (`apiKey`). Anders krijg je `Unauthorized` (niet het netwerkfoutbericht).
+3. **`OPENAI_API_KEY`** — verplicht op Vercel.
+
+In de browser: F12 → Network → `api/chat`: rood + geen response = CORS; status **401** = API-key; **503** = OpenAI-key ontbreekt.
+
 ### Deep links use cases
 
 Use cases zijn linkbaar via `overzicht-use-cases.html?id=P001` (opent het detailpaneel).

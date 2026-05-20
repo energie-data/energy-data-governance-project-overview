@@ -330,7 +330,15 @@
     } catch (err) {
       loadingEl.remove();
       console.error(err);
-      appendMessage('assistant', 'Kon geen verbinding maken met de chat-API. Controleer uw netwerk of probeer het later opnieuw.');
+      const isFetchBlocked =
+        err instanceof TypeError &&
+        /failed to fetch|networkerror|load failed/i.test(String(err.message || err));
+      appendMessage(
+        'assistant',
+        isFetchBlocked
+          ? 'De browser blokkeert de aanroep naar de chat-API (vaak CORS). Controleer in Vercel of CORS_ORIGINS exact uw GitHub Pages-adres bevat (bijv. https://energie-data.github.io, zonder pad). Zie ook of CHAT_CLIENT_API_KEY op Vercel overeenkomt met de widget.'
+          : 'Kon geen verbinding maken met de chat-API. Controleer uw netwerk of probeer het later opnieuw.'
+      );
     } finally {
       setLoading(false);
     }
