@@ -49,7 +49,7 @@ status: Actief
 scope: Energiedomein
 geografische_scope: Nederland
 eigenaar: Het Normo B.V.
-jaar_start: 2019
+jaar_start: 2022
 jaar_einde: None
 tags: energiedata, afsprakenstelsel, slimme meter, governance, privacy
 
@@ -68,7 +68,7 @@ Transparant en efficiënt delen van (gereguleerde) energiedata mogelijk maken, m
 - Afsprakenstelsel energiedata
 - Governancestructuur (MFF)
 - Implementatie- en monitoringsprocessen
-- Marktbrede afstemming over datadeling
+- Marktbrede afstemming over datadeling en systeemprocessen
 
 ### korte_referentie.doelgebruikers
 - Netbeheerders
@@ -81,7 +81,7 @@ Transparant en efficiënt delen van (gereguleerde) energiedata mogelijk maken, m
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-In aanloop naar de Energiewet is MFFBAS opgesplitst in een vereniging (MFF) voor marktfacilitatie en een BV (BAS) voor de wettelijke rol. BAS opereert sinds 2025/2026 onder de handelsnaam Het Normo en fungeert per 1 januari 2026 als wettelijke Gegevensuitwisselingsentiteit (GUE).
+In aanloop naar de Energiewet is MFFBAS opgericht als 1. een vereniging (MFF) voor marktfacilitatie en 2. een BV (BAS) voor de wettelijke rol voor gegevensuitwisseling. BAS opereert sinds 2025/2026 onder de handelsnaam Het Normo en fungeert per 1 januari 2026 als wettelijke Gegevensuitwisselingsentiteit (GUE).
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2024-10; titel=Energiedatawijzer; detail=Lancering van een centraal platform om sectorafspraken en documentatie vindbaar te maken.
@@ -881,7 +881,7 @@ tags: EU, federatie, trustframework, compliance, interoperabiliteit
 - label=GAIA-X Hub Netherlands; url=https://gaia-x.nl/
 
 ### samenvatting
-Europees initiatief dat, gebaseerd op Europese waarden, een digitale governance en architectuur ontwikkelt voor federatieve data- en clouddiensten. Richt zich op transparantie, controleerbaarheid, overdraagbaarheid en interoperabiliteit. Heeft nationale hubs en stimuleert praktijkcases via lighthouse‑projecten.
+Europees initiatief dat, gebaseerd op Europese waarden, een digitale governance en architectuur ontwikkelt voor federatieve data- en clouddiensten. Richt zich op transparantie, controleerbaarheid, overdraagbaarheid en interoperabiliteit. Heeft nationale hubs en stimuleert praktijkcases via lighthouse‑projecten. GAIA-X is voor het energiedomein relevant omdat het een Europees raamwerk biedt voor veilig, interoperabel en soeverein delen van energiedata tussen partijen, als fundament voor toepassingen zoals flexibiliteitsmarkten, energiehubs en Common European Energy Data Spaces.
 
 ### korte_referentie.primair_doel
 Federatieve data- en cloud‑infrastructuur in Europa mogelijk maken via governance, compliance en federation services.
@@ -965,6 +965,7 @@ tags: standaarden, referentiearchitectuur, IDS-connector, datasoevereiniteit, in
 ### links
 - label=Website; url=https://internationaldataspaces.org/
 - label=Reference Architecture Model; url=https://internationaldataspaces.org/publications/ids-reference-architecture-model/
+- label=Data Spaces Radar; url=https://www.dataspaces-radar.org/radar/
 
 ### samenvatting
 Non‑profit organisatie die de ontwikkeling en standaardisatie van veilige gegevensuitwisseling bevordert (o.a. in IoT/Industrie 4.0). Levert een referentiearchitectuur (IDS RAM) en definieert kerncomponenten zoals IDS Connector, metadata broker, clearing house en vocabulary hub.
@@ -977,6 +978,7 @@ Een gestandaardiseerd, veilig en flexibel ecosysteem voor organisatie‑overstij
 - Standaarden voor kerncomponenten (connector, broker, clearing, vocab)
 - Best practices en implementatierichtlijnen
 - Ecosysteem van implementatiepartners
+- Data Spaces Radar; overzicht van europese data space initiatieven
 
 ### korte_referentie.doelgebruikers
 - Data space ontwerpers
@@ -989,7 +991,7 @@ Een gestandaardiseerd, veilig en flexibel ecosysteem voor organisatie‑overstij
 Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connectorconcept naar een breder stelsel van rulebook, architectuur, certificering en protocolstandaardisatie voor data spaces. De IDSA Rulebook-publicatie, de standaardisatie van het Dataspace Protocol en de voorbereiding van IDS-RAM 5 maken IDSA relevant als internationale referentie voor data-soevereiniteit en interoperabele data spaces, ook voor het energiedomein.
+IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connectorconcept naar een breder stelsel van rulebook, architectuur, certificering en protocolstandaardisatie voor data spaces. De IDSA Rulebook-publicatie, de standaardisatie van het Dataspace Protocol en de voorbereiding van IDS-RAM 5 maken IDSA relevant als internationale referentie voor data-soevereiniteit en interoperabele data spaces, ook voor het energiedomein. De Data Spaces Radar biedt een overzicht van energie data spaces wereldwijd.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2023; titel=IDSA Rulebook; detail=Het IDSA Rulebook biedt principes en eisen voor vertrouwd datadelen via data spaces, inclusief functionele, technische, operationele en juridische vereisten voor het opzetten en beheren van een data space.
@@ -997,6 +999,7 @@ IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connect
 - datum=2024-03; titel=MoU met iSHARE; detail=IDSA en iSHARE formaliseerden samenwerking om dataspace-architectuur, protocolafspraken en trust-frameworkcomponenten beter te combineren.
 - datum=2025; titel=Data Space Manifesto en doorontwikkeling documentatie; detail=IDSA publiceerde aanvullende kernpublicaties, waaronder het Data Space Manifesto, en bleef de documentatieset rond IDS-RAM, Rulebook, certificering en Dataspace Protocol positioneren als basis voor praktische implementatie.
 - datum=2025-2026; titel=IDS-RAM 5 in ontwikkeling; detail=IDS-RAM 4 blijft de stabiele officiële referentie voor bestaande implementaties, certificering en training, terwijl IDSA werkt aan IDS-RAM 5 om nieuwe inzichten rond governance, policies, protocollen, conformance, schaalbaarheid en interoperabiliteit te verwerken.
+- datum=2025-2026; titel=Data Spaces Radar; detail= dé plek voor alle initiatieven op het gebied van dataspaces. Het is een openbaar toegankelijke tool die een overzicht biedt van diverse dataspace-initiatieven wereldwijd. De radar geeft inzicht in de sectoren, locaties en ontwikkelingsfasen van deze initiatieven, evenals in de toepassingsmogelijkheden die een dataspace biedt.
 
 ## id: fiware
 naam: FIWARE
