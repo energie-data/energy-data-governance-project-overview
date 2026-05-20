@@ -17,6 +17,11 @@ const overlay = document.getElementById('overlay');
 const drawer = document.getElementById('drawer');
 const closeBtn = document.getElementById('closeBtn');
 const drawerCtl = createDrawerController({ overlay, drawer, closeBtn });
+const closeDrawer = drawerCtl.close.bind(drawerCtl);
+drawerCtl.close = () => {
+  closeDrawer();
+  setDeepLinkUseCaseId('');
+};
 
 const dTitle = document.getElementById('dTitle');
 const dSub = document.getElementById('dSub');
@@ -232,9 +237,29 @@ function listSection(title, values) {
   return `<div class="drawerSubheading">${escapeHtml(title)}</div><ul class="drawerList">${values.map(v => `<li>${escapeHtml(v)}</li>`).join('')}</ul>`;
 }
 
+function getDeepLinkedUseCaseId() {
+  return new URL(window.location.href).searchParams.get('id') || '';
+}
+
+function setDeepLinkUseCaseId(id) {
+  const url = new URL(window.location.href);
+  if (id) url.searchParams.set('id', id);
+  else url.searchParams.delete('id');
+  window.history.replaceState({}, '', url);
+}
+
+function openDeepLinkedUseCase() {
+  const id = getDeepLinkedUseCaseId();
+  if (!id || !allUseCases.length) return;
+  const item = allUseCases.find(x => x.project_id === id);
+  if (item) openDrawer(id);
+}
+
 function openDrawer(id) {
   const item = allUseCases.find(x => x.project_id === id);
   if (!item) return;
+
+  setDeepLinkUseCaseId(id);
 
   dTitle.textContent = item.projectnaam || 'Onbekende use case';
   const subParts = [];
@@ -351,6 +376,7 @@ async function loadUseCases() {
 
   renderEnergyTypeBars();
   apply();
+  openDeepLinkedUseCase();
 }
 
 function init() {

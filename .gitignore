@@ -1,9 +1,43 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel/
+
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+.venv/
+venv/
 
-# Claude Code
+# TypeScript / build output
+dist/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local tool settings
 .claude/
-
-# Codex
 .codex/
