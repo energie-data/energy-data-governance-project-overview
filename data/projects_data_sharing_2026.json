@@ -1632,7 +1632,8 @@
     },
     "ontwikkelingen_2023_2026": {
       "referentiedatum": "Q2 2026",
-      "samenvatting": "GO FAIR blijft in 2023-2026 relevant als methodische en semantische basis voor vindbare, toegankelijke, interoperabele en herbruikbare data. Het initiatief is geen data space en geen technisch trust framework, maar levert principes, implementatiemethoden, FAIR Implementation Profiles, training en communityvorming die van belang zijn voor datakwaliteit, metadata en hergebruik. Voor energiedata is GO FAIR vooral relevant als generieke benadering voor metadata, semantiek en herbruikbaarheid van datasets."
+      "samenvatting": "GO FAIR blijft in 2023-2026 relevant als methodische en semantische basis voor vindbare, toegankelijke, interoperabele en herbruikbare data. Het initiatief is geen data space en geen technisch trust framework, maar levert principes, implementatiemethoden, FAIR Implementation Profiles, training en communityvorming die van belang zijn voor datakwaliteit, metadata en hergebruik. Voor energiedata is GO FAIR vooral relevant als generieke benadering voor metadata, semantiek en herbruikbaarheid van datasets.",
+      "hoogtepunten": []
     }
   },
   {
@@ -2373,12 +2374,13 @@
     "status": "Actief",
     "scope": "Energiedomein",
     "geografische_scope": "Nederland",
-    "eigenaar": "Samenwerking tussen MFF, Het Normo, Topsector Energie, RVO en ministerie van Klimaat en Groene Groei (KGG)",
+    "eigenaar": "Samenwerking tussen MFF, Het Normo, Energy Innovation NL (voorheen Topsector Energie), RVO en het Ministerie van Economische Zaken en Klimaat (voorheen Klimaat en Groene Groei)",
     "jaar_start": 2024,
     "jaar_einde": null,
     "tags": [
       "energiedata",
       "community",
+      "ecosysteem",
       "datavraag",
       "data-aanbod",
       "Nederland"
@@ -2406,7 +2408,7 @@
         {
           "datum": "2024-06",
           "titel": "Oprichting energie.data",
-          "detail": "Oprichting door MFF, Het Normo, Topsector Energie, RVO en ministerie van KGG."
+          "detail": "Oprichting door MFF, Het Normo, Topsector Energie, RVO en het Ministerie van KGG."
         },
         {
           "datum": "2024-10",
@@ -2417,6 +2419,11 @@
           "datum": "2026-01",
           "titel": "No Wrong Door",
           "detail": "Data-loketten in de energiesector werken samen en verwijzen vragers door naar het juiste loket."
+        },
+        {
+          "datum": "2026-05",
+          "titel": "Data Sandbox",
+          "detail": "Opzetten van Energiedata Sandbox voor het veilig, schaalbaar en juridisch verantwoord delen van energiedata voor verduurzaming en rapportages. De kern van deze aanpak is het gebruik van Multi-Party Computation (MPC), een privacy enhancing technology (PET) waarmee gevoelige data versleuteld blijft, ook tijdens verwerking, en waarbij alleen vooraf goedgekeurde analyses kunnen worden uitgevoerd."
         }
       ]
     }
