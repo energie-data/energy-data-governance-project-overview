@@ -1525,10 +1525,10 @@ naam: energie.data
 status: Actief
 scope: Energiedomein
 geografische_scope: Nederland
-eigenaar: Samenwerking tussen MFF, Het Normo, Topsector Energie, RVO en ministerie van Klimaat en Groene Groei (KGG)
+eigenaar: Samenwerking tussen MFF, Het Normo, Energy Innovation NL (voorheen Topsector Energie), RVO en het Ministerie van Economische Zaken en Klimaat (voorheen Klimaat en Groene Groei)
 jaar_start: 2024
 jaar_einde: None
-tags: energiedata, community, datavraag, data-aanbod, Nederland
+tags: energiedata, community, ecosysteem, datavraag, data-aanbod, Nederland
 
 ### links
 
@@ -1545,7 +1545,6 @@ Vraag en aanbod van energiedata beter verbinden en energiedata toegankelijker ma
 
 ### korte_referentie.doelgebruikers
 - Datavragende organisaties (publiek/privaat)
-- Dataleveranciers in de energiesector
 - Data-loketten en intermediairs
 - Beleids- en uitvoeringsorganisaties
 
@@ -1556,9 +1555,12 @@ Q1 2026
 Opgericht in juni 2024 als samenwerking om energiedata toegankelijker te maken en vraag en aanbod beter te verbinden. Speerpunten zijn gedeelde taal, kennisdeling en het dichter bij elkaar brengen van vraag en aanbod.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
-- datum=2024-06; titel=Oprichting energie.data; detail=Oprichting door MFF, Het Normo, Topsector Energie, RVO en ministerie van KGG.
+- datum=2024-06; titel=Oprichting energie.data; detail=Oprichting door MFF, Het Normo, Topsector Energie, RVO en het Ministerie van KGG.
 - datum=2024-10; titel=energie.data festival; detail=Community-event om vraag en aanbod van data te verbinden (samen met o.a. MFFBAS, Topsector Energie, KGG en RVO).
 - datum=2026-01; titel=No Wrong Door; detail=Data-loketten in de energiesector werken samen en verwijzen vragers door naar het juiste loket.
+- datum=2026-05; titel=Data Sandbox; detail=Opzetten van Energiedata Sandbox voor het veilig, schaalbaar en juridisch verantwoord delen van energiedata voor verduurzaming en rapportages. De kern van deze aanpak is het gebruik van Multi-Party Computation (MPC), een privacy enhancing technology (PET) waarmee gevoelige data versleuteld blijft, ook tijdens verwerking, en waarbij alleen vooraf goedgekeurde analyses kunnen worden uitgevoerd.
+
+
 
 ## id: d4e
 naam: Data for Energy (D4E)
