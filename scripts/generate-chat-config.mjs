@@ -59,7 +59,8 @@ const source = `/**
       return LOCAL_CHAT_API_URL;
     }
 
-    return PROD_CHAT_API_URL;
+    if (PROD_CHAT_API_URL) return PROD_CHAT_API_URL;
+    return origin.replace(/\\/$/, '');
   }
 
   window.CHAT_CONFIG = {
@@ -71,4 +72,5 @@ const source = `/**
 
 writeFileSync(outPath, source, 'utf8');
 console.log(`Wrote ${outPath}`);
-console.log(`  PROD_CHAT_API_URL = ${PROD_CHAT_API_URL}`);
+console.log(`  PROD_CHAT_API_URL = ${PROD_CHAT_API_URL || '(same origin as site)'}`);
+console.log(`  CHAT_API_KEY      = ${CHAT_API_KEY ? '(set)' : '(empty — set CHAT_CLIENT_API_KEY at build time if API requires it)'}`);

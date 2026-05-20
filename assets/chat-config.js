@@ -27,7 +27,8 @@
       return LOCAL_CHAT_API_URL;
     }
 
-    return PROD_CHAT_API_URL;
+    if (PROD_CHAT_API_URL) return PROD_CHAT_API_URL;
+    return origin.replace(/\/$/, '');
   }
 
   window.CHAT_CONFIG = {

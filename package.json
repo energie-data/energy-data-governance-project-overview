@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "npm run build:chat-config",
     "build:knowledge": "python build_knowledge.py",
     "build:chat-config": "node scripts/generate-chat-config.mjs",
     "dev:api": "npm run build:chat-config && vercel dev"
