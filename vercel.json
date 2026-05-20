@@ -3,7 +3,8 @@
   "outputDirectory": ".",
   "functions": {
     "api/chat.ts": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "includeFiles": "data/knowledge_chunks.json,data/algemene_projectcontext_openai.md"
     }
   },
   "headers": [

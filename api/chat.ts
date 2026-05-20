@@ -202,6 +202,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const allChunks = getAllChunks();
 
+  if (allChunks.length === 0) {
+    console.error('[chat] Knowledge base leeg — controleer data/knowledge_chunks.json en Vercel includeFiles');
+    return res.status(503).json({
+      error:
+        'Knowledge base niet geladen op de server. Zorg dat data/knowledge_chunks.json in de deploy zit (vercel.json includeFiles) en deploy opnieuw.',
+    });
+  }
+
   const relevant = retrieveRelevantChunks(message, allChunks, 8);
 
   const context = relevant.length

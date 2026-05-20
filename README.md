@@ -131,6 +131,8 @@ De Vercel-build draait `npm run build:chat-config`. De API leest in productie ge
 - `401 Unauthorized`: `CHAT_CLIENT_API_KEY` staat op Vercel, maar `assets/chat-config.js` bevat geen overeenkomende `apiKey`.
 - `403 Origin not allowed by CORS`: de origin van de website staat niet exact in `CORS_ORIGINS`.
 - `503 Chat API is not configured`: `OPENAI_API_KEY` ontbreekt in Vercel.
+- `503 Knowledge base niet geladen`: op Vercel worden `data/knowledge_chunks.json` en `data/algemene_projectcontext_openai.md` niet automatisch meegebundeld bij `readFileSync`. In `vercel.json` staan ze onder `functions.api/chat.ts.includeFiles`; na wijziging opnieuw deployen. Lokaal (`vercel dev`) werkt het vaak wel omdat de hele repo beschikbaar is.
+- Chat antwoordt generiek / zonder site-inhoud (geen 503): controleer Vercel **Runtime Logs** op `[chat] Projectcontext niet gevonden` of lege retrieval; run `python build_knowledge.py` en commit `data/knowledge_chunks.json`.
 - Geen chatrespons in de browser: controleer het Network-tabblad op `/api/chat`.
 
 ## Licentie
