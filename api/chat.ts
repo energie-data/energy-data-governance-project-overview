@@ -12,6 +12,8 @@ import { checkRateLimit } from '../lib/rate-limit.js';
 
 import { buildSystemPrompt } from '../lib/project-context.js';
 
+import { CHAT_JSON_OUTPUT_INSTRUCTIONS } from '../lib/prompt-output.js';
+
 import { formatContext, retrieveRelevantChunks } from '../lib/retrieval.js';
 
 import {
@@ -27,32 +29,6 @@ import type { ChatResponse, ChatSource } from '../lib/types.js';
 
 
 const DEFAULT_MODEL = 'gpt-5.5';
-
-
-
-const USER_JSON_INSTRUCTIONS = `Antwoord als JSON:
-
-{"answer": "...", "sources": [{"id": "...", "title": "...", "url": "..."}]}
-
-
-
-Regels voor "answer":
-
-- Nederlands, opgemaakt met eenvoudige HTML (geen markdown).
-
-- Toegestane tags: <p>, <br>, <strong>, <em>, <ul>, <ol>, <li>, <h3>, <h4> — zonder attributen.
-
-- Geen <a> in answer; verwijzingen naar pagina's horen in "sources".
-
-- Geen metatekst over chunks, context of ontbrekende informatie; geen vervolgvragen of aanbiedingen ("Als je wilt kan ik …").
-
-
-
-Regels voor "sources":
-
-- Alleen bronnen uit de context waarvan de url een interne site-pagina is (eindigt op .html of relatief pad zonder https://).
-
-- Geen externe websites. Neem id, title en url exact over uit de context.`;
 
 
 
@@ -244,7 +220,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
           role: 'user',
 
-          content: `Context:\n\n${context}\n\n---\n\nVraag: ${message}\n\n${USER_JSON_INSTRUCTIONS}`,
+          content: `Context:\n\n${context}\n\n---\n\nVraag: ${message}\n\n${CHAT_JSON_OUTPUT_INSTRUCTIONS}`,
 
         },
 

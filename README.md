@@ -75,7 +75,9 @@ Na wijzigingen in de JSON-bronnen moet de RAG-kennisbasis opnieuw worden opgebou
 python build_knowledge.py
 ```
 
-Dit schrijft `data/knowledge_chunks.json`. Commit dit bestand samen met de gewijzigde brondata. De algemene systeemcontext staat in `data/algemene_projectcontext_openai.md`.
+Dit schrijft `data/knowledge_chunks.json`. Commit dit bestand samen met de gewijzigde brondata.
+
+**Chat-prompts:** domein en antwoordstijl in `data/algemene_projectcontext_openai.md`; korte preambule + JSON/HTML-contract in `lib/prompt-output.ts` (tags sync met `lib/response-format.ts`); per vraag de opgehaalde chunks in de user prompt (`api/chat.ts`).
 
 ## Data Bewerken
 

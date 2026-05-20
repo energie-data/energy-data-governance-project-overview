@@ -8,18 +8,14 @@ export function isInternalSiteUrl(url: string): boolean {
   return /\.html(\?|#|$)/i.test(u) || u.endsWith('.html') || !u.includes('://');
 }
 
+/** Tags die het model mag gebruiken (prompt); b/i worden bij sanitize ook geaccepteerd. */
+export const PROMPT_ALLOWED_ANSWER_TAGS =
+  'p, br, strong, em, ul, ol, li, h3, h4';
+
 const ALLOWED_ANSWER_TAGS = new Set([
-  'p',
-  'br',
-  'strong',
+  ...PROMPT_ALLOWED_ANSWER_TAGS.split(',').map(t => t.trim()),
   'b',
-  'em',
   'i',
-  'ul',
-  'ol',
-  'li',
-  'h3',
-  'h4',
 ]);
 
 function escapeHtml(text: string): string {
