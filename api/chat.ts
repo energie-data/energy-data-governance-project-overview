@@ -71,15 +71,10 @@ function getClientIp(req: VercelRequest): string {
 
 
 function validateClientKey(req: VercelRequest): boolean {
-
-  const expected = process.env.CHAT_CLIENT_API_KEY;
-
+  const expected = (process.env.CHAT_CLIENT_API_KEY ?? '').trim();
   if (!expected) return true;
-
   const provided = req.headers['x-chat-api-key'];
-
   return typeof provided === 'string' && provided === expected;
-
 }
 
 
@@ -112,6 +107,15 @@ function parseResponseJson(raw: string): ChatResponse {
 
   };
 
+}
+
+function parseRequestBody(req: VercelRequest): unknown {
+  if (typeof req.body !== 'string') return req.body;
+  try {
+    return JSON.parse(req.body);
+  } catch {
+    return undefined;
+  }
 }
 
 
@@ -148,7 +152,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (!validateClientKey(req)) {
 
-    return res.status(401).json({ error: 'Unauthorized' });
+    return res.status(401).json({
+      error:
+        'Unauthorized: de chat-widget stuurt geen geldige X-Chat-Api-Key. Verwijder CHAT_CLIENT_API_KEY in Vercel of zet dezelfde waarde in assets/chat-config.js (apiKey).',
+    });
 
   }
 
@@ -178,9 +185,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
 
 
-  const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+  const body = parseRequestBody(req);
 
-  const message = typeof body?.message === 'string' ? body.message.trim() : '';
+  const message =
+    body && typeof body === 'object' && 'message' in body && typeof body.message === 'string'
+      ? body.message.trim()
+      : '';
 
   if (!message || message.length > 2000) {
 

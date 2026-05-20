@@ -48,13 +48,13 @@ const source = `/**
   }
 
   function resolveChatApiUrl() {
-    const params = new URLSearchParams(window.location.search);
-    const override = (params.get('chatApi') || '').trim();
-    if (override) return override.replace(/\\/$/, '');
-
     const { hostname, port, origin } = window.location;
 
     if (isLocalHost(hostname)) {
+      const params = new URLSearchParams(window.location.search);
+      const override = (params.get('chatApi') || '').trim();
+      if (override) return override.replace(/\\/$/, '');
+
       if (port === '3000') return origin.replace(/\\/$/, '');
       return LOCAL_CHAT_API_URL;
     }

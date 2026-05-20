@@ -20,6 +20,10 @@ function applyParsedEnv(raw: string): void {
 }
 
 export function loadEnvFiles(): void {
+  if (process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production') {
+    return;
+  }
+
   const roots = new Set<string>();
   roots.add(process.cwd());
 

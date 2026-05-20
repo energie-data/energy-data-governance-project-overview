@@ -321,7 +321,18 @@
       loadingEl.remove();
 
       if (!res.ok) {
-        const errText = data.error || `Fout (${res.status})`;
+        let errText = data.error || `Fout (${res.status})`;
+        if (res.status === 401) {
+          errText =
+            data.error ||
+            'De API verwacht een API-sleutel (401). In Vercel: verwijder de omgevingsvariabele CHAT_CLIENT_API_KEY, of zet dezelfde waarde in chat-config.js bij apiKey en deploy opnieuw.';
+        } else if (res.status === 403) {
+          errText =
+            data.error ||
+            'Toegang geweigerd (403). Controleer CORS_ORIGINS in Vercel (exacte GitHub Pages-origin, zonder pad).';
+        } else if (res.status === 503) {
+          errText = data.error || 'Chat-API is niet geconfigureerd (OPENAI_API_KEY ontbreekt op Vercel).';
+        }
         appendMessage('assistant', errText);
         return;
       }
