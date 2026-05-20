@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build:chat-config",
+  "outputDirectory": ".",
   "functions": {
     "api/chat.ts": {
       "maxDuration": 30
