@@ -49,7 +49,7 @@ status: Actief
 scope: Energiedomein
 geografische_scope: Nederland
 eigenaar: Het Normo B.V.
-jaar_start: 2019
+jaar_start: 2022
 jaar_einde: None
 tags: energiedata, afsprakenstelsel, slimme meter, governance, privacy
 
@@ -68,7 +68,7 @@ Transparant en efficiënt delen van (gereguleerde) energiedata mogelijk maken, m
 - Afsprakenstelsel energiedata
 - Governancestructuur (MFF)
 - Implementatie- en monitoringsprocessen
-- Marktbrede afstemming over datadeling
+- Marktbrede afstemming over datadeling en systeemprocessen
 
 ### korte_referentie.doelgebruikers
 - Netbeheerders
@@ -81,7 +81,7 @@ Transparant en efficiënt delen van (gereguleerde) energiedata mogelijk maken, m
 Q1 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-In aanloop naar de Energiewet is MFFBAS opgesplitst in een vereniging (MFF) voor marktfacilitatie en een BV (BAS) voor de wettelijke rol. BAS opereert sinds 2025/2026 onder de handelsnaam Het Normo en fungeert per 1 januari 2026 als wettelijke Gegevensuitwisselingsentiteit (GUE).
+In aanloop naar de Energiewet is MFFBAS opgericht als 1. een vereniging (MFF) voor marktfacilitatie en 2. een BV (BAS) voor de wettelijke rol voor gegevensuitwisseling. BAS opereert sinds 2025/2026 onder de handelsnaam Het Normo en fungeert per 1 januari 2026 als wettelijke Gegevensuitwisselingsentiteit (GUE).
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2024-10; titel=Energiedatawijzer; detail=Lancering van een centraal platform om sectorafspraken en documentatie vindbaar te maken.
@@ -881,7 +881,7 @@ tags: EU, federatie, trustframework, compliance, interoperabiliteit
 - label=GAIA-X Hub Netherlands; url=https://gaia-x.nl/
 
 ### samenvatting
-Europees initiatief dat, gebaseerd op Europese waarden, een digitale governance en architectuur ontwikkelt voor federatieve data- en clouddiensten. Richt zich op transparantie, controleerbaarheid, overdraagbaarheid en interoperabiliteit. Heeft nationale hubs en stimuleert praktijkcases via lighthouse‑projecten.
+Europees initiatief dat, gebaseerd op Europese waarden, een digitale governance en architectuur ontwikkelt voor federatieve data- en clouddiensten. Richt zich op transparantie, controleerbaarheid, overdraagbaarheid en interoperabiliteit. Heeft nationale hubs en stimuleert praktijkcases via lighthouse‑projecten. GAIA-X is voor het energiedomein relevant omdat het een Europees raamwerk biedt voor veilig, interoperabel en soeverein delen van energiedata tussen partijen, als fundament voor toepassingen zoals flexibiliteitsmarkten, energiehubs en Common European Energy Data Spaces.
 
 ### korte_referentie.primair_doel
 Federatieve data- en cloud‑infrastructuur in Europa mogelijk maken via governance, compliance en federation services.
@@ -965,6 +965,7 @@ tags: standaarden, referentiearchitectuur, IDS-connector, datasoevereiniteit, in
 ### links
 - label=Website; url=https://internationaldataspaces.org/
 - label=Reference Architecture Model; url=https://internationaldataspaces.org/publications/ids-reference-architecture-model/
+- label=Data Spaces Radar; url=https://www.dataspaces-radar.org/radar/
 
 ### samenvatting
 Non‑profit organisatie die de ontwikkeling en standaardisatie van veilige gegevensuitwisseling bevordert (o.a. in IoT/Industrie 4.0). Levert een referentiearchitectuur (IDS RAM) en definieert kerncomponenten zoals IDS Connector, metadata broker, clearing house en vocabulary hub.
@@ -977,6 +978,7 @@ Een gestandaardiseerd, veilig en flexibel ecosysteem voor organisatie‑overstij
 - Standaarden voor kerncomponenten (connector, broker, clearing, vocab)
 - Best practices en implementatierichtlijnen
 - Ecosysteem van implementatiepartners
+- Data Spaces Radar; overzicht van europese data space initiatieven
 
 ### korte_referentie.doelgebruikers
 - Data space ontwerpers
@@ -989,7 +991,7 @@ Een gestandaardiseerd, veilig en flexibel ecosysteem voor organisatie‑overstij
 Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connectorconcept naar een breder stelsel van rulebook, architectuur, certificering en protocolstandaardisatie voor data spaces. De IDSA Rulebook-publicatie, de standaardisatie van het Dataspace Protocol en de voorbereiding van IDS-RAM 5 maken IDSA relevant als internationale referentie voor data-soevereiniteit en interoperabele data spaces, ook voor het energiedomein.
+IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connectorconcept naar een breder stelsel van rulebook, architectuur, certificering en protocolstandaardisatie voor data spaces. De IDSA Rulebook-publicatie, de standaardisatie van het Dataspace Protocol en de voorbereiding van IDS-RAM 5 maken IDSA relevant als internationale referentie voor data-soevereiniteit en interoperabele data spaces, ook voor het energiedomein. De Data Spaces Radar biedt een overzicht van energie data spaces wereldwijd.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2023; titel=IDSA Rulebook; detail=Het IDSA Rulebook biedt principes en eisen voor vertrouwd datadelen via data spaces, inclusief functionele, technische, operationele en juridische vereisten voor het opzetten en beheren van een data space.
@@ -997,6 +999,7 @@ IDSA is in 2023-2026 verder doorontwikkeld van referentiearchitectuur en connect
 - datum=2024-03; titel=MoU met iSHARE; detail=IDSA en iSHARE formaliseerden samenwerking om dataspace-architectuur, protocolafspraken en trust-frameworkcomponenten beter te combineren.
 - datum=2025; titel=Data Space Manifesto en doorontwikkeling documentatie; detail=IDSA publiceerde aanvullende kernpublicaties, waaronder het Data Space Manifesto, en bleef de documentatieset rond IDS-RAM, Rulebook, certificering en Dataspace Protocol positioneren als basis voor praktische implementatie.
 - datum=2025-2026; titel=IDS-RAM 5 in ontwikkeling; detail=IDS-RAM 4 blijft de stabiele officiële referentie voor bestaande implementaties, certificering en training, terwijl IDSA werkt aan IDS-RAM 5 om nieuwe inzichten rond governance, policies, protocollen, conformance, schaalbaarheid en interoperabiliteit te verwerken.
+- datum=2025-2026; titel=Data Spaces Radar; detail= dé plek voor alle initiatieven op het gebied van dataspaces. Het is een openbaar toegankelijke tool die een overzicht biedt van diverse dataspace-initiatieven wereldwijd. De radar geeft inzicht in de sectoren, locaties en ontwikkelingsfasen van deze initiatieven, evenals in de toepassingsmogelijkheden die een dataspace biedt.
 
 ## id: fiware
 naam: FIWARE
@@ -1251,12 +1254,13 @@ CO₂‑reductie in utiliteitsgebouwen versnellen door betrouwbare uitwisseling 
 - Sectororganisaties
 
 ### ontwikkelingen_2023_2026.referentiedatum
-
+Q2 2026
 
 ### ontwikkelingen_2023_2026.samenvatting
-
+Datastelsel Verduurzaming Utiliteit (DVU) ontwikkelde zich van een project tot een operationeel datastelsel voor het veilig delen en benutten van energiedata van utiliteitsgebouwen. DVU maakte het mogelijk om energieverbruiksdata van gebouwen gestandaardiseerd en onder regie van de eigenaar of gebruiker beschikbaar te stellen voor benchmarking, verduurzamingsadvies en monitoring, onder meer via de WEii-indicator. In deze periode zijn federatieve datadeling en interoperabiliteit verder uitgewerkt met toepassing van het iSHARE trust framework en aansluiting op bredere ontwikkelingen rond energiedata-ecosystemen, digitalisering van het energiesysteem en de nieuwe Energiewet. Daarmee werd DVU steeds meer gepositioneerd als een belangrijke bouwsteen voor datagedreven verduurzaming van de utiliteitssector.
 
 ### ontwikkelingen_2023_2026.hoogtepunten
+- datum=2023-10; titel=Publieke lancering van DVU in oktober 2023; detail=Gebouweigenaren en huurders kunnen voor het eerst op landelijke schaal energieverbruiksdata gestandaardiseerd en onder eigen regie delen voor benchmarking, verduurzamingsadvies en monitoring.
 
 ## id: great
 naam: GREAT (Green Deal Data Space Foundation and Community of Practice)
@@ -1369,9 +1373,9 @@ tags: EU, Green Deal, dataspace, milieudata, duurzaamheid, biodiversiteit, klima
 ### links
 - label=Website Green Deal Dataspace; url=https://green-deal-dataspace.eu/
 - label=European Commission - Green Data; url=https://environment.ec.europa.eu/law-and-governance/green-data_en
-- label=SAGE - The Green Deal Data Space; url=https://www.greendealdata.eu/
 - label=Green Deal Dataspace e.V.; url=https://green-deal-dataspace.eu/association/
 - label=Data Marketplace; url=https://green-deal-dataspace.eu/datamarketplace/
+- label=SAGE - The Green Deal Data Space; url=https://www.greendealdata.eu/
 
 ### samenvatting
 De Green Deal Data Space (GDDS) is het overkoepelende Europese data-space-initiatief voor Green Deal-gerelateerde milieu- en duurzaamheidsdata. Het doel is om publieke en private partijen data veilig, interoperabel en onder duidelijke voorwaarden te laten delen, uitwisselen en hergebruiken voor Europese milieu- en klimaatdoelen. De GDDS moet bijdragen aan betere toegang tot data, hergebruik van milieudata, data-gedreven productontwikkeling, duurzaamheidsrapportage, circulaire economie, biodiversiteit, klimaatadaptatie en zero pollution. In de tijdlijn is GREAT te zien als de voorbereidende fase met roadmap, governance en technische blauwdruk; SAGE is de uitvoeringsfase die vanaf 2025 werkt aan een volledig operationele GDDS met tien concrete use cases.
@@ -1486,6 +1490,7 @@ tags: EU, supportcentrum, interoperabiliteit, starterkit, dataspaces
 ### links
 - label=Website; url=https://dssc.eu/
 - label=Starter Kit; url=https://dssc.eu/knowledge/starter-kit/
+- label=Blueprint 3.0; url=https://blueprint.dssc.eu/
 
 ### samenvatting
 Ondersteuningscentrum om de Europese strategie voor data te operationaliseren. Ontwikkelt kennis (o.a. DSSC Starter Kit) en faciliteert interoperabiliteit tussen (sectorale) data spaces binnen het Europese data‑ruimtenlandschap.
@@ -1498,6 +1503,7 @@ Europese (common) data spaces versnellen en interoperabel maken door kennis, too
 - Richtlijnen voor governance/techniek/organisatie
 - Interoperabiliteitsaanpak tussen data spaces
 - Community- en supportactiviteiten
+- Blueprint 3.0
 
 ### korte_referentie.doelgebruikers
 - Data space initiatieven
@@ -1517,8 +1523,8 @@ DSSC is in 2023-2026 uitgegroeid tot de belangrijkste Europese ondersteuningsstr
 - datum=2023-09; titel=Blueprint 0.5; detail=De eerste blueprint-publicaties bundelden een conceptueel model, building blocks, glossarium en eerste richtlijnen voor het ontwikkelen en beheren van data spaces.
 - datum=2024; titel=DSSC als Europese supportvoorziening; detail=De Europese Commissie positioneerde DSSC als ondersteuning voor common European data spaces, met assets zoals glossarium, starter kit, blueprint en help centre.
 - datum=2024-09; titel=Starter Kit versie 1.5; detail=DSSC publiceerde een uitgebreidere Starter Kit met aandacht voor interoperability and data quality, business, legal, operational activities, functionality, technology en data/organisational governance.
-- datum=2025; titel=Blueprint 2.0; detail=DSSC publiceerde een verder ontwikkelde Blueprint for Data Spaces met bouwblokken voor business, governance, legal, technical building blocks, data sovereignty and trust, publication and discovery, standards en life-cycle support.
 - datum=2025-2026; titel=Referentie voor Europese data-space-convergentie; detail=DSSC blijft richtinggevend voor hergebruik van referentiearchitecturen, semantiek, interoperabiliteitsspecificaties, datamodellen, adviesdiensten en afstemming tussen sectorale data spaces, waaronder energie, mobiliteit, Green Deal, gezondheid en industrie.
+- datum=2026; titel=Blueprint 3.0; detail=DSSC publiceerde een verder ontwikkelde Blueprint for Data Spaces met bouwblokken voor business, governance, legal, technical building blocks, data sovereignty and trust, publication and discovery, standards en life-cycle support.
 
 ## id: energie-data
 naam: energie.data
@@ -1557,7 +1563,8 @@ Opgericht in juni 2024 als samenwerking om energiedata toegankelijker te maken e
 ### ontwikkelingen_2023_2026.hoogtepunten
 - datum=2024-06; titel=Oprichting energie.data; detail=Oprichting door MFF, Het Normo, Topsector Energie, RVO en het Ministerie van KGG.
 - datum=2024-10; titel=energie.data festival; detail=Community-event om vraag en aanbod van data te verbinden (samen met o.a. MFFBAS, Topsector Energie, KGG en RVO).
-- datum=2026-01; titel=No Wrong Door; detail=Data-loketten in de energiesector werken samen en verwijzen vragers door naar het juiste loket.
+- datum=2025-08; titel=Infograghic Energy Hubs; detail=energie.data ontwikkelt infographics voor verschillende use cases die de belangrijkste datastromen inzichtelijk maakt en laat zien waar je deze kunt ophalen. De eerste in de serie maakt de datastromen voor een energyhub inzichtelijk.
+- datum=2026-04; titel=No Wrong Door; detail=Data-loketten in de energiesector werken samen en verwijzen data vragers door naar het juiste loket.
 - datum=2026-05; titel=Data Sandbox; detail=Opzetten van Energiedata Sandbox voor het veilig, schaalbaar en juridisch verantwoord delen van energiedata voor verduurzaming en rapportages. De kern van deze aanpak is het gebruik van Multi-Party Computation (MPC), een privacy enhancing technology (PET) waarmee gevoelige data versleuteld blijft, ook tijdens verwerking, en waarbij alleen vooraf goedgekeurde analyses kunnen worden uitgevoerd.
 
 
