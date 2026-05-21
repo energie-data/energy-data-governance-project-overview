@@ -7,6 +7,7 @@
   const STORAGE_MESSAGES = 'energy-data-chat-messages';
   const STORAGE_PANEL_OPEN = 'energy-data-chat-panel-open';
   const WELCOME_ID = 'chat-welcome';
+  const LOADING_ID = 'chat-loading';
 
   const root = document.createElement('div');
   root.className = 'chatRoot';
@@ -186,6 +187,63 @@
     }
   }
 
+  function createEnergyLoadingElement() {
+    const root = document.createElement('div');
+    root.className = 'chatEnergyLoad';
+    root.setAttribute('role', 'status');
+    root.setAttribute('aria-live', 'polite');
+
+    const sr = document.createElement('span');
+    sr.className = 'visuallyHidden';
+    sr.textContent = 'Antwoord wordt opgehaald';
+    root.appendChild(sr);
+
+    const scene = document.createElement('div');
+    scene.className = 'chatEnergyScene';
+    scene.setAttribute('aria-hidden', 'true');
+    scene.innerHTML = `
+      <div class="chatEnergySun" title="Zon"></div>
+      <div class="chatEnergyTurbine" title="Windturbine">
+        <div class="chatEnergyTower"></div>
+        <div class="chatEnergyHub"></div>
+        <div class="chatEnergyBlades">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="chatEnergyLine" title="Energiestroom">
+        <span class="chatEnergyPulse"></span>
+        <span class="chatEnergyPulse"></span>
+        <span class="chatEnergyPulse"></span>
+      </div>
+      <div class="chatEnergyBattery" title="Opslag">
+        <div class="chatEnergyFill"></div>
+        <div class="chatEnergyBolt"></div>
+      </div>
+    `;
+    root.appendChild(scene);
+
+    return root;
+  }
+
+  function appendLoadingMessage() {
+    const wrap = document.createElement('div');
+    wrap.className = 'chatMsg chatMsg--assistant chatMsg--loading';
+    wrap.id = LOADING_ID;
+
+    const bubble = document.createElement('div');
+    bubble.className = 'chatBubble chatBubble--loading';
+    bubble.appendChild(createEnergyLoadingElement());
+    wrap.appendChild(bubble);
+
+    messagesEl.appendChild(wrap);
+    scrollMessagesToBottom();
+    return wrap;
+  }
+
+  function removeLoadingMessage(loadingEl) {
+    if (loadingEl) loadingEl.remove();
+  }
+
   function appendMessage(role, text, sources, id, options = {}) {
     const { persist = true, scroll = true } = options;
 
@@ -302,9 +360,7 @@
     input.value = '';
     setLoading(true);
 
-    const loadingEl = appendMessage('assistant', 'Antwoord wordt opgehaald…', [], 'chat-loading', {
-      persist: false
-    });
+    const loadingEl = appendLoadingMessage();
 
     try {
       const headers = { 'Content-Type': 'application/json' };
@@ -318,7 +374,7 @@
 
       const data = await res.json().catch(() => ({}));
 
-      loadingEl.remove();
+      removeLoadingMessage(loadingEl);
 
       if (!res.ok) {
         let errText = data.error || `Fout (${res.status})`;
@@ -339,7 +395,7 @@
 
       appendMessage('assistant', data.answer || 'Geen antwoord ontvangen.', data.sources || []);
     } catch (err) {
-      loadingEl.remove();
+      removeLoadingMessage(loadingEl);
       console.error(err);
       const isFetchBlocked =
         err instanceof TypeError &&

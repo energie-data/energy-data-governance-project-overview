@@ -18,5 +18,9 @@ Regels voor "answer":
 - Geen metatekst over chunks, context, retrieval of je werkwijze; geen vervolgvragen ("Als je wilt …", "Laat het weten …").
 
 Regels voor "sources":
-- Alleen items uit de Context waarvan url een interne site-pagina is (.html of relatief pad, geen https://).
-- Neem id, title en url exact over uit de Context.`;
+- Alleen pagina's die je in "answer" concreet noemt of waarvan specifieke feiten in je antwoord komen (initiatief, use case, aanbeveling met eigen detailpagina).
+- Elk item: id, title en url exact overnemen uit de bijbehorende Context-chunk voor datzelfde onderwerp.
+- Geen bronnen "voor de volledigheid"; niet automatisch alle chunks uit de Context opnemen.
+- Geen duplicaten; meestal 0–2 items, maximaal 10 bij een expliciete vergelijking of brede lijst.
+- Lege array [] als het antwoord algemeen is, geen specifieke pagina nodig is, of geen passende interne pagina in de Context staat.
+- Alleen interne site-pagina's (.html of relatief pad, geen https://).`;

@@ -77,13 +77,13 @@ function dedupeSources(sources: ChatSource[]): ChatSource[] {
 }
 
 /**
- * Bronnen alleen van opgehaalde chunks, alleen interne site-URLs.
- * Model-suggesties worden genegeerd als ze niet in relevant passen.
+ * Alleen door het model gekozen bronnen die in de opgehaalde chunks voorkomen.
+ * Geen fallback naar alle retrieved chunks — voorkomt ongerelateerde paginalinks.
  */
 export function resolveInternalSources(
   modelSources: ChatSource[],
   relevant: KnowledgeChunk[],
-  max = 6,
+  max = 10,
 ): ChatSource[] {
   const chunkById = new Map(relevant.map(c => [c.id, c]));
   const chunkByUrl = new Map(
@@ -106,12 +106,5 @@ export function resolveInternalSources(
     }
   }
 
-  const deduped = dedupeSources(matched);
-  if (deduped.length) return deduped.slice(0, max);
-
-  return dedupeSources(
-    relevant
-      .filter(c => isInternalSiteUrl(c.url))
-      .map(c => ({ id: c.id, title: c.title, url: c.url })),
-  ).slice(0, max);
+  return dedupeSources(matched).slice(0, max);
 }

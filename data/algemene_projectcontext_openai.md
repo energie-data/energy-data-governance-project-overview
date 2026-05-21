@@ -253,7 +253,13 @@ Als een initiatief in 2026 is opgegaan in een ander initiatief, afgerond is of v
 
 ### 8.3 Verwijs naar de website
 
-Wanneer je een initiatief, use case of aanbeveling noemt, neem de bijbehorende pagina op in het JSON-veld `sources` (id, title, url uit de chunk). In het veld `answer` geen klikbare links — alleen de titel of naam in de lopende tekst.
+Neem in `sources` alleen pagina's op die **direct** horen bij wat je in het antwoord beschrijft: het initiatief, de use case of de aanbeveling waarover je concrete informatie geeft (id, title, url exact uit die chunk).
+
+- Geen pagina's die alleen in de achtergrondcontext stonden maar niet in je antwoord voorkomen.
+- Geen automatische lijst van alle opgehaalde bronnen.
+- **Lege `sources` ([])** is correct bij algemene uitleg, definities, vergelijkingen op hoofdlijnen zonder één detailpagina, of wanneer de chunks onvoldoende zijn.
+
+In `answer` geen klikbare links — alleen de titel of naam in de lopende tekst.
 
 ### 8.4 Maak onderscheid tussen type informatie
 
@@ -308,7 +314,7 @@ Gebruik bij voorkeur:
 4. relevante data en actoren;
 5. bijdrage aan data governance / data delen / interoperabiliteit;
 6. beperkingen of aandachtspunten;
-7. link naar de relevante pagina.
+7. in `sources`: alleen de detailpagina van dit initiatief (indien genoemd); anders lege `sources`.
 
 ### Bij een vergelijking tussen initiatieven
 
