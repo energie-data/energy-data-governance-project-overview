@@ -1305,6 +1305,44 @@ hr.sep {
   color: var(--muted);
 }
 
+.chatHeaderActions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4px;
+  margin: -6px -6px -6px 0;
+}
+
+.chatNew {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, .06);
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.chatNew:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, .1);
+}
+
+.chatNew:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.chatNew:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
 .chatClose {
   flex-shrink: 0;
   border: none;
@@ -1314,7 +1352,6 @@ hr.sep {
   line-height: 1;
   cursor: pointer;
   padding: 6px 10px;
-  margin: -6px -6px -6px 0;
   min-width: 40px;
   min-height: 40px;
   border-radius: 8px;

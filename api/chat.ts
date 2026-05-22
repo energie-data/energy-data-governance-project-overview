@@ -12,8 +12,11 @@ import { checkRateLimit } from '../lib/rate-limit.js';
 
 import { buildSystemPrompt } from '../lib/project-context.js';
 
-import { CHAT_JSON_OUTPUT_INSTRUCTIONS } from '../lib/prompt-output.js';
-
+import {
+  buildChatCompletionMessages,
+  buildRetrievalQuery,
+  parseChatHistory,
+} from '../lib/chat-history.js';
 import { formatContext, retrieveRelevantChunks } from '../lib/retrieval.js';
 
 import {
@@ -186,7 +189,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
   }
 
-  const relevant = retrieveRelevantChunks(message, allChunks, 8);
+  const history = parseChatHistory(body);
+
+  const retrievalQuery = buildRetrievalQuery(message, history);
+
+  const relevant = retrieveRelevantChunks(retrievalQuery, allChunks, 8);
 
   const context = relevant.length
 
@@ -200,6 +207,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const model = process.env.OPENAI_MODEL?.trim() || DEFAULT_MODEL;
 
+  const completionMessages = buildChatCompletionMessages(
+    buildSystemPrompt(),
+    history,
+    context,
+    message,
+  );
+
 
 
   try {
@@ -212,19 +226,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       response_format: { type: 'json_object' },
 
-      messages: [
-
-        { role: 'system', content: buildSystemPrompt() },
-
-        {
-
-          role: 'user',
-
-          content: `Context:\n\n${context}\n\n---\n\nVraag: ${message}\n\n${CHAT_JSON_OUTPUT_INSTRUCTIONS}`,
-
-        },
-
-      ],
+      messages: completionMessages,
 
     });
 

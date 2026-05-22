@@ -12,6 +12,7 @@ export const CHAT_JSON_OUTPUT_INSTRUCTIONS = `Antwoord als JSON:
 
 Regels voor "answer":
 - Nederlands; beknopt en feitelijk.
+- Bij vervolgvragen: sluit aan op het eerdere gesprek in dit draadje; herhaal niet onnodig de volledige inleiding.
 - Eenvoudige HTML, geen markdown (geen **, *, #, backticks).
 - Toegestane tags: ${PROMPT_ALLOWED_ANSWER_TAGS} — zonder attributen.
 - Geen <a> in answer; paginaverwijzingen horen in "sources".

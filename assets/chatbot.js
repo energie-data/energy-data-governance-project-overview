@@ -8,6 +8,8 @@
   const STORAGE_PANEL_OPEN = 'energy-data-chat-panel-open';
   const WELCOME_ID = 'chat-welcome';
   const LOADING_ID = 'chat-loading';
+  const WELCOME_TEXT =
+    'Stel een vraag over use cases, initiatieven of de reflectie op aanbevelingen uit 2023. Ik verwijs naar pagina\'s op deze site.';
 
   const root = document.createElement('div');
   root.className = 'chatRoot';
@@ -24,7 +26,10 @@
           <h2 class="chatTitle">Vraag over het rapport</h2>
           <p class="chatSubtitle">Antwoorden op basis van de website-inhoud</p>
         </div>
-        <button type="button" class="chatClose" id="chatClose" aria-label="Sluit chat">×</button>
+        <div class="chatHeaderActions">
+          <button type="button" class="chatNew" id="chatNew" disabled aria-label="Nieuw gesprek beginnen">Nieuw gesprek</button>
+          <button type="button" class="chatClose" id="chatClose" aria-label="Sluit chat">×</button>
+        </div>
       </header>
       <div class="chatMessages" id="chatMessages" role="log" aria-live="polite"></div>
       <form class="chatForm" id="chatForm">
@@ -40,6 +45,7 @@
   const fab = root.querySelector('#chatFab');
   const panel = root.querySelector('#chatPanel');
   const closeBtn = root.querySelector('#chatClose');
+  const newChatBtn = root.querySelector('#chatNew');
   const messagesEl = root.querySelector('#chatMessages');
   const form = root.querySelector('#chatForm');
   const input = root.querySelector('#chatInput');
@@ -244,6 +250,19 @@
     if (loadingEl) loadingEl.remove();
   }
 
+  function buildApiHistory() {
+    return storedMessages
+      .filter(
+        m =>
+          (m.role === 'user' || m.role === 'assistant') &&
+          m.id !== WELCOME_ID &&
+          m.id !== LOADING_ID &&
+          typeof m.text === 'string' &&
+          m.text.trim()
+      )
+      .map(m => ({ role: m.role, content: m.text }));
+  }
+
   function appendMessage(role, text, sources, id, options = {}) {
     const { persist = true, scroll = true } = options;
 
@@ -293,33 +312,59 @@
         id: id || null
       });
       saveStoredMessages(storedMessages);
+      updateNewChatButton();
     }
 
     return wrap;
   }
 
+  function hasConversationHistory() {
+    return storedMessages.length > 0;
+  }
+
+  function updateNewChatButton() {
+    const loading = Boolean(document.getElementById(LOADING_ID));
+    newChatBtn.disabled = !hasConversationHistory() || loading;
+  }
+
+  function showWelcomeMessage() {
+    appendMessage('assistant', WELCOME_TEXT, [], WELCOME_ID, { persist: false, scroll: false });
+  }
+
   function restoreSession() {
     const live = messagesEl.getAttribute('aria-live');
     messagesEl.setAttribute('aria-live', 'off');
+    messagesEl.innerHTML = '';
 
     if (!storedMessages.length) {
-      appendMessage(
-        'assistant',
-        'Stel een vraag over use cases, initiatieven of de reflectie op aanbevelingen uit 2023. Ik verwijs naar pagina\'s op deze site.',
-        [],
-        WELCOME_ID,
-        { scroll: false }
-      );
-      messagesEl.setAttribute('aria-live', live || 'polite');
-      return;
-    }
-
-    for (const m of storedMessages) {
-      appendMessage(m.role, m.text, m.sources || [], m.id || undefined, { persist: false, scroll: false });
+      showWelcomeMessage();
+    } else {
+      for (const m of storedMessages) {
+        appendMessage(m.role, m.text, m.sources || [], m.id || undefined, {
+          persist: false,
+          scroll: false
+        });
+      }
     }
 
     messagesEl.setAttribute('aria-live', live || 'polite');
+    updateNewChatButton();
   }
+
+  function startNewConversation() {
+    if (!hasConversationHistory()) return;
+    storedMessages = [];
+    saveStoredMessages(storedMessages);
+    restoreSession();
+    scheduleScrollToBottom();
+    input.focus({ preventScroll: true });
+  }
+
+  newChatBtn.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    startNewConversation();
+  });
 
   restoreSession();
 
@@ -337,6 +382,7 @@
     sendBtn.disabled = on;
     input.disabled = on;
     sendBtn.textContent = on ? 'Bezig…' : 'Verstuur';
+    updateNewChatButton();
   }
 
   input.addEventListener('keydown', e => {
@@ -356,6 +402,7 @@
       return;
     }
 
+    const history = buildApiHistory();
     appendMessage('user', message);
     input.value = '';
     setLoading(true);
@@ -369,7 +416,7 @@
       const res = await fetch(`${apiUrl}/api/chat`, {
         method: 'POST',
         headers,
-        body: JSON.stringify({ message })
+        body: JSON.stringify({ message, history })
       });
 
       const data = await res.json().catch(() => ({}));
