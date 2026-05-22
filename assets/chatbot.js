@@ -2,6 +2,8 @@
 
 (function initChatbot() {
   const config = window.CHAT_CONFIG || {};
+  if (config.enabled === false) return;
+
   const apiUrl = (config.apiUrl || '').trim().replace(/\/$/, '');
 
   const STORAGE_MESSAGES = 'energy-data-chat-messages';
