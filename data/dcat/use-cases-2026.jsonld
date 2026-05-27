@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/dataset/use-cases-2026",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "use-cases-2026",
+      "dct:title": {
+        "@value": "Energiedata Use Cases Database",
+        "@language": "nl"
+      },
+      "dct:description": {
+        "@value": "Overzicht van 69 use cases en projecten op het gebied van energiedatatoepassing in Nederland",
+        "@language": "nl"
+      },
+      "dct:language": "nl",
+      "dct:publisher": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl"
+      },
+      "dct:license": {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": "2026-04-24",
+      "dcat:keyword": [
+        {
+          "@value": "use cases",
+          "@language": "nl"
+        },
+        {
+          "@value": "energiedata",
+          "@language": "nl"
+        },
+        {
+          "@value": "projecten",
+          "@language": "nl"
+        },
+        {
+          "@value": "metadata",
+          "@language": "nl"
+        },
+        {
+          "@value": "Nederland",
+          "@language": "nl"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "https://data.overheid.nl/ondersteuning/dcat#Energie"
+      },
+      "dcat:landingPage": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/overzicht-use-cases.html"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/contact/main"
+      },
+      "dcat:distribution": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/distribution/use-cases-2026-json"
+      },
+      "adms:versionNotes": {
+        "@value": "Automatisch afgeleid: {\"record_count\": 69, \"metadata_dimensions\": [\"MD1_status\", \"MD2_projectdoel\", \"MD3_type_energiedata\", \"MD4_databron\", \"MD6_governance\", \"MD7_toepassing\", \"MD8_granulariteit_niveau\", \"MD9_granulariteit_frequentie\", \"data_consumer\"]}",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/distribution/use-cases-2026-json",
+      "@type": "dcat:Distribution",
+      "dct:title": {
+        "@value": "JSON distributie van Use cases energiedata 2026",
+        "@language": "nl"
+      },
+      "dct:description": {
+        "@value": "Machineleesbare bron in JSON-formaat.",
+        "@language": "nl"
+      },
+      "dct:license": {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/data/use_cases_2026.json"
+      },
+      "dcat:accessURL": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/data/use_cases_2026.json"
+      },
+      "dcat:byteSize": 173678
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl",
+      "@type": "foaf:Organization",
+      "foaf:name": "energie.data"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/contact/main",
+      "@type": "vcard:Kind",
+      "vcard:fn": "energie.data",
+      "vcard:hasEmail": {
+        "@id": "mailto:info@energiedata.nl"
+      }
+    }
+  ]
+}

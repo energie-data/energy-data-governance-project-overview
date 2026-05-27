@@ -105,6 +105,30 @@ Ondersteunde bronnen:
 | `interoperability` | `data/projects_interoperability.json` |
 | `recommendations_2023` | `data/recommendations_2023.json` |
 
+## DCAT-AP-NL export (RDF op GitHub Pages)
+
+Voor machineleesbare ontsluiting is er een DCAT-exportscript dat metadata voor de drie JSON-kennisproducten genereert als `JSON-LD` en `Turtle` (zonder SPARQL-endpoint).
+
+```bash
+python export_dcat.py \
+  --base-url "https://data-governance-2026.reports.energiedata.nl/" \
+  --publisher-name "energie.data" \
+  --publisher-uri "https://data-governance-2026.reports.energiedata.nl" \
+  --contact-name "energie.data" \
+  --contact-email "info@energiedata.nl"
+```
+
+Output komt in `data/dcat/`:
+
+- `catalog.jsonld` en `catalog.ttl` (catalogus met 3 datasets)
+- `projects-data-sharing-2026.*`
+- `projects-interoperability-2026.*`
+- `use-cases-2026.*`
+- `interoperability-filters-skos.*` (SKOS voor filtermetadata)
+- `use-case-metadata-skos.*` (SKOS voor MD1-MD9-schema)
+
+Deze bestanden zijn statisch te hosten via GitHub Pages en daarmee direct crawlbaar/harvestbaar als RDF-resources.
+
 ## Deployment
 
 ### GitHub Pages

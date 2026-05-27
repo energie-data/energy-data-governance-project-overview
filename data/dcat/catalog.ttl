@@ -1,0 +1,101 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data-governance-2026.reports.energiedata.nl/id/catalog/energiedata-governance-catalogus>
+  a "dcat:Catalog" ;
+  dct:title "Catalogus energiedata governance kennisproducten"@nl ;
+  dct:description "DCAT-AP-NL catalogus voor drie JSON-kennisproducten van het energiedata-governance overzicht."@nl ;
+  dct:publisher <https://data-governance-2026.reports.energiedata.nl> ;
+  dct:language "nl" ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:modified "2026-05-27T14:37:06+00:00" ;
+  dcat:dataset <https://data-governance-2026.reports.energiedata.nl/id/dataset/projects-data-sharing-2026>, <https://data-governance-2026.reports.energiedata.nl/id/dataset/projects-interoperability-2026>, <https://data-governance-2026.reports.energiedata.nl/id/dataset/use-cases-2026> ;
+  dcat:themeTaxonomy <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters>, <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  dcat:contactPoint <https://data-governance-2026.reports.energiedata.nl/id/contact/main> ;
+  foaf:homepage <https://data-governance-2026.reports.energiedata.nl/> .
+<https://data-governance-2026.reports.energiedata.nl>
+  a "foaf:Organization" ;
+  foaf:name "energie.data" .
+<https://data-governance-2026.reports.energiedata.nl/id/contact/main>
+  a "vcard:Kind" ;
+  vcard:fn "energie.data" ;
+  vcard:hasEmail <mailto:info@energiedata.nl> .
+<https://data-governance-2026.reports.energiedata.nl/id/dataset/projects-data-sharing-2026>
+  a "dcat:Dataset" ;
+  dct:identifier "projects-data-sharing-2026" ;
+  dct:title "Initiatieven data delen 2026"@nl ;
+  dct:description "Overzicht van initiatieven rond data delen in het energiedomein (2026)."@nl ;
+  dct:language "nl" ;
+  dct:publisher <https://data-governance-2026.reports.energiedata.nl> ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:modified "2026-05-27T12:19:13+00:00" ;
+  dcat:keyword "energiedata"@nl, "data delen"@nl, "governance"@nl, "initiatieven"@nl, "Nederland"@nl ;
+  dcat:theme <https://data.overheid.nl/ondersteuning/dcat#Energie> ;
+  dcat:landingPage <https://data-governance-2026.reports.energiedata.nl/initiatieven-data-delen.html> ;
+  dcat:contactPoint <https://data-governance-2026.reports.energiedata.nl/id/contact/main> ;
+  dcat:distribution <https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-data-sharing-2026-json> ;
+  adms:versionNotes "Automatisch afgeleid: {\"record_count\": 37, \"statuses\": [\"Actief\", \"Afgerond\"]}"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/dataset/projects-interoperability-2026>
+  a "dcat:Dataset" ;
+  dct:identifier "projects-interoperability-2026" ;
+  dct:title "Update H6.1 – semantiek & interoperabiliteit in het energiedomein"@nl ;
+  dct:description "Overzicht van semantiek- en interoperabiliteitsinitiatieven in het energiedomein."@nl ;
+  dct:language "nl" ;
+  dct:publisher <https://data-governance-2026.reports.energiedata.nl> ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:modified "2026-05-06" ;
+  dcat:keyword "interoperabiliteit"@nl, "semantiek"@nl, "ontologie"@nl, "standaarden"@nl, "energiedata"@nl ;
+  dcat:theme <https://data.overheid.nl/ondersteuning/dcat#Energie> ;
+  dcat:landingPage <https://data-governance-2026.reports.energiedata.nl/initiatieven-interoperabiliteit.html> ;
+  dcat:contactPoint <https://data-governance-2026.reports.energiedata.nl/id/contact/main> ;
+  dcat:distribution <https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-interoperability-2026-json> ;
+  adms:versionNotes "Automatisch afgeleid: {\"record_count\": 13, \"filter_dimensions\": [\"beheer_vorm\", \"bruikbaarheid_e_ontologie\", \"inhoudelijke_focus\", \"oorsprong_in_rapport\", \"regio_cluster\", \"relevantie_h61\", \"type_initiatief\", \"volwassenheid_2026\"]}"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/dataset/use-cases-2026>
+  a "dcat:Dataset" ;
+  dct:identifier "use-cases-2026" ;
+  dct:title "Energiedata Use Cases Database"@nl ;
+  dct:description "Overzicht van 69 use cases en projecten op het gebied van energiedatatoepassing in Nederland"@nl ;
+  dct:language "nl" ;
+  dct:publisher <https://data-governance-2026.reports.energiedata.nl> ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:modified "2026-04-24" ;
+  dcat:keyword "use cases"@nl, "energiedata"@nl, "projecten"@nl, "metadata"@nl, "Nederland"@nl ;
+  dcat:theme <https://data.overheid.nl/ondersteuning/dcat#Energie> ;
+  dcat:landingPage <https://data-governance-2026.reports.energiedata.nl/overzicht-use-cases.html> ;
+  dcat:contactPoint <https://data-governance-2026.reports.energiedata.nl/id/contact/main> ;
+  dcat:distribution <https://data-governance-2026.reports.energiedata.nl/id/distribution/use-cases-2026-json> ;
+  adms:versionNotes "Automatisch afgeleid: {\"record_count\": 69, \"metadata_dimensions\": [\"MD1_status\", \"MD2_projectdoel\", \"MD3_type_energiedata\", \"MD4_databron\", \"MD6_governance\", \"MD7_toepassing\", \"MD8_granulariteit_niveau\", \"MD9_granulariteit_frequentie\", \"data_consumer\"]}"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-data-sharing-2026-json>
+  a "dcat:Distribution" ;
+  dct:title "JSON distributie van Initiatieven data delen 2026"@nl ;
+  dct:description "Machineleesbare bron in JSON-formaat."@nl ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:downloadURL <https://data-governance-2026.reports.energiedata.nl/data/projects_data_sharing_2026.json> ;
+  dcat:accessURL <https://data-governance-2026.reports.energiedata.nl/data/projects_data_sharing_2026.json> ;
+  dcat:byteSize 142995 .
+<https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-interoperability-2026-json>
+  a "dcat:Distribution" ;
+  dct:title "JSON distributie van Initiatieven semantiek en interoperabiliteit 2026"@nl ;
+  dct:description "Machineleesbare bron in JSON-formaat."@nl ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:downloadURL <https://data-governance-2026.reports.energiedata.nl/data/projects_interoperability.json> ;
+  dcat:accessURL <https://data-governance-2026.reports.energiedata.nl/data/projects_interoperability.json> ;
+  dcat:byteSize 59517 .
+<https://data-governance-2026.reports.energiedata.nl/id/distribution/use-cases-2026-json>
+  a "dcat:Distribution" ;
+  dct:title "JSON distributie van Use cases energiedata 2026"@nl ;
+  dct:description "Machineleesbare bron in JSON-formaat."@nl ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:downloadURL <https://data-governance-2026.reports.energiedata.nl/data/use_cases_2026.json> ;
+  dcat:accessURL <https://data-governance-2026.reports.energiedata.nl/data/use_cases_2026.json> ;
+  dcat:byteSize 173678 .

@@ -1,0 +1,1112 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema",
+      "@type": "skos:ConceptScheme",
+      "dct:title": {
+        "@value": "Use-case metadata schema",
+        "@language": "nl"
+      },
+      "dct:description": {
+        "@value": "SKOS conceptscheme afgeleid uit metadata_schema.",
+        "@language": "nl"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+        }
+      ]
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD1: Status project",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Geeft aan of het project nog loopt of is afgerond",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status/01-lopend",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status"
+      },
+      "skos:prefLabel": {
+        "@value": "Lopend",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status/02-afgerond",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status"
+      },
+      "skos:prefLabel": {
+        "@value": "Afgerond",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status/03-onbekend-niet-gespecificeerd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status"
+      },
+      "skos:prefLabel": {
+        "@value": "Onbekend / niet gespecificeerd",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD2: Projectdoel",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Primair doel van het project; meerdere waarden mogelijk (niet MECE)",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/01-inzicht-monitoring-van-energiegebruik",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Inzicht & monitoring van energiegebruik",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/02-optimalisatie-sturing-van-energiegebruik",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Optimalisatie & sturing van energiegebruik",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/03-voorspelling-planning-van-energiegebruik",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Voorspelling & planning van energiegebruik",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/04-markt-flexibiliteit-vermarkten-van-energ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/05-beleid-onderzoek-gebruik-van-energiedata",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Beleid & onderzoek: gebruik van energiedata t.b.v. nieuw of aangepast beleid",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/06-operationeel-netbeheer-gebruik-van-energ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Operationeel netbeheer: gebruik van energiedata voor de operationele taken van de netbeheerder",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/07-innovatie-demonstratie-testen-en-demonst",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel"
+      },
+      "skos:prefLabel": {
+        "@value": "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD3: Type energiedata",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Welk soort energiedata centraal staat; meerdere waarden mogelijk",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/01-energieverbruiksdata",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+      },
+      "skos:prefLabel": {
+        "@value": "Energieverbruiksdata",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/02-realtime-sensordata-anders-dan-energieve",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+      },
+      "skos:prefLabel": {
+        "@value": "Realtime sensordata (anders dan energieverbruik)",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/03-netdata-data-over-het-fysieke-energienet",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+      },
+      "skos:prefLabel": {
+        "@value": "Netdata: data over het (fysieke) energienetwerk en de assets daarin",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/04-flexibiliteitsdata-data-over-de-inzet-va",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+      },
+      "skos:prefLabel": {
+        "@value": "Flexibiliteitsdata: data over de inzet van flexibele energie",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/05-gebouwdata-data-over-gebouwen-die-energi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+      },
+      "skos:prefLabel": {
+        "@value": "Gebouwdata: data over gebouwen die energie verbruiken",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/06-marktdata-data-over-de-energiemarkt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata"
+      },
+      "skos:prefLabel": {
+        "@value": "Marktdata: data over de energiemarkt",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD4: Databron ofwel aanbieder",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Van wie de data afkomstig is; meerdere waarden mogelijk",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/01-netbeheerder-ofwel-systeembeheerder-dist",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+      },
+      "skos:prefLabel": {
+        "@value": "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/02-energieleverancier",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+      },
+      "skos:prefLabel": {
+        "@value": "Energieleverancier",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/03-gebruiker-aangeslotene-contractant-op-ni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+      },
+      "skos:prefLabel": {
+        "@value": "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/04-aggregator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+      },
+      "skos:prefLabel": {
+        "@value": "Aggregator",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/05-dienstverlener-anders-dan-de-aggregator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+      },
+      "skos:prefLabel": {
+        "@value": "Dienstverlener anders dan de aggregator",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/06-producent-opwekker-wind-zon-overige-hern",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron"
+      },
+      "skos:prefLabel": {
+        "@value": "Producent / opwekker (wind, zon, overige hernieuwbare opwek)",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD5: Data consument, gebruiker ofwel aanvrager",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Wie de data ontvangt of gebruikt; meerdere waarden mogelijk",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/01-huishoudens-prosumers",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Huishoudens/prosumers",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/02-bedrijven-industrie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Bedrijven/industrie",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/03-overheden-beleidsmakers",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Overheden/beleidsmakers",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/04-netbeheerders",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Netbeheerders",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/05-dienstverlener-anders-dan-de-aggregator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Dienstverlener anders dan de aggregator",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/06-aggregator",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Aggregator",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/07-onderzoekers",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer"
+      },
+      "skos:prefLabel": {
+        "@value": "Onderzoekers",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD6: Governance/toegang",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Hoe de toegang tot de data geregeld is; meerdere waarden mogelijk",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/01-individuele-toestemming-consent",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+      },
+      "skos:prefLabel": {
+        "@value": "Individuele toestemming (consent)",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/02-geanonimiseerde-data",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+      },
+      "skos:prefLabel": {
+        "@value": "Geanonimiseerde data",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/03-open-data",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+      },
+      "skos:prefLabel": {
+        "@value": "Open data",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/04-contractuele-datadeling-b2b",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+      },
+      "skos:prefLabel": {
+        "@value": "Contractuele datadeling (B2B)",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/05-wettelijke-verplichting",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+      },
+      "skos:prefLabel": {
+        "@value": "Wettelijke verplichting",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/06-data-space-federatief-gedistribueerde-da",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance"
+      },
+      "skos:prefLabel": {
+        "@value": "Data space / federatief (gedistribueerde datadeling met behoud van controle)",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD7: Toepassing, waar wordt de data voor gebruikt",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Maatschappelijk doel waarvoor de data wordt ingezet; meerdere waarden mogelijk",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/01-ondersteunen-van-landelijke-beleidsvormi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Ondersteunen van landelijke beleidsvorming - Strategische keuzes, wet- en regelgeving, scenario's, monitoring",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/02-ondersteunen-van-systeemplanning-en-real",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Ondersteunen van systeemplanning en realisatie - Fysieke planning en beheer van netten en infrastructuur door netbeheerders",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/03-ondersteunen-van-decentrale-beleidsvormi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen.",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/04-stimuleren-van-innovatie-en-bedrijvighei",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs.",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/05-versterken-van-keuze-en-handelingsvermog",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/06-ondersteunen-van-energiemarktprocessen-f",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit.",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/07-ondersteunen-van-andere-maatschappelijke",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Ondersteunen van andere maatschappelijke opgaven - Integratie met o.a. woningbouw, mobiliteit",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/08-operationeel-management-dagelijkse-bedri",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing"
+      },
+      "skos:prefLabel": {
+        "@value": "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD8: Granulariteit data - niveau",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Op welk geografisch of fysiek aggregatieniveau de data beschikbaar is",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/01-apparaat-1-apparaat-dat-energie-verbruik",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Apparaat: 1 apparaat dat energie verbruikt",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/02-groep-een-groep-van-apparaten",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Groep: een groep van apparaten",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/03-fase-een-verzameling-van-apparaten-aansg",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Fase: een verzameling van apparaten aansgesloten op 1 fase in het huis",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/04-allocatiepunt-als-onderdeel-van-de-aansl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Allocatiepunt: als onderdeel van de aansluiting",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/05-aansluiting",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Aansluiting",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/06-straat",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Straat",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/07-postcode-6",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Postcode 6",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/08-wijk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Wijk",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/09-bedrijventerrein",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Bedrijventerrein",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/10-gemeente",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Gemeente",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/11-provincie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Provincie",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/12-land",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau"
+      },
+      "skos:prefLabel": {
+        "@value": "Land",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:prefLabel": {
+        "@value": "MD9: Granulariteit data - frequentie",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "De tijdresolutie waarmee het energieverbruik wordt gemeten en opgeslagen",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/01-seconde",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Seconde",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/02-minuut",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Minuut",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/03-kwartier",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Kwartier",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/04-uur",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Uur",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/05-dag",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Dag",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/06-week",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Week",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/07-maand",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Maand",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/08-jaar",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "Jaar",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/09-5-jaar",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie"
+      },
+      "skos:prefLabel": {
+        "@value": "5 Jaar",
+        "@language": "nl"
+      }
+    }
+  ]
+}

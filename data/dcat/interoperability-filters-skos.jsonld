@@ -1,0 +1,720 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters",
+      "@type": "skos:ConceptScheme",
+      "dct:title": {
+        "@value": "Interoperabiliteit filtermetadata",
+        "@language": "nl"
+      },
+      "dct:description": {
+        "@value": "SKOS conceptscheme afgeleid uit filter_metadata_definities.",
+        "@language": "nl"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/oorsprong-in-rapport"
+        },
+        {
+          "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie"
+        }
+      ]
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Type initiatief",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Inhoudelijke hoofdclassificatie van het initiatief.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief/ontologie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+      },
+      "skos:prefLabel": {
+        "@value": "Ontologie",
+        "@language": "nl"
+      },
+      "skos:notation": "ontologie"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief/informatiemodel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+      },
+      "skos:prefLabel": {
+        "@value": "Informatiemodel",
+        "@language": "nl"
+      },
+      "skos:notation": "informatiemodel"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief/systeemmodel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+      },
+      "skos:prefLabel": {
+        "@value": "Systeemmodel",
+        "@language": "nl"
+      },
+      "skos:notation": "systeemmodel"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief/harmonisatiemethodiek",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+      },
+      "skos:prefLabel": {
+        "@value": "Harmonisatiemethodiek",
+        "@language": "nl"
+      },
+      "skos:notation": "harmonisatiemethodiek"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief/interoperabiliteitsframework",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+      },
+      "skos:prefLabel": {
+        "@value": "Interoperabiliteitsframework",
+        "@language": "nl"
+      },
+      "skos:notation": "interoperabiliteitsframework"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief/interface-api-standaard",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/type-initiatief"
+      },
+      "skos:prefLabel": {
+        "@value": "Interface- en API-standaard",
+        "@language": "nl"
+      },
+      "skos:notation": "interface_api_standaard"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Beheervorm",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Vorm waarin het initiatief wordt beheerd of gedragen.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm/standaard",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm"
+      },
+      "skos:prefLabel": {
+        "@value": "Standaard",
+        "@language": "nl"
+      },
+      "skos:notation": "standaard"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm/project",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm"
+      },
+      "skos:prefLabel": {
+        "@value": "Project",
+        "@language": "nl"
+      },
+      "skos:notation": "project"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm/community-open-source",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm"
+      },
+      "skos:prefLabel": {
+        "@value": "Community / open source",
+        "@language": "nl"
+      },
+      "skos:notation": "community_open_source"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm/nationaal-model-of-afsprakenstelsel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/beheer-vorm"
+      },
+      "skos:prefLabel": {
+        "@value": "Nationaal model of afsprakenstelsel",
+        "@language": "nl"
+      },
+      "skos:notation": "nationaal_model_of_afsprakenstelsel"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Inhoudelijke focus",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Primair domein of toepassingsgebied binnen H6.1.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus/netbeheer-en-netwerkdata",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+      },
+      "skos:prefLabel": {
+        "@value": "Netbeheer en netwerkdata",
+        "@language": "nl"
+      },
+      "skos:notation": "netbeheer_en_netwerkdata"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus/assets-en-installaties",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+      },
+      "skos:prefLabel": {
+        "@value": "Assets en installaties",
+        "@language": "nl"
+      },
+      "skos:notation": "assets_en_installaties"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus/integraal-energiesysteem",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+      },
+      "skos:prefLabel": {
+        "@value": "Integraal energiesysteem",
+        "@language": "nl"
+      },
+      "skos:notation": "integraal_energiesysteem"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus/gebouw-device-hems",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+      },
+      "skos:prefLabel": {
+        "@value": "Gebouw / device / HEMS",
+        "@language": "nl"
+      },
+      "skos:notation": "gebouw_device_hems"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus/semantische-harmonisatie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+      },
+      "skos:prefLabel": {
+        "@value": "Semantische harmonisatie",
+        "@language": "nl"
+      },
+      "skos:notation": "semantische_harmonisatie"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus/cross-domain-datauitwisseling",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/inhoudelijke-focus"
+      },
+      "skos:prefLabel": {
+        "@value": "Cross-domain datauitwisseling",
+        "@language": "nl"
+      },
+      "skos:notation": "cross_domain_datauitwisseling"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Regio-cluster",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Grof geografisch cluster om op te filteren.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster/nederland",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+      },
+      "skos:prefLabel": {
+        "@value": "Nederland",
+        "@language": "nl"
+      },
+      "skos:notation": "nederland"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster/europa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+      },
+      "skos:prefLabel": {
+        "@value": "Europa",
+        "@language": "nl"
+      },
+      "skos:notation": "europa"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster/internationaal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+      },
+      "skos:prefLabel": {
+        "@value": "Internationaal",
+        "@language": "nl"
+      },
+      "skos:notation": "internationaal"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster/noord-amerika",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+      },
+      "skos:prefLabel": {
+        "@value": "Noord-Amerika",
+        "@language": "nl"
+      },
+      "skos:notation": "noord_amerika"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster/azie-pacific",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+      },
+      "skos:prefLabel": {
+        "@value": "Azië-Pacific",
+        "@language": "nl"
+      },
+      "skos:notation": "azie_pacific"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster/overig",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/regio-cluster"
+      },
+      "skos:prefLabel": {
+        "@value": "Overig",
+        "@language": "nl"
+      },
+      "skos:notation": "overig"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Volwassenheid 2026",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Mate van volwassenheid van het initiatief in 2026.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026/in-ontwikkeling",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026"
+      },
+      "skos:prefLabel": {
+        "@value": "In ontwikkeling",
+        "@language": "nl"
+      },
+      "skos:notation": "in_ontwikkeling"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026/actief",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026"
+      },
+      "skos:prefLabel": {
+        "@value": "Actief",
+        "@language": "nl"
+      },
+      "skos:notation": "actief"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026/matuur",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026"
+      },
+      "skos:prefLabel": {
+        "@value": "In beheer",
+        "@language": "nl"
+      },
+      "skos:notation": "matuur"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026/referentie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/volwassenheid-2026"
+      },
+      "skos:prefLabel": {
+        "@value": "Archief",
+        "@language": "nl"
+      },
+      "skos:notation": "referentie"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Relevantie H6.1",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Mate van relevantie voor de verdere uitwerking van H6.1.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61/kern",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61"
+      },
+      "skos:prefLabel": {
+        "@value": "Kern",
+        "@language": "nl"
+      },
+      "skos:notation": "kern"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61/relevant",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61"
+      },
+      "skos:prefLabel": {
+        "@value": "Relevant",
+        "@language": "nl"
+      },
+      "skos:notation": "relevant"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61/selectief",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/relevantie-h61"
+      },
+      "skos:prefLabel": {
+        "@value": "Selectief",
+        "@language": "nl"
+      },
+      "skos:notation": "selectief"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/oorsprong-in-rapport",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Oorsprong in rapport",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Geeft aan of het initiatief al in het oorspronkelijke rapport was opgenomen of later is toegevoegd.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/oorsprong-in-rapport/oorspronkelijk-rapport",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/oorsprong-in-rapport"
+      },
+      "skos:prefLabel": {
+        "@value": "Oorspronkelijk rapport",
+        "@language": "nl"
+      },
+      "skos:notation": "oorspronkelijk_rapport"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/oorsprong-in-rapport/nieuw-tov-oorspronkelijk-rapport",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/oorsprong-in-rapport"
+      },
+      "skos:prefLabel": {
+        "@value": "Nieuw t.o.v. oorspronkelijk rapport",
+        "@language": "nl"
+      },
+      "skos:notation": "nieuw_tov_oorspronkelijk_rapport"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:prefLabel": {
+        "@value": "Bruikbaarheid voor e-ontologie",
+        "@language": "nl"
+      },
+      "skos:definition": {
+        "@value": "Mate waarin het initiatief direct of indirect inzetbaar is voor de opbouw van een e-ontologie.",
+        "@language": "nl"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie/direct-bouwblok",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie"
+      },
+      "skos:prefLabel": {
+        "@value": "Direct bouwblok",
+        "@language": "nl"
+      },
+      "skos:notation": "direct_bouwblok"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie/via-mapping",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie"
+      },
+      "skos:prefLabel": {
+        "@value": "Via mapping",
+        "@language": "nl"
+      },
+      "skos:notation": "via_mapping"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie/referentiebron",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie"
+      },
+      "skos:prefLabel": {
+        "@value": "Referentiebron",
+        "@language": "nl"
+      },
+      "skos:notation": "referentiebron"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie/beperkt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/interoperability-filters"
+      },
+      "skos:broader": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/concept/interoperability/bruikbaarheid-e-ontologie"
+      },
+      "skos:prefLabel": {
+        "@value": "Beperkt",
+        "@language": "nl"
+      },
+      "skos:notation": "beperkt"
+    }
+  ]
+}

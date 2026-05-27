@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/dataset/projects-interoperability-2026",
+      "@type": "dcat:Dataset",
+      "dct:identifier": "projects-interoperability-2026",
+      "dct:title": {
+        "@value": "Update H6.1 – semantiek & interoperabiliteit in het energiedomein",
+        "@language": "nl"
+      },
+      "dct:description": {
+        "@value": "Overzicht van semantiek- en interoperabiliteitsinitiatieven in het energiedomein.",
+        "@language": "nl"
+      },
+      "dct:language": "nl",
+      "dct:publisher": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl"
+      },
+      "dct:license": {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:modified": "2026-05-06",
+      "dcat:keyword": [
+        {
+          "@value": "interoperabiliteit",
+          "@language": "nl"
+        },
+        {
+          "@value": "semantiek",
+          "@language": "nl"
+        },
+        {
+          "@value": "ontologie",
+          "@language": "nl"
+        },
+        {
+          "@value": "standaarden",
+          "@language": "nl"
+        },
+        {
+          "@value": "energiedata",
+          "@language": "nl"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "https://data.overheid.nl/ondersteuning/dcat#Energie"
+      },
+      "dcat:landingPage": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/initiatieven-interoperabiliteit.html"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/contact/main"
+      },
+      "dcat:distribution": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-interoperability-2026-json"
+      },
+      "adms:versionNotes": {
+        "@value": "Automatisch afgeleid: {\"record_count\": 13, \"filter_dimensions\": [\"beheer_vorm\", \"bruikbaarheid_e_ontologie\", \"inhoudelijke_focus\", \"oorsprong_in_rapport\", \"regio_cluster\", \"relevantie_h61\", \"type_initiatief\", \"volwassenheid_2026\"]}",
+        "@language": "nl"
+      }
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-interoperability-2026-json",
+      "@type": "dcat:Distribution",
+      "dct:title": {
+        "@value": "JSON distributie van Initiatieven semantiek en interoperabiliteit 2026",
+        "@language": "nl"
+      },
+      "dct:description": {
+        "@value": "Machineleesbare bron in JSON-formaat.",
+        "@language": "nl"
+      },
+      "dct:license": {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/data/projects_interoperability.json"
+      },
+      "dcat:accessURL": {
+        "@id": "https://data-governance-2026.reports.energiedata.nl/data/projects_interoperability.json"
+      },
+      "dcat:byteSize": 59517
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl",
+      "@type": "foaf:Organization",
+      "foaf:name": "energie.data"
+    },
+    {
+      "@id": "https://data-governance-2026.reports.energiedata.nl/id/contact/main",
+      "@type": "vcard:Kind",
+      "vcard:fn": "energie.data",
+      "vcard:hasEmail": {
+        "@id": "mailto:info@energiedata.nl"
+      }
+    }
+  ]
+}

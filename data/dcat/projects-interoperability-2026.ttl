@@ -1,0 +1,39 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data-governance-2026.reports.energiedata.nl/id/dataset/projects-interoperability-2026>
+  a "dcat:Dataset" ;
+  dct:identifier "projects-interoperability-2026" ;
+  dct:title "Update H6.1 – semantiek & interoperabiliteit in het energiedomein"@nl ;
+  dct:description "Overzicht van semantiek- en interoperabiliteitsinitiatieven in het energiedomein."@nl ;
+  dct:language "nl" ;
+  dct:publisher <https://data-governance-2026.reports.energiedata.nl> ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:modified "2026-05-06" ;
+  dcat:keyword "interoperabiliteit"@nl, "semantiek"@nl, "ontologie"@nl, "standaarden"@nl, "energiedata"@nl ;
+  dcat:theme <https://data.overheid.nl/ondersteuning/dcat#Energie> ;
+  dcat:landingPage <https://data-governance-2026.reports.energiedata.nl/initiatieven-interoperabiliteit.html> ;
+  dcat:contactPoint <https://data-governance-2026.reports.energiedata.nl/id/contact/main> ;
+  dcat:distribution <https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-interoperability-2026-json> ;
+  adms:versionNotes "Automatisch afgeleid: {\"record_count\": 13, \"filter_dimensions\": [\"beheer_vorm\", \"bruikbaarheid_e_ontologie\", \"inhoudelijke_focus\", \"oorsprong_in_rapport\", \"regio_cluster\", \"relevantie_h61\", \"type_initiatief\", \"volwassenheid_2026\"]}"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/distribution/projects-interoperability-2026-json>
+  a "dcat:Distribution" ;
+  dct:title "JSON distributie van Initiatieven semantiek en interoperabiliteit 2026"@nl ;
+  dct:description "Machineleesbare bron in JSON-formaat."@nl ;
+  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:downloadURL <https://data-governance-2026.reports.energiedata.nl/data/projects_interoperability.json> ;
+  dcat:accessURL <https://data-governance-2026.reports.energiedata.nl/data/projects_interoperability.json> ;
+  dcat:byteSize 59517 .
+<https://data-governance-2026.reports.energiedata.nl>
+  a "foaf:Organization" ;
+  foaf:name "energie.data" .
+<https://data-governance-2026.reports.energiedata.nl/id/contact/main>
+  a "vcard:Kind" ;
+  vcard:fn "energie.data" ;
+  vcard:hasEmail <mailto:info@energiedata.nl> .

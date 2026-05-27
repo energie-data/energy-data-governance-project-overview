@@ -1,0 +1,386 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema>
+  a "skos:ConceptScheme" ;
+  dct:title "Use-case metadata schema"@nl ;
+  dct:description "SKOS conceptscheme afgeleid uit metadata_schema."@nl ;
+  skos:hasTopConcept <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau>, <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD1: Status project"@nl ;
+  skos:definition "Geeft aan of het project nog loopt of is afgerond"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status/01-lopend>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status> ;
+  skos:prefLabel "Lopend"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status/02-afgerond>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status> ;
+  skos:prefLabel "Afgerond"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status/03-onbekend-niet-gespecificeerd>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md1-status> ;
+  skos:prefLabel "Onbekend / niet gespecificeerd"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD2: Projectdoel"@nl ;
+  skos:definition "Primair doel van het project; meerdere waarden mogelijk (niet MECE)"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/01-inzicht-monitoring-van-energiegebruik>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Inzicht & monitoring van energiegebruik"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/02-optimalisatie-sturing-van-energiegebruik>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Optimalisatie & sturing van energiegebruik"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/03-voorspelling-planning-van-energiegebruik>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Voorspelling & planning van energiegebruik"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/04-markt-flexibiliteit-vermarkten-van-energ>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Markt & flexibiliteit: vermarkten van energie en inzetten voor flexibiliteit"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/05-beleid-onderzoek-gebruik-van-energiedata>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Beleid & onderzoek: gebruik van energiedata t.b.v. nieuw of aangepast beleid"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/06-operationeel-netbeheer-gebruik-van-energ>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Operationeel netbeheer: gebruik van energiedata voor de operationele taken van de netbeheerder"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel/07-innovatie-demonstratie-testen-en-demonst>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md2-projectdoel> ;
+  skos:prefLabel "Innovatie & demonstratie: testen en demonstreren van nieuwe technologieen of businessmodellen"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD3: Type energiedata"@nl ;
+  skos:definition "Welk soort energiedata centraal staat; meerdere waarden mogelijk"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/01-energieverbruiksdata>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata> ;
+  skos:prefLabel "Energieverbruiksdata"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/02-realtime-sensordata-anders-dan-energieve>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata> ;
+  skos:prefLabel "Realtime sensordata (anders dan energieverbruik)"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/03-netdata-data-over-het-fysieke-energienet>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata> ;
+  skos:prefLabel "Netdata: data over het (fysieke) energienetwerk en de assets daarin"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/04-flexibiliteitsdata-data-over-de-inzet-va>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata> ;
+  skos:prefLabel "Flexibiliteitsdata: data over de inzet van flexibele energie"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/05-gebouwdata-data-over-gebouwen-die-energi>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata> ;
+  skos:prefLabel "Gebouwdata: data over gebouwen die energie verbruiken"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata/06-marktdata-data-over-de-energiemarkt>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md3-type-energiedata> ;
+  skos:prefLabel "Marktdata: data over de energiemarkt"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD4: Databron ofwel aanbieder"@nl ;
+  skos:definition "Van wie de data afkomstig is; meerdere waarden mogelijk"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/01-netbeheerder-ofwel-systeembeheerder-dist>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron> ;
+  skos:prefLabel "Netbeheerder ofwel systeembeheerder, distributie of transmissie (DSO/DSB, TSO/TSB)"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/02-energieleverancier>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron> ;
+  skos:prefLabel "Energieleverancier"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/03-gebruiker-aangeslotene-contractant-op-ni>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron> ;
+  skos:prefLabel "Gebruiker (aangeslotene, contractant) op niveau van 1 huishouden, prosumer"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/04-aggregator>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron> ;
+  skos:prefLabel "Aggregator"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/05-dienstverlener-anders-dan-de-aggregator>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron> ;
+  skos:prefLabel "Dienstverlener anders dan de aggregator"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron/06-producent-opwekker-wind-zon-overige-hern>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md4-databron> ;
+  skos:prefLabel "Producent / opwekker (wind, zon, overige hernieuwbare opwek)"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD5: Data consument, gebruiker ofwel aanvrager"@nl ;
+  skos:definition "Wie de data ontvangt of gebruikt; meerdere waarden mogelijk"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/01-huishoudens-prosumers>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Huishoudens/prosumers"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/02-bedrijven-industrie>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Bedrijven/industrie"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/03-overheden-beleidsmakers>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Overheden/beleidsmakers"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/04-netbeheerders>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Netbeheerders"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/05-dienstverlener-anders-dan-de-aggregator>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Dienstverlener anders dan de aggregator"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/06-aggregator>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Aggregator"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer/07-onderzoekers>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/data-consumer> ;
+  skos:prefLabel "Onderzoekers"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD6: Governance/toegang"@nl ;
+  skos:definition "Hoe de toegang tot de data geregeld is; meerdere waarden mogelijk"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/01-individuele-toestemming-consent>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance> ;
+  skos:prefLabel "Individuele toestemming (consent)"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/02-geanonimiseerde-data>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance> ;
+  skos:prefLabel "Geanonimiseerde data"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/03-open-data>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance> ;
+  skos:prefLabel "Open data"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/04-contractuele-datadeling-b2b>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance> ;
+  skos:prefLabel "Contractuele datadeling (B2B)"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/05-wettelijke-verplichting>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance> ;
+  skos:prefLabel "Wettelijke verplichting"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance/06-data-space-federatief-gedistribueerde-da>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md6-governance> ;
+  skos:prefLabel "Data space / federatief (gedistribueerde datadeling met behoud van controle)"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD7: Toepassing, waar wordt de data voor gebruikt"@nl ;
+  skos:definition "Maatschappelijk doel waarvoor de data wordt ingezet; meerdere waarden mogelijk"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/01-ondersteunen-van-landelijke-beleidsvormi>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Ondersteunen van landelijke beleidsvorming - Strategische keuzes, wet- en regelgeving, scenario's, monitoring"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/02-ondersteunen-van-systeemplanning-en-real>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Ondersteunen van systeemplanning en realisatie - Fysieke planning en beheer van netten en infrastructuur door netbeheerders"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/03-ondersteunen-van-decentrale-beleidsvormi>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Ondersteunen van decentrale beleidsvorming en uitvoering - Regionale en lokale planning en concrete uitvoering van maatregelen."@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/04-stimuleren-van-innovatie-en-bedrijvighei>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Stimuleren van innovatie en bedrijvigheid in het energiesysteem - Ontwikkeling van nieuwe diensten, flexibiliteitsopties en energiehubs."@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/05-versterken-van-keuze-en-handelingsvermog>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Versterken van keuze- en handelingsvermogen van burgers - Inzicht en mogelijkheden voor energiebesparing en lokale energieparticipatie"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/06-ondersteunen-van-energiemarktprocessen-f>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Ondersteunen van energiemarktprocessen - Functioneren van energiemarkten, prijsbepaling en handel in flexibiliteit."@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/07-ondersteunen-van-andere-maatschappelijke>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Ondersteunen van andere maatschappelijke opgaven - Integratie met o.a. woningbouw, mobiliteit"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing/08-operationeel-management-dagelijkse-bedri>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md7-toepassing> ;
+  skos:prefLabel "Operationeel management - Dagelijkse bedrijfsvoering van het elektriciteits-  gas- en warmtenet"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD8: Granulariteit data - niveau"@nl ;
+  skos:definition "Op welk geografisch of fysiek aggregatieniveau de data beschikbaar is"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/01-apparaat-1-apparaat-dat-energie-verbruik>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Apparaat: 1 apparaat dat energie verbruikt"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/02-groep-een-groep-van-apparaten>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Groep: een groep van apparaten"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/03-fase-een-verzameling-van-apparaten-aansg>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Fase: een verzameling van apparaten aansgesloten op 1 fase in het huis"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/04-allocatiepunt-als-onderdeel-van-de-aansl>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Allocatiepunt: als onderdeel van de aansluiting"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/05-aansluiting>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Aansluiting"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/06-straat>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Straat"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/07-postcode-6>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Postcode 6"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/08-wijk>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Wijk"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/09-bedrijventerrein>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Bedrijventerrein"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/10-gemeente>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Gemeente"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/11-provincie>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Provincie"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau/12-land>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md8-granulariteit-niveau> ;
+  skos:prefLabel "Land"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:prefLabel "MD9: Granulariteit data - frequentie"@nl ;
+  skos:definition "De tijdresolutie waarmee het energieverbruik wordt gemeten en opgeslagen"@nl ;
+  skos:topConceptOf <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/01-seconde>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Seconde"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/02-minuut>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Minuut"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/03-kwartier>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Kwartier"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/04-uur>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Uur"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/05-dag>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Dag"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/06-week>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Week"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/07-maand>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Maand"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/08-jaar>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "Jaar"@nl .
+<https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie/09-5-jaar>
+  a "skos:Concept" ;
+  skos:inScheme <https://data-governance-2026.reports.energiedata.nl/id/conceptscheme/use-case-metadata-schema> ;
+  skos:broader <https://data-governance-2026.reports.energiedata.nl/id/concept/use-case-schema/md9-granulariteit-frequentie> ;
+  skos:prefLabel "5 Jaar"@nl .
