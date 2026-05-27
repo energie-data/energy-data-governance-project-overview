@@ -1,10 +1,10 @@
 /**
  * AUTO-GENERATED — niet handmatig bewerken.
  * Genereer opnieuw: npm run build:chat-config
- * Bron: CHAT_API_URL, CHAT_CLIENT_API_KEY (.env.local / CI / Vercel build env)
+ * Bron: CHAT_API_URL, CHAT_CLIENT_API_KEY, CHAT_ENABLED (.env.local / CI / Vercel build env)
  */
 (function initChatConfig() {
-  const PROD_CHAT_API_URL = "http://localhost:3000";
+  const PROD_CHAT_API_URL = "https://energy-data-governance-2026-chatapi.vercel.app";
   const LOCAL_CHAT_API_URL = 'http://localhost:3000';
 
   function isLocalHost(hostname) {
@@ -33,6 +33,7 @@
 
   window.CHAT_CONFIG = {
     apiUrl: resolveChatApiUrl(),
-    apiKey: ""
+    apiKey: "",
+    enabled: true
   };
 })();

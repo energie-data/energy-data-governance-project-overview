@@ -30,10 +30,18 @@ const CHAT_API_KEY = (
   ''
 ).trim();
 
+function parseChatEnabled(value) {
+  if (value === undefined || value === null || value === '') return true;
+  const normalized = String(value).trim().toLowerCase();
+  return !['0', 'false', 'no', 'off'].includes(normalized);
+}
+
+const CHAT_ENABLED = parseChatEnabled(process.env.CHAT_ENABLED);
+
 const source = `/**
  * AUTO-GENERATED — niet handmatig bewerken.
  * Genereer opnieuw: npm run build:chat-config
- * Bron: CHAT_API_URL, CHAT_CLIENT_API_KEY (.env.local / CI / Vercel build env)
+ * Bron: CHAT_API_URL, CHAT_CLIENT_API_KEY, CHAT_ENABLED (.env.local / CI / Vercel build env)
  */
 (function initChatConfig() {
   const PROD_CHAT_API_URL = ${JSON.stringify(PROD_CHAT_API_URL)};
@@ -65,7 +73,8 @@ const source = `/**
 
   window.CHAT_CONFIG = {
     apiUrl: resolveChatApiUrl(),
-    apiKey: ${JSON.stringify(CHAT_API_KEY)}
+    apiKey: ${JSON.stringify(CHAT_API_KEY)},
+    enabled: ${CHAT_ENABLED}
   };
 })();
 `;
@@ -74,3 +83,4 @@ writeFileSync(outPath, source, 'utf8');
 console.log(`Wrote ${outPath}`);
 console.log(`  PROD_CHAT_API_URL = ${PROD_CHAT_API_URL || '(same origin as site)'}`);
 console.log(`  CHAT_API_KEY      = ${CHAT_API_KEY ? '(set)' : '(empty — set CHAT_CLIENT_API_KEY at build time if API requires it)'}`);
+console.log(`  CHAT_ENABLED      = ${CHAT_ENABLED}`);

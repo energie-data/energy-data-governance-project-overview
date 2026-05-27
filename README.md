@@ -56,6 +56,7 @@ Relevante variabelen:
 
 | Variabele | Waar | Doel |
 | --- | --- | --- |
+| `CHAT_ENABLED` | GitHub Pages build / lokaal | Chatwidget tonen (`true`, standaard) of verbergen (`false`, `0`, `no`, `off`) |
 | `CHAT_API_URL` | GitHub Pages build / lokaal | Publieke URL van de Vercel API |
 | `CHAT_CLIENT_API_KEY` | GitHub Pages build en Vercel runtime | Optionele gedeelde sleutel voor `X-Chat-Api-Key` |
 | `OPENAI_API_KEY` | Alleen Vercel runtime | Server-side OpenAI API-sleutel |
