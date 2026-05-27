@@ -5,6 +5,7 @@ let fuse = null;
 const elQ = document.getElementById('q');
 const elStatus = document.getElementById('status');
 const elEnergyType = document.getElementById('energyType');
+const elDataConsumer = document.getElementById('dataConsumer');
 const elGranularityLevel = document.getElementById('granularityLevel');
 const elGranularityFrequency = document.getElementById('granularityFrequency');
 const elGrid = document.getElementById('grid');
@@ -188,12 +189,14 @@ function renderChips() {
   const q = elQ.value.trim();
   const status = elStatus.value;
   const energyType = elEnergyType.value;
+  const dataConsumer = elDataConsumer ? elDataConsumer.value : '';
   const granularityLevel = elGranularityLevel.value;
   const granularityFrequency = elGranularityFrequency.value;
 
   if (q) chips.push({ label: `Zoek: ${q}`, clear: () => { elQ.value = ''; apply(); } });
   if (status) chips.push({ label: `Status: ${status}`, clear: () => { elStatus.value = ''; apply(); } });
   if (energyType) chips.push({ label: `Type energiedata: ${energyType}`, clear: () => { elEnergyType.value = ''; apply(); } });
+  if (dataConsumer) chips.push({ label: `Data consument: ${dataConsumer}`, clear: () => { if (elDataConsumer) elDataConsumer.value = ''; apply(); } });
   if (granularityLevel) chips.push({ label: `Granulariteit niveau: ${granularityLevel}`, clear: () => { elGranularityLevel.value = ''; apply(); } });
   if (granularityFrequency) chips.push({ label: `Granulariteit frequentie: ${granularityFrequency}`, clear: () => { elGranularityFrequency.value = ''; apply(); } });
 
@@ -214,6 +217,7 @@ function apply() {
   const q = elQ.value.trim();
   const status = elStatus.value;
   const energyType = elEnergyType.value;
+  const dataConsumer = elDataConsumer ? elDataConsumer.value : '';
   const granularityLevel = elGranularityLevel.value;
   const granularityFrequency = elGranularityFrequency.value;
 
@@ -221,6 +225,7 @@ function apply() {
   if (q && fuse) list = fuse.search(q).map(r => r.item);
   if (status) list = list.filter(x => (x.MD1_status || '') === status);
   if (energyType) list = list.filter(x => x.MD3_type_energiedata.includes(energyType));
+  if (dataConsumer) list = list.filter(x => x.data_consumer.includes(dataConsumer));
   if (granularityLevel) list = list.filter(x => x.MD8_granulariteit_niveau.includes(granularityLevel));
   if (granularityFrequency) list = list.filter(x => x.MD9_granulariteit_frequentie.includes(granularityFrequency));
 
@@ -341,11 +346,13 @@ async function loadUseCases() {
 
   elStatus.innerHTML = '<option value="">Status (alle)</option>';
   elEnergyType.innerHTML = '<option value="">Type energiedata (alle)</option>';
+  if (elDataConsumer) elDataConsumer.innerHTML = '<option value="">Data consument (alle)</option>';
   elGranularityLevel.innerHTML = '<option value="">Granulariteit niveau (alle)</option>';
   elGranularityFrequency.innerHTML = '<option value="">Granulariteit frequentie (alle)</option>';
 
   buildSelectOptions(elStatus, uniqueValues(allUseCases.map(x => x.MD1_status)));
   buildSelectOptions(elEnergyType, uniqueValues(allUseCases.flatMap(x => x.MD3_type_energiedata)));
+  if (elDataConsumer) buildSelectOptions(elDataConsumer, uniqueValues(allUseCases.flatMap(x => x.data_consumer)));
   buildSelectOptions(
     elGranularityLevel,
     sortByPreferredOrder(
@@ -383,6 +390,7 @@ function init() {
   elQ.addEventListener('input', apply);
   elStatus.addEventListener('change', apply);
   elEnergyType.addEventListener('change', apply);
+  if (elDataConsumer) elDataConsumer.addEventListener('change', apply);
   elGranularityLevel.addEventListener('change', apply);
   elGranularityFrequency.addEventListener('change', apply);
 

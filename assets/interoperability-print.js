@@ -3,8 +3,9 @@
  * (geen klikbare links in de gegenereerde inhoud)
  * Data: projects_interoperability.json (zelfde bron als de overzichtspagina).
  */
-function textBlock(label, value) {
-  const t = value != null && String(value).trim() ? String(value) : '';
+function textBlock(label, value, options = {}) {
+  const raw = value != null && String(value).trim() ? String(value) : '';
+  const t = options.compactWhitespace ? raw.replace(/\s+/g, ' ').trim() : raw;
   if (!t) return '';
   return `<p class="printBlockLabel">${escapeHtml(label)}</p><div class="printBlock">${escapeHtml(t)}</div>`;
 }
@@ -111,7 +112,7 @@ function initiativeSection(i, defs, idToName, index) {
   const body = [
     textBlock('Organisatie / consortium', i.organisatie_of_consortium),
     textBlock('Korte omschrijving', i.korte_omschrijving),
-    textBlock('Uitgebreide omschrijving', i.uitgebreide_omschrijving),
+    textBlock('Uitgebreide omschrijving', i.uitgebreide_omschrijving, { compactWhitespace: true }),
     textBlock('Toepassing in praktijk', i.toepassing_in_praktijk),
     textBlock('Relevantie semantiek', i.relevantie_semantiek),
     textBlock('Relevantie interoperabiliteit', i.relevantie_interoperabiliteit),

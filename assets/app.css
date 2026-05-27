@@ -436,6 +436,41 @@ a { color: inherit }
 }
 .section + .section { margin-top: 14px; }
 .section h4 { margin: 0 0 10px; font-size: 13px; color: var(--muted) }
+.section--mainRecommendation {
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-color: var(--accent-border);
+  background: linear-gradient(140deg, rgba(244, 150, 59, .18), rgba(255,255,255,.05));
+  box-shadow: 0 14px 36px rgba(0,0,0,.35);
+}
+.section--mainRecommendation h2 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 2.3vw, 28px);
+  letter-spacing: -0.01em;
+  color: #fff;
+  font-family: var(--font-brand);
+}
+.section--mainRecommendation .summary {
+  color: rgba(255,255,255,.94);
+  font-size: 16px;
+  line-height: 1.55;
+  max-width: 100ch;
+}
+
+.recommendationsGrid {
+  align-items: stretch;
+}
+.recommendationCard {
+  cursor: default;
+  min-height: 0;
+}
+.recommendationCard:hover {
+  transform: none;
+  border-color: var(--border);
+}
+.recommendationCard .list {
+  margin-top: 0;
+}
 
 /* Drawer (zijbalk): zelfde ritme als quick reference (.kv) — titel lichtgrijs, tekst wit, 13px */
 .drawer .section h4 {
