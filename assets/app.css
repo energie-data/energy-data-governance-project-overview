@@ -1646,6 +1646,16 @@ hr.sep {
   text-underline-offset: 2px;
 }
 
+.chatDisclaimer {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--muted2);
+  border-top: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .chatForm {
   display: grid;
   grid-template-columns: 1fr auto;
