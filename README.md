@@ -1,65 +1,143 @@
-# Energy data governance — project overview
+# Energy Data Governance Project Overview
 
-Static HTML site that presents Dutch-language overviews of energy-sector data governance: data-sharing initiatives, interoperability initiatives, and 2023 policy recommendations. Content lives in JSON under `data/` and is loaded by the pages in the repository root (`initiatieven-*.html`, `aanbevelingen.html`, and related views).
+Deze repository bevat een statische website over data governance en data delen in het energiedomein. De site wordt gepubliceerd via GitHub Pages. De chatfunctie gebruikt een aparte serverless API op Vercel, zodat de OpenAI API-sleutel nooit in de browser terechtkomt.
 
-## Requirements
+## Architectuur
 
-- Python 3.10+ (for import/export scripts only; the site itself is plain HTML/CSS/JS).
+- `*.html` en `assets/`: statische website met vanilla HTML, CSS en JavaScript.
+- `data/*.json`: brondata voor overzichten, use cases, aanbevelingen en interoperabiliteitsinitiatieven.
+- `api/chat.ts`: Vercel serverless API voor de chatwidget.
+- `lib/`: gedeelde API-logica voor CORS, retrieval, rate limiting, env-loading en response-sanitization.
+- `scripts/generate-chat-config.mjs`: genereert `assets/chat-config.js` met de publieke chatconfiguratie.
 
-## Data layout
+De browser haalt de statische website en JSON-data op vanaf GitHub Pages. Alleen chatvragen gaan naar de Vercel API.
 
-| Source id (`--source`)   | JSON file                         | Role |
-|--------------------------|-----------------------------------|------|
-| `data_sharing_2023`      | `data/projects_data_sharing_2023.json` | Initiatives snapshot (2023) |
-| `data_sharing_2026`      | `data/projects_data_sharing_2026.json` | Initiatives snapshot (2026) |
-| `interoperability`       | `data/projects_interoperability.json`   | Interoperability: `meta`, `initiatieven`, `bronbijlage`, `filter_metadata_definities` |
-| `recommendations_2023`   | `data/recommendations_2023.json`        | Recommendations legend + nested structure |
+## Vereisten
 
-The static assets in `assets/*.js` fetch these JSON files (paths are relative to each HTML page).
+- Node.js 22 of nieuwer
+- npm
+- Python 3.10 of nieuwer
+- Vercel CLI voor lokaal testen van de API
 
-## Import and export (Markdown ↔ JSON)
-
-Workflow:
-
-1. **Export** — JSON → Markdown for readable, diff-friendly editing in Git.
-2. Edit the `.md` files (or edit JSON directly if you prefer).
-3. **Import** — Markdown → JSON so the site and any JSON-first tooling stay in sync.
-
-Commands (from the repo root):
+Installeer de Node-dependencies:
 
 ```bash
-# Export everything (default)
-python export_to_md.py
-
-# Export one dataset
-python export_to_md.py --source data_sharing_2026
-
-# Import everything (default)
-python import_from_md.py
-
-# Import interoperability only
-python import_from_md.py --source interoperability
-
-# Several sources
-python import_from_md.py --source data_sharing_2023 --source recommendations_2023
+npm install
 ```
 
-- **Export** writes `data/*.md` from `data/*.json`. Filenames are fixed per source (see table above).
-- **Import** reads those Markdown files and overwrites the corresponding JSON.  
-  Interoperability import **preserves** `meta`, `bronbijlage` en `filter_metadata_definities` in `projects_interoperability.json`; alleen `initiatieven` wordt uit de Markdown opgebouwd.
+## Lokaal ontwikkelen
 
-Markdown formats differ by dataset (block structure, section headings). The canonical round-trip pair is **export then import** on the same source; avoid hand-editing field names unless you match the exporter’s layout.
-
-Data-sharing Markdown includes a **`### links`** block after `tags` (one line per link: `- label=…; url=https://…`). Import maps that back to the JSON `links` array; if the block is missing or empty, `links` becomes `[]`.
-
-Interoperability Markdown (v11): per initiatief een blok `## id: …` met **kopregels** (`naam:`, `type_initiatief:`, `jaar_start:`, enz.), daarna **`###`-secties** voor langere tekst (`korte_omschrijving`, `uitgebreide_omschrijving`, …) en lijsten met `- regels` voor `alternatieve_namen`, `opgeleverd`, `verwante_initiatieven`. **`### aanvullende_websites`** gebruikt hetzelfde `- label=…; url=…`-patroon als data-sharing links.
-
-## Local preview
-
-Open any HTML file in a browser from a local checkout. If the browser blocks `fetch()` to `file://` URLs, serve the folder with a small static server, for example:
+Start een eenvoudige statische server voor de website:
 
 ```bash
 python -m http.server 8080
 ```
 
-Then open `http://localhost:8080/index.html`.
+Open daarna `http://localhost:8080/index.html`.
+
+Start de Vercel API in een tweede terminal:
+
+```bash
+cp .env.example .env.local
+npx vercel dev
+```
+
+Vul in `.env.local` minimaal `OPENAI_API_KEY` en `CORS_ORIGINS` in. Lokale `.env`-bestanden worden alleen buiten productie gelezen; in productie gebruikt de API uitsluitend Vercel Environment Variables.
+
+## Chatconfiguratie
+
+De chatwidget leest `window.CHAT_CONFIG` uit `assets/chat-config.js`. Dat bestand wordt gegenereerd uit omgevingsvariabelen:
+
+```bash
+npm run build:chat-config
+```
+
+Relevante variabelen:
+
+| Variabele | Waar | Doel |
+| --- | --- | --- |
+| `CHAT_ENABLED` | GitHub Pages build / lokaal | Chatwidget tonen (`true`, standaard) of verbergen (`false`, `0`, `no`, `off`) |
+| `CHAT_API_URL` | GitHub Pages build / lokaal | Publieke URL van de Vercel API |
+| `CHAT_CLIENT_API_KEY` | GitHub Pages build en Vercel runtime | Optionele gedeelde sleutel voor `X-Chat-Api-Key` |
+| `OPENAI_API_KEY` | Alleen Vercel runtime | Server-side OpenAI API-sleutel |
+| `OPENAI_MODEL` | Vercel runtime | Optioneel model, standaard `gpt-5.5` |
+| `CORS_ORIGINS` | Vercel runtime | Komma-gescheiden lijst van toegestane browser-origins |
+| `RATE_LIMIT_PER_HOUR` | Vercel runtime | Eenvoudige per-instance limiet, standaard `20` |
+
+`CHAT_CLIENT_API_KEY` is zichtbaar in de browser zodra je die gebruikt. Zie dit daarom als misbruikdrempel, niet als geheim. Voor sterke bescherming is een server-side of edge-rate-limit nodig.
+
+De queryparameter `?chatApi=` werkt alleen op `localhost`. In productie wordt deze genegeerd, zodat een link de client-key niet naar een andere host kan sturen.
+
+## Kennisbasis Voor De Chat
+
+Na wijzigingen in de JSON-bronnen moet de RAG-kennisbasis opnieuw worden opgebouwd:
+
+```bash
+python build_knowledge.py
+```
+
+Dit schrijft `data/knowledge_chunks.json`. Commit dit bestand samen met de gewijzigde brondata.
+
+**Chat-prompts:** domein en antwoordstijl in `data/algemene_projectcontext_openai.md`; korte preambule + JSON/HTML-contract in `lib/prompt-output.ts` (tags sync met `lib/response-format.ts`); per vraag de opgehaalde chunks in de user prompt (`api/chat.ts`).
+
+## Data Bewerken
+
+De JSON-bestanden in `data/` zijn leidend voor de website. Voor sommige datasets zijn import- en exportscripts beschikbaar om Markdown als bewerkformaat te gebruiken:
+
+```bash
+python export_to_md.py
+python import_from_md.py
+```
+
+Je kunt ook één bron verwerken:
+
+```bash
+python export_to_md.py --source data_sharing_2026
+python import_from_md.py --source interoperability
+```
+
+Ondersteunde bronnen:
+
+| Source | JSON-bestand |
+| --- | --- |
+| `data_sharing_2023` | `data/projects_data_sharing_2023.json` |
+| `data_sharing_2026` | `data/projects_data_sharing_2026.json` |
+| `interoperability` | `data/projects_interoperability.json` |
+| `recommendations_2023` | `data/recommendations_2023.json` |
+
+## Deployment
+
+### GitHub Pages
+
+GitHub Pages publiceert de statische bestanden uit de repository. Zorg vóór publicatie dat `assets/chat-config.js` en `data/knowledge_chunks.json` up-to-date zijn.
+
+### Vercel API
+
+Zet in Vercel minimaal:
+
+- `OPENAI_API_KEY`
+- `CORS_ORIGINS`, bijvoorbeeld `https://energie-data.github.io,http://localhost:8080`
+- optioneel `CHAT_CLIENT_API_KEY`, met dezelfde waarde als gebruikt bij het genereren van `assets/chat-config.js`
+
+De Vercel-build draait `npm run build:chat-config`. De API leest in productie geen `.env.local`.
+
+## Security
+
+- De OpenAI API-sleutel staat alleen server-side.
+- Als `CORS_ORIGINS` is gezet, laat CORS alleen die origins toe.
+- Chatantwoorden worden server-side en client-side gesanitized voordat eenvoudige HTML wordt weergegeven.
+- Ongeldige JSON in `/api/chat` levert een nette `400` op.
+- De ingebouwde rate limiter is in-memory en daardoor beperkt geschikt voor serverless productie. Gebruik voor publieke productie bij voorkeur Vercel Firewall, Vercel KV of Redis/Upstash.
+
+## Troubleshooting
+
+- `401 Unauthorized`: `CHAT_CLIENT_API_KEY` staat op Vercel, maar `assets/chat-config.js` bevat geen overeenkomende `apiKey`.
+- `403 Origin not allowed by CORS`: de origin van de website staat niet exact in `CORS_ORIGINS`.
+- `503 Chat API is not configured`: `OPENAI_API_KEY` ontbreekt in Vercel.
+- `503 Knowledge base niet geladen`: op Vercel worden `data/knowledge_chunks.json` en `data/algemene_projectcontext_openai.md` niet automatisch meegebundeld bij `readFileSync`. In `vercel.json` staan ze onder `functions.api/chat.ts.includeFiles`; na wijziging opnieuw deployen. Lokaal (`vercel dev`) werkt het vaak wel omdat de hele repo beschikbaar is.
+- Chat antwoordt generiek / zonder site-inhoud (geen 503): controleer Vercel **Runtime Logs** op `[chat] Projectcontext niet gevonden` of lege retrieval; run `python build_knowledge.py` en commit `data/knowledge_chunks.json`.
+- Geen chatrespons in de browser: controleer het Network-tabblad op `/api/chat`.
+
+## Licentie
+
+Zie `LICENSE`.
