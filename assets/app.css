@@ -1321,11 +1321,18 @@ hr.sep {
 
 .chatHeader {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 8px;
   padding: 14px 14px 10px;
   border-bottom: 1px solid var(--border);
+}
+
+.chatHeaderTop {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .chatTitle {
@@ -1335,9 +1342,10 @@ hr.sep {
 }
 
 .chatSubtitle {
-  margin: 4px 0 0;
+  margin: 0;
   font-size: 12px;
   color: var(--muted);
+  width: 100%;
 }
 
 .chatHeaderActions {

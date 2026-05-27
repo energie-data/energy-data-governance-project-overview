@@ -16,22 +16,22 @@
   const root = document.createElement('div');
   root.className = 'chatRoot';
   root.innerHTML = `
-    <button type="button" class="chatFab" id="chatFab" aria-expanded="false" aria-controls="chatPanel" aria-label="Open chat over dit rapport">
+    <button type="button" class="chatFab" id="chatFab" aria-expanded="false" aria-controls="chatPanel" aria-label="Open Best Practice Finder">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
       </svg>
-      <span class="chatFab-label">Vraag</span>
+      <span class="chatFab-label">Finder</span>
     </button>
-    <section class="chatPanel" id="chatPanel" role="dialog" aria-label="Chat over het rapport" aria-hidden="true" hidden>
+    <section class="chatPanel" id="chatPanel" role="dialog" aria-label="Best Practice Finder" aria-hidden="true" hidden>
       <header class="chatHeader">
-        <div>
-          <h2 class="chatTitle">Vraag over het rapport</h2>
-          <p class="chatSubtitle">Antwoorden op basis van de website-inhoud</p>
+        <div class="chatHeaderTop">
+          <h2 class="chatTitle">Best Practice Finder</h2>
+          <div class="chatHeaderActions">
+            <button type="button" class="chatNew" id="chatNew" aria-label="Nieuw gesprek beginnen" hidden>Nieuw gesprek</button>
+            <button type="button" class="chatClose" id="chatClose" aria-label="Sluit chat">×</button>
+          </div>
         </div>
-        <div class="chatHeaderActions">
-          <button type="button" class="chatNew" id="chatNew" disabled aria-label="Nieuw gesprek beginnen">Nieuw gesprek</button>
-          <button type="button" class="chatClose" id="chatClose" aria-label="Sluit chat">×</button>
-        </div>
+        <p class="chatSubtitle">Deze AI-assistent kan zoeken door de initiatieven interoperabiliteit, intiatieven data delen, use cases en aanbevelingen.</p>
       </header>
       <div class="chatMessages" id="chatMessages" role="log" aria-live="polite"></div>
       <p class="chatDisclaimer" role="note">
@@ -329,7 +329,9 @@
 
   function updateNewChatButton() {
     const loading = Boolean(document.getElementById(LOADING_ID));
-    newChatBtn.disabled = !hasConversationHistory() || loading;
+    const canStartNewChat = hasConversationHistory() && !loading;
+    newChatBtn.hidden = !canStartNewChat;
+    newChatBtn.disabled = !canStartNewChat;
   }
 
   function showWelcomeMessage() {
