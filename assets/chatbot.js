@@ -34,6 +34,9 @@
         </div>
       </header>
       <div class="chatMessages" id="chatMessages" role="log" aria-live="polite"></div>
+      <p class="chatDisclaimer" role="note">
+        Antwoorden worden gegenereerd met behulp van AI. AI kan fouten maken — controleer de resultaten altijd zelf.
+      </p>
       <form class="chatForm" id="chatForm">
         <label class="visuallyHidden" for="chatInput">Uw vraag</label>
         <textarea id="chatInput" class="chatInput" rows="2" placeholder="Bijv. welke use cases gebruiken netdata?" maxlength="2000" required></textarea>
