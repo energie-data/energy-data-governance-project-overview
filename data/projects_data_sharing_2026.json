@@ -2671,5 +2671,105 @@
         }
       ]
     }
+  },
+  {
+    "id": "energiedatawijzer",
+    "naam": "Energiedatawijzer",
+    "status": "Actief",
+    "scope": "Energiedomein",
+    "geografische_scope": "Nederland",
+    "eigenaar": "Het Normo",
+    "jaar_start": 2024,
+    "jaar_einde": null,
+    "tags": [
+      "energiedata",
+      "kennisplatform",
+      "sectorafspraken",
+      "gegevensuitwisseling",
+      "documentatie",
+      "Energiewet",
+      "Het Normo",
+      "MFF",
+      "marktprocessen"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://energiedatawijzer.nl/"
+      }
+    ],
+    "samenvatting": "De Energiedatawijzer is een openbaar kennisplatform voor informatie over gegevensuitwisseling in de Nederlandse energiemarkt. Het platform bundelt documentatie over wet- en regelgeving, sectorafspraken, marktprocessen, gegevensuitwisseling, toegangsverlening, releases, begrippen en vastgestelde documenten. Daarmee vervult de Energiedatawijzer vooral een praktische ontsluitingsfunctie: niet als zelfstandig data space-initiatief of formeel afsprakenstelsel, maar als centrale vindplaats voor de documentatie waarmee marktpartijen, dienstverleners en andere betrokkenen gegevensuitwisseling kunnen begrijpen en toepassen.",
+    "korte_referentie": {
+      "primair_doel": "Professionals in de energiemarkt één centrale, actuele en toegankelijke vindplaats bieden voor afspraken, documentatie en uitleg over gegevensuitwisseling in de energiesector.",
+      "belangrijkste_resultaten": [
+        "Centraal openbaar platform voor documentatie over gegevensuitwisseling in de energiemarkt",
+        "Vindbare documentatie over sectorafspraken, marktprocessen, berichtuitwisseling en releases",
+        "Begrippenlijst en thematische ingangen voor onder meer wet- en regelgeving, toegangsverlening, profielen, congestiemanagement en data delen",
+        "Ondersteuning van de overgang naar gegevensuitwisseling onder de Energiewet en de rol van Het Normo als GUE"
+      ],
+      "doelgebruikers": [
+        "Energieleveranciers",
+        "Netbeheerders",
+        "Meetbedrijven",
+        "Dienstverleners",
+        "Datavragende partijen",
+        "Overheden",
+        "Toezichthouders",
+        "Professionals die met marktprocessen en energiedata werken"
+      ]
+    },
+    "ontwikkelingen_2023_2026": {
+      "referentiedatum": "Q2 2026",
+      "samenvatting": "De Energiedatawijzer is in 2024 gelanceerd als centraal platform om documentatie en afspraken over gegevensuitwisseling in de energiesector beter vindbaar te maken. In 2025 en 2026 is de relevantie toegenomen door de voorbereiding op en inwerkingtreding van de Energiewet, de positionering van Het Normo als Gegevensuitwisselingsentiteit en de behoefte aan één centrale bron voor vastgestelde documentatie, releases en toelichting op sectorprocessen.",
+      "hoogtepunten": [
+        {
+          "datum": "2024-10-15",
+          "titel": "Soft launch Energiedatawijzer",
+          "detail": "BAS presenteerde de Energiedatawijzer als MVP tijdens het energie.data festival, met als doel de toegang tot actuele afspraken over gegevensuitwisseling eenvoudiger en betrouwbaarder te maken."
+        },
+        {
+          "datum": "2024-10-22",
+          "titel": "Publieke lancering",
+          "detail": "BAS lanceerde de Energiedatawijzer als openbaar platform voor essentiële informatie over wet- en regelgeving, sectorafspraken en gegevensuitwisseling binnen de energiesector."
+        },
+        {
+          "datum": "2025",
+          "titel": "Verdere vulling met sectorinformatie",
+          "detail": "Het platform groeide uit tot vindplaats voor onderwerpen zoals gegevensuitwisseling, marktafspraken en -processen, profielen, toegangsverlening, sectorkalender, begrippenlijst en documenten."
+        },
+        {
+          "datum": "2026-01-01",
+          "titel": "Koppeling met Energiewet en rol Het Normo",
+          "detail": "Vanaf de inwerkingtreding van de Energiewet ondersteunt de Energiedatawijzer de uitleg en documentatie rond gegevensuitwisseling onder het nieuwe wettelijke kader en de rol van Het Normo als GUE."
+        },
+        {
+          "datum": "2026",
+          "titel": "Release- en documentatieplatform",
+          "detail": "De Energiedatawijzer bevat actuele en vastgestelde documenten en biedt gebruikers de mogelijkheid updates rond releases te volgen, waaronder de oktober 2026-release."
+        }
+      ]
+    },
+    "positie_in_het_datalandschap": {
+      "type_initiatief": "Kennisplatform en documentatieportaal",
+      "relatie_tot_data_spaces": "Geen data space of federatieve infrastructuur, maar een ondersteunende voorziening die afspraken, processen en documentatie voor gegevensuitwisseling vindbaar maakt.",
+      "relatie_tot_Het_Normo": "De Energiedatawijzer is een initiatief van Het Normo en ondersteunt de informatievoorziening rond diens rol in gegevensuitwisseling onder de Energiewet.",
+      "relatie_tot_MFF": "De Energiedatawijzer sluit aan op de sectorale marktfacilitering en documentatie rond marktprocessen en afspraken die vanuit MFF/BAS/Het Normo zijn ontwikkeld.",
+      "relatie_tot_Energiewet": "Het platform ondersteunt uitleg en documentatie over gegevensuitwisseling binnen het nieuwe wettelijke kader, maar is zelf geen wet- of regelgeving."
+    },
+    "beoordeling": {
+      "volwassenheid_2026": "Operationeel en relevant als centrale vindplaats voor documentatie; de waarde ligt vooral in vindbaarheid, actualiteit en uniformering van informatievoorziening.",
+      "sterktes": [
+        "Openbaar toegankelijk",
+        "Centrale vindplaats voor vastgestelde documentatie",
+        "Direct verbonden met Het Normo en sectorprocessen",
+        "Praktisch bruikbaar voor partijen die gegevensuitwisseling moeten implementeren"
+      ],
+      "aandachtspunten": [
+        "Geen zelfstandig afsprakenstelsel of technische interoperabiliteitsstandaard",
+        "Afhankelijk van actualiteit, volledigheid en beheer van onderliggende documentatie",
+        "Moet goed blijven aansluiten op Energiewet, NBility, EDSN-processen, MFF-afspraken en toekomstige datadeling via Het Normo"
+      ],
+      "advies_voor_rapport": "Opnemen als praktisch ontsluitings- en documentatieplatform binnen het Nederlandse energiedata-ecosysteem. Niet positioneren als data space of semantische standaard, maar als belangrijke randvoorwaarde voor adoptie, transparantie en vindbaarheid van afspraken over gegevensuitwisseling."
+    }
   }
 ]
