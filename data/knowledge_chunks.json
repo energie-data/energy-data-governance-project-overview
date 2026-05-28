@@ -15,7 +15,7 @@
       "id": "intro:rapport",
       "type": "intro",
       "title": "Introductie rapport",
-      "text": "# Rapport: Data governance en data delen in het energiedomein\nStand van zaken 2026. Actualisatie van het onderzoek van maart 2023.\n## Onderdelen op de website\n- index.html — introductie\n- reflectie-aanbevelingen-2023.html — voortgang aanbevelingen 2023\n- initiatieven-interoperabiliteit.html — semantiek en interoperabiliteit\n- initiatieven-data-delen.html — initiatieven data delen (2023 en 2026)\n- overzicht-use-cases.html — 69 use cases met metadata MD1–MD9\n- aanbevelingen.html — nieuwe aanbevelingen\nUse cases hebben gestructureerde metadata (status, projectdoel, type energiedata, databron, data consument, governance, toepassing, granulariteit). Initiatieven interoperabiliteit hebben filtermetadata (type, beheervorm, focus, regio, volwassenheid, relevantie).",
+      "text": "# Rapport: Data governance en data delen in het energiedomein\nStand van zaken 2026. Actualisatie van het onderzoek van maart 2023.\n## Onderdelen op de website\n- index.html — introductie\n- reflectie-aanbevelingen-2023.html — voortgang aanbevelingen 2023\n- initiatieven-interoperabiliteit.html — semantiek en interoperabiliteit\n- initiatieven-data-delen.html — initiatieven data delen (2023 en 2026)\n- overzicht-use-cases.html — 69 use cases met metadata MD1–MD9\n- wegwijzer.html — wegwijzer energiedata\nUse cases hebben gestructureerde metadata (status, projectdoel, type energiedata, databron, data consument, governance, toepassing, granulariteit). Initiatieven interoperabiliteit hebben filtermetadata (type, beheervorm, focus, regio, volwassenheid, relevantie).",
       "url": "index.html"
     },
     {

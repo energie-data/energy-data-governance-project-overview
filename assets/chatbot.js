@@ -103,6 +103,17 @@
     }
   }
 
+  window.openBestPracticeFinder = function openBestPracticeFinder() {
+    setOpen(true);
+  };
+
+  document.addEventListener('click', e => {
+    const trigger = e.target.closest('[data-open-best-practice-finder]');
+    if (!trigger) return;
+    e.preventDefault();
+    setOpen(true);
+  });
+
   fab.addEventListener('click', e => {
     e.stopPropagation();
     setOpen(!isPanelOpen());

@@ -451,7 +451,7 @@ def build_intro(chunks: List[Dict[str, Any]]) -> None:
         "- initiatieven-interoperabiliteit.html — semantiek en interoperabiliteit",
         "- initiatieven-data-delen.html — initiatieven data delen (2023 en 2026)",
         "- overzicht-use-cases.html — 69 use cases met metadata MD1–MD9",
-        "- aanbevelingen.html — nieuwe aanbevelingen",
+        "- wegwijzer.html — wegwijzer energiedata",
         "",
         "Use cases hebben gestructureerde metadata (status, projectdoel, type energiedata, "
         "databron, data consument, governance, toepassing, granulariteit). "
