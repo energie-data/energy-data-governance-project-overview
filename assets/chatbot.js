@@ -11,7 +11,7 @@
   const WELCOME_ID = 'chat-welcome';
   const LOADING_ID = 'chat-loading';
   const WELCOME_TEXT =
-    'Stel een vraag over use cases, initiatieven of de reflectie op aanbevelingen uit 2023. Ik verwijs naar pagina\'s op deze site.';
+    'Stel een vraag over de inhoud van deze site. Ik geef je antwoord en verwijs naar pagina\'s op de site.';
 
   const root = document.createElement('div');
   root.className = 'chatRoot';
