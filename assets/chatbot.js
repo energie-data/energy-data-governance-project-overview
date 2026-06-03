@@ -16,16 +16,16 @@
   const root = document.createElement('div');
   root.className = 'chatRoot';
   root.innerHTML = `
-    <button type="button" class="chatFab" id="chatFab" aria-expanded="false" aria-controls="chatPanel" aria-label="Open Best Practice Finder">
+    <button type="button" class="chatFab" id="chatFab" aria-expanded="false" aria-controls="chatPanel" aria-label="Open Energiedata Assistent">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
       </svg>
-      <span class="chatFab-label">Finder</span>
+      <span class="chatFab-label">Assistent</span>
     </button>
-    <section class="chatPanel" id="chatPanel" role="dialog" aria-label="Best Practice Finder" aria-hidden="true" hidden>
+    <section class="chatPanel" id="chatPanel" role="dialog" aria-label="Energiedata Assistent" aria-hidden="true" hidden>
       <header class="chatHeader">
         <div class="chatHeaderTop">
-          <h2 class="chatTitle">Best Practice Finder</h2>
+          <h2 class="chatTitle">Energiedata Assistent</h2>
           <div class="chatHeaderActions">
             <button type="button" class="chatNew" id="chatNew" aria-label="Nieuw gesprek beginnen" hidden>Nieuw gesprek</button>
             <button type="button" class="chatClose" id="chatClose" aria-label="Sluit chat">×</button>
@@ -103,12 +103,12 @@
     }
   }
 
-  window.openBestPracticeFinder = function openBestPracticeFinder() {
+  window.openEnergiedataAssistent = function openEnergiedataAssistent() {
     setOpen(true);
   };
 
   document.addEventListener('click', e => {
-    const trigger = e.target.closest('[data-open-best-practice-finder]');
+    const trigger = e.target.closest('[data-open-energiedata-assistent]');
     if (!trigger) return;
     e.preventDefault();
     setOpen(true);
