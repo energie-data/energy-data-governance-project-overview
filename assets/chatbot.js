@@ -465,11 +465,16 @@
       const isFetchBlocked =
         err instanceof TypeError &&
         /failed to fetch|networkerror|load failed/i.test(String(err.message || err));
+      const apiUrlLooksLocal =
+        apiUrl && /localhost|127\.0\.0\.1|\[::1\]/i.test(apiUrl) &&
+        !/localhost|127\.0\.0\.1|\[::1\]/i.test(window.location.hostname);
       appendMessage(
         'assistant',
-        isFetchBlocked
-          ? 'De browser blokkeert de aanroep naar de chat-API (vaak CORS). Controleer in Vercel of CORS_ORIGINS exact uw GitHub Pages-adres bevat (bijv. https://energie-data.github.io, zonder pad). Zie ook of CHAT_CLIENT_API_KEY op Vercel overeenkomt met de widget.'
-          : 'Kon geen verbinding maken met de chat-API. Controleer uw netwerk of probeer het later opnieuw.'
+        apiUrlLooksLocal
+          ? 'De chat-widget wijst naar een lokale API-URL. Genereer assets/chat-config.js opnieuw met npm run build:site en de juiste CHAT_API_URL, en publiceer opnieuw op GitHub Pages.'
+          : isFetchBlocked
+            ? 'De browser blokkeert de aanroep naar de chat-API (vaak CORS). Controleer in Vercel of CORS_ORIGINS exact uw website-adres bevat (bijv. https://data-governance-2026.reports.energiedata.nl, zonder pad). Zie ook of CHAT_CLIENT_API_KEY op Vercel overeenkomt met de widget.'
+            : 'Kon geen verbinding maken met de chat-API. Controleer uw netwerk of probeer het later opnieuw.'
       );
     } finally {
       setLoading(false);

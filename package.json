@@ -6,7 +6,9 @@
     "build:site": "npm run build:chat-config",
     "build:knowledge": "python build_knowledge.py",
     "build:chat-config": "node scripts/generate-chat-config.mjs",
-    "dev:api": "npm run build:chat-config && vercel dev"
+    "dev": "node scripts/dev-local.mjs",
+    "dev:site": "python -m http.server 8080",
+    "dev:api": "vercel dev --listen 3000"
   },
   "dependencies": {
     "dotenv": "^16.5.0",

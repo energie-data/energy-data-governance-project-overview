@@ -27,22 +27,27 @@ npm install
 
 ## Lokaal ontwikkelen
 
-Start een eenvoudige statische server voor de website:
+Eén commando start website én chat-API:
 
 ```bash
-python -m http.server 8080
+cp .env.example .env.local   # Windows: copy .env.example .env.local
+npm install
+npm run dev
 ```
 
-Open daarna `http://localhost:8080/index.html`.
+- Website: `http://localhost:8080/index.html`
+- Chat-API: `http://localhost:3000/api/chat`
 
-Start de Vercel API in een tweede terminal:
+De chat-widget op localhost:8080 praat automatisch met de lokale API op poort 3000 (zie `assets/chat-config.js`).
+
+Vul in `.env.local` minimaal `OPENAI_API_KEY` en `CORS_ORIGINS` in (inclusief `http://localhost:8080`). Lokale `.env`-bestanden worden alleen buiten productie gelezen; in productie gebruikt de API uitsluitend Vercel Environment Variables.
+
+Aparte terminals (optioneel):
 
 ```bash
-cp .env.example .env.local
-npx vercel dev
+npm run dev:site   # alleen statische site op :8080
+npm run dev:api      # alleen API op :3000
 ```
-
-Vul in `.env.local` minimaal `OPENAI_API_KEY` en `CORS_ORIGINS` in. Lokale `.env`-bestanden worden alleen buiten productie gelezen; in productie gebruikt de API uitsluitend Vercel Environment Variables.
 
 ## Chatconfiguratie
 
@@ -120,7 +125,7 @@ Vercel host **alleen** de serverless chat-API (`/api/chat`). De statische websit
 Zet in Vercel minimaal:
 
 - `OPENAI_API_KEY`
-- `CORS_ORIGINS`, bijvoorbeeld `https://energie-data.github.io,https://data-governance-2026.reports.energiedata.nl,http://localhost:8080`
+- `CORS_ORIGINS`, bijvoorbeeld `https://data-governance-2026.reports.energiedata.nl,https://energie-data.github.io,http://localhost:8080`
 - optioneel `CHAT_CLIENT_API_KEY`, met dezelfde waarde als gebruikt bij het genereren van `assets/chat-config.js`
 
 Controleer in het Vercel-dashboard dat **geen** Output Directory is ingesteld (laat leeg of verwijder `.`) en dat **Build Command** leeg is of overeenkomt met `vercel.json` (`buildCommand: ""`). Vercel mag geen `npm run build` meer draaien — de chat-config hoort bij GitHub Pages.
@@ -143,6 +148,7 @@ De API leest in productie geen `.env.local`. Genereer `assets/chat-config.js` v�
 - `503 Knowledge base niet geladen`: op Vercel worden `data/knowledge_chunks.json` en `data/algemene_projectcontext_openai.md` niet automatisch meegebundeld bij `readFileSync`. In `vercel.json` staan ze onder `functions.api/chat.ts.includeFiles`; na wijziging opnieuw deployen. Lokaal (`vercel dev`) werkt het vaak wel omdat de hele repo beschikbaar is.
 - Chat antwoordt generiek / zonder site-inhoud (geen 503): controleer Vercel **Runtime Logs** op `[chat] Projectcontext niet gevonden` of lege retrieval; run `python build_knowledge.py` en commit `data/knowledge_chunks.json`.
 - Geen chatrespons in de browser: controleer het Network-tabblad op `/api/chat`.
+- Chat op GitHub Pages met CORS-/netwerkfout terwijl Vercel goed staat: controleer of `assets/chat-config.js` niet naar `http://localhost:3000` wijst. Genereer opnieuw met `CHAT_API_URL=https://jouw-api.vercel.app npm run build:site` en commit het bestand.
 
 ## Licentie
 

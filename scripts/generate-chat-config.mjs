@@ -18,11 +18,28 @@ const outPath = resolve(root, 'assets/chat-config.js');
 config({ path: resolve(root, '.env.local') });
 config({ path: resolve(root, '.env') });
 
-const PROD_CHAT_API_URL = (
+const DEFAULT_PROD_CHAT_API_URL = 'https://energy-data-governance-2026-chatapi.vercel.app';
+
+function isLocalApiUrl(url) {
+  try {
+    const { hostname } = new URL(url);
+    return hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '[::1]';
+  } catch {
+    return false;
+  }
+}
+
+const rawChatApiUrl = (
   process.env.CHAT_API_URL ||
   process.env.PUBLIC_CHAT_API_URL ||
-  'https://energy-data-governance-2026-chatapi.vercel.app'
+  DEFAULT_PROD_CHAT_API_URL
 ).trim().replace(/\/$/, '');
+
+const PROD_CHAT_API_URL = isLocalApiUrl(rawChatApiUrl)
+  ? (console.warn(
+      `CHAT_API_URL=${rawChatApiUrl} is lokaal — PROD_CHAT_API_URL wordt ${DEFAULT_PROD_CHAT_API_URL}`
+    ), DEFAULT_PROD_CHAT_API_URL)
+  : rawChatApiUrl;
 
 const CHAT_API_KEY = (
   process.env.CHAT_CLIENT_API_KEY ||
