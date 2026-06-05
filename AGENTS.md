@@ -14,7 +14,7 @@ This is a static HTML/CSS/JS site published on **GitHub Pages**. A separate **Ve
 ### Key commands
 
 - **Local preview:** `python3 -m http.server 8080` then open `http://localhost:8080/index.html`
-- **Chat config (GitHub Pages):** `npm run build:chat-config` (uses `CHAT_API_URL` from `.env.local` or env)
+- **Chat config (GitHub Pages):** `npm run build:site` (uses `CHAT_API_URL` from `.env.local` or env)
 - **Vercel:** API-only; static files are listed in `.vercelignore`. Do not set an Output Directory in the Vercel project.
 - **Export JSON→Markdown:** `python3 export_to_md.py` (all sources) or `python3 export_to_md.py --source <id>`
 - **Import Markdown→JSON:** `python3 import_from_md.py` (all sources) or `python3 import_from_md.py --source <id>`

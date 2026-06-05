@@ -49,8 +49,10 @@ Vul in `.env.local` minimaal `OPENAI_API_KEY` en `CORS_ORIGINS` in. Lokale `.env
 De chatwidget leest `window.CHAT_CONFIG` uit `assets/chat-config.js`. Dat bestand wordt gegenereerd uit omgevingsvariabelen:
 
 ```bash
-npm run build:chat-config
+npm run build:site
 ```
+
+Of direct: `npm run build:chat-config`
 
 Relevante variabelen:
 
@@ -121,7 +123,7 @@ Zet in Vercel minimaal:
 - `CORS_ORIGINS`, bijvoorbeeld `https://energie-data.github.io,https://data-governance-2026.reports.energiedata.nl,http://localhost:8080`
 - optioneel `CHAT_CLIENT_API_KEY`, met dezelfde waarde als gebruikt bij het genereren van `assets/chat-config.js`
 
-Controleer in het Vercel-dashboard dat **geen** Output Directory is ingesteld (laat leeg of verwijder `.`). `vercel.json` definieert geen `outputDirectory` meer.
+Controleer in het Vercel-dashboard dat **geen** Output Directory is ingesteld (laat leeg of verwijder `.`) en dat **Build Command** leeg is of overeenkomt met `vercel.json` (`buildCommand: ""`). Vercel mag geen `npm run build` meer draaien — de chat-config hoort bij GitHub Pages.
 
 De API leest in productie geen `.env.local`. Genereer `assets/chat-config.js` vóór de GitHub Pages-deploy, niet op Vercel.
 

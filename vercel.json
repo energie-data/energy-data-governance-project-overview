@@ -1,4 +1,6 @@
 {
+  "buildCommand": "",
+  "installCommand": "npm install",
   "functions": {
     "api/chat.ts": {
       "maxDuration": 30,
