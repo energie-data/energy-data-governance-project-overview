@@ -1,12 +1,20 @@
 {
-  "buildCommand": "npm run build:chat-config",
-  "outputDirectory": ".",
   "functions": {
     "api/chat.ts": {
       "maxDuration": 30,
       "includeFiles": "data/knowledge_chunks.json,data/algemene_projectcontext_openai.md"
     }
   },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/api/not-found"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",

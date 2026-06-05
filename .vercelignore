@@ -1,0 +1,26 @@
+# Static website — alleen op GitHub Pages
+*.html
+assets/
+CNAME
+
+# Brondata voor de website (niet nodig op Vercel)
+data/projects_*.json
+data/projects_*.md
+data/use_cases_*.json
+data/recommendations_*.json
+data/recommendations_*.md
+
+# Python-scripts en lokale tooling
+*.py
+__pycache__/
+.venv/
+venv/
+
+# Documentatie en licentie
+README.md
+AGENTS.md
+LICENSE
+.env.example
+
+# Chat-config wordt op GitHub Pages gebouwd, niet op Vercel
+scripts/

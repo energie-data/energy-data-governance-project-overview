@@ -113,13 +113,17 @@ GitHub Pages publiceert de statische bestanden uit de repository. Zorg vóór pu
 
 ### Vercel API
 
+Vercel host **alleen** de serverless chat-API (`/api/chat`). De statische website wordt niet op Vercel gepubliceerd: `.vercelignore` sluit HTML, assets en overige sitebestanden uit, en alle andere paden geven `404` via `api/not-found.ts`.
+
 Zet in Vercel minimaal:
 
 - `OPENAI_API_KEY`
-- `CORS_ORIGINS`, bijvoorbeeld `https://energie-data.github.io,http://localhost:8080`
+- `CORS_ORIGINS`, bijvoorbeeld `https://energie-data.github.io,https://data-governance-2026.reports.energiedata.nl,http://localhost:8080`
 - optioneel `CHAT_CLIENT_API_KEY`, met dezelfde waarde als gebruikt bij het genereren van `assets/chat-config.js`
 
-De Vercel-build draait `npm run build:chat-config`. De API leest in productie geen `.env.local`.
+Controleer in het Vercel-dashboard dat **geen** Output Directory is ingesteld (laat leeg of verwijder `.`). `vercel.json` definieert geen `outputDirectory` meer.
+
+De API leest in productie geen `.env.local`. Genereer `assets/chat-config.js` vóór de GitHub Pages-deploy, niet op Vercel.
 
 ## Security
 
