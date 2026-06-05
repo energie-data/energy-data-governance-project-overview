@@ -1,5 +1,17 @@
 /* assets/diagram.js — radiaal diagram voor initiatieven per scope */
 
+const DIAGRAM_DOT_R = 3.2;
+const DIAGRAM_LABEL_MAX_LEN = 42;
+const DIAGRAM_LABEL_GAP = 8;          // afstand rand dot → tekst (px in viewBox)
+const DIAGRAM_LABEL_COLLISION_PAD = 1.4;
+const DIAGRAM_LABEL_MAX_NUDGE = 20;
+
+function truncateDiagramLabel(name, maxLen = DIAGRAM_LABEL_MAX_LEN) {
+  const s = String(name || '');
+  if (s.length <= maxLen) return s;
+  return `${s.slice(0, maxLen - 1)}…`;
+}
+
 /**
  * Rendert een radiaal SVG-diagram in `container`.
  *
@@ -8,9 +20,7 @@
  *   Middelste ring  → 'Gerelateerde sector'
  *   Buitenste ring  → 'Generiek initiatief'
  *
- * Elk initiatief verschijnt als een klikbaar punt met een label.
- * Labels aan de linker- en rechterkant worden verticaal uitgespreid
- * zodat ze elkaar niet overlappen.
+ * Elk initiatief verschijnt als een klikbaar punt met een kort label.
  *
  * @param {Array}       projects    - Gefilterde projecten (met .id, .naam, .scope)
  * @param {HTMLElement} container   - Element waarin het SVG wordt geplaatst
@@ -60,11 +70,11 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
   const center = size / 2;
 
   // Stralen van de zichtbare ringen (achtergrondcirkels)
-  const ringRadii = { inner: 60, middle: 95, outer: 130 };
+  const ringRadii = { inner: 72, middle: 102, outer: 130 };
 
   // Stralen waarop de datapunten worden geplaatst (midden van elke ring)
   const dotRadii = {
-    inner: ringRadii.inner * 0.6,
+    inner: ringRadii.inner * 0.68,
     middle: (ringRadii.inner + ringRadii.middle) / 2,
     outer: (ringRadii.middle + ringRadii.outer) / 2
   };
@@ -81,14 +91,21 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
       const angle = (2 * Math.PI * i / n) - Math.PI / 2;
       const x = center + radius * Math.cos(angle);
       const y = center + radius * Math.sin(angle);
-      const isRight = Math.cos(angle) >= 0;
-      const lx = x + (isRight ? 10 : -10);
+      const cos = Math.cos(angle);
+      const sin = Math.sin(angle);
+      const isRight = cos >= 0;
+      const labelDistance = DIAGRAM_DOT_R + DIAGRAM_LABEL_GAP;
+      const lx = x + (cos * labelDistance);
+      const ly = y + (sin * labelDistance);
+      const anchor = cos > 0.22 ? 'start' : (cos < -0.22 ? 'end' : 'middle');
       return {
         p,
         x, y,
-        lx, ly: y,
-        anchor: isRight ? 'start' : 'end',
-        side: isRight ? 'right' : 'left'
+        lx, ly,
+        anchor,
+        side: isRight ? 'right' : 'left',
+        isRight,
+        cos, sin
       };
     });
   }
@@ -97,23 +114,62 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
   const middlePts = pointsFor(byScope['Gerelateerde sector'], dotRadii.middle);
   const outerPts  = pointsFor(byScope['Generiek initiatief'], dotRadii.outer);
 
-  // --- Label-botsing voorkomen --------------------------------------------
-  // Sorteer labels per zijde op y-positie en duw overlappende labels omlaag.
-  const allPts = [...innerPts, ...middlePts, ...outerPts];
-  const minLabelGap = 8; // minimale verticale ruimte tussen labels (px in viewBox)
+  function prepareLabel(pt) {
+    pt.fullName = String(pt.p.naam || '');
+    pt.label = truncateDiagramLabel(pt.fullName);
+    pt.labelW = Math.max(8, pt.label.length * labelFontSize * 0.56);
+    pt.labelH = labelFontSize + 2;
+    pt.nudge = 0;
+    return pt;
+  }
 
-  function spreadLabels(side) {
-    const pts = allPts
-      .filter(pt => pt.side === side)
-      .sort((a, b) => a.ly - b.ly);
-    for (let i = 1; i < pts.length; i++) {
-      if (pts[i].ly < pts[i - 1].ly + minLabelGap) {
-        pts[i].ly = pts[i - 1].ly + minLabelGap;
+  function labelRect(pt) {
+    const x = pt.anchor === 'middle'
+      ? pt.lx - (pt.labelW / 2)
+      : (pt.anchor === 'start' ? pt.lx : pt.lx - pt.labelW);
+    return {
+      x1: x - DIAGRAM_LABEL_COLLISION_PAD,
+      y1: pt.ly - (pt.labelH / 2) - DIAGRAM_LABEL_COLLISION_PAD,
+      x2: x + pt.labelW + DIAGRAM_LABEL_COLLISION_PAD,
+      y2: pt.ly + (pt.labelH / 2) + DIAGRAM_LABEL_COLLISION_PAD
+    };
+  }
+
+  function rectsOverlap(a, b) {
+    return a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1;
+  }
+
+  function nudgeLabelOutward(pt, amount) {
+    if (pt.nudge >= DIAGRAM_LABEL_MAX_NUDGE) return false;
+    const dx = pt.x - center;
+    const dy = pt.y - center;
+    const len = Math.hypot(dx, dy) || 1;
+    const step = Math.min(amount, DIAGRAM_LABEL_MAX_NUDGE - pt.nudge);
+    pt.lx += (dx / len) * step;
+    pt.ly += (dy / len) * step;
+    pt.nudge += step;
+    return true;
+  }
+
+  function reduceLabelOverlap(points) {
+    const pts = points.map(prepareLabel);
+    for (let pass = 0; pass < 16; pass++) {
+      let changed = false;
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          if (!rectsOverlap(labelRect(pts[i]), labelRect(pts[j]))) continue;
+
+          // Verplaats vooral het label dat al het verst buiten staat; dat houdt labels bij hun eigen bolletje.
+          const ri = Math.hypot(pts[i].x - center, pts[i].y - center) + pts[i].nudge;
+          const rj = Math.hypot(pts[j].x - center, pts[j].y - center) + pts[j].nudge;
+          changed = nudgeLabelOutward(ri >= rj ? pts[i] : pts[j], 2.5) || changed;
+        }
       }
+      if (!changed) break;
     }
   }
-  spreadLabels('left');
-  spreadLabels('right');
+
+  reduceLabelOverlap([...innerPts, ...middlePts, ...outerPts]);
 
   // --- SVG opbouwen -------------------------------------------------------
   // viewBox snoeit de lege ruimte boven en onder het diagram af
@@ -136,26 +192,48 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
    * - wit: overige initiatieven
    */
   function renderLayer(points) {
-    return points.map(pt => `
-      <g class="diagramItem" data-slug="${escapeHtml(pt.p.id)}">
-        <circle cx="${pt.x}" cy="${pt.y}" r="3.8" fill="${isNewIn2026(pt.p) ? 'rgb(147, 214, 255)' : (isInactiveIn2026(pt.p) ? 'rgba(170, 177, 191, .96)' : 'rgba(255,255,255,.9)')}"/>
+    return points.map(pt => {
+      const dotFill = isNewIn2026(pt.p)
+        ? 'rgb(147, 214, 255)'
+        : (isInactiveIn2026(pt.p) ? 'rgba(170, 177, 191, .96)' : 'rgba(255,255,255,.9)');
+      const titleEl = pt.fullName !== pt.label
+        ? `<title>${escapeHtml(pt.fullName)}</title>`
+        : '';
+      // Bereken leader line na nudge: start op rand van dot richting huidig labelanker, eind op labelanker
+      const ldx = pt.lx - pt.x;
+      const ldy = pt.ly - pt.y;
+      const ldist = Math.hypot(ldx, ldy) || 1;
+      const ll1x = (pt.x + (ldx / ldist) * (DIAGRAM_DOT_R + 0.5)).toFixed(2);
+      const ll1y = (pt.y + (ldy / ldist) * (DIAGRAM_DOT_R + 0.5)).toFixed(2);
+      // Eindpunt: de kant van de tekst die het dichtst bij de dot zit
+      const ll2x = (pt.anchor === 'end'   ? pt.lx :
+                    pt.anchor === 'start' ? pt.lx :
+                    pt.lx).toFixed(2);
+      const ll2y = pt.ly.toFixed(2);
+      return `
+      <g class="diagramItem" data-slug="${escapeHtml(pt.p.id)}" aria-label="${escapeHtml(pt.fullName)}">
+        ${titleEl}
+        <line class="diagramLeader" x1="${ll1x}" y1="${ll1y}" x2="${ll2x}" y2="${ll2y}" stroke="${dotFill}" stroke-width="0.5" stroke-opacity="0.45" stroke-linecap="round"/>
+        <circle class="diagramDot" cx="${pt.x}" cy="${pt.y}" r="${DIAGRAM_DOT_R}" fill="${dotFill}"/>
         ${labelBackground ? (() => {
-          const name = String(pt.p.naam || '');
-          const textW = Math.max(8, name.length * labelFontSize * 0.56);
+          const textW = pt.labelW;
           const padX = 2.4;
           const padY = 1.4;
           const boxW = textW + (padX * 2);
           const boxH = labelFontSize + (padY * 2);
-          const boxX = pt.anchor === 'start' ? pt.lx - padX : pt.lx - boxW + padX;
+          const boxX = pt.anchor === 'middle'
+            ? pt.lx - (boxW / 2)
+            : (pt.anchor === 'start' ? pt.lx - padX : pt.lx - boxW + padX);
           const boxY = pt.ly - (boxH / 2);
-          return `<rect x="${boxX}" y="${boxY}" width="${boxW}" height="${boxH}" rx="1.8" ry="1.8" fill="${labelBackgroundColor}" fill-opacity="${labelBackgroundOpacity}"/>`;
+          return `<rect class="diagramLabelBg" x="${boxX}" y="${boxY}" width="${boxW}" height="${boxH}" rx="1.8" ry="1.8" fill="${labelBackgroundColor}" fill-opacity="${labelBackgroundOpacity}"/>`;
         })() : ''}
-        <text x="${pt.lx}" y="${pt.ly}" fill="${labelColor(pt.p)}" font-size="${labelFontSize}"
-              text-anchor="${pt.anchor}" dominant-baseline="middle">
-          ${escapeHtml(pt.p.naam)}
+        <text class="diagramLabel" x="${pt.lx}" y="${pt.ly}" fill="${labelColor(pt.p)}" font-size="${labelFontSize}"
+              text-anchor="${pt.anchor}" dominant-baseline="middle" xml:space="preserve">
+          ${escapeHtml(pt.label)}
         </text>
       </g>
-    `).join('');
+    `;
+    }).join('');
   }
 
   svg += renderLayer(innerPts);
@@ -165,12 +243,40 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
   svg += '</svg>';
   container.innerHTML = svg;
 
-  // --- Klik- en toetsenbordafhandeling ------------------------------------
-  for (const el of container.querySelectorAll('.diagramItem')) {
+  // --- Klik-, hover- en toetsenbordafhandeling ----------------------------
+  const items = container.querySelectorAll('.diagramItem');
+
+  function clearHighlights() {
+    for (const item of items) {
+      item.classList.remove('is-highlighted');
+    }
+  }
+
+  function setHighlighted(el, on) {
+    if (!on) {
+      el.classList.remove('is-highlighted');
+      return;
+    }
+
+    clearHighlights();
+    el.classList.add('is-highlighted');
+    if (el.parentNode) {
+      el.parentNode.appendChild(el);
+    }
+  }
+
+  container.addEventListener('mouseleave', clearHighlights);
+  container.addEventListener('blur', clearHighlights, true);
+
+  for (const el of items) {
     const slug = el.getAttribute('data-slug');
     if (!slug) continue;
     el.setAttribute('tabindex', '0');
     el.setAttribute('role', 'button');
+    el.addEventListener('mouseenter', () => setHighlighted(el, true));
+    el.addEventListener('mouseleave', () => setHighlighted(el, false));
+    el.addEventListener('focus', () => setHighlighted(el, true));
+    el.addEventListener('blur', () => setHighlighted(el, false));
     el.addEventListener('click', () => onItemClick(slug));
     el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {

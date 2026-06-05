@@ -271,6 +271,29 @@ a { color: inherit }
 .radialDiagram .diagramItem {
   cursor: pointer;
 }
+.radialDiagram .diagramLeader {
+  transition: stroke-opacity .12s ease;
+}
+.radialDiagram .diagramDot {
+  transition: stroke .12s ease, stroke-width .12s ease, filter .12s ease;
+}
+.radialDiagram .diagramLabel {
+  transition: font-weight .12s ease;
+}
+.radialDiagram .diagramItem.is-highlighted .diagramLeader {
+  stroke-opacity: 0.85;
+}
+.radialDiagram .diagramItem.is-highlighted .diagramDot {
+  stroke: rgba(244, 150, 59, .95);
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 2px rgba(244, 150, 59, .65));
+}
+.radialDiagram .diagramItem.is-highlighted .diagramLabel {
+  font-weight: 600;
+}
+.radialDiagram .diagramItem.is-highlighted .diagramLabelBg {
+  fill-opacity: 0.55;
+}
 
 .card {
   border: 1px solid var(--border);
