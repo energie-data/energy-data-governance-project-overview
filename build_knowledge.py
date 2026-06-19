@@ -151,7 +151,7 @@ def _interop_label(defs: Dict[str, Any], def_key: str, code: Any) -> str:
 def build_use_case_glossary(chunks: List[Dict[str, Any]], schema: Dict[str, Any]) -> Dict[str, str]:
     """Legenda MD-velden + mapping veldnaam → label voor use cases."""
     lines = [
-        "Legenda metadata use cases (velden MD1–MD9 en MD5 data_consumer).",
+        "Legenda metadata use cases (velden MD1–MD10 en MD5 data_consumer).",
         "Gebruik deze definities bij het interpreteren van use-case kenmerken.",
     ]
     field_labels: Dict[str, str] = {}
@@ -173,7 +173,7 @@ def build_use_case_glossary(chunks: List[Dict[str, Any]], schema: Dict[str, Any]
         chunks,
         id="glossary:use_case_metadata",
         type="glossary",
-        title="Legenda use-case metadata (MD1–MD9)",
+        title="Legenda use-case metadata (MD1–MD10)",
         text=_lines(*lines),
         url="overzicht-use-cases.html",
     )
@@ -217,6 +217,7 @@ def build_use_cases(chunks: List[Dict[str, Any]]) -> None:
                 labels.get("MD9_granulariteit_frequentie", "MD9 Granulariteit frequentie"),
                 uc.get("MD9_granulariteit_frequentie"),
             ),
+            _join_list(labels.get("MD10_energiedrager", "MD10 Energiedrager"), uc.get("MD10_energiedrager")),
             "",
             _format_links(uc.get("links")),
         )
@@ -450,11 +451,11 @@ def build_intro(chunks: List[Dict[str, Any]]) -> None:
         "- reflectie-aanbevelingen-2023.html — voortgang aanbevelingen 2023",
         "- initiatieven-interoperabiliteit.html — semantiek en interoperabiliteit",
         "- initiatieven-data-delen.html — initiatieven data delen (2023 en 2026)",
-        "- overzicht-use-cases.html — 69 use cases met metadata MD1–MD9",
+        "- overzicht-use-cases.html — 69 use cases met metadata MD1–MD10",
         "- wegwijzer.html — wegwijzer energiedata",
         "",
         "Use cases hebben gestructureerde metadata (status, projectdoel, type energiedata, "
-        "databron, data consument, governance, toepassing, granulariteit). "
+        "databron, data consument, governance, toepassing, granulariteit, energiedrager). "
         "Initiatieven interoperabiliteit hebben filtermetadata (type, beheervorm, focus, regio, volwassenheid, relevantie).",
     )
     _emit(
