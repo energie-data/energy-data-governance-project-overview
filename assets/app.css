@@ -257,6 +257,8 @@ a { color: inherit }
   margin-top: 14px;
 }
 .radialDiagram {
+  position: relative;
+  z-index: 2;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: rgba(255,255,255,.04);
@@ -267,18 +269,30 @@ a { color: inherit }
   width: 100%;
   height: auto;
   display: block;
+  overflow: visible;
+}
+.radialDiagram .diagramRing {
+  pointer-events: none;
 }
 .radialDiagram .diagramItem {
   cursor: pointer;
 }
 .radialDiagram .diagramLeader {
   transition: stroke-opacity .12s ease;
+  pointer-events: none;
+}
+.radialDiagram .diagramDotHit,
+.radialDiagram .diagramLabelHit {
+  fill: transparent;
+  pointer-events: all;
 }
 .radialDiagram .diagramDot {
   transition: stroke .12s ease, stroke-width .12s ease, filter .12s ease;
+  pointer-events: none;
 }
 .radialDiagram .diagramLabel {
   transition: font-weight .12s ease;
+  pointer-events: none;
 }
 .radialDiagram .diagramItem.is-highlighted .diagramLeader {
   stroke-opacity: 0.85;
@@ -406,8 +420,12 @@ a { color: inherit }
   z-index: 60;
   display: flex;
   flex-direction: column;
+  pointer-events: none;
 }
-.drawer.open { transform: translateX(0); }
+.drawer.open {
+  transform: translateX(0);
+  pointer-events: auto;
+}
 
 .drawerHeader {
   padding: 14px 14px 10px;

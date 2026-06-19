@@ -134,6 +134,17 @@
         "5 Jaar"
       ],
       "meerdere_waarden": true
+    },
+    "MD10_energiedrager": {
+      "label": "MD10: Energiedrager",
+      "beschrijving": "Welke energiedrager(s) centraal staan in de use case. Gas omvat hier gasvormige energiedragers zoals aardgas en, waar relevant, waterstof.",
+      "waarden": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte",
+        "Niet specifiek"
+      ],
+      "meerdere_waarden": true
     }
   },
   "use_cases": [
@@ -187,6 +198,9 @@
       "MD9_granulariteit_frequentie": [
         "Kwartier",
         "Uur"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -231,6 +245,9 @@
       ],
       "links": [
         "https://projecten.topsectorenergie.nl/projecten/orkest-optimal-integration-of-network-flexibiilty-and-asset-intelligence-to-increase-large-scale-integration-of-res-while-maintaining-reliability-37711"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -279,6 +296,10 @@
       "MD9_granulariteit_frequentie": [
         "Uur",
         "Dag"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -328,6 +349,9 @@
       ],
       "links": [
         "https://energiehubs.nl/kennisbank/case-energie-handelsplatform-pannenweg"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -376,6 +400,9 @@
       ],
       "links": [
         "https://ecah.amsterdam/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -420,6 +447,9 @@
       ],
       "links": [
         "https://www.amports.nl/nieuws/energieplatform-voor-havenbedrijven-om-onderling-energie-te-delen/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -473,6 +503,9 @@
       ],
       "links": [
         "https://www.provincie.drenthe.nl/onderwerpen/natuur-milieu/diversen/netcongestie/netcongestie-bedrijven/ortese/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -522,6 +555,9 @@
       ],
       "links": [
         "https://ibestuur.nl/data-en-ai/toepassingen/rotterdam-ontwikkelt-open-urban-platform-met-digital-twin"
+      ],
+      "MD10_energiedrager": [
+        "Niet specifiek"
       ]
     },
     {
@@ -570,6 +606,11 @@
       ],
       "links": [
         "https://www.thegreenvillage.org/toekomstig-energiesysteem/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -625,6 +666,10 @@
       ],
       "links": [
         "https://gridflex.nl/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas"
       ]
     },
     {
@@ -671,6 +716,9 @@
       ],
       "links": [
         "https://equigy.com/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -722,6 +770,10 @@
       ],
       "links": [
         "https://projecten.topsectorenergie.nl/projecten/troef-transparant-reduceren-van-co2-en-optimaliseren-van-energie-in-een-ecosysteem-van-flexibiliteit-de-troef-naar-versnelling-van-de-energietransitie-en-lokale-energiegemeenschappen-35404"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -768,6 +820,10 @@
       ],
       "links": [
         "https://www.portofrotterdam.com/en/news-and-press-releases/pilot-exchange-energy-and-utility-flows-between-companies-rotterdam"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -812,6 +868,9 @@
       ],
       "links": [
         "https://www.duurzaam-ondernemen.nl/65-miljoen-euro-voor-circulaire-energie-innovatie-in-de-gebouwde-omgeving/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -863,6 +922,9 @@
       ],
       "links": [
         "https://projecten.topsectorenergie.nl/projecten/new-energy-garden-xl-businesspark-37466"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -911,6 +973,10 @@
       ],
       "links": [
         "https://projecten.topsectorenergie.nl/projecten/sinnewetterstof-34699"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas"
       ]
     },
     {
@@ -962,6 +1028,10 @@
       "MD9_granulariteit_frequentie": [
         "Minuut",
         "Kwartier"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -1009,6 +1079,10 @@
       "MD9_granulariteit_frequentie": [
         "Kwartier",
         "Uur"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -1057,6 +1131,9 @@
       "MD9_granulariteit_frequentie": [
         "Uur",
         "Dag"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1106,6 +1183,9 @@
       "MD9_granulariteit_frequentie": [
         "Minuut",
         "Kwartier"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1157,6 +1237,9 @@
       "MD9_granulariteit_frequentie": [
         "Kwartier",
         "Uur"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1203,6 +1286,11 @@
       ],
       "links": [
         "https://www.rug.nl/news/2021/07/0701-nwo-esi-far-subsidie?lang=en"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1252,6 +1340,11 @@
       ],
       "links": [
         "https://www.esciencecenter.nl/projects/designing-and-modelling-future-systems-of-energy-systems-demoses/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1297,6 +1390,9 @@
       ],
       "links": [
         "https://spectral.energy/project/utility-scale-bess-poland-stellar/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1340,6 +1436,10 @@
       ],
       "links": [
         "https://spectral.energy/project/acanthus-large-scale-energy-optimization-brighter/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -1382,6 +1482,11 @@
       ],
       "links": [
         "https://spectral.energy/project/data-management-b-vital/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1424,6 +1529,11 @@
       ],
       "links": [
         "https://spectral.energy/project/het-koninklijk-concertgebouw-optimizing-a-unique-building/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1466,6 +1576,10 @@
       ],
       "links": [
         "https://spectral.energy/project/greenchoice-building-optimization-rotterdam-headquarters/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -1512,6 +1626,9 @@
       ],
       "links": [
         "https://spectral.energy/project/axpo-renewable-asset-management/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1554,6 +1671,10 @@
       ],
       "links": [
         "https://spectral.energy/project/aroundtown-shining-a-light-on-sustainability/"
+      ],
+      "MD10_energiedrager": [
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1601,6 +1722,9 @@
       ],
       "links": [
         "https://spectral.energy/project/hines-feed-in-congestion-at-fresh-park-venlo/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1645,6 +1769,11 @@
       ],
       "links": [
         "https://spectral.energy/project/hines-data-gathering-and-control-for-real-estate/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1692,6 +1821,11 @@
       ],
       "links": [
         "https://spectral.energy/project/becc-enabling-the-energy-hub-of-tomorrow/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1741,6 +1875,10 @@
       ],
       "links": [
         "https://spectral.energy/project/republica-microgrid/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -1785,6 +1923,9 @@
       ],
       "links": [
         "https://spectral.energy/project/schieoevers-mapping-the-potential-for-smart-business-parks/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -1831,6 +1972,10 @@
       ],
       "links": [
         "https://spectral.energy/project/tse-smart-grid-interactive-offices/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -1873,6 +2018,11 @@
       ],
       "links": [
         "https://spectral.energy/project/bouwinvest-an-environmental-management-system/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1915,6 +2065,11 @@
       ],
       "links": [
         "https://spectral.energy/project/nsi-portfolio-2/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -1962,6 +2117,9 @@
       ],
       "links": [
         "https://spectral.energy/project/living-labs-scheveningen-micro-grid-phase-1/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2009,6 +2167,10 @@
       ],
       "links": [
         "https://spectral.energy/project/mooi-brains4buildings/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -2054,6 +2216,9 @@
       ],
       "links": [
         "https://spectral.energy/project/tractieweg-increasing-sustainable-energy-consumption/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2100,6 +2265,9 @@
       ],
       "links": [
         "https://spectral.energy/project/groningen-peer-to-peer-energy-exchange/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2145,6 +2313,9 @@
       ],
       "links": [
         "https://spectral.energy/project/ahoy/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2190,6 +2361,9 @@
       ],
       "links": [
         "https://spectral.energy/project/gvb-electric-bus-fleet/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2238,6 +2412,9 @@
       ],
       "links": [
         "https://spectral.energy/project/jouliette/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2279,6 +2456,10 @@
       ],
       "links": [
         "https://spectral.energy/project/merin-portfolio/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -2326,6 +2507,9 @@
       ],
       "links": [
         "https://withthegrid.com/aire-and-withthegrid-partnership/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2370,6 +2554,9 @@
       ],
       "links": [
         "https://withthegrid.com/how-gasunie-automated-cathodic-protection-monitoring-for-11000-assets-with-the-asset-monitoring-platform/"
+      ],
+      "MD10_energiedrager": [
+        "Gas"
       ]
     },
     {
@@ -2417,6 +2604,9 @@
       ],
       "links": [
         "https://withthegrid.com/withthegrid-and-repowered-powering-up-asset-flexibility-together/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -2459,6 +2649,9 @@
       ],
       "links": [
         "https://withthegrid.com/withthegrid-case-study-cathodic-protection-waterbedrijf-groningen/"
+      ],
+      "MD10_energiedrager": [
+        "Niet specifiek"
       ]
     },
     {
@@ -2501,6 +2694,9 @@
       ],
       "links": [
         "https://withthegrid.com/monitoring-distribution-grid-in-real-time-at-warmtebedrijf-rotterdam/"
+      ],
+      "MD10_energiedrager": [
+        "Warmte"
       ]
     },
     {
@@ -2543,6 +2739,11 @@
       ],
       "links": [
         "https://energydataxchange.com/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -2586,6 +2787,11 @@
       ],
       "links": [
         "https://www.denyse.org/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -2636,6 +2842,10 @@
       ],
       "links": [
         "https://www.aimz.nl/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -2678,6 +2888,11 @@
       ],
       "links": [
         "https://www.bouwinvest.nl/duurzaamheid/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -2725,6 +2940,9 @@
       ],
       "links": [
         "https://www.sustainablescale-up.com/twinvalley-programme/twintwente-twents"
+      ],
+      "MD10_energiedrager": [
+        "Niet specifiek"
       ]
     },
     {
@@ -2790,6 +3008,10 @@
         "https://ampowr.com/nl/elektriciteitsnet-scheveningen/",
         "https://spectral.energy/project/living-labs-scheveningen-micro-grid-phase-1/",
         "https://vng.nl/praktijkvoorbeelden/slim-strandnet-het-elektriciteitsnet-van-de-toekomst"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -2849,6 +3071,10 @@
         "https://www.drechtstedenenergie.nl/digitaltwindrechtsteden",
         "https://www.smartdeltadrechtsteden.nl/nieuws/simulatietool-helpt-slim-om-te-gaan-met-stroom-bij-warmtetransitie?sresult=1265987673&swords=digital+twin",
         "https://www.smartdeltadrechtsteden.nl/nieuws/simulatietool-digital-twin-helpt-ondernemers-drechtsteden-bij-aanpak-netcongestie"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -2912,6 +3138,11 @@
       ],
       "links": [
         "https://energyshr.nl/"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -2969,6 +3200,9 @@
       "MD9_granulariteit_frequentie": [
         "Minuut",
         "Kwartier"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -3030,6 +3264,9 @@
         "Minuut",
         "Kwartier",
         "Uur"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -3092,6 +3329,10 @@
         "Kwartier",
         "Uur",
         "Dag"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -3153,6 +3394,9 @@
         "Minuut",
         "Kwartier",
         "Uur"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -3214,6 +3458,10 @@
       "MD9_granulariteit_frequentie": [
         "Kwartier",
         "Uur"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -3279,6 +3527,10 @@
         "Kwartier",
         "Uur",
         "Dag"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Warmte"
       ]
     },
     {
@@ -3340,6 +3592,11 @@
         "Kwartier",
         "Uur",
         "Dag"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -3396,6 +3653,9 @@
         "Overheden/beleidsmakers",
         "Netbeheerders",
         "Dienstverlener anders dan de aggregator"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     },
     {
@@ -3464,6 +3724,11 @@
         "Dienstverlener anders dan de aggregator",
         "Aggregator",
         "Onderzoekers"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit",
+        "Gas",
+        "Warmte"
       ]
     },
     {
@@ -3518,6 +3783,9 @@
         "Huishoudens/prosumers",
         "Netbeheerders",
         "Dienstverlener anders dan de aggregator"
+      ],
+      "MD10_energiedrager": [
+        "Elektriciteit"
       ]
     }
   ]

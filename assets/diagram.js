@@ -93,7 +93,6 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
       const y = center + radius * Math.sin(angle);
       const cos = Math.cos(angle);
       const sin = Math.sin(angle);
-      const isRight = cos >= 0;
       const labelDistance = DIAGRAM_DOT_R + DIAGRAM_LABEL_GAP;
       const lx = x + (cos * labelDistance);
       const ly = y + (sin * labelDistance);
@@ -103,8 +102,6 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
         x, y,
         lx, ly,
         anchor,
-        side: isRight ? 'right' : 'left',
-        isRight,
         cos, sin
       };
     });
@@ -177,11 +174,11 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
   const viewBoxH = size - 140;
   let svg = `<svg viewBox="0 ${viewBoxY} ${size} ${viewBoxH}" role="img" aria-label="Overzicht initiatieven per scope">`;
 
-  // Achtergrondringen (iets lichter + rand voor betere laagafbakening)
+  // Achtergrondringen (niet klikbaar; alleen decoratie)
   svg += `
-    <circle cx="${center}" cy="${center}" r="${ringRadii.outer}" fill="rgba(30,52,84,.55)" stroke="rgba(255,255,255,.18)" stroke-width="0.8"/>
-    <circle cx="${center}" cy="${center}" r="${ringRadii.middle}" fill="rgba(24,42,72,.70)" stroke="rgba(255,255,255,.20)" stroke-width="0.8"/>
-    <circle cx="${center}" cy="${center}" r="${ringRadii.inner}" fill="rgba(16,30,56,.88)" stroke="rgba(255,255,255,.22)" stroke-width="0.8"/>
+    <circle class="diagramRing" cx="${center}" cy="${center}" r="${ringRadii.outer}" fill="rgba(30,52,84,.55)" stroke="rgba(255,255,255,.18)" stroke-width="0.8"/>
+    <circle class="diagramRing" cx="${center}" cy="${center}" r="${ringRadii.middle}" fill="rgba(24,42,72,.70)" stroke="rgba(255,255,255,.20)" stroke-width="0.8"/>
+    <circle class="diagramRing" cx="${center}" cy="${center}" r="${ringRadii.inner}" fill="rgba(16,30,56,.88)" stroke="rgba(255,255,255,.22)" stroke-width="0.8"/>
   `;
 
   /**
@@ -199,21 +196,37 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
       const titleEl = pt.fullName !== pt.label
         ? `<title>${escapeHtml(pt.fullName)}</title>`
         : '';
-      // Bereken leader line na nudge: start op rand van dot richting huidig labelanker, eind op labelanker
+      // Leader line: van de rand van de dot tot vlak vóór de rand van het label,
+      // zodat de naam netjes aansluit op het uiteinde van het verbindingslijntje.
       const ldx = pt.lx - pt.x;
       const ldy = pt.ly - pt.y;
       const ldist = Math.hypot(ldx, ldy) || 1;
       const ll1x = (pt.x + (ldx / ldist) * (DIAGRAM_DOT_R + 0.5)).toFixed(2);
       const ll1y = (pt.y + (ldy / ldist) * (DIAGRAM_DOT_R + 0.5)).toFixed(2);
-      // Eindpunt: de kant van de tekst die het dichtst bij de dot zit
-      const ll2x = (pt.anchor === 'end'   ? pt.lx :
-                    pt.anchor === 'start' ? pt.lx :
-                    pt.lx).toFixed(2);
-      const ll2y = pt.ly.toFixed(2);
+      const textGap = 1.5;
+      let ll2xRaw = pt.lx;
+      let ll2yRaw = pt.ly;
+      if (pt.anchor === 'start') {
+        ll2xRaw = pt.lx - textGap;
+      } else if (pt.anchor === 'end') {
+        ll2xRaw = pt.lx + textGap;
+      } else {
+        // Boven-/onderlabels: stop op de rand van de tekst die naar de dot wijst.
+        const nearEdge = pt.ly < pt.y ? pt.ly + (pt.labelH / 2) : pt.ly - (pt.labelH / 2);
+        ll2yRaw = nearEdge + (pt.ly < pt.y ? textGap : -textGap);
+      }
+      const ll2x = ll2xRaw.toFixed(2);
+      const ll2y = ll2yRaw.toFixed(2);
+      const labelX = pt.anchor === 'middle'
+        ? pt.lx - (pt.labelW / 2)
+        : (pt.anchor === 'start' ? pt.lx : pt.lx - pt.labelW);
+      const labelY = pt.ly - (pt.labelH / 2);
       return `
       <g class="diagramItem" data-slug="${escapeHtml(pt.p.id)}" aria-label="${escapeHtml(pt.fullName)}">
         ${titleEl}
         <line class="diagramLeader" x1="${ll1x}" y1="${ll1y}" x2="${ll2x}" y2="${ll2y}" stroke="${dotFill}" stroke-width="0.5" stroke-opacity="0.45" stroke-linecap="round"/>
+        <circle class="diagramDotHit" cx="${pt.x}" cy="${pt.y}" r="9"/>
+        <rect class="diagramLabelHit" x="${labelX.toFixed(2)}" y="${labelY.toFixed(2)}" width="${pt.labelW.toFixed(2)}" height="${pt.labelH.toFixed(2)}"/>
         <circle class="diagramDot" cx="${pt.x}" cy="${pt.y}" r="${DIAGRAM_DOT_R}" fill="${dotFill}"/>
         ${labelBackground ? (() => {
           const textW = pt.labelW;
@@ -227,10 +240,7 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
           const boxY = pt.ly - (boxH / 2);
           return `<rect class="diagramLabelBg" x="${boxX}" y="${boxY}" width="${boxW}" height="${boxH}" rx="1.8" ry="1.8" fill="${labelBackgroundColor}" fill-opacity="${labelBackgroundOpacity}"/>`;
         })() : ''}
-        <text class="diagramLabel" x="${pt.lx}" y="${pt.ly}" fill="${labelColor(pt.p)}" font-size="${labelFontSize}"
-              text-anchor="${pt.anchor}" dominant-baseline="middle" xml:space="preserve">
-          ${escapeHtml(pt.label)}
-        </text>
+        <text class="diagramLabel" x="${pt.lx}" y="${pt.ly}" fill="${labelColor(pt.p)}" font-size="${labelFontSize}" text-anchor="${pt.anchor}" dominant-baseline="middle">${escapeHtml(pt.label)}</text>
       </g>
     `;
     }).join('');
@@ -260,13 +270,12 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
 
     clearHighlights();
     el.classList.add('is-highlighted');
-    if (el.parentNode) {
-      el.parentNode.appendChild(el);
-    }
   }
 
-  container.addEventListener('mouseleave', clearHighlights);
-  container.addEventListener('blur', clearHighlights, true);
+  if (container._diagramAbort) container._diagramAbort.abort();
+  container._diagramAbort = new AbortController();
+  const { signal } = container._diagramAbort;
+  container.addEventListener('mouseleave', clearHighlights, { signal });
 
   for (const el of items) {
     const slug = el.getAttribute('data-slug');
@@ -277,12 +286,17 @@ function renderDiagram(projects, container, onItemClick, options = {}) {
     el.addEventListener('mouseleave', () => setHighlighted(el, false));
     el.addEventListener('focus', () => setHighlighted(el, true));
     el.addEventListener('blur', () => setHighlighted(el, false));
-    el.addEventListener('click', () => onItemClick(slug));
     el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         onItemClick(slug);
       }
     });
+    for (const node of el.querySelectorAll('.diagramDotHit, .diagramLabelHit')) {
+      node.addEventListener('click', (e) => {
+        e.preventDefault();
+        onItemClick(slug);
+      });
+    }
   }
 }

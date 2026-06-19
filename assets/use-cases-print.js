@@ -56,6 +56,7 @@ function useCaseSection(u, index) {
     listBlock('Toepassing', u.MD7_toepassing),
     listBlock('Granulariteit niveau', u.MD8_granulariteit_niveau),
     listBlock('Granulariteit frequentie', u.MD9_granulariteit_frequentie),
+    listBlock('Energiedrager', u.MD10_energiedrager),
     listBlock('Links', links)
   ].join('');
 
